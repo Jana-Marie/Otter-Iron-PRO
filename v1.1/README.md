@@ -1,3 +1,3 @@
-![](/KiCAD/Otter-Iron_Devkit/3D1.png)
-![](/KiCAD/Otter-Iron_Devkit/3D2.png)
-![](/KiCAD/Otter-Iron_Devkit/3D3.png)
+![](/v1.1/img1.png)
+![](/v1.1/img2.png)
+![](/v1.1/img3.png)
