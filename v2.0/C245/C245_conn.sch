@@ -55,30 +55,6 @@ Text GLabel 8000 3400 0    50   Input ~ 0
 JUNC
 Text GLabel 8000 3100 0    50   Input ~ 0
 HEAT
-Text GLabel 7650 2750 2    50   Input ~ 0
-HEAT
-$Comp
-L power:GND #PWR0103
-U 1 1 5E939CFD
-P 7350 2750
-F 0 "#PWR0103" H 7350 2500 50  0001 C CNN
-F 1 "GND" V 7355 2622 50  0000 R CNN
-F 2 "" H 7350 2750 50  0001 C CNN
-F 3 "" H 7350 2750 50  0001 C CNN
-	1    7350 2750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5E939EB4
-P 7500 2750
-F 0 "C1" V 7248 2750 50  0000 C CNN
-F 1 "10u" V 7339 2750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7538 2600 50  0001 C CNN
-F 3 "~" H 7500 2750 50  0001 C CNN
-	1    7500 2750
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5E992574
