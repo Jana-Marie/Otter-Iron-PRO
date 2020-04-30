@@ -17,13 +17,13 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_01x10 J1
 U 1 1 5E94B1B6
-P 7700 2950
-F 0 "J1" H 7780 2942 50  0000 L CNN
-F 1 "Conn_01x10" H 7780 2851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" H 7700 2950 50  0001 C CNN
-F 3 "~" H 7700 2950 50  0001 C CNN
-	1    7700 2950
-	1    0    0    -1  
+P 7700 3050
+F 0 "J1" H 7618 2325 50  0000 C CNN
+F 1 "Conn_01x10" H 7618 2416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" H 7700 3050 50  0001 C CNN
+F 3 "~" H 7700 3050 50  0001 C CNN
+	1    7700 3050
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0101

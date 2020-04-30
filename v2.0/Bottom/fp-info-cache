@@ -1,4 +1,4 @@
-16857948444268197
+16851565937175744
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -74711,13 +74711,6 @@ Oscillator_3225
 4
 4
 otter
-Otter-iron
-
-
-0
-0
-0
-otter
 OtterIron_Devkit_silk
 
 
@@ -75075,20 +75068,6 @@ conn_02x10_edge
 20
 20
 otter
-design_by_@janhenrikh
-
-
-0
-0
-0
-otter
-design_by_@janhenrikh_otter_iron
-
-
-0
-0
-0
-otter
 jegger_233
 
 
@@ -75390,27 +75369,6 @@ otterimage_small
 0
 0
 otter
-pad_0.75_3
-
-
-0
-1
-1
-otter
-pad_1.5_3
-
-
-0
-1
-1
-otter
-pad_1_2
-
-
-0
-1
-1
-otter
 polyhedrone
 
 
@@ -75487,3 +75445,17 @@ wson8
 0
 9
 8
+touch
+PinHeader_1x01_P2.54mm_Vertical
+Through hole straight pin header, 1x01, 2.54mm pitch, single row
+Through hole pin header THT 1x01 2.54mm single row
+0
+1
+1
+touch
+PinHeader_1x05_P2.54mm_Vertical
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5

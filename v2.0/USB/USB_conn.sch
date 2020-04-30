@@ -50,27 +50,27 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0103
 U 1 1 5E94BB3A
-P 7500 3250
-F 0 "#PWR0103" H 7500 3100 50  0001 C CNN
-F 1 "+3.3V" V 7515 3378 50  0000 L CNN
-F 2 "" H 7500 3250 50  0001 C CNN
-F 3 "" H 7500 3250 50  0001 C CNN
-	1    7500 3250
+P 7500 2950
+F 0 "#PWR0103" H 7500 2800 50  0001 C CNN
+F 1 "+3.3V" V 7515 3078 50  0000 L CNN
+F 2 "" H 7500 2950 50  0001 C CNN
+F 3 "" H 7500 2950 50  0001 C CNN
+	1    7500 2950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7500 3350 0    50   Input ~ 0
-SW1
-Text GLabel 7500 3450 0    50   Input ~ 0
-SW2
-Text GLabel 7500 3150 0    50   Input ~ 0
-INT_N
-Text GLabel 7500 3050 0    50   Input ~ 0
-SDA
-Text GLabel 7500 2950 0    50   Input ~ 0
-SCL
-Text GLabel 7500 2750 0    50   Input ~ 0
-USB_P
 Text GLabel 7500 2850 0    50   Input ~ 0
+SW1
+Text GLabel 7500 3250 0    50   Input ~ 0
+SW2
+Text GLabel 7500 2750 0    50   Input ~ 0
+INT_N
+Text GLabel 7500 3450 0    50   Input ~ 0
+SDA
+Text GLabel 7500 3350 0    50   Input ~ 0
+SCL
+Text GLabel 7500 3050 0    50   Input ~ 0
+USB_P
+Text GLabel 7500 3150 0    50   Input ~ 0
 USB_N
 $Comp
 L power:GND #PWR0104
