@@ -28,7 +28,8 @@
 #define FILT(a, b, c) ((a) * (c) + (b) * ((1.0f) - (c)))
 #define CLAMP(x, low, high) (((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))
 
-#define TTIP_AVG_FILTER 0.98f
+#define TTIP_AVG_FILTER 0.99f
+#define DISP_AVG_FILTER 0.9f
 #define MIN_DUTY 0
 uint16_t MAX_DUTY = 150;
 
@@ -71,14 +72,16 @@ struct status_t{
   float ttipavg;
   float uin;
   float iin;
+  float iinavg;
   float imax;
   float tref;
   uint8_t writeFlash;
   uint8_t button[2];
+  float drawlineavg;
 #ifdef DISPLAYCURRENT
   uint8_t timeout;
 #endif
-}s = {.writeFlash = 0, .imax = 1.1f};
+}s = {.writeFlash = 0, .imax = 4.0f};
 
 struct reg_t{
   float target;
@@ -93,7 +96,8 @@ struct reg_t{
   float Ki;
   float Kd;
   float deadband;
-}r = {.Kp = 0.3f,.Ki = 0.13f,.Kd = 0.3f,.cycletime = 0.0005f,.imax=200.0f,.target=220.0f,.deadband=12.0f};
+}r = {.Kp = 0.2f,.Ki = 0.01f,.Kd = 0.0f,.cycletime = 0.00025f,.imax=200.0f,.target=220.0f,.deadband=42.0f};
+//}r = {.Kp = 0.3f,.Ki = 0.13f,.Kd = 0.3f,.cycletime = 0.0005f,.imax=200.0f,.target=220.0f,.deadband=42.0f};
 
 struct tipcal_t{
   float offset;
@@ -125,11 +129,11 @@ int main(void)
 
   HAL_ADC_Start_DMA(&hadc, (uint32_t *)ADC_raw, 4);
 
-  HAL_Delay(20);
+  HAL_Delay(50);
   disp_init();
   HAL_Delay(150);
   clear_screen();
-  // DFU bootloader
+  //DFU bootloader
   if(HAL_GPIO_ReadPin(GPIOA,B1_Pin) && HAL_GPIO_ReadPin(GPIOA,B2_Pin)){
     draw_string("dfudfudfudfudfu", 1, 1 ,1);
     draw_string("dfudfudfudfudfu", 1, 8 ,1);
@@ -213,7 +217,7 @@ int main(void)
     sprintf(str1, "%d C   ", (uint16_t)r.target);
     sprintf(str2, "%d.%d C", (uint16_t)s.ttipavg,(uint16_t)((s.ttipavg-(uint16_t)s.ttipavg)*10.0f));
     sprintf(str3, "%d.%d V", (uint16_t)s.uin,(uint16_t)((s.uin-(uint16_t)s.uin)*10.0f));
-    sprintf(str4, "%d.%d A", (uint16_t)s.iin,(uint16_t)((s.iin-(uint16_t)s.iin)*10.0f));
+    sprintf(str4, "%d.%d A", (uint16_t)s.iinavg,(uint16_t)((s.iinavg-(uint16_t)s.iinavg)*10.0f));
 
     clear_screen();
     draw_string(str1, 10, 1 ,1);
@@ -226,8 +230,9 @@ int main(void)
       s.timeout--;
     }
 #endif
-
-    for(uint16_t i = 0; i <=  CLAMP(r.error*3.0f,0,30); i++){
+    s.drawlineavg = (s.drawlineavg * DISP_AVG_FILTER) + (CLAMP(r.error*3.0f,0,30)*(1.0-DISP_AVG_FILTER));
+    s.iinavg = (s.iinavg * DISP_AVG_FILTER) + (s.iin*(1.0-DISP_AVG_FILTER));
+    for(uint16_t i = 0; i <= (int)s.drawlineavg; i++){
       draw_v_line(60+i, 8, 8, 1);
     }
 
@@ -270,12 +275,11 @@ void reg(void) {
     r.duty -= 100;
   } else {
     MAX_DUTY++;
-    if(MAX_DUTY >= 3990) MAX_DUTY = 3990;
+    if(MAX_DUTY >= 3900) MAX_DUTY = 3900;
   }
 
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, r.duty);
-
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 4050);
+  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 4090);
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) //send USB cdc data

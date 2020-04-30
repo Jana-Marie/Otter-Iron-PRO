@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccmPiGn9.s 			page 1
+ARM GAS  /tmp/ccauA3k4.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****     (+) The IWDG is implemented in the VDD voltage domain that is still functional
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****         in STOP and STANDBY mode (IWDG reset can wake-up from STANDBY).
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****         IWDGRST flag in RCC_CSR register can be used to inform when an IWDG
-ARM GAS  /tmp/ccmPiGn9.s 			page 2
+ARM GAS  /tmp/ccauA3k4.s 			page 2
 
 
   34:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****         reset occurs.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   *   2. Redistributions in binary form must reproduce the above copyright notice,
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   *      this list of conditions and the following disclaimer in the documentation
   90:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   *      and/or other materials provided with the distribution.
-ARM GAS  /tmp/ccmPiGn9.s 			page 3
+ARM GAS  /tmp/ccauA3k4.s 			page 3
 
 
   91:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   *   3. Neither the name of STMicroelectronics nor the names of its contributors
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
  145:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****  *  @brief    Initialization and Start functions.
  146:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****  *
  147:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c **** @verbatim
-ARM GAS  /tmp/ccmPiGn9.s 			page 4
+ARM GAS  /tmp/ccauA3k4.s 			page 4
 
 
  148:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****  ===============================================================================
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
  187:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   __HAL_IWDG_START(hiwdg);
   41              		.loc 1 187 0
   42 0006 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/ccmPiGn9.s 			page 5
+ARM GAS  /tmp/ccauA3k4.s 			page 5
 
 
   43 0008 124A     		ldr	r2, .L9
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
  207:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   }
  208:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c **** 
  209:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   /* If window parameter is different than current value, modify window 
-ARM GAS  /tmp/ccmPiGn9.s 			page 6
+ARM GAS  /tmp/ccauA3k4.s 			page 6
 
 
  210:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_iwdg.c ****   register */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
  114              		.section	.text.HAL_IWDG_Refresh,"ax",%progbits
  115              		.align	1
  116              		.global	HAL_IWDG_Refresh
-ARM GAS  /tmp/ccmPiGn9.s 			page 7
+ARM GAS  /tmp/ccauA3k4.s 			page 7
 
 
  117              		.syntax unified
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
  137              		@ sp needed
  138 0008 7047     		bx	lr
  139              	.L13:
-ARM GAS  /tmp/ccmPiGn9.s 			page 8
+ARM GAS  /tmp/ccauA3k4.s 			page 8
 
 
  140 000a C046     		.align	2
@@ -428,29 +428,29 @@ ARM GAS  /tmp/ccmPiGn9.s 			page 1
  144              	.LFE38:
  146              		.text
  147              	.Letext0:
- 148              		.file 2 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/machin
- 149              		.file 3 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/_s
+ 148              		.file 2 "/usr/include/newlib/machine/_default_types.h"
+ 149              		.file 3 "/usr/include/newlib/sys/_stdint.h"
  150              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
  151              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
- 152              		.file 6 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/lo
- 153              		.file 7 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/_t
- 154              		.file 8 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/lib/gcc/arm-none-eabi/7.3.1/
- 155              		.file 9 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/re
+ 152              		.file 6 "/usr/include/newlib/sys/lock.h"
+ 153              		.file 7 "/usr/include/newlib/sys/_types.h"
+ 154              		.file 8 "/usr/lib/gcc/arm-none-eabi/7.3.1/include/stddef.h"
+ 155              		.file 9 "/usr/include/newlib/sys/reent.h"
  156              		.file 10 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
  157              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  158              		.file 12 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_iwdg.h"
  159              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
-ARM GAS  /tmp/ccmPiGn9.s 			page 9
+ARM GAS  /tmp/ccauA3k4.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_iwdg.c
-     /tmp/ccmPiGn9.s:16     .text.HAL_IWDG_Init:0000000000000000 $t
-     /tmp/ccmPiGn9.s:23     .text.HAL_IWDG_Init:0000000000000000 HAL_IWDG_Init
-     /tmp/ccmPiGn9.s:108    .text.HAL_IWDG_Init:0000000000000054 $d
-     /tmp/ccmPiGn9.s:115    .text.HAL_IWDG_Refresh:0000000000000000 $t
-     /tmp/ccmPiGn9.s:122    .text.HAL_IWDG_Refresh:0000000000000000 HAL_IWDG_Refresh
-     /tmp/ccmPiGn9.s:142    .text.HAL_IWDG_Refresh:000000000000000c $d
+     /tmp/ccauA3k4.s:16     .text.HAL_IWDG_Init:0000000000000000 $t
+     /tmp/ccauA3k4.s:23     .text.HAL_IWDG_Init:0000000000000000 HAL_IWDG_Init
+     /tmp/ccauA3k4.s:108    .text.HAL_IWDG_Init:0000000000000054 $d
+     /tmp/ccauA3k4.s:115    .text.HAL_IWDG_Refresh:0000000000000000 $t
+     /tmp/ccauA3k4.s:122    .text.HAL_IWDG_Refresh:0000000000000000 HAL_IWDG_Refresh
+     /tmp/ccauA3k4.s:142    .text.HAL_IWDG_Refresh:000000000000000c $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick

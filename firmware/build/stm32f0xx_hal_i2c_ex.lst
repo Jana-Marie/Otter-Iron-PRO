@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc8gfoTQ.s 			page 1
+ARM GAS  /tmp/cctPQ2rM.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****           (++) HAL_I2CEx_EnableFastModePlus()
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****           (++) HAL_I2CEx_DisableFastModePlus()
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   @endverbatim
-ARM GAS  /tmp/cc8gfoTQ.s 			page 2
+ARM GAS  /tmp/cctPQ2rM.s 			page 2
 
 
   34:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** /** @defgroup I2CEx_Exported_Functions_Group1 Extended features functions
   90:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   * @brief    Extended features functions
-ARM GAS  /tmp/cc8gfoTQ.s 			page 3
+ARM GAS  /tmp/cctPQ2rM.s 			page 3
 
 
   91:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****  *
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
   50 0012 4024     		movs	r4, #64
   51 0014 0122     		movs	r2, #1
   52 0016 0255     		strb	r2, [r0, r4]
-ARM GAS  /tmp/cc8gfoTQ.s 			page 4
+ARM GAS  /tmp/cctPQ2rM.s 			page 4
 
 
  121:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
   87              	.LVL2:
   88 004a 00E0     		b	.L2
   89              	.LVL3:
-ARM GAS  /tmp/cc8gfoTQ.s 			page 5
+ARM GAS  /tmp/cctPQ2rM.s 			page 5
 
 
   90              	.L3:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  129              		.cfi_offset 4, -20
  130              		.cfi_offset 5, -16
  131              		.cfi_offset 6, -12
-ARM GAS  /tmp/cc8gfoTQ.s 			page 6
+ARM GAS  /tmp/cctPQ2rM.s 			page 6
 
 
  132              		.cfi_offset 7, -8
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  165              	.LVL10:
  178:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
  179:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     /* Set I2Cx DNF coefficient */
-ARM GAS  /tmp/cc8gfoTQ.s 			page 7
+ARM GAS  /tmp/cctPQ2rM.s 			page 7
 
 
  180:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     tmpreg |= DigitalFilter << 8U;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  166:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
  201              		.loc 1 166 0
  202 004c 0220     		movs	r0, #2
-ARM GAS  /tmp/cc8gfoTQ.s 			page 8
+ARM GAS  /tmp/cctPQ2rM.s 			page 8
 
 
  203              	.LVL19:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  242 000e 012B     		cmp	r3, #1
  243 0010 1BD0     		beq	.L16
  244              		.loc 1 215 0 is_stmt 0 discriminator 2
-ARM GAS  /tmp/cc8gfoTQ.s 			page 9
+ARM GAS  /tmp/cctPQ2rM.s 			page 9
 
 
  245 0012 4021     		movs	r1, #64
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  234:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   else
  235:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   {
  236:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     return HAL_BUSY;
-ARM GAS  /tmp/cc8gfoTQ.s 			page 10
+ARM GAS  /tmp/cctPQ2rM.s 			page 10
 
 
  281              		.loc 1 236 0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  321 0004 C35C     		ldrb	r3, [r0, r3]
  322 0006 202B     		cmp	r3, #32
  323 0008 1CD1     		bne	.L19
-ARM GAS  /tmp/cc8gfoTQ.s 			page 11
+ARM GAS  /tmp/cctPQ2rM.s 			page 11
 
 
  252:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   {
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  271:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     return HAL_OK;
  359              		.loc 1 271 0 discriminator 2
  360 0040 0020     		movs	r0, #0
-ARM GAS  /tmp/cc8gfoTQ.s 			page 12
+ARM GAS  /tmp/cctPQ2rM.s 			page 12
 
 
  361              	.LVL27:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  293:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** void HAL_I2CEx_EnableFastModePlus(uint32_t ConfigFastModePlus)
  294:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** {
  395              		.loc 1 294 0
-ARM GAS  /tmp/cc8gfoTQ.s 			page 13
+ARM GAS  /tmp/cctPQ2rM.s 			page 13
 
 
  396              		.cfi_startproc
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  443              	.LFB42:
  304:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
  305:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** /**
-ARM GAS  /tmp/cc8gfoTQ.s 			page 14
+ARM GAS  /tmp/cctPQ2rM.s 			page 14
 
 
  306:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   * @brief Disable the I2C fast mode plus driving capability.
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  475              		.align	2
  476              	.L27:
  477 0020 00100240 		.word	1073876992
-ARM GAS  /tmp/cc8gfoTQ.s 			page 15
+ARM GAS  /tmp/cctPQ2rM.s 			page 15
 
 
  478 0024 00000140 		.word	1073807360
@@ -846,38 +846,38 @@ ARM GAS  /tmp/cc8gfoTQ.s 			page 1
  480              	.LFE42:
  482              		.text
  483              	.Letext0:
- 484              		.file 2 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/machin
- 485              		.file 3 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/_s
+ 484              		.file 2 "/usr/include/newlib/machine/_default_types.h"
+ 485              		.file 3 "/usr/include/newlib/sys/_stdint.h"
  486              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
  487              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f072xb.h"
- 488              		.file 6 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/lo
- 489              		.file 7 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/_t
- 490              		.file 8 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/lib/gcc/arm-none-eabi/7.3.1/
- 491              		.file 9 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/re
+ 488              		.file 6 "/usr/include/newlib/sys/lock.h"
+ 489              		.file 7 "/usr/include/newlib/sys/_types.h"
+ 490              		.file 8 "/usr/lib/gcc/arm-none-eabi/7.3.1/include/stddef.h"
+ 491              		.file 9 "/usr/include/newlib/sys/reent.h"
  492              		.file 10 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  493              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
  494              		.file 12 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h"
-ARM GAS  /tmp/cc8gfoTQ.s 			page 16
+ARM GAS  /tmp/cctPQ2rM.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_i2c_ex.c
-     /tmp/cc8gfoTQ.s:16     .text.HAL_I2CEx_ConfigAnalogFilter:0000000000000000 $t
-     /tmp/cc8gfoTQ.s:23     .text.HAL_I2CEx_ConfigAnalogFilter:0000000000000000 HAL_I2CEx_ConfigAnalogFilter
-     /tmp/cc8gfoTQ.s:107    .text.HAL_I2CEx_ConfigAnalogFilter:0000000000000054 $d
-     /tmp/cc8gfoTQ.s:112    .text.HAL_I2CEx_ConfigDigitalFilter:0000000000000000 $t
-     /tmp/cc8gfoTQ.s:119    .text.HAL_I2CEx_ConfigDigitalFilter:0000000000000000 HAL_I2CEx_ConfigDigitalFilter
-     /tmp/cc8gfoTQ.s:208    .text.HAL_I2CEx_ConfigDigitalFilter:0000000000000050 $d
-     /tmp/cc8gfoTQ.s:213    .text.HAL_I2CEx_EnableWakeUp:0000000000000000 $t
-     /tmp/cc8gfoTQ.s:220    .text.HAL_I2CEx_EnableWakeUp:0000000000000000 HAL_I2CEx_EnableWakeUp
-     /tmp/cc8gfoTQ.s:298    .text.HAL_I2CEx_DisableWakeUp:0000000000000000 $t
-     /tmp/cc8gfoTQ.s:305    .text.HAL_I2CEx_DisableWakeUp:0000000000000000 HAL_I2CEx_DisableWakeUp
-     /tmp/cc8gfoTQ.s:381    .text.HAL_I2CEx_DisableWakeUp:000000000000004c $d
-     /tmp/cc8gfoTQ.s:386    .text.HAL_I2CEx_EnableFastModePlus:0000000000000000 $t
-     /tmp/cc8gfoTQ.s:393    .text.HAL_I2CEx_EnableFastModePlus:0000000000000000 HAL_I2CEx_EnableFastModePlus
-     /tmp/cc8gfoTQ.s:429    .text.HAL_I2CEx_EnableFastModePlus:0000000000000020 $d
-     /tmp/cc8gfoTQ.s:435    .text.HAL_I2CEx_DisableFastModePlus:0000000000000000 $t
-     /tmp/cc8gfoTQ.s:442    .text.HAL_I2CEx_DisableFastModePlus:0000000000000000 HAL_I2CEx_DisableFastModePlus
-     /tmp/cc8gfoTQ.s:477    .text.HAL_I2CEx_DisableFastModePlus:0000000000000020 $d
+     /tmp/cctPQ2rM.s:16     .text.HAL_I2CEx_ConfigAnalogFilter:0000000000000000 $t
+     /tmp/cctPQ2rM.s:23     .text.HAL_I2CEx_ConfigAnalogFilter:0000000000000000 HAL_I2CEx_ConfigAnalogFilter
+     /tmp/cctPQ2rM.s:107    .text.HAL_I2CEx_ConfigAnalogFilter:0000000000000054 $d
+     /tmp/cctPQ2rM.s:112    .text.HAL_I2CEx_ConfigDigitalFilter:0000000000000000 $t
+     /tmp/cctPQ2rM.s:119    .text.HAL_I2CEx_ConfigDigitalFilter:0000000000000000 HAL_I2CEx_ConfigDigitalFilter
+     /tmp/cctPQ2rM.s:208    .text.HAL_I2CEx_ConfigDigitalFilter:0000000000000050 $d
+     /tmp/cctPQ2rM.s:213    .text.HAL_I2CEx_EnableWakeUp:0000000000000000 $t
+     /tmp/cctPQ2rM.s:220    .text.HAL_I2CEx_EnableWakeUp:0000000000000000 HAL_I2CEx_EnableWakeUp
+     /tmp/cctPQ2rM.s:298    .text.HAL_I2CEx_DisableWakeUp:0000000000000000 $t
+     /tmp/cctPQ2rM.s:305    .text.HAL_I2CEx_DisableWakeUp:0000000000000000 HAL_I2CEx_DisableWakeUp
+     /tmp/cctPQ2rM.s:381    .text.HAL_I2CEx_DisableWakeUp:000000000000004c $d
+     /tmp/cctPQ2rM.s:386    .text.HAL_I2CEx_EnableFastModePlus:0000000000000000 $t
+     /tmp/cctPQ2rM.s:393    .text.HAL_I2CEx_EnableFastModePlus:0000000000000000 HAL_I2CEx_EnableFastModePlus
+     /tmp/cctPQ2rM.s:429    .text.HAL_I2CEx_EnableFastModePlus:0000000000000020 $d
+     /tmp/cctPQ2rM.s:435    .text.HAL_I2CEx_DisableFastModePlus:0000000000000000 $t
+     /tmp/cctPQ2rM.s:442    .text.HAL_I2CEx_DisableFastModePlus:0000000000000000 HAL_I2CEx_DisableFastModePlus
+     /tmp/cctPQ2rM.s:477    .text.HAL_I2CEx_DisableFastModePlus:0000000000000020 $d
 
 NO UNDEFINED SYMBOLS

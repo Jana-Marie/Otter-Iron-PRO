@@ -1,21 +1,19 @@
 
-OpenDocument="main.c", FilePath="/home/janhenrik/kiCAD/Otter-Iron/firmware/Src/main.c", Line=0
-OpenDocument="system_stm32f0xx.c", FilePath="/home/janhenrik/kiCAD/Otter-Iron/firmware/Src/system_stm32f0xx.c", Line=219
-OpenDocument="startup_stm32f072xb.s", FilePath="/home/janhenrik/kiCAD/Otter-Iron/firmware/startup_stm32f072xb.s", Line=51
+OpenDocument="otter.jdebug", FilePath="otter.jdebug", Line=0
+OpenDocument="startup_stm32f072xb.s", FilePath="/home/janhenrik/kiCAD/Otter-Iron_PRO/firmware/startup_stm32f072xb.s", Line=47
+OpenDocument="main.c", FilePath="/home/janhenrik/kiCAD/Otter-Iron_PRO/firmware/Src/main.c", Line=91
 OpenToolbar="Debug", Floating=0, x=0, y=0
-OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=2, w=733, h=343, FilterBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
-OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=733, h=403, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0, InstEncodingsShown=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=2, w=733, h=344, FilterBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=733, h=402, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0, InstEncodingsShown=0
 OpenWindow="Source", x=0, y=0, w=0, h=0, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0
 OpenWindow="Watched Data", DockArea=RIGHT, x=0, y=1, w=733, h=343, FilterBarShown=0, ToolBarShown=0
-OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=307, h=1101, FilterBarShown=1, ToolBarShown=0
 OpenWindow="Data Sampling", DockArea=BOTTOM, x=0, y=0, w=1993, h=239, FilterBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
 OpenWindow="Console", DockArea=BOTTOM, x=1, y=0, w=506, h=239, FilterBarShown=0, ToolBarShown=0
 TableHeader="Watched Data", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[314;123;68;228]
-TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[27;27;27;27;203]
 TableHeader="Data Sampling Table", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time"], ColWidths=[100;100]
 TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[84;51;55;44;48;70;83;93;1465]
 TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
 TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[120;92;506]
 TableHeader="RegisterSelectionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Auto";"Name";"Address";"Description"], ColWidths=[27;27;27;27]
-WatchedExpression="s", RefreshRate=5
-WatchedExpression="r", RefreshRate=5
+WatchedExpression="s"
+WatchedExpression="r"

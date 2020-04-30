@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccIAGofU.s 			page 1
+ARM GAS  /tmp/ccpLaj8e.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
   31:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** /** @addtogroup STM32_USB_DEVICE_LIBRARY
   32:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c ****   * @{
   33:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c ****   */
-ARM GAS  /tmp/ccIAGofU.s 			page 2
+ARM GAS  /tmp/ccpLaj8e.s 			page 2
 
 
   34:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
   88:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** * @brief  USBD_CtlSendData
   89:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** *         send data on the ctl pipe
   90:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** * @param  pdev: device instance
-ARM GAS  /tmp/ccIAGofU.s 			page 3
+ARM GAS  /tmp/ccpLaj8e.s 			page 3
 
 
   91:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** * @param  buff: pointer to data buffer
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
   64              		.code	16
   65              		.thumb_func
   66              		.fpu softvfp
-ARM GAS  /tmp/ccIAGofU.s 			page 4
+ARM GAS  /tmp/ccpLaj8e.s 			page 4
 
 
   68              	USBD_CtlContinueSendData:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
  127:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** /**
  128:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** * @brief  USBD_CtlPrepareRx
  129:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** *         receive data on the ctl pipe
-ARM GAS  /tmp/ccIAGofU.s 			page 5
+ARM GAS  /tmp/ccpLaj8e.s 			page 5
 
 
  130:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** * @param  pdev: device instance
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
  138              		.cfi_endproc
  139              	.LFE39:
  141              		.section	.text.USBD_CtlContinueRx,"ax",%progbits
-ARM GAS  /tmp/ccIAGofU.s 			page 6
+ARM GAS  /tmp/ccpLaj8e.s 			page 6
 
 
  142              		.align	1
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
  178              		.global	USBD_CtlSendStatus
  179              		.syntax unified
  180              		.code	16
-ARM GAS  /tmp/ccIAGofU.s 			page 7
+ARM GAS  /tmp/ccpLaj8e.s 			page 7
 
 
  181              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
  220              		.fpu softvfp
  222              	USBD_CtlReceiveStatus:
  223              	.LFB42:
-ARM GAS  /tmp/ccIAGofU.s 			page 8
+ARM GAS  /tmp/ccpLaj8e.s 			page 8
 
 
  188:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
  260              	USBD_GetRxCount:
  261              	.LFB43:
  208:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** 
-ARM GAS  /tmp/ccIAGofU.s 			page 9
+ARM GAS  /tmp/ccpLaj8e.s 			page 9
 
 
  209:Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c **** 
@@ -514,35 +514,35 @@ ARM GAS  /tmp/ccIAGofU.s 			page 1
  280              	.LFE43:
  282              		.text
  283              	.Letext0:
- 284              		.file 2 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/machin
- 285              		.file 3 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/_s
+ 284              		.file 2 "/usr/include/newlib/machine/_default_types.h"
+ 285              		.file 3 "/usr/include/newlib/sys/_stdint.h"
  286              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
- 287              		.file 5 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/lo
- 288              		.file 6 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/_t
- 289              		.file 7 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/lib/gcc/arm-none-eabi/7.3.1/
- 290              		.file 8 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/sys/re
- 291              		.file 9 "/home/janhenrik/programme/gcc-arm-none-eabi-7-2018-q2-update/arm-none-eabi/include/stdlib
+ 287              		.file 5 "/usr/include/newlib/sys/lock.h"
+ 288              		.file 6 "/usr/include/newlib/sys/_types.h"
+ 289              		.file 7 "/usr/lib/gcc/arm-none-eabi/7.3.1/include/stddef.h"
+ 290              		.file 8 "/usr/include/newlib/sys/reent.h"
+ 291              		.file 9 "/usr/include/newlib/stdlib.h"
  292              		.file 10 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
  293              		.file 11 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
-ARM GAS  /tmp/ccIAGofU.s 			page 10
+ARM GAS  /tmp/ccpLaj8e.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_ioreq.c
-     /tmp/ccIAGofU.s:16     .text.USBD_CtlSendData:0000000000000000 $t
-     /tmp/ccIAGofU.s:23     .text.USBD_CtlSendData:0000000000000000 USBD_CtlSendData
-     /tmp/ccIAGofU.s:61     .text.USBD_CtlContinueSendData:0000000000000000 $t
-     /tmp/ccIAGofU.s:68     .text.USBD_CtlContinueSendData:0000000000000000 USBD_CtlContinueSendData
-     /tmp/ccIAGofU.s:96     .text.USBD_CtlPrepareRx:0000000000000000 $t
-     /tmp/ccIAGofU.s:103    .text.USBD_CtlPrepareRx:0000000000000000 USBD_CtlPrepareRx
-     /tmp/ccIAGofU.s:142    .text.USBD_CtlContinueRx:0000000000000000 $t
-     /tmp/ccIAGofU.s:149    .text.USBD_CtlContinueRx:0000000000000000 USBD_CtlContinueRx
-     /tmp/ccIAGofU.s:177    .text.USBD_CtlSendStatus:0000000000000000 $t
-     /tmp/ccIAGofU.s:184    .text.USBD_CtlSendStatus:0000000000000000 USBD_CtlSendStatus
-     /tmp/ccIAGofU.s:215    .text.USBD_CtlReceiveStatus:0000000000000000 $t
-     /tmp/ccIAGofU.s:222    .text.USBD_CtlReceiveStatus:0000000000000000 USBD_CtlReceiveStatus
-     /tmp/ccIAGofU.s:253    .text.USBD_GetRxCount:0000000000000000 $t
-     /tmp/ccIAGofU.s:260    .text.USBD_GetRxCount:0000000000000000 USBD_GetRxCount
+     /tmp/ccpLaj8e.s:16     .text.USBD_CtlSendData:0000000000000000 $t
+     /tmp/ccpLaj8e.s:23     .text.USBD_CtlSendData:0000000000000000 USBD_CtlSendData
+     /tmp/ccpLaj8e.s:61     .text.USBD_CtlContinueSendData:0000000000000000 $t
+     /tmp/ccpLaj8e.s:68     .text.USBD_CtlContinueSendData:0000000000000000 USBD_CtlContinueSendData
+     /tmp/ccpLaj8e.s:96     .text.USBD_CtlPrepareRx:0000000000000000 $t
+     /tmp/ccpLaj8e.s:103    .text.USBD_CtlPrepareRx:0000000000000000 USBD_CtlPrepareRx
+     /tmp/ccpLaj8e.s:142    .text.USBD_CtlContinueRx:0000000000000000 $t
+     /tmp/ccpLaj8e.s:149    .text.USBD_CtlContinueRx:0000000000000000 USBD_CtlContinueRx
+     /tmp/ccpLaj8e.s:177    .text.USBD_CtlSendStatus:0000000000000000 $t
+     /tmp/ccpLaj8e.s:184    .text.USBD_CtlSendStatus:0000000000000000 USBD_CtlSendStatus
+     /tmp/ccpLaj8e.s:215    .text.USBD_CtlReceiveStatus:0000000000000000 $t
+     /tmp/ccpLaj8e.s:222    .text.USBD_CtlReceiveStatus:0000000000000000 USBD_CtlReceiveStatus
+     /tmp/ccpLaj8e.s:253    .text.USBD_GetRxCount:0000000000000000 $t
+     /tmp/ccpLaj8e.s:260    .text.USBD_GetRxCount:0000000000000000 USBD_GetRxCount
 
 UNDEFINED SYMBOLS
 USBD_LL_Transmit
