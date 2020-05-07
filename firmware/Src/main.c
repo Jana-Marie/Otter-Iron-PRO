@@ -96,7 +96,7 @@ struct reg_t{
   float Ki;
   float Kd;
   float deadband;
-}r = {.Kp = 0.2f,.Ki = 0.01f,.Kd = 0.0f,.cycletime = 0.00025f,.imax=200.0f,.target=220.0f,.deadband=42.0f};
+}r = {.Kp = 0.5f,.Ki = 0.01f,.Kd = 0.0f,.cycletime = 0.0000725f,.imax=200.0f,.target=220.0f,.deadband=20.0f};
 //}r = {.Kp = 0.3f,.Ki = 0.13f,.Kd = 0.3f,.cycletime = 0.0005f,.imax=200.0f,.target=220.0f,.deadband=42.0f};
 
 struct tipcal_t{
@@ -268,10 +268,19 @@ void reg(void) {
     }
   }
 
+  // detect if no tip is plugged in
+  if(s.iin <= 0.001 && s.ttipavg > 300){
+    r.duty = 100;
+    r.error = 0;
+    r.ierror = 0;
+    r.derror = 0;
+    MAX_DUTY = 100;
+  }
+
   r.duty = CLAMP(r.duty, MIN_DUTY, MAX_DUTY); // Clamp to duty cycle
 
   if(s.iin > s.imax && r.duty > 100){ // Current limiting
-    MAX_DUTY = r.duty - 1;
+    MAX_DUTY = r.duty - 2;
     r.duty -= 100;
   } else {
     MAX_DUTY++;
@@ -279,7 +288,7 @@ void reg(void) {
   }
 
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, r.duty);
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 4090);
+  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 4000);
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) //send USB cdc data
@@ -556,7 +565,7 @@ static void MX_TIM1_Init(void)
   TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
 
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 8; // 2048
+  htim1.Init.Prescaler = 6; // 2048
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim1.Init.Period = 4096; // 4096
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

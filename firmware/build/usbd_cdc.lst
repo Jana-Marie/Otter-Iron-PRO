@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccD1Fkkx.s 			page 1
+ARM GAS  /tmp/ccxOHMuh.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
   32:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   *           These aspects may be enriched or modified for a specific user application.
   33:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   *          
   34:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   *            This driver doesn't implement the following aspects of the specification 
-ARM GAS  /tmp/ccD1Fkkx.s 			page 2
+ARM GAS  /tmp/ccxOHMuh.s 			page 2
 
 
   35:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   *            (but it is possible to manage these features with some modifications on this driver)
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
   89:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   * @}
   90:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   */ 
   91:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c **** 
-ARM GAS  /tmp/ccD1Fkkx.s 			page 3
+ARM GAS  /tmp/ccxOHMuh.s 			page 3
 
 
   92:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  146:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x00,
  147:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c **** };
  148:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c **** 
-ARM GAS  /tmp/ccD1Fkkx.s 			page 4
+ARM GAS  /tmp/ccxOHMuh.s 			page 4
 
 
  149:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c **** /**
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  203:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x00,   /* iInterface: */
  204:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   
  205:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   /*Header Functional Descriptor*/
-ARM GAS  /tmp/ccD1Fkkx.s 			page 5
+ARM GAS  /tmp/ccxOHMuh.s 			page 5
 
 
  206:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x05,   /* bLength: Endpoint Descriptor size */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  260:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x00,                              /* bInterval: ignore for Bulk transfer */
  261:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   
  262:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   /*Endpoint IN Descriptor*/
-ARM GAS  /tmp/ccD1Fkkx.s 			page 6
+ARM GAS  /tmp/ccxOHMuh.s 			page 6
 
 
  263:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x07,   /* bLength: Endpoint Descriptor size */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  317:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x24,   /* bDescriptorType: CS_INTERFACE */
  318:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x02,   /* bDescriptorSubtype: Abstract Control Management desc */
  319:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x02,   /* bmCapabilities */
-ARM GAS  /tmp/ccD1Fkkx.s 			page 7
+ARM GAS  /tmp/ccxOHMuh.s 			page 7
 
 
  320:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  374:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x02,   /* bNumInterfaces: 2 interfaces */
  375:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x01,   /* bConfigurationValue: */
  376:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x04,   /* iConfiguration: */
-ARM GAS  /tmp/ccD1Fkkx.s 			page 8
+ARM GAS  /tmp/ccxOHMuh.s 			page 8
 
 
  377:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0xC0,   /* bmAttributes: */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  431:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x09,   /* bLength: Endpoint Descriptor size */
  432:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   USB_DESC_TYPE_INTERFACE,  /* bDescriptorType: */
  433:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x01,   /* bInterfaceNumber: Number of Interface */
-ARM GAS  /tmp/ccD1Fkkx.s 			page 9
+ARM GAS  /tmp/ccxOHMuh.s 			page 9
 
 
  434:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   0x00,   /* bAlternateSetting: Alternate setting */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  488:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     
  489:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     /* Open EP OUT */
  490:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     USBD_LL_OpenEP(pdev,
-ARM GAS  /tmp/ccD1Fkkx.s 			page 10
+ARM GAS  /tmp/ccxOHMuh.s 			page 10
 
 
  491:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****                    CDC_OUT_EP,
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  545:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****       USBD_LL_PrepareReceive(pdev,
  546:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****                              CDC_OUT_EP,
  547:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****                              hcdc->RxBuffer,
-ARM GAS  /tmp/ccD1Fkkx.s 			page 11
+ARM GAS  /tmp/ccxOHMuh.s 			page 11
 
 
  548:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****                              CDC_DATA_FS_OUT_PACKET_SIZE);
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  602:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   USBD_CDC_HandleTypeDef   *hcdc = (USBD_CDC_HandleTypeDef*) pdev->pClassData;
  603:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   static uint8_t ifalt = 0;
  604:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     
-ARM GAS  /tmp/ccD1Fkkx.s 			page 12
+ARM GAS  /tmp/ccxOHMuh.s 			page 12
 
 
  605:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   switch (req->bmRequest & USB_REQ_TYPE_MASK)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  659:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   *         Data sent on non-control IN endpoint
  660:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   * @param  pdev: device instance
  661:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   * @param  epnum: endpoint number
-ARM GAS  /tmp/ccD1Fkkx.s 			page 13
+ARM GAS  /tmp/ccxOHMuh.s 			page 13
 
 
  662:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   * @retval status
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
   61              		.section	.text.USBD_CDC_EP0_RxReady,"ax",%progbits
   62              		.align	1
   63              		.syntax unified
-ARM GAS  /tmp/ccD1Fkkx.s 			page 14
+ARM GAS  /tmp/ccxOHMuh.s 			page 14
 
 
   64              		.code	16
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
   79              		.cfi_offset 14, -4
  720:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   USBD_CDC_HandleTypeDef   *hcdc = (USBD_CDC_HandleTypeDef*) pdev->pClassData;
   80              		.loc 1 720 0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 15
+ARM GAS  /tmp/ccxOHMuh.s 			page 15
 
 
   81 0002 8623     		movs	r3, #134
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  125              		.code	16
  126              		.thumb_func
  127              		.fpu softvfp
-ARM GAS  /tmp/ccD1Fkkx.s 			page 16
+ARM GAS  /tmp/ccxOHMuh.s 			page 16
 
 
  129              	USBD_CDC_GetFSCfgDesc:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  162              		.cfi_startproc
  163              		@ args = 0, pretend = 0, frame = 0
  164              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 17
+ARM GAS  /tmp/ccxOHMuh.s 			page 17
 
 
  165              		@ link register save eliminated.
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  205              	.L16:
  206              		.align	2
  207              	.L15:
-ARM GAS  /tmp/ccD1Fkkx.s 			page 18
+ARM GAS  /tmp/ccxOHMuh.s 			page 18
 
 
  208 0008 00000000 		.word	.LANCHOR2
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  253              		.cfi_startproc
  254              		@ args = 0, pretend = 0, frame = 0
  255              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 19
+ARM GAS  /tmp/ccxOHMuh.s 			page 19
 
 
  256              	.LVL19:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  303 0032 0220     		movs	r0, #2
  304 0034 FCE7     		b	.L21
  305              		.cfi_endproc
-ARM GAS  /tmp/ccD1Fkkx.s 			page 20
+ARM GAS  /tmp/ccxOHMuh.s 			page 20
 
 
  306              	.LFE41:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  357 002c 2100     		movs	r1, r4
  358 002e 9847     		blx	r3
  359              	.LVL30:
-ARM GAS  /tmp/ccD1Fkkx.s 			page 21
+ARM GAS  /tmp/ccxOHMuh.s 			page 21
 
 
  360              	.L24:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  407 006a E1E7     		b	.L24
  408              	.LVL40:
  409              	.L25:
-ARM GAS  /tmp/ccD1Fkkx.s 			page 22
+ARM GAS  /tmp/ccxOHMuh.s 			page 22
 
 
  639:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     {      
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  460 000e FFF7FEFF 		bl	USBD_LL_CloseEP
  461              	.LVL46:
  577:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****               CDC_CMD_EP);
-ARM GAS  /tmp/ccD1Fkkx.s 			page 23
+ARM GAS  /tmp/ccxOHMuh.s 			page 23
 
 
  462              		.loc 1 577 0
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  512 0000 70B5     		push	{r4, r5, r6, lr}
  513              	.LCFI4:
  514              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccD1Fkkx.s 			page 24
+ARM GAS  /tmp/ccxOHMuh.s 			page 24
 
 
  515              		.cfi_offset 4, -16
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  562              		.loc 1 528 0
  563 0044 0433     		adds	r3, r3, #4
  564 0046 E358     		ldr	r3, [r4, r3]
-ARM GAS  /tmp/ccD1Fkkx.s 			page 25
+ARM GAS  /tmp/ccxOHMuh.s 			page 25
 
 
  565 0048 1B68     		ldr	r3, [r3]
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  611 0084 2000     		movs	r0, r4
  612 0086 FFF7FEFF 		bl	USBD_LL_OpenEP
  613              	.LVL66:
-ARM GAS  /tmp/ccD1Fkkx.s 			page 26
+ARM GAS  /tmp/ccxOHMuh.s 			page 26
 
 
  614 008a CBE7     		b	.L37
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  654 0000 0029     		cmp	r1, #0
  655 0002 04D0     		beq	.L44
  796:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   {
-ARM GAS  /tmp/ccD1Fkkx.s 			page 27
+ARM GAS  /tmp/ccxOHMuh.s 			page 27
 
 
  797:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     pdev->pUserData= fops;
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  693              		.loc 1 814 0
  694 0000 8623     		movs	r3, #134
  695 0002 9B00     		lsls	r3, r3, #2
-ARM GAS  /tmp/ccD1Fkkx.s 			page 28
+ARM GAS  /tmp/ccxOHMuh.s 			page 28
 
 
  696 0004 C358     		ldr	r3, [r0, r3]
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  734 0002 9B00     		lsls	r3, r3, #2
  735 0004 C258     		ldr	r2, [r0, r3]
  736              	.LVL81:
-ARM GAS  /tmp/ccD1Fkkx.s 			page 29
+ARM GAS  /tmp/ccxOHMuh.s 			page 29
 
 
  833:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  775 000a 14D0     		beq	.L49
  851:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   {
  852:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     if(hcdc->TxState == 0)
-ARM GAS  /tmp/ccD1Fkkx.s 			page 30
+ARM GAS  /tmp/ccxOHMuh.s 			page 30
 
 
  776              		.loc 1 852 0
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  863:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     }
  806              		.loc 1 863 0
  807 0032 0020     		movs	r0, #0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 31
+ARM GAS  /tmp/ccxOHMuh.s 			page 31
 
 
  808 0034 EFE7     		b	.L48
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  847 000c 037C     		ldrb	r3, [r0, #16]
  848 000e 002B     		cmp	r3, #0
  849 0010 09D0     		beq	.L56
-ARM GAS  /tmp/ccD1Fkkx.s 			page 32
+ARM GAS  /tmp/ccxOHMuh.s 			page 32
 
 
  891:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****     {      
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  880 0038 F4E7     		b	.L53
  881              	.LVL98:
  882              	.L55:
-ARM GAS  /tmp/ccD1Fkkx.s 			page 33
+ARM GAS  /tmp/ccxOHMuh.s 			page 33
 
 
  910:Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c ****   }
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  943 0012 05       		.byte	5
  944 0013 24       		.byte	36
  945 0014 00       		.byte	0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 34
+ARM GAS  /tmp/ccxOHMuh.s 			page 34
 
 
  946 0015 10       		.byte	16
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  1002 0004 02       		.byte	2
  1003 0005 01       		.byte	1
  1004 0006 00       		.byte	0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 35
+ARM GAS  /tmp/ccxOHMuh.s 			page 35
 
 
  1005 0007 C0       		.byte	-64
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  1059 003d 05       		.byte	5
  1060 003e 81       		.byte	-127
  1061 003f 02       		.byte	2
-ARM GAS  /tmp/ccD1Fkkx.s 			page 36
+ARM GAS  /tmp/ccxOHMuh.s 			page 36
 
 
  1062 0040 00       		.byte	0
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  1120 0021 24       		.byte	36
  1121 0022 06       		.byte	6
  1122 0023 00       		.byte	0
-ARM GAS  /tmp/ccD1Fkkx.s 			page 37
+ARM GAS  /tmp/ccxOHMuh.s 			page 37
 
 
  1123 0024 01       		.byte	1
@@ -2208,59 +2208,59 @@ ARM GAS  /tmp/ccD1Fkkx.s 			page 1
  1167              		.file 13 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
  1168              		.file 14 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h"
  1169              		.file 15 "Inc/usbd_conf.h"
-ARM GAS  /tmp/ccD1Fkkx.s 			page 38
+ARM GAS  /tmp/ccxOHMuh.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_cdc.c
-     /tmp/ccD1Fkkx.s:16     .text.USBD_CDC_DataIn:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:22     .text.USBD_CDC_DataIn:0000000000000000 USBD_CDC_DataIn
-     /tmp/ccD1Fkkx.s:62     .text.USBD_CDC_EP0_RxReady:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:68     .text.USBD_CDC_EP0_RxReady:0000000000000000 USBD_CDC_EP0_RxReady
-     /tmp/ccD1Fkkx.s:118    .text.USBD_CDC_EP0_RxReady:0000000000000030 $d
-     /tmp/ccD1Fkkx.s:123    .text.USBD_CDC_GetFSCfgDesc:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:129    .text.USBD_CDC_GetFSCfgDesc:0000000000000000 USBD_CDC_GetFSCfgDesc
-     /tmp/ccD1Fkkx.s:148    .text.USBD_CDC_GetFSCfgDesc:0000000000000008 $d
-     /tmp/ccD1Fkkx.s:153    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:159    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 USBD_CDC_GetHSCfgDesc
-     /tmp/ccD1Fkkx.s:178    .text.USBD_CDC_GetHSCfgDesc:0000000000000008 $d
-     /tmp/ccD1Fkkx.s:183    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:189    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 USBD_CDC_GetOtherSpeedCfgDesc
-     /tmp/ccD1Fkkx.s:208    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000008 $d
-     /tmp/ccD1Fkkx.s:213    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:220    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 USBD_CDC_GetDeviceQualifierDescriptor
-     /tmp/ccD1Fkkx.s:239    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000008 $d
-     /tmp/ccD1Fkkx.s:244    .text.USBD_CDC_DataOut:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:250    .text.USBD_CDC_DataOut:0000000000000000 USBD_CDC_DataOut
-     /tmp/ccD1Fkkx.s:309    .text.USBD_CDC_Setup:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:315    .text.USBD_CDC_Setup:0000000000000000 USBD_CDC_Setup
-     /tmp/ccD1Fkkx.s:424    .text.USBD_CDC_Setup:000000000000007c $d
-     /tmp/ccD1Fkkx.s:430    .text.USBD_CDC_DeInit:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:436    .text.USBD_CDC_DeInit:0000000000000000 USBD_CDC_DeInit
-     /tmp/ccD1Fkkx.s:499    .text.USBD_CDC_Init:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:505    .text.USBD_CDC_Init:0000000000000000 USBD_CDC_Init
-     /tmp/ccD1Fkkx.s:638    .text.USBD_CDC_RegisterInterface:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:645    .text.USBD_CDC_RegisterInterface:0000000000000000 USBD_CDC_RegisterInterface
-     /tmp/ccD1Fkkx.s:678    .text.USBD_CDC_SetTxBuffer:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:685    .text.USBD_CDC_SetTxBuffer:0000000000000000 USBD_CDC_SetTxBuffer
-     /tmp/ccD1Fkkx.s:717    .text.USBD_CDC_SetRxBuffer:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:724    .text.USBD_CDC_SetRxBuffer:0000000000000000 USBD_CDC_SetRxBuffer
-     /tmp/ccD1Fkkx.s:749    .text.USBD_CDC_TransmitPacket:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:756    .text.USBD_CDC_TransmitPacket:0000000000000000 USBD_CDC_TransmitPacket
-     /tmp/ccD1Fkkx.s:819    .text.USBD_CDC_ReceivePacket:0000000000000000 $t
-     /tmp/ccD1Fkkx.s:826    .text.USBD_CDC_ReceivePacket:0000000000000000 USBD_CDC_ReceivePacket
-     /tmp/ccD1Fkkx.s:1086   .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 USBD_CDC_OtherSpeedCfgDesc
-     /tmp/ccD1Fkkx.s:924    .data.USBD_CDC_CfgFSDesc:0000000000000000 USBD_CDC_CfgFSDesc
-     /tmp/ccD1Fkkx.s:997    .data.USBD_CDC_CfgHSDesc:0000000000000000 USBD_CDC_CfgHSDesc
-     /tmp/ccD1Fkkx.s:904    .data.USBD_CDC:0000000000000000 USBD_CDC
-     /tmp/ccD1Fkkx.s:898    .bss.ifalt.8079:0000000000000000 ifalt.8079
-     /tmp/ccD1Fkkx.s:899    .bss.ifalt.8079:0000000000000000 $d
-     /tmp/ccD1Fkkx.s:901    .data.USBD_CDC:0000000000000000 $d
-     /tmp/ccD1Fkkx.s:920    .data.USBD_CDC_CfgFSDesc:0000000000000000 $d
-     /tmp/ccD1Fkkx.s:993    .data.USBD_CDC_CfgHSDesc:0000000000000000 $d
-     /tmp/ccD1Fkkx.s:1066   .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 $d
-     /tmp/ccD1Fkkx.s:1070   .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 USBD_CDC_DeviceQualifierDesc
-     /tmp/ccD1Fkkx.s:1082   .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 $d
+     /tmp/ccxOHMuh.s:16     .text.USBD_CDC_DataIn:0000000000000000 $t
+     /tmp/ccxOHMuh.s:22     .text.USBD_CDC_DataIn:0000000000000000 USBD_CDC_DataIn
+     /tmp/ccxOHMuh.s:62     .text.USBD_CDC_EP0_RxReady:0000000000000000 $t
+     /tmp/ccxOHMuh.s:68     .text.USBD_CDC_EP0_RxReady:0000000000000000 USBD_CDC_EP0_RxReady
+     /tmp/ccxOHMuh.s:118    .text.USBD_CDC_EP0_RxReady:0000000000000030 $d
+     /tmp/ccxOHMuh.s:123    .text.USBD_CDC_GetFSCfgDesc:0000000000000000 $t
+     /tmp/ccxOHMuh.s:129    .text.USBD_CDC_GetFSCfgDesc:0000000000000000 USBD_CDC_GetFSCfgDesc
+     /tmp/ccxOHMuh.s:148    .text.USBD_CDC_GetFSCfgDesc:0000000000000008 $d
+     /tmp/ccxOHMuh.s:153    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 $t
+     /tmp/ccxOHMuh.s:159    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 USBD_CDC_GetHSCfgDesc
+     /tmp/ccxOHMuh.s:178    .text.USBD_CDC_GetHSCfgDesc:0000000000000008 $d
+     /tmp/ccxOHMuh.s:183    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 $t
+     /tmp/ccxOHMuh.s:189    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 USBD_CDC_GetOtherSpeedCfgDesc
+     /tmp/ccxOHMuh.s:208    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000008 $d
+     /tmp/ccxOHMuh.s:213    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 $t
+     /tmp/ccxOHMuh.s:220    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 USBD_CDC_GetDeviceQualifierDescriptor
+     /tmp/ccxOHMuh.s:239    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000008 $d
+     /tmp/ccxOHMuh.s:244    .text.USBD_CDC_DataOut:0000000000000000 $t
+     /tmp/ccxOHMuh.s:250    .text.USBD_CDC_DataOut:0000000000000000 USBD_CDC_DataOut
+     /tmp/ccxOHMuh.s:309    .text.USBD_CDC_Setup:0000000000000000 $t
+     /tmp/ccxOHMuh.s:315    .text.USBD_CDC_Setup:0000000000000000 USBD_CDC_Setup
+     /tmp/ccxOHMuh.s:424    .text.USBD_CDC_Setup:000000000000007c $d
+     /tmp/ccxOHMuh.s:430    .text.USBD_CDC_DeInit:0000000000000000 $t
+     /tmp/ccxOHMuh.s:436    .text.USBD_CDC_DeInit:0000000000000000 USBD_CDC_DeInit
+     /tmp/ccxOHMuh.s:499    .text.USBD_CDC_Init:0000000000000000 $t
+     /tmp/ccxOHMuh.s:505    .text.USBD_CDC_Init:0000000000000000 USBD_CDC_Init
+     /tmp/ccxOHMuh.s:638    .text.USBD_CDC_RegisterInterface:0000000000000000 $t
+     /tmp/ccxOHMuh.s:645    .text.USBD_CDC_RegisterInterface:0000000000000000 USBD_CDC_RegisterInterface
+     /tmp/ccxOHMuh.s:678    .text.USBD_CDC_SetTxBuffer:0000000000000000 $t
+     /tmp/ccxOHMuh.s:685    .text.USBD_CDC_SetTxBuffer:0000000000000000 USBD_CDC_SetTxBuffer
+     /tmp/ccxOHMuh.s:717    .text.USBD_CDC_SetRxBuffer:0000000000000000 $t
+     /tmp/ccxOHMuh.s:724    .text.USBD_CDC_SetRxBuffer:0000000000000000 USBD_CDC_SetRxBuffer
+     /tmp/ccxOHMuh.s:749    .text.USBD_CDC_TransmitPacket:0000000000000000 $t
+     /tmp/ccxOHMuh.s:756    .text.USBD_CDC_TransmitPacket:0000000000000000 USBD_CDC_TransmitPacket
+     /tmp/ccxOHMuh.s:819    .text.USBD_CDC_ReceivePacket:0000000000000000 $t
+     /tmp/ccxOHMuh.s:826    .text.USBD_CDC_ReceivePacket:0000000000000000 USBD_CDC_ReceivePacket
+     /tmp/ccxOHMuh.s:1086   .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 USBD_CDC_OtherSpeedCfgDesc
+     /tmp/ccxOHMuh.s:924    .data.USBD_CDC_CfgFSDesc:0000000000000000 USBD_CDC_CfgFSDesc
+     /tmp/ccxOHMuh.s:997    .data.USBD_CDC_CfgHSDesc:0000000000000000 USBD_CDC_CfgHSDesc
+     /tmp/ccxOHMuh.s:904    .data.USBD_CDC:0000000000000000 USBD_CDC
+     /tmp/ccxOHMuh.s:898    .bss.ifalt.8079:0000000000000000 ifalt.8079
+     /tmp/ccxOHMuh.s:899    .bss.ifalt.8079:0000000000000000 $d
+     /tmp/ccxOHMuh.s:901    .data.USBD_CDC:0000000000000000 $d
+     /tmp/ccxOHMuh.s:920    .data.USBD_CDC_CfgFSDesc:0000000000000000 $d
+     /tmp/ccxOHMuh.s:993    .data.USBD_CDC_CfgHSDesc:0000000000000000 $d
+     /tmp/ccxOHMuh.s:1066   .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 $d
+     /tmp/ccxOHMuh.s:1070   .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 USBD_CDC_DeviceQualifierDesc
+     /tmp/ccxOHMuh.s:1082   .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 USBD_LL_GetRxDataSize
@@ -2268,7 +2268,7 @@ USBD_CtlSendData
 USBD_CtlPrepareRx
 USBD_LL_CloseEP
 USBD_static_free
-ARM GAS  /tmp/ccD1Fkkx.s 			page 39
+ARM GAS  /tmp/ccxOHMuh.s 			page 39
 
 
 USBD_LL_OpenEP

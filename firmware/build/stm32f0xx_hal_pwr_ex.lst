@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cczYwmov.s 			page 1
+ARM GAS  /tmp/cczVNt0c.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-ARM GAS  /tmp/cczYwmov.s 			page 2
+ARM GAS  /tmp/cczVNt0c.s 			page 2
 
 
   34:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****     [..]
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****       (+) The PVD is used to monitor the VDD power supply by comparing it to a
   90:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****           threshold selected by the PVD Level (PLS[2:0] bits in the PWR_CR).
-ARM GAS  /tmp/cczYwmov.s 			page 3
+ARM GAS  /tmp/cczVNt0c.s 			page 3
 
 
   91:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****       (+) A PVDO flag is available to indicate if VDD/VDDA is higher or lower
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
   39 000c 1360     		str	r3, [r2]
  132:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   
  133:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   /* Clear any previous config. Keep it clear if no event or IT mode is selected */
-ARM GAS  /tmp/cczYwmov.s 			page 4
+ARM GAS  /tmp/cczVNt0c.s 			page 4
 
 
  134:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   __HAL_PWR_PVD_EXTI_DISABLE_EVENT();
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
   80              	.L3:
  148:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   }
  149:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   
-ARM GAS  /tmp/cczYwmov.s 			page 5
+ARM GAS  /tmp/cczVNt0c.s 			page 5
 
 
  150:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   /* Configure the edge */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  126              	.LFB38:
  161:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** 
  162:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** /**
-ARM GAS  /tmp/cczYwmov.s 			page 6
+ARM GAS  /tmp/cczVNt0c.s 			page 6
 
 
  163:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   * @brief Enables the Power Voltage Detector(PVD).
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  168 0008 1360     		str	r3, [r2]
  178:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** }
  169              		.loc 1 178 0
-ARM GAS  /tmp/cczYwmov.s 			page 7
+ARM GAS  /tmp/cczVNt0c.s 			page 7
 
 
  170              		@ sp needed
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  197              		.cfi_endproc
  198              	.LFE41:
  200              		.section	.text.HAL_PWR_PVD_IRQHandler,"ax",%progbits
-ARM GAS  /tmp/cczYwmov.s 			page 8
+ARM GAS  /tmp/cczVNt0c.s 			page 8
 
 
  201              		.align	1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  251              		.thumb_func
  252              		.fpu softvfp
  254              	HAL_PWREx_EnableVddio2Monitor:
-ARM GAS  /tmp/cczYwmov.s 			page 9
+ARM GAS  /tmp/cczVNt0c.s 			page 9
 
 
  255              	.LFB42:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  291              	.LFB43:
  228:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** 
  229:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** /**
-ARM GAS  /tmp/cczYwmov.s 			page 10
+ARM GAS  /tmp/cczVNt0c.s 			page 10
 
 
  230:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   * @brief Disable the Vddio2 Monitor.
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  246:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** {
  247:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   /* Check PWR exti flag */
  248:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   if(__HAL_PWR_VDDIO2_EXTI_GET_FLAG() != RESET)
-ARM GAS  /tmp/cczYwmov.s 			page 11
+ARM GAS  /tmp/cczVNt0c.s 			page 11
 
 
  249:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c ****   {
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  367              	.L27:
  256:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c **** 
  368              		.loc 1 256 0
-ARM GAS  /tmp/cczYwmov.s 			page 12
+ARM GAS  /tmp/cczVNt0c.s 			page 12
 
 
  369              		@ sp needed
@@ -695,35 +695,35 @@ ARM GAS  /tmp/cczYwmov.s 			page 1
  398              		.file 9 "/usr/include/newlib/sys/reent.h"
  399              		.file 10 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h"
  400              		.file 11 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
-ARM GAS  /tmp/cczYwmov.s 			page 13
+ARM GAS  /tmp/cczVNt0c.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_pwr_ex.c
-     /tmp/cczYwmov.s:16     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
-     /tmp/cczYwmov.s:23     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
-     /tmp/cczYwmov.s:111    .text.HAL_PWR_ConfigPVD:0000000000000074 $d
-     /tmp/cczYwmov.s:118    .text.HAL_PWR_EnablePVD:0000000000000000 $t
-     /tmp/cczYwmov.s:125    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
-     /tmp/cczYwmov.s:144    .text.HAL_PWR_EnablePVD:000000000000000c $d
-     /tmp/cczYwmov.s:149    .text.HAL_PWR_DisablePVD:0000000000000000 $t
-     /tmp/cczYwmov.s:156    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
-     /tmp/cczYwmov.s:175    .text.HAL_PWR_DisablePVD:000000000000000c $d
-     /tmp/cczYwmov.s:180    .text.HAL_PWR_PVDCallback:0000000000000000 $t
-     /tmp/cczYwmov.s:187    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
-     /tmp/cczYwmov.s:201    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
-     /tmp/cczYwmov.s:208    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
-     /tmp/cczYwmov.s:242    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
-     /tmp/cczYwmov.s:247    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 $t
-     /tmp/cczYwmov.s:254    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 HAL_PWREx_EnableVddio2Monitor
-     /tmp/cczYwmov.s:278    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000014 $d
-     /tmp/cczYwmov.s:283    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 $t
-     /tmp/cczYwmov.s:290    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 HAL_PWREx_DisableVddio2Monitor
-     /tmp/cczYwmov.s:318    .text.HAL_PWREx_DisableVddio2Monitor:000000000000001c $d
-     /tmp/cczYwmov.s:323    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 $t
-     /tmp/cczYwmov.s:330    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 HAL_PWREx_Vddio2MonitorCallback
-     /tmp/cczYwmov.s:344    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 $t
-     /tmp/cczYwmov.s:351    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 HAL_PWREx_Vddio2Monitor_IRQHandler
-     /tmp/cczYwmov.s:385    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:000000000000001c $d
+     /tmp/cczVNt0c.s:16     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
+     /tmp/cczVNt0c.s:23     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
+     /tmp/cczVNt0c.s:111    .text.HAL_PWR_ConfigPVD:0000000000000074 $d
+     /tmp/cczVNt0c.s:118    .text.HAL_PWR_EnablePVD:0000000000000000 $t
+     /tmp/cczVNt0c.s:125    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
+     /tmp/cczVNt0c.s:144    .text.HAL_PWR_EnablePVD:000000000000000c $d
+     /tmp/cczVNt0c.s:149    .text.HAL_PWR_DisablePVD:0000000000000000 $t
+     /tmp/cczVNt0c.s:156    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
+     /tmp/cczVNt0c.s:175    .text.HAL_PWR_DisablePVD:000000000000000c $d
+     /tmp/cczVNt0c.s:180    .text.HAL_PWR_PVDCallback:0000000000000000 $t
+     /tmp/cczVNt0c.s:187    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
+     /tmp/cczVNt0c.s:201    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
+     /tmp/cczVNt0c.s:208    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
+     /tmp/cczVNt0c.s:242    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
+     /tmp/cczVNt0c.s:247    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 $t
+     /tmp/cczVNt0c.s:254    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 HAL_PWREx_EnableVddio2Monitor
+     /tmp/cczVNt0c.s:278    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000014 $d
+     /tmp/cczVNt0c.s:283    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 $t
+     /tmp/cczVNt0c.s:290    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 HAL_PWREx_DisableVddio2Monitor
+     /tmp/cczVNt0c.s:318    .text.HAL_PWREx_DisableVddio2Monitor:000000000000001c $d
+     /tmp/cczVNt0c.s:323    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 $t
+     /tmp/cczVNt0c.s:330    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 HAL_PWREx_Vddio2MonitorCallback
+     /tmp/cczVNt0c.s:344    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 $t
+     /tmp/cczVNt0c.s:351    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 HAL_PWREx_Vddio2Monitor_IRQHandler
+     /tmp/cczVNt0c.s:385    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:000000000000001c $d
 
 NO UNDEFINED SYMBOLS
