@@ -21,7 +21,7 @@
 #include "font.h"
 
 // Enable serial printing via CDC, quite buggy
-//#define ENABLESERIAL
+/* #define ENABLESERIAL */
 // Enable Current display, shows up after a few millisecconds instead of temp-target
 #define DISPLAYCURRENT
 
@@ -31,7 +31,8 @@
 #define TTIP_AVG_FILTER 0.99f
 #define DISP_AVG_FILTER 0.9f
 #define MIN_DUTY 0
-uint16_t MAX_DUTY = 150;
+#define MAX_DUTY 2000
+uint16_t wduty = 150;
 
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
@@ -81,7 +82,7 @@ struct status_t{
 #ifdef DISPLAYCURRENT
   uint8_t timeout;
 #endif
-}s = {.writeFlash = 0, .imax = 4.0f};
+}s = {.writeFlash = 0, .imax = 3.0f};
 
 struct reg_t{
   float target;
@@ -109,6 +110,12 @@ static uint16_t ADC_raw[4];
 extern uint8_t UserTxBuffer[APP_TX_DATA_SIZE];/* Received Data over UART (CDC interface) are stored in this buffer */
 uint32_t sendDataUSB;
 
+const unsigned char* dfu_string = (unsigned char*) "dfudfudfudfudfu";
+const unsigned char* otter_string = (unsigned char*) "Otter-Iron";
+const unsigned char* by_string = (unsigned char*) "by Jan Henrik";
+const unsigned char* assembly_string = (unsigned char*) "Assembly by";
+const unsigned char* jbr_string = (unsigned char*) "JBR Eng 2020";
+
 int main(void)
 {
   HAL_Init();
@@ -123,27 +130,34 @@ int main(void)
   MX_TIM1_Init();
   TIM3_Init();
 
-
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_OC_Start(&htim1, TIM_CHANNEL_4);
 
   HAL_ADC_Start_DMA(&hadc, (uint32_t *)ADC_raw, 4);
 
-  HAL_Delay(50);
+  HAL_Delay(100);
   disp_init();
   HAL_Delay(150);
+  set_screen();
+  HAL_Delay(150);
   clear_screen();
+
   //DFU bootloader
   if(HAL_GPIO_ReadPin(GPIOA,B1_Pin) && HAL_GPIO_ReadPin(GPIOA,B2_Pin)){
-    draw_string("dfudfudfudfudfu", 1, 1 ,1);
-    draw_string("dfudfudfudfudfu", 1, 8 ,1);
+    draw_string(dfu_string, 1, 1 ,1);
+    draw_string(dfu_string, 1, 8 ,1);
     refresh();
     HAL_Delay(40);
     *((unsigned long *)0x20003FF0) = 0xDEADBEEF;
     NVIC_SystemReset();
   } else {
-    draw_string("Otter-Iron", 15, 1 ,1);
-    draw_string("by Jan Henrik", 10, 9 ,1);
+    draw_string(otter_string, 15, 1 ,1);
+    draw_string(by_string, 10, 9 ,1);
+    refresh();
+    HAL_Delay(1000);
+    clear_screen();
+    draw_string(assembly_string, 14, 1 ,1);
+    draw_string(jbr_string, 8, 9 ,1);
     refresh();
 #ifdef ENABLESERIAL
     //start USB CDC
@@ -162,15 +176,15 @@ int main(void)
   MX_IWDG_Init();
 
   r.target = *((uint16_t *) 0x0800e400);
-  if(r.target > 400) r.target = 220;  //initial temp set
+  if (r.target >= 400) r.target = 220;  //initial temp set
 
   while (1)
   {
     HAL_Delay(50);
 
     //UI
-    s.button[0] = HAL_GPIO_ReadPin(GPIOA,B1_Pin);
-    s.button[1] = HAL_GPIO_ReadPin(GPIOA,B2_Pin) | HAL_GPIO_ReadPin(GPIOC, B1_1_Pin);
+    s.button[1] = HAL_GPIO_ReadPin(GPIOA,B1_Pin);
+    s.button[0] = HAL_GPIO_ReadPin(GPIOA,B2_Pin) | HAL_GPIO_ReadPin(GPIOC, B1_1_Pin);
 
     if(s.button[0] == 1){
       r.target -= 5;
@@ -210,14 +224,14 @@ int main(void)
 #endif
 
     //super shitty display code
-    char str1[10] = "          ";
-    char str2[10] = "          ";
-    char str3[10] = "          ";
-    char str4[10] = "          ";
-    sprintf(str1, "%d C   ", (uint16_t)r.target);
-    sprintf(str2, "%d.%d C", (uint16_t)s.ttipavg,(uint16_t)((s.ttipavg-(uint16_t)s.ttipavg)*10.0f));
-    sprintf(str3, "%d.%d V", (uint16_t)s.uin,(uint16_t)((s.uin-(uint16_t)s.uin)*10.0f));
-    sprintf(str4, "%d.%d A", (uint16_t)s.iinavg,(uint16_t)((s.iinavg-(uint16_t)s.iinavg)*10.0f));
+    unsigned char str1[14] = "          ";
+    unsigned char str2[14] = "          ";
+    unsigned char str3[14] = "          ";
+    unsigned char str4[14] = "          ";
+    sprintf((char * restrict) str1, "%d C   ", (uint16_t)r.target);
+    sprintf((char * restrict) str2, "%d.%d C", (uint16_t)s.ttipavg,(uint16_t)((s.ttipavg-(uint16_t)s.ttipavg)*10.0f));
+    sprintf((char * restrict) str3, "%d.%d V", (uint16_t)s.uin,(uint16_t)((s.uin-(uint16_t)s.uin)*10.0f));
+    sprintf((char * restrict) str4, "%d.%d A", (uint16_t)s.iinavg,(uint16_t)((s.iinavg-(uint16_t)s.iinavg)*10.0f));
 
     clear_screen();
     draw_string(str1, 10, 1 ,1);
@@ -255,12 +269,11 @@ void reg(void) {
     r.error = r.target - s.ttipavg;
     r.ierror = r.ierror + (r.error*r.cycletime);
     r.ierror = CLAMP(r.ierror,-r.imax,r.imax);
-    r.derror = (r.error - r.errorprior)/r.cycletime;
-    r.duty = (r.Kp*r.error + r.Ki*r.ierror + r.Kd*r.derror)*MAX_DUTY;
+    r.duty = ((int16_t) (r.Kp*r.error + r.Ki*r.ierror)) * wduty;
     r.errorprior = r.error;
   } else {
     if(s.ttipavg <= r.target){
-      r.duty = MAX_DUTY;
+      r.duty = wduty;
       r.error = 12.0;
     } else {
       r.duty = MIN_DUTY;
@@ -271,20 +284,21 @@ void reg(void) {
   // detect if no tip is plugged in
   if(s.iin <= 0.001 && s.ttipavg > 300){
     r.duty = 100;
-    r.error = 0;
-    r.ierror = 0;
-    r.derror = 0;
-    MAX_DUTY = 100;
+    r.error = 0.0;
+    r.ierror = 0.0;
+    r.derror = 0.0;
+    r.errorprior = 0.0;
+    wduty = 150;
   }
 
   r.duty = CLAMP(r.duty, MIN_DUTY, MAX_DUTY); // Clamp to duty cycle
 
   if(s.iin > s.imax && r.duty > 100){ // Current limiting
-    MAX_DUTY = r.duty - 2;
+    wduty = r.duty - 2;
     r.duty -= 100;
   } else {
-    MAX_DUTY++;
-    if(MAX_DUTY >= 3900) MAX_DUTY = 3900;
+    wduty++;
+    if(wduty >= MAX_DUTY) wduty = MAX_DUTY;
   }
 
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, r.duty);
@@ -304,7 +318,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) //send USB cdc data
 
 void USB_printfloat(float _buf){
   memset(UserTxBuffer, 0, APP_TX_DATA_SIZE);
-  sprintf(UserTxBuffer, "%d.%d \r\n", (uint16_t)_buf,(uint16_t)((_buf-(uint16_t)_buf)*10.0f));
+  sprintf((char * restrict) UserTxBuffer, "%d.%d \r\n", (uint16_t)_buf,(uint16_t)((_buf-(uint16_t)_buf)*10.0f));
   sendDataUSB = 1;
 }
 
@@ -342,6 +356,7 @@ uint8_t OLED_Setup_Array[] = {
 0x80, 0x00, /*Wrap memory*/
 0x80, 0xAF /*Display on*/
 };
+
 //not Ralim anymore
 void disp_init(void) {
   memcpy(&screenBuffer[0], &REFRESH_COMMANDS[0], sizeof(REFRESH_COMMANDS));
@@ -389,7 +404,7 @@ void draw_char(unsigned char c, uint8_t x, uint8_t y, uint8_t brightness) {
     } else {
         c -= ' ';
     }
-    uint8_t * chr = font[c];
+    uint8_t * chr = (uint8_t *) font[c];
     for (uint8_t j=0; j<CHAR_WIDTH; j++) {
         for (uint8_t i=0; i<CHAR_HEIGHT; i++) {
             if (chr[j] & (1<<i)) {
