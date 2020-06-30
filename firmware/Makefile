@@ -20,10 +20,13 @@ TARGET = firmware
 # building variables
 ######################################
 # debug build?
-DEBUG = 1
+DEBUG = 0
 # optimization
+ifeq ($(DEBUG), 1)
 OPT = -Og
-
+else
+OPT = -Os
+endif
 
 #######################################
 # paths

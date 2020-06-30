@@ -35,13 +35,14 @@
 #define DISP_AVG_FILTER 0.9f
 #define MIN_DUTY 0
 #define MAX_DUTY 2000
+#define MIN_VOLTAGE 15.0f
+#define MIN_CURRENT 2.0f
 uint16_t wduty = 150;
 
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
 
 I2C_HandleTypeDef hi2c1;
-I2C_HandleTypeDef hi2c2;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
@@ -55,7 +56,6 @@ static void MX_GPIO_Init(void);
 static void MX_ADC_Init(void);
 static void MX_DMA_Init(void);
 static void MX_I2C1_Init(void);
-static void MX_I2C2_Init(void);
 static void MX_TIM1_Init(void);
 static void TIM3_Init(void);
 static void MX_IWDG_Init(void);
@@ -71,7 +71,8 @@ void draw_string(const unsigned char * str, uint8_t x, uint8_t y, uint8_t bright
 void draw_v_line(int16_t x, int16_t y, uint16_t h, uint8_t color);
 void USB_printfloat(float _buf);
 void read_stusb_rdo(void);
-void read_stusb_pdo(void);
+HAL_StatusTypeDef update_pdo(uint8_t pdo_number, uint16_t voltage_mv, uint16_t current_ma);
+HAL_StatusTypeDef set_valid_pdo(uint8_t valid_count);
 
 struct status_t{
   float ttip;
@@ -118,6 +119,7 @@ extern uint8_t UserTxBuffer[APP_TX_DATA_SIZE];/* Received Data over UART (CDC in
 uint32_t sendDataUSB;
 
 STUSB_GEN1S_RDO_REG_STATUS_RegTypeDef Nego_RDO;
+USB_PD_SNK_PDO_TypeDef pdo_profile[3];
 
 const unsigned char* dfu_string = (unsigned char*) "dfudfudfudfudfu";
 const unsigned char* otter_string = (unsigned char*) "Otter-Iron";
@@ -138,11 +140,20 @@ int main(void)
   MX_TIM1_Init();
   TIM3_Init();
 
+  // setup STUSB4500 PD requests before starting controller IT
+  update_pdo(1, 5000, 500); // allows comms on standard 5 V
+  // 30 W and 80 W - ensures iron is well behaved and enumerates PD profile before drawing it (Apple charger for example will drop-out without this)
+  update_pdo(2, 20000, 1500);
+  update_pdo(3, 20000, 4000);
+  set_valid_pdo(3);
+
+  // now display
   HAL_Delay(50);
   disp_init();
   HAL_Delay(150);
   clear_screen();
 
+  // now system
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_OC_Start(&htim1, TIM_CHANNEL_4);
 
@@ -240,7 +251,7 @@ int main(void)
     sprintf((char * restrict) str2, "%d.%d C", (uint16_t)s.ttipavg,(uint16_t)((s.ttipavg-(uint16_t)s.ttipavg)*10.0f));
     sprintf((char * restrict) str3, "%d.%d V", (uint16_t)s.uin,(uint16_t)((s.uin-(uint16_t)s.uin)*10.0f));
     sprintf((char * restrict) str4, "%d.%d A", (uint16_t)s.iinavg,(uint16_t)((s.iinavg-(uint16_t)s.iinavg)*10.0f));
-    sprintf((char * restrict) str5, "%d.%d A", (uint16_t)s.imax,(uint16_t)((s.imax-(uint16_t)s.imax)*10.0f));
+    sprintf((char * restrict) str5, "P %d.%d", (uint16_t)s.imax,(uint16_t)((s.imax-(uint16_t)s.imax)*10.0f));
     sprintf((char * restrict) str6, "PDO %d", s.pdo);
 
     clear_screen();
@@ -275,9 +286,9 @@ int main(void)
   }
 }
 
-inline uint8_t check_usbpd(void) {
+uint8_t check_usbpd(void) {
  #ifdef CHECKUSBPD
-  return (s.uin >= 15.0 && s.imax >= 2.0);
+  return (s.uin >= MIN_VOLTAGE && s.imax >= MIN_CURRENT);
  #else
   return 1;
  #endif
@@ -297,7 +308,7 @@ void reg(void) {
   // check input voltage
   if (check_usbpd()) {
     // Check if within deadband, decide on two-way or PID control
-    if(s.ttipavg >= r.target-r.deadband && s.ttipavg <= r.target+r.deadband){
+    if(s.ttipavg >= r.target-r.deadband && s.ttipavg <= r.target+r.deadband) {
       r.error = r.target - s.ttipavg;
       r.ierror = r.ierror + (r.error*r.cycletime);
       r.ierror = CLAMP(r.ierror,-r.imax,r.imax);
@@ -314,9 +325,9 @@ void reg(void) {
     }
 
     // detect if no tip is plugged in
-    if (s.iin <= 0.001 && s.ttipavg > 100.0) {
+    if (s.iin <= 0.001 && !(s.ttipavg >= r.target-r.deadband && s.ttipavg <= r.target+r.deadband)) {
       if (count > 2000) {
-        r.duty = 100;
+        r.duty = 0;
         r.error = 0.0;
         r.ierror = 0.0;
         r.derror = 0.0;
@@ -344,6 +355,7 @@ void reg(void) {
     __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, r.duty);
   } else {
     s.active = 0;
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
   }
 
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 4000);
@@ -401,20 +413,56 @@ uint8_t OLED_Setup_Array[] = {
 0x80, 0xAF /*Display on*/
 };
 
-
 void read_stusb_rdo(void) {
   HAL_StatusTypeDef ret;
-  /* uint8_t pdo_count = 0; */
-  ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), (uint16_t) RDO_REG_STATUS, I2C_MEMADD_SIZE_8BIT, (uint8_t *) &Nego_RDO, 4, 10);
-  /* ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), (uint16_t) DPM_PDO_NUMB, I2C_MEMADD_SIZE_8BIT, &pdo_count, 1, 10); */
+  ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), (uint16_t) RDO_REG_STATUS, I2C_MEMADD_SIZE_8BIT, (uint8_t *) &Nego_RDO, 4, 1000);
 
   if (ret == 0) {
     s.imax = (float) Nego_RDO.b.MaxCurrent / 100.0;
     s.pdo = Nego_RDO.b.Object_Pos;
   } else {
     s.imax = 0.0;
-    s.pdo = 0;
+    s.pdo = 1;
   }
+}
+
+HAL_StatusTypeDef update_pdo(uint8_t pdo_number, uint16_t voltage_mv, uint16_t current_ma) {
+  HAL_StatusTypeDef ret;
+  uint16_t addr;
+  uint8_t data[40];
+  uint8_t i, j = 0;
+
+  // get existing
+  addr = DPM_SNK_PDO1;
+  ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), addr, I2C_MEMADD_SIZE_8BIT, data, 12, 1000);
+  for (i = 0 ; i < 3 ; i++) { pdo_profile[i].d32 = (uint32_t) (data[j] +(data[j+1]<<8)+(data[j+2]<<16)+(data[j+3]<<24));
+    j += 4;
+  }
+
+  // update
+  if ((pdo_number == 1) || (pdo_number == 2) || (pdo_number == 3)) {
+    pdo_profile[pdo_number - 1].fix.Operationnal_Current = current_ma / 10;
+    if (pdo_number == 1) {
+      //force 5V for PDO_1 to follow the USB PD spec
+      pdo_profile[pdo_number - 1].fix.Voltage = 100; // 5000/50=100
+      pdo_profile[pdo_number - 1].fix.USB_Communications_Capable = 1;
+    } else {
+      pdo_profile[pdo_number - 1].fix.Voltage = voltage_mv / 50;
+    }
+
+    addr = DPM_SNK_PDO1 + (4 * (pdo_number - 1));
+    ret = HAL_I2C_Mem_Write(&hi2c1, (0x28 << 1), addr, I2C_MEMADD_SIZE_8BIT, (uint8_t *) &pdo_profile[pdo_number - 1].d32, 4, 1000);
+  }
+
+  return ret;
+}
+
+HAL_StatusTypeDef set_valid_pdo(uint8_t valid_count) {
+  HAL_StatusTypeDef ret = -1;
+  if (valid_count <= 3) {
+    ret = HAL_I2C_Mem_Write(&hi2c1, (0x28 << 1), DPM_PDO_NUMB, I2C_MEMADD_SIZE_8BIT, &valid_count, 1, 10);
+  }
+  return ret;
 }
 
 //not Ralim anymore
@@ -574,25 +622,6 @@ static void MX_I2C1_Init(void)
   HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE);
 
   HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0);
-}
-
-static void MX_I2C2_Init(void)
-{
-
-  hi2c2.Instance = I2C2;
-  hi2c2.Init.Timing = 0x20303E5D;
-  hi2c2.Init.OwnAddress1 = 0;
-  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c2.Init.OwnAddress2 = 0;
-  hi2c2.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
-  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  HAL_I2C_Init(&hi2c2);
-
-  HAL_I2CEx_ConfigAnalogFilter(&hi2c2, I2C_ANALOGFILTER_ENABLE);
-
-  HAL_I2CEx_ConfigDigitalFilter(&hi2c2, 0);
 }
 
 static void MX_IWDG_Init(void)

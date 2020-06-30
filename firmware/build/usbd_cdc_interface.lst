@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccbX86Ns.s 			page 1
+ARM GAS  /tmp/ccIGexNd.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -8,244 +8,134 @@ ARM GAS  /tmp/ccbX86Ns.s 			page 1
    5              		.eabi_attribute 24, 1
    6              		.eabi_attribute 25, 1
    7              		.eabi_attribute 26, 1
-   8              		.eabi_attribute 30, 1
+   8              		.eabi_attribute 30, 4
    9              		.eabi_attribute 34, 0
   10              		.eabi_attribute 18, 4
   11              		.file	"usbd_cdc_interface.c"
   12              		.text
-  13              	.Ltext0:
-  14              		.cfi_sections	.debug_frame
-  15              		.section	.text.CDC_Itf_DeInit,"ax",%progbits
-  16              		.align	1
-  17              		.arch armv6s-m
-  18              		.syntax unified
-  19              		.code	16
-  20              		.thumb_func
-  21              		.fpu softvfp
-  23              	CDC_Itf_DeInit:
-  24              	.LFB38:
-  25              		.file 1 "Src/usbd_cdc_interface.c"
-   1:Src/usbd_cdc_interface.c **** #include "main.h"
-   2:Src/usbd_cdc_interface.c **** 
-   3:Src/usbd_cdc_interface.c **** uint8_t UserRxBuffer[APP_RX_DATA_SIZE];
-   4:Src/usbd_cdc_interface.c **** uint8_t UserTxBuffer[APP_TX_DATA_SIZE];
-   5:Src/usbd_cdc_interface.c **** 
-   6:Src/usbd_cdc_interface.c **** USBD_CDC_LineCodingTypeDef LineCoding =
-   7:Src/usbd_cdc_interface.c ****   {
-   8:Src/usbd_cdc_interface.c ****     115200, /* baud rate*/
-   9:Src/usbd_cdc_interface.c ****     0x00,   /* stop bits-1*/
-  10:Src/usbd_cdc_interface.c ****     0x00,   /* parity - none*/
-  11:Src/usbd_cdc_interface.c ****     0x08    /* nb. of bits 8*/
-  12:Src/usbd_cdc_interface.c ****   };
-  13:Src/usbd_cdc_interface.c **** 
-  14:Src/usbd_cdc_interface.c **** extern USBD_HandleTypeDef  USBD_Device;
-  15:Src/usbd_cdc_interface.c **** 
-  16:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_Init     (void);
-  17:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_DeInit   (void);
-  18:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_Control  (uint8_t cmd, uint8_t* pbuf, uint16_t length);
-  19:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_Receive  (uint8_t* pbuf, uint32_t *Len);
-  20:Src/usbd_cdc_interface.c **** 
-  21:Src/usbd_cdc_interface.c **** static void ComPort_Config(void);
-  22:Src/usbd_cdc_interface.c **** 
-  23:Src/usbd_cdc_interface.c **** USBD_CDC_ItfTypeDef USBD_CDC_fops =
-  24:Src/usbd_cdc_interface.c **** {
-  25:Src/usbd_cdc_interface.c ****   CDC_Itf_Init,
-  26:Src/usbd_cdc_interface.c ****   CDC_Itf_DeInit,
-  27:Src/usbd_cdc_interface.c ****   CDC_Itf_Control,
-  28:Src/usbd_cdc_interface.c ****   CDC_Itf_Receive
-  29:Src/usbd_cdc_interface.c **** };
-  30:Src/usbd_cdc_interface.c **** 
-  31:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_Init(void)
-  32:Src/usbd_cdc_interface.c **** {
-  33:Src/usbd_cdc_interface.c ****   USBD_CDC_SetTxBuffer(&USBD_Device, UserTxBuffer, 0);
-ARM GAS  /tmp/ccbX86Ns.s 			page 2
+  13              		.section	.text.CDC_Itf_DeInit,"ax",%progbits
+  14              		.align	1
+  15              		.arch armv6s-m
+  16              		.syntax unified
+  17              		.code	16
+  18              		.thumb_func
+  19              		.fpu softvfp
+  21              	CDC_Itf_DeInit:
+  22              		@ args = 0, pretend = 0, frame = 0
+  23              		@ frame_needed = 0, uses_anonymous_args = 0
+  24              		@ link register save eliminated.
+  25              		@ sp needed
+  26 0000 7047     		bx	lr
+  28              		.section	.text.CDC_Itf_Control,"ax",%progbits
+  29              		.align	1
+  30              		.syntax unified
+  31              		.code	16
+  32              		.thumb_func
+  33              		.fpu softvfp
+  35              	CDC_Itf_Control:
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 0, uses_anonymous_args = 0
+  38              		@ link register save eliminated.
+  39              		@ sp needed
+  40 0000 7047     		bx	lr
+  42              		.section	.text.CDC_Itf_Receive,"ax",%progbits
+  43              		.align	1
+  44              		.syntax unified
+  45              		.code	16
+  46              		.thumb_func
+  47              		.fpu softvfp
+  49              	CDC_Itf_Receive:
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		@ link register save eliminated.
+  53              		@ sp needed
+  54 0000 7047     		bx	lr
+  56              		.section	.text.CDC_Itf_Init,"ax",%progbits
+  57              		.align	1
+  58              		.syntax unified
+  59              		.code	16
+  60              		.thumb_func
+  61              		.fpu softvfp
+  63              	CDC_Itf_Init:
+  64              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  /tmp/ccIGexNd.s 			page 2
 
 
-  34:Src/usbd_cdc_interface.c ****   USBD_CDC_SetRxBuffer(&USBD_Device, UserRxBuffer);
-  35:Src/usbd_cdc_interface.c **** 
-  36:Src/usbd_cdc_interface.c ****   return (USBD_OK);
-  37:Src/usbd_cdc_interface.c **** }
-  38:Src/usbd_cdc_interface.c **** 
-  39:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_DeInit   (void){
-  26              		.loc 1 39 38 view -0
-  27              		.cfi_startproc
-  28              		@ args = 0, pretend = 0, frame = 0
-  29              		@ frame_needed = 0, uses_anonymous_args = 0
-  30              		@ link register save eliminated.
-  40:Src/usbd_cdc_interface.c **** 
-  41:Src/usbd_cdc_interface.c **** }
-  31              		.loc 1 41 1 view .LVU1
-  32              		@ sp needed
-  33 0000 7047     		bx	lr
-  34              		.cfi_endproc
-  35              	.LFE38:
-  37              		.section	.text.CDC_Itf_Control,"ax",%progbits
-  38              		.align	1
-  39              		.syntax unified
-  40              		.code	16
-  41              		.thumb_func
-  42              		.fpu softvfp
-  44              	CDC_Itf_Control:
-  45              	.LVL0:
-  46              	.LFB39:
-  42:Src/usbd_cdc_interface.c **** 
-  43:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_Control  (uint8_t cmd, uint8_t* pbuf, uint16_t length){
-  47              		.loc 1 43 77 view -0
-  48              		.cfi_startproc
-  49              		@ args = 0, pretend = 0, frame = 0
-  50              		@ frame_needed = 0, uses_anonymous_args = 0
-  51              		@ link register save eliminated.
-  44:Src/usbd_cdc_interface.c **** 
-  45:Src/usbd_cdc_interface.c **** }
-  52              		.loc 1 45 1 view .LVU3
-  53              	.LVL1:
-  54              		.loc 1 45 1 is_stmt 0 view .LVU4
-  55              		@ sp needed
-  56 0000 7047     		bx	lr
-  57              		.cfi_endproc
-  58              	.LFE39:
-  60              		.section	.text.CDC_Itf_Receive,"ax",%progbits
-  61              		.align	1
-  62              		.syntax unified
-  63              		.code	16
-  64              		.thumb_func
-  65              		.fpu softvfp
-  67              	CDC_Itf_Receive:
-  68              	.LVL2:
-  69              	.LFB40:
-  46:Src/usbd_cdc_interface.c **** 
-  47:Src/usbd_cdc_interface.c **** static int8_t CDC_Itf_Receive  (uint8_t* pbuf, uint32_t *Len){
-  70              		.loc 1 47 62 is_stmt 1 view -0
-  71              		.cfi_startproc
-  72              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccbX86Ns.s 			page 3
-
-
-  73              		@ frame_needed = 0, uses_anonymous_args = 0
-  74              		@ link register save eliminated.
-  48:Src/usbd_cdc_interface.c **** 
-  49:Src/usbd_cdc_interface.c **** }
-  75              		.loc 1 49 1 view .LVU6
-  76              	.LVL3:
-  77              		.loc 1 49 1 is_stmt 0 view .LVU7
-  78              		@ sp needed
-  79 0000 7047     		bx	lr
-  80              		.cfi_endproc
-  81              	.LFE40:
-  83              		.section	.text.CDC_Itf_Init,"ax",%progbits
-  84              		.align	1
-  85              		.syntax unified
-  86              		.code	16
-  87              		.thumb_func
-  88              		.fpu softvfp
-  90              	CDC_Itf_Init:
-  91              	.LFB37:
-  32:Src/usbd_cdc_interface.c ****   USBD_CDC_SetTxBuffer(&USBD_Device, UserTxBuffer, 0);
-  92              		.loc 1 32 1 is_stmt 1 view -0
-  93              		.cfi_startproc
-  94              		@ args = 0, pretend = 0, frame = 0
-  95              		@ frame_needed = 0, uses_anonymous_args = 0
-  96 0000 10B5     		push	{r4, lr}
-  97              	.LCFI0:
-  98              		.cfi_def_cfa_offset 8
-  99              		.cfi_offset 4, -8
- 100              		.cfi_offset 14, -4
-  33:Src/usbd_cdc_interface.c ****   USBD_CDC_SetRxBuffer(&USBD_Device, UserRxBuffer);
- 101              		.loc 1 33 3 view .LVU9
- 102 0002 064C     		ldr	r4, .L5
- 103 0004 0022     		movs	r2, #0
- 104 0006 0649     		ldr	r1, .L5+4
- 105 0008 2000     		movs	r0, r4
- 106 000a FFF7FEFF 		bl	USBD_CDC_SetTxBuffer
- 107              	.LVL4:
-  34:Src/usbd_cdc_interface.c **** 
- 108              		.loc 1 34 3 view .LVU10
- 109 000e 0549     		ldr	r1, .L5+8
- 110 0010 2000     		movs	r0, r4
- 111 0012 FFF7FEFF 		bl	USBD_CDC_SetRxBuffer
- 112              	.LVL5:
-  36:Src/usbd_cdc_interface.c **** }
- 113              		.loc 1 36 3 view .LVU11
-  37:Src/usbd_cdc_interface.c **** 
- 114              		.loc 1 37 1 is_stmt 0 view .LVU12
- 115 0016 0020     		movs	r0, #0
- 116              		@ sp needed
- 117 0018 10BD     		pop	{r4, pc}
- 118              	.L6:
- 119 001a C046     		.align	2
- 120              	.L5:
- 121 001c 00000000 		.word	USBD_Device
- 122 0020 00000000 		.word	UserTxBuffer
- 123 0024 00000000 		.word	UserRxBuffer
- 124              		.cfi_endproc
-ARM GAS  /tmp/ccbX86Ns.s 			page 4
-
-
- 125              	.LFE37:
- 127              		.global	USBD_CDC_fops
- 128              		.global	LineCoding
- 129              		.global	UserTxBuffer
- 130              		.global	UserRxBuffer
- 131              		.section	.bss.UserRxBuffer,"aw",%nobits
- 132              		.align	2
- 135              	UserRxBuffer:
- 136 0000 00000000 		.space	512
- 136      00000000 
- 136      00000000 
- 136      00000000 
- 136      00000000 
- 137              		.section	.bss.UserTxBuffer,"aw",%nobits
- 138              		.align	2
- 141              	UserTxBuffer:
- 142 0000 00000000 		.space	512
- 142      00000000 
- 142      00000000 
- 142      00000000 
- 142      00000000 
- 143              		.section	.data.LineCoding,"aw"
- 144              		.align	2
- 147              	LineCoding:
- 148 0000 00C20100 		.word	115200
- 149 0004 00       		.byte	0
- 150 0005 00       		.byte	0
- 151 0006 08       		.byte	8
- 152 0007 00       		.space	1
- 153              		.section	.data.USBD_CDC_fops,"aw"
- 154              		.align	2
- 157              	USBD_CDC_fops:
- 158 0000 00000000 		.word	CDC_Itf_Init
- 159 0004 00000000 		.word	CDC_Itf_DeInit
- 160 0008 00000000 		.word	CDC_Itf_Control
- 161 000c 00000000 		.word	CDC_Itf_Receive
- 162              		.text
- 163              	.Letext0:
- 164              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 165              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 166              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
- 167              		.file 5 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
- 168              		.file 6 "Inc/usbd_cdc_interface.h"
-ARM GAS  /tmp/ccbX86Ns.s 			page 5
+  65              		@ frame_needed = 0, uses_anonymous_args = 0
+  66 0000 10B5     		push	{r4, lr}
+  67 0002 064C     		ldr	r4, .L5
+  68 0004 0022     		movs	r2, #0
+  69              		@ sp needed
+  70 0006 2000     		movs	r0, r4
+  71 0008 0549     		ldr	r1, .L5+4
+  72 000a FFF7FEFF 		bl	USBD_CDC_SetTxBuffer
+  73 000e 2000     		movs	r0, r4
+  74 0010 0449     		ldr	r1, .L5+8
+  75 0012 FFF7FEFF 		bl	USBD_CDC_SetRxBuffer
+  76 0016 0020     		movs	r0, #0
+  77 0018 10BD     		pop	{r4, pc}
+  78              	.L6:
+  79 001a C046     		.align	2
+  80              	.L5:
+  81 001c 00000000 		.word	USBD_Device
+  82 0020 00000000 		.word	UserTxBuffer
+  83 0024 00000000 		.word	UserRxBuffer
+  85              		.global	USBD_CDC_fops
+  86              		.global	LineCoding
+  87              		.global	UserTxBuffer
+  88              		.global	UserRxBuffer
+  89              		.section	.bss.UserRxBuffer,"aw",%nobits
+  92              	UserRxBuffer:
+  93 0000 00000000 		.space	512
+  93      00000000 
+  93      00000000 
+  93      00000000 
+  93      00000000 
+  94              		.section	.bss.UserTxBuffer,"aw",%nobits
+  97              	UserTxBuffer:
+  98 0000 00000000 		.space	512
+  98      00000000 
+  98      00000000 
+  98      00000000 
+  98      00000000 
+  99              		.section	.data.LineCoding,"aw"
+ 100              		.align	2
+ 103              	LineCoding:
+ 104 0000 00C20100 		.word	115200
+ 105 0004 00       		.byte	0
+ 106 0005 00       		.byte	0
+ 107 0006 08       		.byte	8
+ 108 0007 00       		.space	1
+ 109              		.section	.data.USBD_CDC_fops,"aw"
+ 110              		.align	2
+ 113              	USBD_CDC_fops:
+ 114 0000 00000000 		.word	CDC_Itf_Init
+ 115 0004 00000000 		.word	CDC_Itf_DeInit
+ 116 0008 00000000 		.word	CDC_Itf_Control
+ 117 000c 00000000 		.word	CDC_Itf_Receive
+ 118              		.ident	"GCC: (Arch Repository) 10.1.0"
+ARM GAS  /tmp/ccIGexNd.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_cdc_interface.c
-     /tmp/ccbX86Ns.s:16     .text.CDC_Itf_DeInit:0000000000000000 $t
-     /tmp/ccbX86Ns.s:23     .text.CDC_Itf_DeInit:0000000000000000 CDC_Itf_DeInit
-     /tmp/ccbX86Ns.s:38     .text.CDC_Itf_Control:0000000000000000 $t
-     /tmp/ccbX86Ns.s:44     .text.CDC_Itf_Control:0000000000000000 CDC_Itf_Control
-     /tmp/ccbX86Ns.s:61     .text.CDC_Itf_Receive:0000000000000000 $t
-     /tmp/ccbX86Ns.s:67     .text.CDC_Itf_Receive:0000000000000000 CDC_Itf_Receive
-     /tmp/ccbX86Ns.s:84     .text.CDC_Itf_Init:0000000000000000 $t
-     /tmp/ccbX86Ns.s:90     .text.CDC_Itf_Init:0000000000000000 CDC_Itf_Init
-     /tmp/ccbX86Ns.s:121    .text.CDC_Itf_Init:000000000000001c $d
-     /tmp/ccbX86Ns.s:141    .bss.UserTxBuffer:0000000000000000 UserTxBuffer
-     /tmp/ccbX86Ns.s:135    .bss.UserRxBuffer:0000000000000000 UserRxBuffer
-     /tmp/ccbX86Ns.s:157    .data.USBD_CDC_fops:0000000000000000 USBD_CDC_fops
-     /tmp/ccbX86Ns.s:147    .data.LineCoding:0000000000000000 LineCoding
-     /tmp/ccbX86Ns.s:132    .bss.UserRxBuffer:0000000000000000 $d
-     /tmp/ccbX86Ns.s:138    .bss.UserTxBuffer:0000000000000000 $d
-     /tmp/ccbX86Ns.s:144    .data.LineCoding:0000000000000000 $d
-     /tmp/ccbX86Ns.s:154    .data.USBD_CDC_fops:0000000000000000 $d
+     /tmp/ccIGexNd.s:14     .text.CDC_Itf_DeInit:0000000000000000 $t
+     /tmp/ccIGexNd.s:21     .text.CDC_Itf_DeInit:0000000000000000 CDC_Itf_DeInit
+     /tmp/ccIGexNd.s:29     .text.CDC_Itf_Control:0000000000000000 $t
+     /tmp/ccIGexNd.s:35     .text.CDC_Itf_Control:0000000000000000 CDC_Itf_Control
+     /tmp/ccIGexNd.s:43     .text.CDC_Itf_Receive:0000000000000000 $t
+     /tmp/ccIGexNd.s:49     .text.CDC_Itf_Receive:0000000000000000 CDC_Itf_Receive
+     /tmp/ccIGexNd.s:57     .text.CDC_Itf_Init:0000000000000000 $t
+     /tmp/ccIGexNd.s:63     .text.CDC_Itf_Init:0000000000000000 CDC_Itf_Init
+     /tmp/ccIGexNd.s:81     .text.CDC_Itf_Init:000000000000001c $d
+     /tmp/ccIGexNd.s:97     .bss.UserTxBuffer:0000000000000000 UserTxBuffer
+     /tmp/ccIGexNd.s:92     .bss.UserRxBuffer:0000000000000000 UserRxBuffer
+     /tmp/ccIGexNd.s:113    .data.USBD_CDC_fops:0000000000000000 USBD_CDC_fops
+     /tmp/ccIGexNd.s:103    .data.LineCoding:0000000000000000 LineCoding
+     /tmp/ccIGexNd.s:93     .bss.UserRxBuffer:0000000000000000 $d
+     /tmp/ccIGexNd.s:98     .bss.UserTxBuffer:0000000000000000 $d
+     /tmp/ccIGexNd.s:100    .data.LineCoding:0000000000000000 $d
+     /tmp/ccIGexNd.s:110    .data.USBD_CDC_fops:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 USBD_CDC_SetTxBuffer
