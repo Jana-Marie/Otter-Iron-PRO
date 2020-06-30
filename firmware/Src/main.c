@@ -135,7 +135,6 @@ int main(void)
   MX_DMA_Init();
   MX_ADC_Init();
   MX_I2C1_Init();
-  /* MX_I2C2_Init(); */
   MX_TIM1_Init();
   TIM3_Init();
 
