@@ -19,11 +19,14 @@
 
 #include "main.h"
 #include "font.h"
+#include "stusb4500.h"
 
 // Enable serial printing via CDC, quite buggy
 /* #define ENABLESERIAL */
 // Enable Current display, shows up after a few millisecconds instead of temp-target
 #define DISPLAYCURRENT
+// Enable check of USB PD profile capable before beforing iron
+#define CHECKUSBPD
 
 #define FILT(a, b, c) ((a) * (c) + (b) * ((1.0f) - (c)))
 #define CLAMP(x, low, high) (((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))
@@ -67,6 +70,8 @@ void draw_char(unsigned char  c, uint8_t x, uint8_t y, uint8_t brightness);
 void draw_string(const unsigned char * str, uint8_t x, uint8_t y, uint8_t brightness);
 void draw_v_line(int16_t x, int16_t y, uint16_t h, uint8_t color);
 void USB_printfloat(float _buf);
+void read_stusb_rdo(void);
+void read_stusb_pdo(void);
 
 struct status_t{
   float ttip;
@@ -82,6 +87,8 @@ struct status_t{
 #ifdef DISPLAYCURRENT
   uint8_t timeout;
 #endif
+  uint8_t active;
+  uint8_t pdo;
 }s = {.writeFlash = 0, .imax = 3.0f};
 
 struct reg_t{
@@ -110,6 +117,8 @@ static uint16_t ADC_raw[4];
 extern uint8_t UserTxBuffer[APP_TX_DATA_SIZE];/* Received Data over UART (CDC interface) are stored in this buffer */
 uint32_t sendDataUSB;
 
+STUSB_GEN1S_RDO_REG_STATUS_RegTypeDef Nego_RDO;
+
 const unsigned char* dfu_string = (unsigned char*) "dfudfudfudfudfu";
 const unsigned char* otter_string = (unsigned char*) "Otter-Iron";
 const unsigned char* by_string = (unsigned char*) "by Jan Henrik";
@@ -126,21 +135,19 @@ int main(void)
   MX_DMA_Init();
   MX_ADC_Init();
   MX_I2C1_Init();
-  MX_I2C2_Init();
+  /* MX_I2C2_Init(); */
   MX_TIM1_Init();
   TIM3_Init();
+
+  HAL_Delay(50);
+  disp_init();
+  HAL_Delay(150);
+  clear_screen();
 
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_OC_Start(&htim1, TIM_CHANNEL_4);
 
   HAL_ADC_Start_DMA(&hadc, (uint32_t *)ADC_raw, 4);
-
-  HAL_Delay(100);
-  disp_init();
-  HAL_Delay(150);
-  set_screen();
-  HAL_Delay(150);
-  clear_screen();
 
   //DFU bootloader
   if(HAL_GPIO_ReadPin(GPIOA,B1_Pin) && HAL_GPIO_ReadPin(GPIOA,B2_Pin)){
@@ -228,35 +235,59 @@ int main(void)
     unsigned char str2[14] = "          ";
     unsigned char str3[14] = "          ";
     unsigned char str4[14] = "          ";
+    unsigned char str5[14] = "          ";
+    unsigned char str6[14] = "          ";
     sprintf((char * restrict) str1, "%d C   ", (uint16_t)r.target);
     sprintf((char * restrict) str2, "%d.%d C", (uint16_t)s.ttipavg,(uint16_t)((s.ttipavg-(uint16_t)s.ttipavg)*10.0f));
     sprintf((char * restrict) str3, "%d.%d V", (uint16_t)s.uin,(uint16_t)((s.uin-(uint16_t)s.uin)*10.0f));
     sprintf((char * restrict) str4, "%d.%d A", (uint16_t)s.iinavg,(uint16_t)((s.iinavg-(uint16_t)s.iinavg)*10.0f));
+    sprintf((char * restrict) str5, "%d.%d A", (uint16_t)s.imax,(uint16_t)((s.imax-(uint16_t)s.imax)*10.0f));
+    sprintf((char * restrict) str6, "PDO %d", s.pdo);
 
     clear_screen();
     draw_string(str1, 10, 1 ,1);
-    draw_string(str2, 10, 9 ,1);
-    draw_string(str3, 60, 1 ,1);
+    draw_string(str6, 60, 1 ,1);
+    draw_string(str5, 10, 9 ,1);
 #ifdef DISPLAYCURRENT
     if(s.timeout == 0){
+      draw_string(str2, 10, 9 ,1);
+      draw_string(str3, 60, 1 ,1);
       draw_string(str4, 10, 1 ,1);
     } else {
       s.timeout--;
     }
 #endif
-    s.drawlineavg = (s.drawlineavg * DISP_AVG_FILTER) + (CLAMP(r.error*3.0f,0,30)*(1.0-DISP_AVG_FILTER));
     s.iinavg = (s.iinavg * DISP_AVG_FILTER) + (s.iin*(1.0-DISP_AVG_FILTER));
-    for(uint16_t i = 0; i <= (int)s.drawlineavg; i++){
-      draw_v_line(60+i, 8, 8, 1);
+
+    if (s.active) {
+      s.drawlineavg = (s.drawlineavg * DISP_AVG_FILTER) + (CLAMP(r.error*3.0f,0,30)*(1.0-DISP_AVG_FILTER));
+      for(uint16_t i = 0; i <= (int)s.drawlineavg; i++){
+        draw_v_line(60+i, 8, 8, 1);
+      }
+    } else {
+      draw_string((const unsigned char*) "!ACTV", 60, 9, 1);
     }
 
     refresh();
     HAL_IWDG_Refresh(&hiwdg);
+ #ifdef CHECKUSBPD
+    read_stusb_rdo();
+  #endif
   }
+}
+
+inline uint8_t check_usbpd(void) {
+ #ifdef CHECKUSBPD
+  return (s.uin >= 15.0 && s.imax >= 2.0);
+ #else
+  return 1;
+ #endif
 }
 
 // Main PID+two-way controller and ADC readout
 void reg(void) {
+  static uint16_t count = 0;
+
   s.tref = ((((float)ADC_raw[3]/4095.0)*3.3)-0.5)/0.01;
   s.ttip = ((ADC_raw[1]-tipcal.offset)*tipcal.coefficient)/1000+s.tref;
   s.uin = ((ADC_raw[2]/4095.0)*3.3)*6.6;
@@ -264,44 +295,58 @@ void reg(void) {
 
   s.ttipavg = FILT(s.ttipavg, s.ttip, TTIP_AVG_FILTER);
 
-  // Check if within deadband, decide on two-way or PID control
-  if(s.ttipavg >= r.target-r.deadband && s.ttipavg <= r.target+r.deadband){
-    r.error = r.target - s.ttipavg;
-    r.ierror = r.ierror + (r.error*r.cycletime);
-    r.ierror = CLAMP(r.ierror,-r.imax,r.imax);
-    r.duty = ((int16_t) (r.Kp*r.error + r.Ki*r.ierror)) * wduty;
-    r.errorprior = r.error;
-  } else {
-    if(s.ttipavg <= r.target){
-      r.duty = wduty;
-      r.error = 12.0;
+  // check input voltage
+  if (check_usbpd()) {
+    // Check if within deadband, decide on two-way or PID control
+    if(s.ttipavg >= r.target-r.deadband && s.ttipavg <= r.target+r.deadband){
+      r.error = r.target - s.ttipavg;
+      r.ierror = r.ierror + (r.error*r.cycletime);
+      r.ierror = CLAMP(r.ierror,-r.imax,r.imax);
+      r.duty = ((int16_t) (r.Kp*r.error + r.Ki*r.ierror)) * wduty;
+      r.errorprior = r.error;
     } else {
-      r.duty = MIN_DUTY;
-      r.error = 0.0;
+      if(s.ttipavg <= r.target){
+        r.duty = wduty;
+        r.error = 12.0;
+      } else {
+        r.duty = MIN_DUTY;
+        r.error = 0.0;
+      }
     }
-  }
 
-  // detect if no tip is plugged in
-  if(s.iin <= 0.001 && s.ttipavg > 300){
-    r.duty = 100;
-    r.error = 0.0;
-    r.ierror = 0.0;
-    r.derror = 0.0;
-    r.errorprior = 0.0;
-    wduty = 150;
-  }
+    // detect if no tip is plugged in
+    if (s.iin <= 0.001 && s.ttipavg > 100.0) {
+      if (count > 2000) {
+        r.duty = 100;
+        r.error = 0.0;
+        r.ierror = 0.0;
+        r.derror = 0.0;
+        r.errorprior = 0.0;
+        wduty = 150;
+        s.active = 0;
+      } else {
+        count++;
+      }
+    } else {
+      count = 0;
+      s.active = 1;
+    }
 
-  r.duty = CLAMP(r.duty, MIN_DUTY, MAX_DUTY); // Clamp to duty cycle
+    r.duty = CLAMP(r.duty, MIN_DUTY, MAX_DUTY); // Clamp to duty cycle
 
-  if(s.iin > s.imax && r.duty > 100){ // Current limiting
-    wduty = r.duty - 2;
-    r.duty -= 100;
+    if(s.iin > s.imax && r.duty > 100){ // Current limiting
+      wduty = r.duty - 2;
+      r.duty -= 100;
+    } else {
+      wduty++;
+      if(wduty >= MAX_DUTY) wduty = MAX_DUTY;
+    }
+
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, r.duty);
   } else {
-    wduty++;
-    if(wduty >= MAX_DUTY) wduty = MAX_DUTY;
+    s.active = 0;
   }
 
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, r.duty);
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 4000);
 }
 
@@ -356,6 +401,22 @@ uint8_t OLED_Setup_Array[] = {
 0x80, 0x00, /*Wrap memory*/
 0x80, 0xAF /*Display on*/
 };
+
+
+void read_stusb_rdo(void) {
+  HAL_StatusTypeDef ret;
+  /* uint8_t pdo_count = 0; */
+  ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), (uint16_t) RDO_REG_STATUS, I2C_MEMADD_SIZE_8BIT, (uint8_t *) &Nego_RDO, 4, 10);
+  /* ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), (uint16_t) DPM_PDO_NUMB, I2C_MEMADD_SIZE_8BIT, &pdo_count, 1, 10); */
+
+  if (ret == 0) {
+    s.imax = (float) Nego_RDO.b.MaxCurrent / 100.0;
+    s.pdo = Nego_RDO.b.Object_Pos;
+  } else {
+    s.imax = 0.0;
+    s.pdo = 0;
+  }
+}
 
 //not Ralim anymore
 void disp_init(void) {
@@ -501,7 +562,7 @@ static void MX_I2C1_Init(void)
 {
 
   hi2c1.Instance = I2C1;
-  hi2c1.Init.Timing = 0x2000090E;
+  hi2c1.Init.Timing = 0x0000020B;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;

@@ -37,7 +37,7 @@ build/main.o: Src/main.c Inc/main.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- Inc/usbd_cdc_interface.h Inc/font.h
+ Inc/usbd_cdc_interface.h Inc/font.h Inc/stusb4500.h
 Inc/main.h:
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 Inc/stm32f0xx_hal_conf.h:
@@ -81,3 +81,4 @@ Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
 Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 Inc/usbd_cdc_interface.h:
 Inc/font.h:
+Inc/stusb4500.h:
