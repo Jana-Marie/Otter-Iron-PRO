@@ -103,7 +103,7 @@ struct reg_t{
   float Kp;
   float Ki;
   float deadband;
-}r = {.Kp = 0.4f,.Ki = 0.02f,.cycletime = 0.0000725f,.imax=200.0f,.target=220.0f,.deadband=20.0f};
+}r = {.Kp = 0.5f,.Ki = 1.0f,.cycletime = 0.0000725f,.imax=10.0f,.target=220.0f,.deadband=20.0f};
 
 struct tipcal_t{
   float offset;
@@ -167,7 +167,7 @@ int main(void)
     draw_string(otter_string, 15, 1 ,1);
     draw_string(by_string, 10, 9 ,1);
     refresh();
-    HAL_Delay(1000);
+    HAL_Delay(500);
     clear_screen();
     draw_string(assembly_string, 14, 1 ,1);
     draw_string(jbr_string, 8, 9 ,1);
@@ -313,9 +313,11 @@ void reg(void) {
       if(s.ttipavg <= r.target){
         r.duty = wduty;
         r.error = 12.0;
+        r.ierror = 0.0;
       } else {
         r.duty = MIN_DUTY;
         r.error = 0.0;
+        r.ierror = 0.0;
       }
     }
 
@@ -338,9 +340,11 @@ void reg(void) {
 
     r.duty = CLAMP(r.duty, MIN_DUTY, MAX_DUTY); // Clamp to duty cycle
 
-    if(s.iin > s.imax && r.duty > 100){ // Current limiting
+    if(s.iin > s.imax && r.duty > 800) { // Current limiting
       wduty = r.duty - 2;
-      r.duty -= 100;
+      r.duty -= 800;
+    } else if (s.iin > s.imax) {
+      r.duty = 0;
     } else {
       wduty++;
       if(wduty >= MAX_DUTY) wduty = MAX_DUTY;
