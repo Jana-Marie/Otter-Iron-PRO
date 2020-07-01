@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc87uRi9.s 			page 1
+ARM GAS  /tmp/ccdEwjib.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
   57              		.global	__aeabi_fmul
   58              		.global	__aeabi_fdiv
   59              		.global	__aeabi_fadd
-ARM GAS  /tmp/cc87uRi9.s 			page 2
+ARM GAS  /tmp/ccdEwjib.s 			page 2
 
 
   60              		.global	__aeabi_i2d
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  115 0064 0022     		movs	r2, #0
  116 0066 8F4B     		ldr	r3, .L43+4
  117 0068 FFF7FEFF 		bl	__aeabi_ddiv
-ARM GAS  /tmp/cc87uRi9.s 			page 3
+ARM GAS  /tmp/ccdEwjib.s 			page 3
 
 
  118 006c 8E4A     		ldr	r2, .L43+8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  172 00fa 0493     		str	r3, [sp, #16]
  173 00fc 0028     		cmp	r0, #0
  174 00fe 00D1     		bne	.LCB136
-ARM GAS  /tmp/cc87uRi9.s 			page 4
+ARM GAS  /tmp/ccdEwjib.s 			page 4
 
 
  175 0100 C9E0     		b	.L11	@long jump
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  229 017c 396A     		ldr	r1, [r7, #32]
  230 017e 061C     		adds	r6, r0, #0
  231 0180 201C     		adds	r0, r4, #0
-ARM GAS  /tmp/cc87uRi9.s 			page 5
+ARM GAS  /tmp/ccdEwjib.s 			page 5
 
 
  232 0182 FFF7FEFF 		bl	__aeabi_fmul
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  286 01f6 281C     		adds	r0, r5, #0
  287 01f8 FFF7FEFF 		bl	__aeabi_fcmple
  288 01fc 0023     		movs	r3, #0
-ARM GAS  /tmp/cc87uRi9.s 			page 6
+ARM GAS  /tmp/ccdEwjib.s 			page 6
 
 
  289 01fe 0028     		cmp	r0, #0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  343 025e 049A     		ldr	r2, [sp, #16]
  344 0260 5363     		str	r3, [r2, #52]
  345              	.L32:
-ARM GAS  /tmp/cc87uRi9.s 			page 7
+ARM GAS  /tmp/ccdEwjib.s 			page 7
 
 
  346 0262 FA23     		movs	r3, #250
@@ -383,7 +383,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  365 0280 1B4A     		ldr	r2, .L43+80
  366 0282 C900     		lsls	r1, r1, #3
  367 0284 1388     		ldrh	r3, [r2]
- 368 0286 0133     		adds	r3, r3, #1
+ 368 0286 6433     		adds	r3, r3, #100
  369 0288 9BB2     		uxth	r3, r3
  370 028a 8B42     		cmp	r3, r1
  371 028c 01D2     		bcs	.L31
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  400 02d8 51B8E63F 		.word	1072085073
  401 02dc E07A843F 		.word	1065646816
  402 02e0 A4707D3F 		.word	1065185444
-ARM GAS  /tmp/cc87uRi9.s 			page 8
+ARM GAS  /tmp/ccdEwjib.s 			page 8
 
 
  403 02e4 00D7233C 		.word	1008981760
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  458              		.thumb_func
  459              		.fpu softvfp
  461              	USB_printfloat:
-ARM GAS  /tmp/cc87uRi9.s 			page 9
+ARM GAS  /tmp/ccdEwjib.s 			page 9
 
 
  462              		@ args = 0, pretend = 0, frame = 0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  518 000c 104D     		ldr	r5, .L59
  519 000e 0193     		str	r3, [sp, #4]
  520 0010 9122     		movs	r2, #145
-ARM GAS  /tmp/cc87uRi9.s 			page 10
+ARM GAS  /tmp/ccdEwjib.s 			page 10
 
 
  521 0012 5021     		movs	r1, #80
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  577 000c 2D4F     		ldr	r7, .L67
  578 000e 08AC     		add	r4, sp, #32
  579 0010 0590     		str	r0, [sp, #20]
-ARM GAS  /tmp/cc87uRi9.s 			page 11
+ARM GAS  /tmp/ccdEwjib.s 			page 11
 
 
  580 0012 0691     		str	r1, [sp, #24]
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  634 0080 134B     		ldr	r3, .L67+12
  635 0082 1343     		orrs	r3, r2
  636 0084 2B60     		str	r3, [r5]
-ARM GAS  /tmp/cc87uRi9.s 			page 12
+ARM GAS  /tmp/ccdEwjib.s 			page 12
 
 
  637              	.L65:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  693 0008 1070     		strb	r0, [r2]
  694 000a FF20     		movs	r0, #255
  695 000c 032B     		cmp	r3, #3
-ARM GAS  /tmp/cc87uRi9.s 			page 13
+ARM GAS  /tmp/ccdEwjib.s 			page 13
 
 
  696 000e 09D8     		bhi	.L70
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  754              	disp_off:
  755              		@ args = 0, pretend = 0, frame = 8
  756              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc87uRi9.s 			page 14
+ARM GAS  /tmp/ccdEwjib.s 			page 14
 
 
  757 0000 1FB5     		push	{r0, r1, r2, r3, r4, lr}
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  815              		@ frame_needed = 0, uses_anonymous_args = 0
  816 0000 10B5     		push	{r4, lr}
  817 0002 C022     		movs	r2, #192
-ARM GAS  /tmp/cc87uRi9.s 			page 15
+ARM GAS  /tmp/ccdEwjib.s 			page 15
 
 
  818              		@ sp needed
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  876              		@ args = 0, pretend = 0, frame = 0
  877              		@ frame_needed = 0, uses_anonymous_args = 0
  878 0000 10B5     		push	{r4, lr}
-ARM GAS  /tmp/cc87uRi9.s 			page 16
+ARM GAS  /tmp/ccdEwjib.s 			page 16
 
 
  879 0002 C022     		movs	r2, #192
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  935 003e 10BD     		pop	{r4, pc}
  936              	.L94:
  937 0040 002A     		cmp	r2, #0
-ARM GAS  /tmp/cc87uRi9.s 			page 17
+ARM GAS  /tmp/ccdEwjib.s 			page 17
 
 
  938 0042 FCD1     		bne	.L92
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  994 0018 019B     		ldr	r3, [sp, #4]
  995 001a 0134     		adds	r4, r4, #1
  996 001c A342     		cmp	r3, r4
-ARM GAS  /tmp/cc87uRi9.s 			page 18
+ARM GAS  /tmp/ccdEwjib.s 			page 18
 
 
  997 001e F5DA     		bge	.L100
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1053 004a FFF7FEFF 		bl	write_pixel
  1054 004e 082D     		cmp	r5, #8
  1055 0050 EED1     		bne	.L107
-ARM GAS  /tmp/cc87uRi9.s 			page 19
+ARM GAS  /tmp/ccdEwjib.s 			page 19
 
 
  1056 0052 0134     		adds	r4, r4, #1
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1114 0008 0021     		movs	r1, #0
  1115 000a 0CA8     		add	r0, sp, #48
  1116 000c FFF7FEFF 		bl	memset
-ARM GAS  /tmp/cc87uRi9.s 			page 20
+ARM GAS  /tmp/ccdEwjib.s 			page 20
 
 
  1117 0010 2A00     		movs	r2, r5
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1170 0010 25642E25 		.ascii	"%d.%d V\000"
  1170      64205600 
  1171              	.LC56:
-ARM GAS  /tmp/cc87uRi9.s 			page 21
+ARM GAS  /tmp/ccdEwjib.s 			page 21
 
 
  1172 0018 25642E25 		.ascii	"%d.%d A\000"
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1223 0048 0A43     		orrs	r2, r1
  1224 004a 6A61     		str	r2, [r5, #20]
  1225 004c 6B69     		ldr	r3, [r5, #20]
-ARM GAS  /tmp/cc87uRi9.s 			page 22
+ARM GAS  /tmp/ccdEwjib.s 			page 22
 
 
  1226 004e 2396     		str	r6, [sp, #140]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1280 00c8 049B     		ldr	r3, [sp, #16]
  1281 00ca AA69     		ldr	r2, [r5, #24]
  1282 00cc 0A43     		orrs	r2, r1
-ARM GAS  /tmp/cc87uRi9.s 			page 23
+ARM GAS  /tmp/ccdEwjib.s 			page 23
 
 
  1283 00ce AA61     		str	r2, [r5, #24]
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1337 0146 FFF7FEFF 		bl	HAL_ADC_MspInit
  1338 014a 814F     		ldr	r7, .L154+20
  1339 014c 814B     		ldr	r3, .L154+24
-ARM GAS  /tmp/cc87uRi9.s 			page 24
+ARM GAS  /tmp/ccdEwjib.s 			page 24
 
 
  1340 014e 3800     		movs	r0, r7
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1394 01c8 FB60     		str	r3, [r7, #12]
  1395 01ca 8023     		movs	r3, #128
  1396 01cc 7860     		str	r0, [r7, #4]
-ARM GAS  /tmp/cc87uRi9.s 			page 25
+ARM GAS  /tmp/ccdEwjib.s 			page 25
 
 
  1397 01ce 3800     		movs	r0, r7
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1451 024a FFF7FEFF 		bl	HAL_TIM_MspPostInit
  1452 024e 0222     		movs	r2, #2
  1453 0250 EB69     		ldr	r3, [r5, #28]
-ARM GAS  /tmp/cc87uRi9.s 			page 26
+ARM GAS  /tmp/ccdEwjib.s 			page 26
 
 
  1454 0252 2100     		movs	r1, r4
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1508 02d4 3800     		movs	r0, r7
  1509 02d6 FFF7FEFF 		bl	HAL_TIM_OC_Start
  1510 02da 2849     		ldr	r1, .L154+64
-ARM GAS  /tmp/cc87uRi9.s 			page 27
+ARM GAS  /tmp/ccdEwjib.s 			page 27
 
 
  1511 02dc 0422     		movs	r2, #4
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1565 033a FDE7     		b	.L123
  1566              	.L155:
  1567              		.align	2
-ARM GAS  /tmp/cc87uRi9.s 			page 28
+ARM GAS  /tmp/ccdEwjib.s 			page 28
 
 
  1568              	.L154:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1622 03e0 1422     		movs	r2, #20
  1623 03e2 DE4B     		ldr	r3, .L156+16
  1624 03e4 0533     		adds	r3, r3, #5
-ARM GAS  /tmp/cc87uRi9.s 			page 29
+ARM GAS  /tmp/ccdEwjib.s 			page 29
 
 
  1625 03e6 DA77     		strb	r2, [r3, #31]
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1679 045e 3860     		str	r0, [r7]
  1680 0460 2820     		movs	r0, #40
  1681 0462 2E77     		strb	r6, [r5, #28]
-ARM GAS  /tmp/cc87uRi9.s 			page 30
+ARM GAS  /tmp/ccdEwjib.s 			page 30
 
 
  1682 0464 FFF7FEFF 		bl	HAL_Delay
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1736 04d0 12D0     		beq	.L131
  1737 04d2 D968     		ldr	r1, [r3, #12]
  1738 04d4 3868     		ldr	r0, [r7]
-ARM GAS  /tmp/cc87uRi9.s 			page 31
+ARM GAS  /tmp/ccdEwjib.s 			page 31
 
 
  1739 04d6 0A43     		orrs	r2, r1
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1793 0552 5B20     		movs	r0, #91
  1794 0554 02AB     		add	r3, sp, #8
  1795 0556 C018     		adds	r0, r0, r3
-ARM GAS  /tmp/cc87uRi9.s 			page 32
+ARM GAS  /tmp/ccdEwjib.s 			page 32
 
 
  1796 0558 0322     		movs	r2, #3
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1850 05e2 011C     		adds	r1, r0, #0
  1851 05e4 381C     		adds	r0, r7, #0
  1852 05e6 FFF7FEFF 		bl	__aeabi_fsub
-ARM GAS  /tmp/cc87uRi9.s 			page 33
+ARM GAS  /tmp/ccdEwjib.s 			page 33
 
 
  1853 05ea 6949     		ldr	r1, .L156+68
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1907 067a 2200     		movs	r2, r4
  1908 067c 3C21     		movs	r1, #60
  1909 067e 21A8     		add	r0, sp, #132
-ARM GAS  /tmp/cc87uRi9.s 			page 34
+ARM GAS  /tmp/ccdEwjib.s 			page 34
 
 
  1910 0680 FFF7FEFF 		bl	draw_string
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  1964 06fc FFF7FEFF 		bl	__aeabi_fmul
  1965 0700 FFF7FEFF 		bl	__aeabi_f2d
  1966 0704 1A4B     		ldr	r3, .L156+36
-ARM GAS  /tmp/cc87uRi9.s 			page 35
+ARM GAS  /tmp/ccdEwjib.s 			page 35
 
 
  1967 0706 0090     		str	r0, [sp]
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2021 07a8 6666663F 		.word	1063675494
  2022 07ac 9A99B93F 		.word	1069128090
  2023 07b0 00004040 		.word	1077936128
-ARM GAS  /tmp/cc87uRi9.s 			page 36
+ARM GAS  /tmp/ccdEwjib.s 			page 36
 
 
  2024 07b4 0000F041 		.word	1106247680
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2078 0814 0000C843 		.word	1137180672
  2079 0818 0000A041 		.word	1101004800
  2080 081c 00003E40 		.word	1077805056
-ARM GAS  /tmp/cc87uRi9.s 			page 37
+ARM GAS  /tmp/ccdEwjib.s 			page 37
 
 
  2081 0820 2F000000 		.word	.LC62
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2125              		.global	hiwdg
  2126              		.global	htim3
  2127              		.global	htim1
-ARM GAS  /tmp/cc87uRi9.s 			page 38
+ARM GAS  /tmp/ccdEwjib.s 			page 38
 
 
  2128              		.global	hi2c1
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2179              		.align	2
  2180              		.set	.LANCHOR8,. + 0
  2183              	hi2c1:
-ARM GAS  /tmp/cc87uRi9.s 			page 39
+ARM GAS  /tmp/ccdEwjib.s 			page 39
 
 
  2184 0000 00000000 		.space	76
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2229              	OLED_Setup_Array:
  2230 0000 80AE80D5 		.ascii	"\200\256\200\325\200\200\200\250\200\017\200\310\200"
  2230      808080A8 
-ARM GAS  /tmp/cc87uRi9.s 			page 40
+ARM GAS  /tmp/ccdEwjib.s 			page 40
 
 
  2230      800F80C8 
@@ -2391,14 +2391,14 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2279 0018 240B9838 		.word	949488420
  2280 001c 0000003F 		.word	1056964608
  2281 0020 0000803F 		.word	1065353216
- 2282 0024 0000A041 		.word	1101004800
+ 2282 0024 00007041 		.word	1097859072
  2283              		.section	.data.s,"aw"
  2284              		.align	2
  2285              		.set	.LANCHOR0,. + 0
  2288              	s:
  2289 0000 00000000 		.space	20
  2289      00000000 
-ARM GAS  /tmp/cc87uRi9.s 			page 41
+ARM GAS  /tmp/ccdEwjib.s 			page 41
 
 
  2289      00000000 
@@ -2420,7 +2420,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2303              		.align	1
  2304              		.set	.LANCHOR5,. + 0
  2307              	wduty:
- 2308 0000 9600     		.short	150
+ 2308 0000 C800     		.short	200
  2309              		.section	.rodata.REFRESH_COMMANDS,"a"
  2310              		.set	.LANCHOR11,. + 0
  2313              	REFRESH_COMMANDS:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2332 0048 80600000 		.ascii	"\200`\000\000\000\000"
  2332      0000
  2333 004e 08080808 		.ascii	"\010\010\010\010\010\000"
-ARM GAS  /tmp/cc87uRi9.s 			page 42
+ARM GAS  /tmp/ccdEwjib.s 			page 42
 
 
  2333      0800
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2360      043F
  2361 00f6 21213F21 		.ascii	"!!?!!!"
  2361      2121
-ARM GAS  /tmp/cc87uRi9.s 			page 43
+ARM GAS  /tmp/ccdEwjib.s 			page 43
 
 
  2362 00fc 10202020 		.ascii	"\020    \037"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2389 019e 1C2C2A2A 		.ascii	"\034,**$\000"
  2389      2400
  2390 01a4 3E050100 		.ascii	">\005\001\000\000\000"
-ARM GAS  /tmp/cc87uRi9.s 			page 44
+ARM GAS  /tmp/ccdEwjib.s 			page 44
 
 
  2390      0000
@@ -2633,127 +2633,127 @@ ARM GAS  /tmp/cc87uRi9.s 			page 1
  2415 023a 00000000 		.ascii	"\000\000\000\000\000\000"
  2415      0000
  2416              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/cc87uRi9.s 			page 45
+ARM GAS  /tmp/ccdEwjib.s 			page 45
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/cc87uRi9.s:15     .text.check_usbpd:0000000000000000 $t
-     /tmp/cc87uRi9.s:23     .text.check_usbpd:0000000000000000 check_usbpd
-     /tmp/cc87uRi9.s:46     .text.check_usbpd:0000000000000024 $d
-     /tmp/cc87uRi9.s:68     .text.reg:0000000000000000 $t
-     /tmp/cc87uRi9.s:75     .text.reg:0000000000000000 reg
-     /tmp/cc87uRi9.s:386    .text.reg:00000000000002a0 $d
-     /tmp/cc87uRi9.s:414    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-     /tmp/cc87uRi9.s:421    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-     /tmp/cc87uRi9.s:445    .text.HAL_TIM_PeriodElapsedCallback:0000000000000024 $d
-     /tmp/cc87uRi9.s:2156   .bss.USBD_Device:0000000000000000 USBD_Device
-     /tmp/cc87uRi9.s:454    .text.USB_printfloat:0000000000000000 $t
-     /tmp/cc87uRi9.s:461    .text.USB_printfloat:0000000000000000 USB_printfloat
-     /tmp/cc87uRi9.s:496    .text.USB_printfloat:0000000000000048 $d
-     /tmp/cc87uRi9.s:502    .text.read_stusb_rdo:0000000000000000 $t
-     /tmp/cc87uRi9.s:509    .text.read_stusb_rdo:0000000000000000 read_stusb_rdo
-     /tmp/cc87uRi9.s:554    .text.read_stusb_rdo:0000000000000050 $d
-     /tmp/cc87uRi9.s:561    .text.update_pdo:0000000000000000 $t
-     /tmp/cc87uRi9.s:568    .text.update_pdo:0000000000000000 update_pdo
-     /tmp/cc87uRi9.s:672    .text.update_pdo:00000000000000c4 $d
-     /tmp/cc87uRi9.s:679    .text.set_valid_pdo:0000000000000000 $t
-     /tmp/cc87uRi9.s:686    .text.set_valid_pdo:0000000000000000 set_valid_pdo
-     /tmp/cc87uRi9.s:713    .text.set_valid_pdo:0000000000000028 $d
-     /tmp/cc87uRi9.s:716    .text.disp_on:0000000000000000 $t
-     /tmp/cc87uRi9.s:723    .text.disp_on:0000000000000000 disp_on
-     /tmp/cc87uRi9.s:743    .text.disp_on:000000000000001c $d
-     /tmp/cc87uRi9.s:747    .text.disp_off:0000000000000000 $t
-     /tmp/cc87uRi9.s:754    .text.disp_off:0000000000000000 disp_off
-     /tmp/cc87uRi9.s:774    .text.disp_off:000000000000001c $d
-     /tmp/cc87uRi9.s:778    .text.refresh:0000000000000000 $t
-     /tmp/cc87uRi9.s:785    .text.refresh:0000000000000000 refresh
-     /tmp/cc87uRi9.s:802    .text.refresh:0000000000000018 $d
-     /tmp/cc87uRi9.s:2216   .bss.screenBuffer:0000000000000000 screenBuffer
-     /tmp/cc87uRi9.s:806    .text.clear_screen:0000000000000000 $t
-     /tmp/cc87uRi9.s:813    .text.clear_screen:0000000000000000 clear_screen
-     /tmp/cc87uRi9.s:826    .text.clear_screen:0000000000000010 $d
-     /tmp/cc87uRi9.s:829    .text.disp_init:0000000000000000 $t
-     /tmp/cc87uRi9.s:836    .text.disp_init:0000000000000000 disp_init
-     /tmp/cc87uRi9.s:862    .text.disp_init:0000000000000034 $d
-     /tmp/cc87uRi9.s:868    .text.set_screen:0000000000000000 $t
-     /tmp/cc87uRi9.s:875    .text.set_screen:0000000000000000 set_screen
-     /tmp/cc87uRi9.s:888    .text.set_screen:0000000000000010 $d
-     /tmp/cc87uRi9.s:891    .text.write_pixel:0000000000000000 $t
-     /tmp/cc87uRi9.s:898    .text.write_pixel:0000000000000000 write_pixel
-     /tmp/cc87uRi9.s:968    .text.write_pixel:0000000000000078 $d
-     /tmp/cc87uRi9.s:972    .text.draw_v_line:0000000000000000 $t
-     /tmp/cc87uRi9.s:979    .text.draw_v_line:0000000000000000 draw_v_line
-     /tmp/cc87uRi9.s:1002   .text.draw_char:0000000000000000 $t
-     /tmp/cc87uRi9.s:1009   .text.draw_char:0000000000000000 draw_char
-     /tmp/cc87uRi9.s:1065   .text.draw_char:000000000000005c $d
-     /tmp/cc87uRi9.s:2319   .rodata.font:0000000000000000 font
-     /tmp/cc87uRi9.s:1068   .text.draw_string:0000000000000000 $t
-     /tmp/cc87uRi9.s:1075   .text.draw_string:0000000000000000 draw_string
-     /tmp/cc87uRi9.s:1100   .text.SystemClock_Config:0000000000000000 $t
-     /tmp/cc87uRi9.s:1107   .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/cc87uRi9.s:1162   .text.SystemClock_Config:000000000000006c $d
-ARM GAS  /tmp/cc87uRi9.s 			page 46
+     /tmp/ccdEwjib.s:15     .text.check_usbpd:0000000000000000 $t
+     /tmp/ccdEwjib.s:23     .text.check_usbpd:0000000000000000 check_usbpd
+     /tmp/ccdEwjib.s:46     .text.check_usbpd:0000000000000024 $d
+     /tmp/ccdEwjib.s:68     .text.reg:0000000000000000 $t
+     /tmp/ccdEwjib.s:75     .text.reg:0000000000000000 reg
+     /tmp/ccdEwjib.s:386    .text.reg:00000000000002a0 $d
+     /tmp/ccdEwjib.s:414    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+     /tmp/ccdEwjib.s:421    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+     /tmp/ccdEwjib.s:445    .text.HAL_TIM_PeriodElapsedCallback:0000000000000024 $d
+     /tmp/ccdEwjib.s:2156   .bss.USBD_Device:0000000000000000 USBD_Device
+     /tmp/ccdEwjib.s:454    .text.USB_printfloat:0000000000000000 $t
+     /tmp/ccdEwjib.s:461    .text.USB_printfloat:0000000000000000 USB_printfloat
+     /tmp/ccdEwjib.s:496    .text.USB_printfloat:0000000000000048 $d
+     /tmp/ccdEwjib.s:502    .text.read_stusb_rdo:0000000000000000 $t
+     /tmp/ccdEwjib.s:509    .text.read_stusb_rdo:0000000000000000 read_stusb_rdo
+     /tmp/ccdEwjib.s:554    .text.read_stusb_rdo:0000000000000050 $d
+     /tmp/ccdEwjib.s:561    .text.update_pdo:0000000000000000 $t
+     /tmp/ccdEwjib.s:568    .text.update_pdo:0000000000000000 update_pdo
+     /tmp/ccdEwjib.s:672    .text.update_pdo:00000000000000c4 $d
+     /tmp/ccdEwjib.s:679    .text.set_valid_pdo:0000000000000000 $t
+     /tmp/ccdEwjib.s:686    .text.set_valid_pdo:0000000000000000 set_valid_pdo
+     /tmp/ccdEwjib.s:713    .text.set_valid_pdo:0000000000000028 $d
+     /tmp/ccdEwjib.s:716    .text.disp_on:0000000000000000 $t
+     /tmp/ccdEwjib.s:723    .text.disp_on:0000000000000000 disp_on
+     /tmp/ccdEwjib.s:743    .text.disp_on:000000000000001c $d
+     /tmp/ccdEwjib.s:747    .text.disp_off:0000000000000000 $t
+     /tmp/ccdEwjib.s:754    .text.disp_off:0000000000000000 disp_off
+     /tmp/ccdEwjib.s:774    .text.disp_off:000000000000001c $d
+     /tmp/ccdEwjib.s:778    .text.refresh:0000000000000000 $t
+     /tmp/ccdEwjib.s:785    .text.refresh:0000000000000000 refresh
+     /tmp/ccdEwjib.s:802    .text.refresh:0000000000000018 $d
+     /tmp/ccdEwjib.s:2216   .bss.screenBuffer:0000000000000000 screenBuffer
+     /tmp/ccdEwjib.s:806    .text.clear_screen:0000000000000000 $t
+     /tmp/ccdEwjib.s:813    .text.clear_screen:0000000000000000 clear_screen
+     /tmp/ccdEwjib.s:826    .text.clear_screen:0000000000000010 $d
+     /tmp/ccdEwjib.s:829    .text.disp_init:0000000000000000 $t
+     /tmp/ccdEwjib.s:836    .text.disp_init:0000000000000000 disp_init
+     /tmp/ccdEwjib.s:862    .text.disp_init:0000000000000034 $d
+     /tmp/ccdEwjib.s:868    .text.set_screen:0000000000000000 $t
+     /tmp/ccdEwjib.s:875    .text.set_screen:0000000000000000 set_screen
+     /tmp/ccdEwjib.s:888    .text.set_screen:0000000000000010 $d
+     /tmp/ccdEwjib.s:891    .text.write_pixel:0000000000000000 $t
+     /tmp/ccdEwjib.s:898    .text.write_pixel:0000000000000000 write_pixel
+     /tmp/ccdEwjib.s:968    .text.write_pixel:0000000000000078 $d
+     /tmp/ccdEwjib.s:972    .text.draw_v_line:0000000000000000 $t
+     /tmp/ccdEwjib.s:979    .text.draw_v_line:0000000000000000 draw_v_line
+     /tmp/ccdEwjib.s:1002   .text.draw_char:0000000000000000 $t
+     /tmp/ccdEwjib.s:1009   .text.draw_char:0000000000000000 draw_char
+     /tmp/ccdEwjib.s:1065   .text.draw_char:000000000000005c $d
+     /tmp/ccdEwjib.s:2319   .rodata.font:0000000000000000 font
+     /tmp/ccdEwjib.s:1068   .text.draw_string:0000000000000000 $t
+     /tmp/ccdEwjib.s:1075   .text.draw_string:0000000000000000 draw_string
+     /tmp/ccdEwjib.s:1100   .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccdEwjib.s:1107   .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccdEwjib.s:1162   .text.SystemClock_Config:000000000000006c $d
+ARM GAS  /tmp/ccdEwjib.s 			page 46
 
 
-     /tmp/cc87uRi9.s:1180   .text.startup.main:0000000000000000 $t
-     /tmp/cc87uRi9.s:1187   .text.startup.main:0000000000000000 main
-     /tmp/cc87uRi9.s:1569   .text.startup.main:000000000000033c $d
-     /tmp/cc87uRi9.s:1592   .text.startup.main:0000000000000394 $t
-     /tmp/cc87uRi9.s:1998   .text.startup.main:000000000000074c $d
-     /tmp/cc87uRi9.s:2027   .text.startup.main:00000000000007b8 $t
-     /tmp/cc87uRi9.s:2077   .text.startup.main:0000000000000810 $d
-     /tmp/cc87uRi9.s:2085   .text.Error_Handler:0000000000000000 $t
-     /tmp/cc87uRi9.s:2092   .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/cc87uRi9.s:2229   .data.OLED_Setup_Array:0000000000000000 OLED_Setup_Array
-     /tmp/cc87uRi9.s:2313   .rodata.REFRESH_COMMANDS:0000000000000000 REFRESH_COMMANDS
-     /tmp/cc87uRi9.s:2260   .data.jbr_string:0000000000000000 jbr_string
-     /tmp/cc87uRi9.s:2239   .data.assembly_string:0000000000000000 assembly_string
-     /tmp/cc87uRi9.s:2246   .data.by_string:0000000000000000 by_string
-     /tmp/cc87uRi9.s:2267   .data.otter_string:0000000000000000 otter_string
-     /tmp/cc87uRi9.s:2253   .data.dfu_string:0000000000000000 dfu_string
-     /tmp/cc87uRi9.s:2211   .bss.pdo_profile:0000000000000000 pdo_profile
-     /tmp/cc87uRi9.s:2150   .bss.Nego_RDO:0000000000000000 Nego_RDO
-     /tmp/cc87uRi9.s:2223   .bss.sendDataUSB:0000000000000000 sendDataUSB
-     /tmp/cc87uRi9.s:2299   .data.tipcal:0000000000000000 tipcal
-     /tmp/cc87uRi9.s:2274   .data.r:0000000000000000 r
-     /tmp/cc87uRi9.s:2288   .data.s:0000000000000000 s
-     /tmp/cc87uRi9.s:2190   .bss.hiwdg:0000000000000000 hiwdg
-     /tmp/cc87uRi9.s:2204   .bss.htim3:0000000000000000 htim3
-     /tmp/cc87uRi9.s:2197   .bss.htim1:0000000000000000 htim1
-     /tmp/cc87uRi9.s:2183   .bss.hi2c1:0000000000000000 hi2c1
-     /tmp/cc87uRi9.s:2176   .bss.hdma_adc:0000000000000000 hdma_adc
-     /tmp/cc87uRi9.s:2170   .bss.hadc:0000000000000000 hadc
-     /tmp/cc87uRi9.s:2307   .data.wduty:0000000000000000 wduty
-     /tmp/cc87uRi9.s:2137   .rodata:000000000000000b $d
-     /tmp/cc87uRi9.s:2139   .bss.ADC_raw:0000000000000000 $d
-     /tmp/cc87uRi9.s:2143   .bss.ADC_raw:0000000000000000 ADC_raw
-     /tmp/cc87uRi9.s:2146   .bss.Nego_RDO:0000000000000000 $d
-     /tmp/cc87uRi9.s:2153   .bss.USBD_Device:0000000000000000 $d
-     /tmp/cc87uRi9.s:2159   .bss.count.0:0000000000000000 $d
-     /tmp/cc87uRi9.s:2163   .bss.count.0:0000000000000000 count.0
-     /tmp/cc87uRi9.s:2166   .bss.hadc:0000000000000000 $d
-     /tmp/cc87uRi9.s:2173   .bss.hdma_adc:0000000000000000 $d
-     /tmp/cc87uRi9.s:2179   .bss.hi2c1:0000000000000000 $d
-     /tmp/cc87uRi9.s:2186   .bss.hiwdg:0000000000000000 $d
-     /tmp/cc87uRi9.s:2193   .bss.htim1:0000000000000000 $d
-     /tmp/cc87uRi9.s:2200   .bss.htim3:0000000000000000 $d
-     /tmp/cc87uRi9.s:2207   .bss.pdo_profile:0000000000000000 $d
-     /tmp/cc87uRi9.s:2217   .bss.screenBuffer:0000000000000000 $d
-     /tmp/cc87uRi9.s:2219   .bss.sendDataUSB:0000000000000000 $d
-     /tmp/cc87uRi9.s:2235   .data.assembly_string:0000000000000000 $d
-     /tmp/cc87uRi9.s:2242   .data.by_string:0000000000000000 $d
-     /tmp/cc87uRi9.s:2249   .data.dfu_string:0000000000000000 $d
-     /tmp/cc87uRi9.s:2256   .data.jbr_string:0000000000000000 $d
-     /tmp/cc87uRi9.s:2263   .data.otter_string:0000000000000000 $d
-     /tmp/cc87uRi9.s:2270   .data.r:0000000000000000 $d
-     /tmp/cc87uRi9.s:2284   .data.s:0000000000000000 $d
-     /tmp/cc87uRi9.s:2295   .data.tipcal:0000000000000000 $d
-     /tmp/cc87uRi9.s:2303   .data.wduty:0000000000000000 $d
+     /tmp/ccdEwjib.s:1180   .text.startup.main:0000000000000000 $t
+     /tmp/ccdEwjib.s:1187   .text.startup.main:0000000000000000 main
+     /tmp/ccdEwjib.s:1569   .text.startup.main:000000000000033c $d
+     /tmp/ccdEwjib.s:1592   .text.startup.main:0000000000000394 $t
+     /tmp/ccdEwjib.s:1998   .text.startup.main:000000000000074c $d
+     /tmp/ccdEwjib.s:2027   .text.startup.main:00000000000007b8 $t
+     /tmp/ccdEwjib.s:2077   .text.startup.main:0000000000000810 $d
+     /tmp/ccdEwjib.s:2085   .text.Error_Handler:0000000000000000 $t
+     /tmp/ccdEwjib.s:2092   .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccdEwjib.s:2229   .data.OLED_Setup_Array:0000000000000000 OLED_Setup_Array
+     /tmp/ccdEwjib.s:2313   .rodata.REFRESH_COMMANDS:0000000000000000 REFRESH_COMMANDS
+     /tmp/ccdEwjib.s:2260   .data.jbr_string:0000000000000000 jbr_string
+     /tmp/ccdEwjib.s:2239   .data.assembly_string:0000000000000000 assembly_string
+     /tmp/ccdEwjib.s:2246   .data.by_string:0000000000000000 by_string
+     /tmp/ccdEwjib.s:2267   .data.otter_string:0000000000000000 otter_string
+     /tmp/ccdEwjib.s:2253   .data.dfu_string:0000000000000000 dfu_string
+     /tmp/ccdEwjib.s:2211   .bss.pdo_profile:0000000000000000 pdo_profile
+     /tmp/ccdEwjib.s:2150   .bss.Nego_RDO:0000000000000000 Nego_RDO
+     /tmp/ccdEwjib.s:2223   .bss.sendDataUSB:0000000000000000 sendDataUSB
+     /tmp/ccdEwjib.s:2299   .data.tipcal:0000000000000000 tipcal
+     /tmp/ccdEwjib.s:2274   .data.r:0000000000000000 r
+     /tmp/ccdEwjib.s:2288   .data.s:0000000000000000 s
+     /tmp/ccdEwjib.s:2190   .bss.hiwdg:0000000000000000 hiwdg
+     /tmp/ccdEwjib.s:2204   .bss.htim3:0000000000000000 htim3
+     /tmp/ccdEwjib.s:2197   .bss.htim1:0000000000000000 htim1
+     /tmp/ccdEwjib.s:2183   .bss.hi2c1:0000000000000000 hi2c1
+     /tmp/ccdEwjib.s:2176   .bss.hdma_adc:0000000000000000 hdma_adc
+     /tmp/ccdEwjib.s:2170   .bss.hadc:0000000000000000 hadc
+     /tmp/ccdEwjib.s:2307   .data.wduty:0000000000000000 wduty
+     /tmp/ccdEwjib.s:2137   .rodata:000000000000000b $d
+     /tmp/ccdEwjib.s:2139   .bss.ADC_raw:0000000000000000 $d
+     /tmp/ccdEwjib.s:2143   .bss.ADC_raw:0000000000000000 ADC_raw
+     /tmp/ccdEwjib.s:2146   .bss.Nego_RDO:0000000000000000 $d
+     /tmp/ccdEwjib.s:2153   .bss.USBD_Device:0000000000000000 $d
+     /tmp/ccdEwjib.s:2159   .bss.count.0:0000000000000000 $d
+     /tmp/ccdEwjib.s:2163   .bss.count.0:0000000000000000 count.0
+     /tmp/ccdEwjib.s:2166   .bss.hadc:0000000000000000 $d
+     /tmp/ccdEwjib.s:2173   .bss.hdma_adc:0000000000000000 $d
+     /tmp/ccdEwjib.s:2179   .bss.hi2c1:0000000000000000 $d
+     /tmp/ccdEwjib.s:2186   .bss.hiwdg:0000000000000000 $d
+     /tmp/ccdEwjib.s:2193   .bss.htim1:0000000000000000 $d
+     /tmp/ccdEwjib.s:2200   .bss.htim3:0000000000000000 $d
+     /tmp/ccdEwjib.s:2207   .bss.pdo_profile:0000000000000000 $d
+     /tmp/ccdEwjib.s:2217   .bss.screenBuffer:0000000000000000 $d
+     /tmp/ccdEwjib.s:2219   .bss.sendDataUSB:0000000000000000 $d
+     /tmp/ccdEwjib.s:2235   .data.assembly_string:0000000000000000 $d
+     /tmp/ccdEwjib.s:2242   .data.by_string:0000000000000000 $d
+     /tmp/ccdEwjib.s:2249   .data.dfu_string:0000000000000000 $d
+     /tmp/ccdEwjib.s:2256   .data.jbr_string:0000000000000000 $d
+     /tmp/ccdEwjib.s:2263   .data.otter_string:0000000000000000 $d
+     /tmp/ccdEwjib.s:2270   .data.r:0000000000000000 $d
+     /tmp/ccdEwjib.s:2284   .data.s:0000000000000000 $d
+     /tmp/ccdEwjib.s:2295   .data.tipcal:0000000000000000 $d
+     /tmp/ccdEwjib.s:2303   .data.wduty:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_fcmpge
-ARM GAS  /tmp/cc87uRi9.s 			page 47
+ARM GAS  /tmp/ccdEwjib.s 			page 47
 
 
 __aeabi_ui2f
@@ -2813,7 +2813,7 @@ HAL_TIM_OC_Start
 HAL_ADC_Start_DMA
 HAL_GPIO_ReadPin
 HAL_IWDG_Init
-ARM GAS  /tmp/cc87uRi9.s 			page 48
+ARM GAS  /tmp/ccdEwjib.s 			page 48
 
 
 HAL_FLASH_Unlock

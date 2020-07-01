@@ -37,7 +37,7 @@
 #define MAX_DUTY 2000
 #define MIN_VOLTAGE 15.0f
 #define MIN_CURRENT 2.0f
-uint16_t wduty = 150;
+uint16_t wduty = 200;
 
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
@@ -103,7 +103,7 @@ struct reg_t{
   float Kp;
   float Ki;
   float deadband;
-}r = {.Kp = 0.5f,.Ki = 1.0f,.cycletime = 0.0000725f,.imax=10.0f,.target=220.0f,.deadband=20.0f};
+}r = {.Kp = 0.5f,.Ki = 1.0f,.cycletime = 0.0000725f,.imax=10.0f,.target=220.0f,.deadband=15.0f};
 
 struct tipcal_t{
   float offset;
@@ -346,7 +346,7 @@ void reg(void) {
     } else if (s.iin > s.imax) {
       r.duty = 0;
     } else {
-      wduty++;
+      wduty += 100;
       if(wduty >= MAX_DUTY) wduty = MAX_DUTY;
     }
 
