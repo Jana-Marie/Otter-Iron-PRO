@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccTe13Au.s 			page 1
+ARM GAS  /tmp/ccbmhlF1.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
   56 003c FFF7FEFF 		bl	__aeabi_uidiv
   57 0040 094B     		ldr	r3, .L4+8
   58 0042 8000     		lsls	r0, r0, #2
-ARM GAS  /tmp/ccTe13Au.s 			page 2
+ARM GAS  /tmp/ccbmhlF1.s 			page 2
 
 
   59 0044 2064     		str	r0, [r4, #64]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  115 0030 054B     		ldr	r3, .L9+4
  116 0032 EB63     		str	r3, [r5, #60]
  117 0034 5E60     		str	r6, [r3, #4]
-ARM GAS  /tmp/ccTe13Au.s 			page 3
+ARM GAS  /tmp/ccbmhlF1.s 			page 3
 
 
  118 0036 AC63     		str	r4, [r5, #56]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  174 003e 6368     		ldr	r3, [r4, #4]
  175 0040 102B     		cmp	r3, #16
  176 0042 07D1     		bne	.L14
-ARM GAS  /tmp/ccTe13Au.s 			page 4
+ARM GAS  /tmp/ccbmhlF1.s 			page 4
 
 
  177 0044 8260     		str	r2, [r0, #8]
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  233 0032 B340     		lsls	r3, r3, r6
  234 0034 0560     		str	r5, [r0]
  235 0036 E56B     		ldr	r5, [r4, #60]
-ARM GAS  /tmp/ccTe13Au.s 			page 5
+ARM GAS  /tmp/ccbmhlF1.s 			page 5
 
 
  236 0038 6B60     		str	r3, [r5, #4]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  292 0006 1A68     		ldr	r2, [r3]
  293 0008 046C     		ldr	r4, [r0, #64]
  294 000a 8A43     		bics	r2, r1
-ARM GAS  /tmp/ccTe13Au.s 			page 6
+ARM GAS  /tmp/ccbmhlF1.s 			page 6
 
 
  295 000c 1A60     		str	r2, [r3]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  351 0032 0024     		movs	r4, #0
  352 0034 8318     		adds	r3, r0, r2
  353 0036 DC77     		strb	r4, [r3, #31]
-ARM GAS  /tmp/ccTe13Au.s 			page 7
+ARM GAS  /tmp/ccbmhlF1.s 			page 7
 
 
  354 0038 426B     		ldr	r2, [r0, #52]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  410 003e FFF7FEFF 		bl	HAL_GetTick
  411 0042 0390     		str	r0, [sp, #12]
  412              	.L37:
-ARM GAS  /tmp/ccTe13Au.s 			page 8
+ARM GAS  /tmp/ccbmhlF1.s 			page 8
 
 
  413 0044 0820     		movs	r0, #8
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  467 00a2 F877     		strb	r0, [r7, #31]
  468 00a4 2418     		adds	r4, r4, r0
  469 00a6 F2E7     		b	.L49
-ARM GAS  /tmp/ccTe13Au.s 			page 9
+ARM GAS  /tmp/ccbmhlF1.s 			page 9
 
 
  470              	.L40:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  526 003a 13D0     		beq	.L55
  527 003c 3C42     		tst	r4, r7
  528 003e 11D0     		beq	.L55
-ARM GAS  /tmp/ccTe13Au.s 			page 10
+ARM GAS  /tmp/ccbmhlF1.s 			page 10
 
 
  529 0040 1968     		ldr	r1, [r3]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  585              		@ args = 0, pretend = 0, frame = 0
  586              		@ frame_needed = 0, uses_anonymous_args = 0
  587 0000 30B5     		push	{r4, r5, lr}
-ARM GAS  /tmp/ccTe13Au.s 			page 11
+ARM GAS  /tmp/ccbmhlF1.s 			page 11
 
 
  588 0002 441C     		adds	r4, r0, #1
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  644 0002 441C     		adds	r4, r0, #1
  645 0004 E27F     		ldrb	r2, [r4, #31]
  646 0006 0300     		movs	r3, r0
-ARM GAS  /tmp/ccTe13Au.s 			page 12
+ARM GAS  /tmp/ccbmhlF1.s 			page 12
 
 
  647 0008 0220     		movs	r0, #2
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  702              		.fpu softvfp
  704              	HAL_DMA_GetState:
  705              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccTe13Au.s 			page 13
+ARM GAS  /tmp/ccbmhlF1.s 			page 13
 
 
  706              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -743,42 +743,42 @@ ARM GAS  /tmp/ccTe13Au.s 			page 1
  727              		@ sp needed
  728 0002 7047     		bx	lr
  730              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccTe13Au.s 			page 14
+ARM GAS  /tmp/ccbmhlF1.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_dma.c
-     /tmp/ccTe13Au.s:15     .text.HAL_DMA_Init:0000000000000000 $t
-     /tmp/ccTe13Au.s:23     .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
-     /tmp/ccTe13Au.s:77     .text.HAL_DMA_Init:0000000000000060 $d
-     /tmp/ccTe13Au.s:82     .text.HAL_DMA_DeInit:0000000000000000 $t
-     /tmp/ccTe13Au.s:89     .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
-     /tmp/ccTe13Au.s:129    .text.HAL_DMA_DeInit:0000000000000044 $d
-     /tmp/ccTe13Au.s:133    .text.HAL_DMA_Start:0000000000000000 $t
-     /tmp/ccTe13Au.s:140    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
-     /tmp/ccTe13Au.s:198    .text.HAL_DMA_Start_IT:0000000000000000 $t
-     /tmp/ccTe13Au.s:205    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
-     /tmp/ccTe13Au.s:279    .text.HAL_DMA_Abort:0000000000000000 $t
-     /tmp/ccTe13Au.s:286    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
-     /tmp/ccTe13Au.s:313    .text.HAL_DMA_Abort_IT:0000000000000000 $t
-     /tmp/ccTe13Au.s:320    .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
-     /tmp/ccTe13Au.s:363    .text.HAL_DMA_PollForTransfer:0000000000000000 $t
-     /tmp/ccTe13Au.s:370    .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
-     /tmp/ccTe13Au.s:484    .text.HAL_DMA_IRQHandler:0000000000000000 $t
-     /tmp/ccTe13Au.s:491    .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
-     /tmp/ccTe13Au.s:577    .text.HAL_DMA_RegisterCallback:0000000000000000 $t
-     /tmp/ccTe13Au.s:584    .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
-     /tmp/ccTe13Au.s:604    .text.HAL_DMA_RegisterCallback:0000000000000022 $d
-     /tmp/ccTe13Au.s:608    .text.HAL_DMA_RegisterCallback:0000000000000026 $t
-     /tmp/ccTe13Au.s:633    .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
-     /tmp/ccTe13Au.s:640    .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
-     /tmp/ccTe13Au.s:663    .text.HAL_DMA_UnRegisterCallback:0000000000000028 $d
-     /tmp/ccTe13Au.s:697    .text.HAL_DMA_GetState:0000000000000000 $t
-     /tmp/ccTe13Au.s:704    .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
-     /tmp/ccTe13Au.s:715    .text.HAL_DMA_GetError:0000000000000000 $t
-     /tmp/ccTe13Au.s:722    .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
-     /tmp/ccTe13Au.s:668    .text.HAL_DMA_UnRegisterCallback:000000000000002d $d
-     /tmp/ccTe13Au.s:668    .text.HAL_DMA_UnRegisterCallback:000000000000002e $t
+     /tmp/ccbmhlF1.s:15     .text.HAL_DMA_Init:0000000000000000 $t
+     /tmp/ccbmhlF1.s:23     .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
+     /tmp/ccbmhlF1.s:77     .text.HAL_DMA_Init:0000000000000060 $d
+     /tmp/ccbmhlF1.s:82     .text.HAL_DMA_DeInit:0000000000000000 $t
+     /tmp/ccbmhlF1.s:89     .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
+     /tmp/ccbmhlF1.s:129    .text.HAL_DMA_DeInit:0000000000000044 $d
+     /tmp/ccbmhlF1.s:133    .text.HAL_DMA_Start:0000000000000000 $t
+     /tmp/ccbmhlF1.s:140    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
+     /tmp/ccbmhlF1.s:198    .text.HAL_DMA_Start_IT:0000000000000000 $t
+     /tmp/ccbmhlF1.s:205    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
+     /tmp/ccbmhlF1.s:279    .text.HAL_DMA_Abort:0000000000000000 $t
+     /tmp/ccbmhlF1.s:286    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
+     /tmp/ccbmhlF1.s:313    .text.HAL_DMA_Abort_IT:0000000000000000 $t
+     /tmp/ccbmhlF1.s:320    .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
+     /tmp/ccbmhlF1.s:363    .text.HAL_DMA_PollForTransfer:0000000000000000 $t
+     /tmp/ccbmhlF1.s:370    .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
+     /tmp/ccbmhlF1.s:484    .text.HAL_DMA_IRQHandler:0000000000000000 $t
+     /tmp/ccbmhlF1.s:491    .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
+     /tmp/ccbmhlF1.s:577    .text.HAL_DMA_RegisterCallback:0000000000000000 $t
+     /tmp/ccbmhlF1.s:584    .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
+     /tmp/ccbmhlF1.s:604    .text.HAL_DMA_RegisterCallback:0000000000000022 $d
+     /tmp/ccbmhlF1.s:608    .text.HAL_DMA_RegisterCallback:0000000000000026 $t
+     /tmp/ccbmhlF1.s:633    .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
+     /tmp/ccbmhlF1.s:640    .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
+     /tmp/ccbmhlF1.s:663    .text.HAL_DMA_UnRegisterCallback:0000000000000028 $d
+     /tmp/ccbmhlF1.s:697    .text.HAL_DMA_GetState:0000000000000000 $t
+     /tmp/ccbmhlF1.s:704    .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
+     /tmp/ccbmhlF1.s:715    .text.HAL_DMA_GetError:0000000000000000 $t
+     /tmp/ccbmhlF1.s:722    .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
+     /tmp/ccbmhlF1.s:668    .text.HAL_DMA_UnRegisterCallback:000000000000002d $d
+     /tmp/ccbmhlF1.s:668    .text.HAL_DMA_UnRegisterCallback:000000000000002e $t
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv

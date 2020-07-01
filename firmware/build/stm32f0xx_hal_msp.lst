@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccXjKJck.s 			page 1
+ARM GAS  /tmp/ccUY3V6P.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
   57              		.code	16
   58              		.thumb_func
   59              		.fpu softvfp
-ARM GAS  /tmp/ccXjKJck.s 			page 2
+ARM GAS  /tmp/ccUY3V6P.s 			page 2
 
 
   61              	HAL_ADC_MspInit:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  115 006a 6361     		str	r3, [r4, #20]
  116 006c 2023     		movs	r3, #32
  117 006e A361     		str	r3, [r4, #24]
-ARM GAS  /tmp/ccXjKJck.s 			page 3
+ARM GAS  /tmp/ccUY3V6P.s 			page 3
 
 
  118 0070 8023     		movs	r3, #128
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  175              		.align	1
  176              		.global	HAL_I2C_MspInit
  177              		.syntax unified
-ARM GAS  /tmp/ccXjKJck.s 			page 4
+ARM GAS  /tmp/ccUY3V6P.s 			page 4
 
 
  178              		.code	16
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  233 005e 9342     		cmp	r3, r2
  234 0060 FAD1     		bne	.L12
  235 0062 8021     		movs	r1, #128
-ARM GAS  /tmp/ccXjKJck.s 			page 5
+ARM GAS  /tmp/ccUY3V6P.s 			page 5
 
 
  236 0064 114C     		ldr	r4, .L15+4
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  292 000a 0B4A     		ldr	r2, .L21+4
  293 000c 0B49     		ldr	r1, .L21+8
  294 000e D369     		ldr	r3, [r2, #28]
-ARM GAS  /tmp/ccXjKJck.s 			page 6
+ARM GAS  /tmp/ccUY3V6P.s 			page 6
 
 
  295 0010 0B40     		ands	r3, r1
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  351 001c 1100     		movs	r1, r2
  352 001e 0D20     		movs	r0, #13
  353 0020 0193     		str	r3, [sp, #4]
-ARM GAS  /tmp/ccXjKJck.s 			page 7
+ARM GAS  /tmp/ccUY3V6P.s 			page 7
 
 
  354 0022 019B     		ldr	r3, [sp, #4]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  410 0036 5A61     		str	r2, [r3, #20]
  411 0038 5B69     		ldr	r3, [r3, #20]
  412 003a C005     		lsls	r0, r0, #23
-ARM GAS  /tmp/ccXjKJck.s 			page 8
+ARM GAS  /tmp/ccUY3V6P.s 			page 8
 
 
  413 003c 0B40     		ands	r3, r1
@@ -475,35 +475,35 @@ ARM GAS  /tmp/ccXjKJck.s 			page 1
  466 0028 00100240 		.word	1073876992
  467 002c FFF7FFFF 		.word	-2049
  469              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccXjKJck.s 			page 9
+ARM GAS  /tmp/ccUY3V6P.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_msp.c
-     /tmp/ccXjKJck.s:14     .text.HAL_MspInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:22     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-     /tmp/ccXjKJck.s:51     .text.HAL_MspInit:000000000000002c $d
-     /tmp/ccXjKJck.s:54     .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:61     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/ccXjKJck.s:131    .text.HAL_ADC_MspInit:0000000000000084 $d
-     /tmp/ccXjKJck.s:137    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:144    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/ccXjKJck.s:170    .text.HAL_ADC_MspDeInit:0000000000000028 $d
-     /tmp/ccXjKJck.s:175    .text.HAL_I2C_MspInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:182    .text.HAL_I2C_MspInit:0000000000000000 HAL_I2C_MspInit
-     /tmp/ccXjKJck.s:271    .text.HAL_I2C_MspInit:00000000000000a8 $d
-     /tmp/ccXjKJck.s:277    .text.HAL_I2C_MspDeInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:284    .text.HAL_I2C_MspDeInit:0000000000000000 HAL_I2C_MspDeInit
-     /tmp/ccXjKJck.s:319    .text.HAL_I2C_MspDeInit:0000000000000034 $d
-     /tmp/ccXjKJck.s:327    .text.HAL_TIM_PWM_MspInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:334    .text.HAL_TIM_PWM_MspInit:0000000000000000 HAL_TIM_PWM_MspInit
-     /tmp/ccXjKJck.s:370    .text.HAL_TIM_PWM_MspInit:0000000000000040 $d
-     /tmp/ccXjKJck.s:374    .text.HAL_TIM_MspPostInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:381    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
-     /tmp/ccXjKJck.s:431    .text.HAL_TIM_MspPostInit:0000000000000058 $d
-     /tmp/ccXjKJck.s:435    .text.HAL_TIM_PWM_MspDeInit:0000000000000000 $t
-     /tmp/ccXjKJck.s:442    .text.HAL_TIM_PWM_MspDeInit:0000000000000000 HAL_TIM_PWM_MspDeInit
-     /tmp/ccXjKJck.s:465    .text.HAL_TIM_PWM_MspDeInit:0000000000000024 $d
+     /tmp/ccUY3V6P.s:14     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:22     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/ccUY3V6P.s:51     .text.HAL_MspInit:000000000000002c $d
+     /tmp/ccUY3V6P.s:54     .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:61     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccUY3V6P.s:131    .text.HAL_ADC_MspInit:0000000000000084 $d
+     /tmp/ccUY3V6P.s:137    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:144    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccUY3V6P.s:170    .text.HAL_ADC_MspDeInit:0000000000000028 $d
+     /tmp/ccUY3V6P.s:175    .text.HAL_I2C_MspInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:182    .text.HAL_I2C_MspInit:0000000000000000 HAL_I2C_MspInit
+     /tmp/ccUY3V6P.s:271    .text.HAL_I2C_MspInit:00000000000000a8 $d
+     /tmp/ccUY3V6P.s:277    .text.HAL_I2C_MspDeInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:284    .text.HAL_I2C_MspDeInit:0000000000000000 HAL_I2C_MspDeInit
+     /tmp/ccUY3V6P.s:319    .text.HAL_I2C_MspDeInit:0000000000000034 $d
+     /tmp/ccUY3V6P.s:327    .text.HAL_TIM_PWM_MspInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:334    .text.HAL_TIM_PWM_MspInit:0000000000000000 HAL_TIM_PWM_MspInit
+     /tmp/ccUY3V6P.s:370    .text.HAL_TIM_PWM_MspInit:0000000000000040 $d
+     /tmp/ccUY3V6P.s:374    .text.HAL_TIM_MspPostInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:381    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
+     /tmp/ccUY3V6P.s:431    .text.HAL_TIM_MspPostInit:0000000000000058 $d
+     /tmp/ccUY3V6P.s:435    .text.HAL_TIM_PWM_MspDeInit:0000000000000000 $t
+     /tmp/ccUY3V6P.s:442    .text.HAL_TIM_PWM_MspDeInit:0000000000000000 HAL_TIM_PWM_MspDeInit
+     /tmp/ccUY3V6P.s:465    .text.HAL_TIM_PWM_MspDeInit:0000000000000024 $d
 
 UNDEFINED SYMBOLS
 memset

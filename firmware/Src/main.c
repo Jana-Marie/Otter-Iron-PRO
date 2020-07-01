@@ -95,7 +95,6 @@ struct status_t{
 struct reg_t{
   float target;
   float error;
-  float errorprior;
   float ierror;
   float imax;
   float derror;
@@ -103,10 +102,8 @@ struct reg_t{
   float cycletime;
   float Kp;
   float Ki;
-  float Kd;
   float deadband;
-}r = {.Kp = 0.5f,.Ki = 0.01f,.Kd = 0.0f,.cycletime = 0.0000725f,.imax=200.0f,.target=220.0f,.deadband=20.0f};
-//}r = {.Kp = 0.3f,.Ki = 0.13f,.Kd = 0.3f,.cycletime = 0.0005f,.imax=200.0f,.target=220.0f,.deadband=42.0f};
+}r = {.Kp = 0.4f,.Ki = 0.02f,.cycletime = 0.0000725f,.imax=200.0f,.target=220.0f,.deadband=20.0f};
 
 struct tipcal_t{
   float offset;
@@ -185,6 +182,9 @@ int main(void)
 #endif
 #ifdef DISPLAYCURRENT
       s.timeout = 20;
+#endif
+#ifdef CHECKUSBPD
+    read_stusb_rdo();
 #endif
   }
 
@@ -279,9 +279,6 @@ int main(void)
 
     refresh();
     HAL_IWDG_Refresh(&hiwdg);
- #ifdef CHECKUSBPD
-    read_stusb_rdo();
-  #endif
   }
 }
 
@@ -312,7 +309,6 @@ void reg(void) {
       r.ierror = r.ierror + (r.error*r.cycletime);
       r.ierror = CLAMP(r.ierror,-r.imax,r.imax);
       r.duty = ((int16_t) (r.Kp*r.error + r.Ki*r.ierror)) * wduty;
-      r.errorprior = r.error;
     } else {
       if(s.ttipavg <= r.target){
         r.duty = wduty;
@@ -325,12 +321,11 @@ void reg(void) {
 
     // detect if no tip is plugged in
     if (s.iin <= 0.001 && !(s.ttipavg >= r.target-r.deadband && s.ttipavg <= r.target+r.deadband)) {
-      if (count > 2000) {
+      if (count > 4000) {
         r.duty = 0;
         r.error = 0.0;
         r.ierror = 0.0;
         r.derror = 0.0;
-        r.errorprior = 0.0;
         wduty = 150;
         s.active = 0;
       } else {
@@ -387,10 +382,10 @@ const uint8_t REFRESH_COMMANDS[17] = { 0x80, 0xAF, 0x80, 0x21, 0x80, 0x20, 0x80,
 uint8_t OLED_Setup_Array[] = {
 0x80, 0xAE, /*Display off*/
 0x80, 0xD5, /*Set display clock divide ratio / osc freq*/
-0x80, 0x52, /*Divide ratios*/
+0x80, 0x80, /*Divide ratios*/
 0x80, 0xA8, /*Set Multiplex Ratio*/
 0x80, 0x0F, /*16 == max brightness,39==dimmest*/
-0x80, 0xC0, /*Set COM Scan direction*/
+0x80, 0xC8, /*Set COM Scan direction*/
 0x80, 0xD3, /*Set vertical Display offset*/
 0x80, 0x00, /*0 Offset*/
 0x80, 0x40, /*Set Display start line to 0*/
@@ -402,9 +397,9 @@ uint8_t OLED_Setup_Array[] = {
 0x80, 0x81, /*Contrast*/
 0x80, 0x33, /*^51*/
 0x80, 0xD9, /*Set pre-charge period*/
-0x80, 0xF1, /*Pre charge period*/
+0x80, 0x22, /*Pre charge period*/
 0x80, 0xDB, /*Adjust VCOMH regulator ouput*/
-0x80, 0x30, /*VCOM level*/
+0x80, 0x40, /*VCOM level*/
 0x80, 0xA4, /*Enable the display GDDR*/
 0x80, 0XA6, /*Normal display*/
 0x80, 0x20, /*Memory Mode*/

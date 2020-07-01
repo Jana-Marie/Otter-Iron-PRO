@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccIGexNd.s 			page 1
+ARM GAS  /tmp/cc6WxnnI.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccIGexNd.s 			page 1
   61              		.fpu softvfp
   63              	CDC_Itf_Init:
   64              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccIGexNd.s 			page 2
+ARM GAS  /tmp/cc6WxnnI.s 			page 2
 
 
   65              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -114,28 +114,28 @@ ARM GAS  /tmp/ccIGexNd.s 			page 1
  116 0008 00000000 		.word	CDC_Itf_Control
  117 000c 00000000 		.word	CDC_Itf_Receive
  118              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccIGexNd.s 			page 3
+ARM GAS  /tmp/cc6WxnnI.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_cdc_interface.c
-     /tmp/ccIGexNd.s:14     .text.CDC_Itf_DeInit:0000000000000000 $t
-     /tmp/ccIGexNd.s:21     .text.CDC_Itf_DeInit:0000000000000000 CDC_Itf_DeInit
-     /tmp/ccIGexNd.s:29     .text.CDC_Itf_Control:0000000000000000 $t
-     /tmp/ccIGexNd.s:35     .text.CDC_Itf_Control:0000000000000000 CDC_Itf_Control
-     /tmp/ccIGexNd.s:43     .text.CDC_Itf_Receive:0000000000000000 $t
-     /tmp/ccIGexNd.s:49     .text.CDC_Itf_Receive:0000000000000000 CDC_Itf_Receive
-     /tmp/ccIGexNd.s:57     .text.CDC_Itf_Init:0000000000000000 $t
-     /tmp/ccIGexNd.s:63     .text.CDC_Itf_Init:0000000000000000 CDC_Itf_Init
-     /tmp/ccIGexNd.s:81     .text.CDC_Itf_Init:000000000000001c $d
-     /tmp/ccIGexNd.s:97     .bss.UserTxBuffer:0000000000000000 UserTxBuffer
-     /tmp/ccIGexNd.s:92     .bss.UserRxBuffer:0000000000000000 UserRxBuffer
-     /tmp/ccIGexNd.s:113    .data.USBD_CDC_fops:0000000000000000 USBD_CDC_fops
-     /tmp/ccIGexNd.s:103    .data.LineCoding:0000000000000000 LineCoding
-     /tmp/ccIGexNd.s:93     .bss.UserRxBuffer:0000000000000000 $d
-     /tmp/ccIGexNd.s:98     .bss.UserTxBuffer:0000000000000000 $d
-     /tmp/ccIGexNd.s:100    .data.LineCoding:0000000000000000 $d
-     /tmp/ccIGexNd.s:110    .data.USBD_CDC_fops:0000000000000000 $d
+     /tmp/cc6WxnnI.s:14     .text.CDC_Itf_DeInit:0000000000000000 $t
+     /tmp/cc6WxnnI.s:21     .text.CDC_Itf_DeInit:0000000000000000 CDC_Itf_DeInit
+     /tmp/cc6WxnnI.s:29     .text.CDC_Itf_Control:0000000000000000 $t
+     /tmp/cc6WxnnI.s:35     .text.CDC_Itf_Control:0000000000000000 CDC_Itf_Control
+     /tmp/cc6WxnnI.s:43     .text.CDC_Itf_Receive:0000000000000000 $t
+     /tmp/cc6WxnnI.s:49     .text.CDC_Itf_Receive:0000000000000000 CDC_Itf_Receive
+     /tmp/cc6WxnnI.s:57     .text.CDC_Itf_Init:0000000000000000 $t
+     /tmp/cc6WxnnI.s:63     .text.CDC_Itf_Init:0000000000000000 CDC_Itf_Init
+     /tmp/cc6WxnnI.s:81     .text.CDC_Itf_Init:000000000000001c $d
+     /tmp/cc6WxnnI.s:97     .bss.UserTxBuffer:0000000000000000 UserTxBuffer
+     /tmp/cc6WxnnI.s:92     .bss.UserRxBuffer:0000000000000000 UserRxBuffer
+     /tmp/cc6WxnnI.s:113    .data.USBD_CDC_fops:0000000000000000 USBD_CDC_fops
+     /tmp/cc6WxnnI.s:103    .data.LineCoding:0000000000000000 LineCoding
+     /tmp/cc6WxnnI.s:93     .bss.UserRxBuffer:0000000000000000 $d
+     /tmp/cc6WxnnI.s:98     .bss.UserTxBuffer:0000000000000000 $d
+     /tmp/cc6WxnnI.s:100    .data.LineCoding:0000000000000000 $d
+     /tmp/cc6WxnnI.s:110    .data.USBD_CDC_fops:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 USBD_CDC_SetTxBuffer

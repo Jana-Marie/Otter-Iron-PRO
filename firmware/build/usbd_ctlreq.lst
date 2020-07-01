@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccav6508.s 			page 1
+ARM GAS  /tmp/cc40IRvz.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
   58 0018 E700     		.2byte	(.L9-.L5)/2
   59 001a 7D00     		.2byte	(.L3-.L5)/2
   60 001c 7200     		.2byte	(.L8-.L5)/2
-ARM GAS  /tmp/ccav6508.s 			page 2
+ARM GAS  /tmp/cc40IRvz.s 			page 2
 
 
   61 001e 0A00     		.2byte	(.L7-.L5)/2
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  115 0076 9B00     		lsls	r3, r3, #2
  116 0078 E358     		ldr	r3, [r4, r3]
  117 007a 002A     		cmp	r2, #0
-ARM GAS  /tmp/ccav6508.s 			page 3
+ARM GAS  /tmp/cc40IRvz.s 			page 3
 
 
  118 007c 06D1     		bne	.L20
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  172 00c8 237C     		ldrb	r3, [r4, #16]
  173 00ca 002B     		cmp	r3, #0
  174 00cc 1ED1     		bne	.L3
-ARM GAS  /tmp/ccav6508.s 			page 4
+ARM GAS  /tmp/cc40IRvz.s 			page 4
 
 
  175 00ce 8523     		movs	r3, #133
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  229 0136 A355     		strb	r3, [r4, r6]
  230              	.L31:
  231 0138 0020     		movs	r0, #0
-ARM GAS  /tmp/ccav6508.s 			page 5
+ARM GAS  /tmp/cc40IRvz.s 			page 5
 
 
  232              		@ sp needed
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  286 01a0 5B00     		lsls	r3, r3, #1
  287 01a2 E35C     		ldrb	r3, [r4, r3]
  288 01a4 022B     		cmp	r3, #2
-ARM GAS  /tmp/ccav6508.s 			page 6
+ARM GAS  /tmp/cc40IRvz.s 			page 6
 
 
  289 01a6 03D0     		beq	.L39
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  343 0206 00D9     		bls	.LCB363
  344 0208 80E7     		b	.L3	@long jump
  345              	.LCB363:
-ARM GAS  /tmp/ccav6508.s 			page 7
+ARM GAS  /tmp/cc40IRvz.s 			page 7
 
 
  346 020a 4B88     		ldrh	r3, [r1, #2]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  403              		.section	.text.USBD_StdEPReq,"ax",%progbits
  404              		.align	1
  405              		.global	USBD_StdEPReq
-ARM GAS  /tmp/ccav6508.s 			page 8
+ARM GAS  /tmp/cc40IRvz.s 			page 8
 
 
  406              		.syntax unified
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  461 0058 6519     		adds	r5, r4, r5
  462 005a 2860     		str	r0, [r5]
  463 005c 0222     		movs	r2, #2
-ARM GAS  /tmp/ccav6508.s 			page 9
+ARM GAS  /tmp/cc40IRvz.s 			page 9
 
 
  464 005e 2900     		movs	r1, r5
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  518 00c6 ACD0     		beq	.L79
  519 00c8 2000     		movs	r0, r4
  520 00ca FFF7FEFF 		bl	USBD_LL_StallEP
-ARM GAS  /tmp/ccav6508.s 			page 10
+ARM GAS  /tmp/cc40IRvz.s 			page 10
 
 
  521 00ce A8E7     		b	.L79
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  579 000e FFF7FEFF 		bl	USBD_LL_StallEP
  580 0012 10BD     		pop	{r4, pc}
  582              		.section	.text.USBD_GetString,"ax",%progbits
-ARM GAS  /tmp/ccav6508.s 			page 11
+ARM GAS  /tmp/cc40IRvz.s 			page 11
 
 
  583              		.align	1
@@ -650,35 +650,35 @@ ARM GAS  /tmp/ccav6508.s 			page 1
  633              	cfgidx.0:
  634 0000 00       		.space	1
  635              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccav6508.s 			page 12
+ARM GAS  /tmp/cc40IRvz.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_ctlreq.c
-     /tmp/ccav6508.s:14     .text.USBD_CtlError.constprop.0:0000000000000000 $t
-     /tmp/ccav6508.s:21     .text.USBD_CtlError.constprop.0:0000000000000000 USBD_CtlError.constprop.0
-     /tmp/ccav6508.s:35     .text.USBD_StdDevReq:0000000000000000 $t
-     /tmp/ccav6508.s:42     .text.USBD_StdDevReq:0000000000000000 USBD_StdDevReq
-     /tmp/ccav6508.s:55     .text.USBD_StdDevReq:0000000000000012 $d
-     /tmp/ccav6508.s:65     .text.USBD_StdDevReq:0000000000000026 $t
-     /tmp/ccav6508.s:74     .text.USBD_StdDevReq:0000000000000034 $d
-     /tmp/ccav6508.s:141    .text.USBD_StdDevReq:00000000000000a2 $d
-     /tmp/ccav6508.s:147    .text.USBD_StdDevReq:00000000000000a8 $t
-     /tmp/ccav6508.s:360    .text.USBD_StdDevReq:0000000000000220 $d
-     /tmp/ccav6508.s:363    .text.USBD_StdItfReq:0000000000000000 $t
-     /tmp/ccav6508.s:370    .text.USBD_StdItfReq:0000000000000000 USBD_StdItfReq
-     /tmp/ccav6508.s:404    .text.USBD_StdEPReq:0000000000000000 $t
-     /tmp/ccav6508.s:411    .text.USBD_StdEPReq:0000000000000000 USBD_StdEPReq
-     /tmp/ccav6508.s:528    .text.USBD_ParseSetupRequest:0000000000000000 $t
-     /tmp/ccav6508.s:535    .text.USBD_ParseSetupRequest:0000000000000000 USBD_ParseSetupRequest
-     /tmp/ccav6508.s:562    .text.USBD_CtlError:0000000000000000 $t
-     /tmp/ccav6508.s:569    .text.USBD_CtlError:0000000000000000 USBD_CtlError
-     /tmp/ccav6508.s:583    .text.USBD_GetString:0000000000000000 $t
-     /tmp/ccav6508.s:590    .text.USBD_GetString:0000000000000000 USBD_GetString
-     /tmp/ccav6508.s:633    .bss.cfgidx.0:0000000000000000 cfgidx.0
-     /tmp/ccav6508.s:634    .bss.cfgidx.0:0000000000000000 $d
-     /tmp/ccav6508.s:81     .text.USBD_StdDevReq:000000000000003b $d
-     /tmp/ccav6508.s:81     .text.USBD_StdDevReq:000000000000003c $t
+     /tmp/cc40IRvz.s:14     .text.USBD_CtlError.constprop.0:0000000000000000 $t
+     /tmp/cc40IRvz.s:21     .text.USBD_CtlError.constprop.0:0000000000000000 USBD_CtlError.constprop.0
+     /tmp/cc40IRvz.s:35     .text.USBD_StdDevReq:0000000000000000 $t
+     /tmp/cc40IRvz.s:42     .text.USBD_StdDevReq:0000000000000000 USBD_StdDevReq
+     /tmp/cc40IRvz.s:55     .text.USBD_StdDevReq:0000000000000012 $d
+     /tmp/cc40IRvz.s:65     .text.USBD_StdDevReq:0000000000000026 $t
+     /tmp/cc40IRvz.s:74     .text.USBD_StdDevReq:0000000000000034 $d
+     /tmp/cc40IRvz.s:141    .text.USBD_StdDevReq:00000000000000a2 $d
+     /tmp/cc40IRvz.s:147    .text.USBD_StdDevReq:00000000000000a8 $t
+     /tmp/cc40IRvz.s:360    .text.USBD_StdDevReq:0000000000000220 $d
+     /tmp/cc40IRvz.s:363    .text.USBD_StdItfReq:0000000000000000 $t
+     /tmp/cc40IRvz.s:370    .text.USBD_StdItfReq:0000000000000000 USBD_StdItfReq
+     /tmp/cc40IRvz.s:404    .text.USBD_StdEPReq:0000000000000000 $t
+     /tmp/cc40IRvz.s:411    .text.USBD_StdEPReq:0000000000000000 USBD_StdEPReq
+     /tmp/cc40IRvz.s:528    .text.USBD_ParseSetupRequest:0000000000000000 $t
+     /tmp/cc40IRvz.s:535    .text.USBD_ParseSetupRequest:0000000000000000 USBD_ParseSetupRequest
+     /tmp/cc40IRvz.s:562    .text.USBD_CtlError:0000000000000000 $t
+     /tmp/cc40IRvz.s:569    .text.USBD_CtlError:0000000000000000 USBD_CtlError
+     /tmp/cc40IRvz.s:583    .text.USBD_GetString:0000000000000000 $t
+     /tmp/cc40IRvz.s:590    .text.USBD_GetString:0000000000000000 USBD_GetString
+     /tmp/cc40IRvz.s:633    .bss.cfgidx.0:0000000000000000 cfgidx.0
+     /tmp/cc40IRvz.s:634    .bss.cfgidx.0:0000000000000000 $d
+     /tmp/cc40IRvz.s:81     .text.USBD_StdDevReq:000000000000003b $d
+     /tmp/cc40IRvz.s:81     .text.USBD_StdDevReq:000000000000003c $t
 
 UNDEFINED SYMBOLS
 USBD_LL_StallEP

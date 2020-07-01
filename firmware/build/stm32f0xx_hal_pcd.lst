@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDQJlw8.s 			page 1
+ARM GAS  /tmp/ccT36pME.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
   58 0024 0022     		movs	r2, #0
   59 0026 6355     		strb	r3, [r4, r5]
   60 0028 2300     		movs	r3, r4
-ARM GAS  /tmp/ccDQJlw8.s 			page 2
+ARM GAS  /tmp/ccT36pME.s 			page 2
 
 
   61 002a 1100     		movs	r1, r2
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  115              		.align	2
  116              	.L10:
  117 0088 00BFFFFF 		.word	-16640
-ARM GAS  /tmp/ccDQJlw8.s 			page 3
+ARM GAS  /tmp/ccT36pME.s 			page 3
 
 
  119              		.section	.text.HAL_PCD_MspDeInit,"ax",%progbits
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  178 0014 0138     		subs	r0, r0, #1
  179 0016 E087     		strh	r0, [r4, #62]
  180 0018 0020     		movs	r0, #0
-ARM GAS  /tmp/ccDQJlw8.s 			page 4
+ARM GAS  /tmp/ccT36pME.s 			page 4
 
 
  181 001a 0632     		adds	r2, r2, #6
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  240              		.thumb_func
  241              		.fpu softvfp
  243              	HAL_PCD_DataInStageCallback:
-ARM GAS  /tmp/ccDQJlw8.s 			page 5
+ARM GAS  /tmp/ccT36pME.s 			page 5
 
 
  244              		@ args = 0, pretend = 0, frame = 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  306              		@ link register save eliminated.
  307              		@ sp needed
  308 0000 7047     		bx	lr
-ARM GAS  /tmp/ccDQJlw8.s 			page 6
+ARM GAS  /tmp/ccT36pME.s 			page 6
 
 
  310              		.section	.text.HAL_PCD_ResumeCallback,"ax",%progbits
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  372              		.weak	HAL_PCD_DisconnectCallback
  373              		.syntax unified
  374              		.code	16
-ARM GAS  /tmp/ccDQJlw8.s 			page 7
+ARM GAS  /tmp/ccT36pME.s 			page 7
 
 
  375              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  434 000c 012A     		cmp	r2, #1
  435 000e 07D0     		beq	.L35
  436 0010 0020     		movs	r0, #0
-ARM GAS  /tmp/ccDQJlw8.s 			page 8
+ARM GAS  /tmp/ccT36pME.s 			page 8
 
 
  437 0012 1968     		ldr	r1, [r3]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  495              		@ args = 0, pretend = 0, frame = 16
  496              		@ frame_needed = 0, uses_anonymous_args = 0
  497 0000 F0B5     		push	{r4, r5, r6, r7, lr}
-ARM GAS  /tmp/ccDQJlw8.s 			page 9
+ARM GAS  /tmp/ccT36pME.s 			page 9
 
 
  498 0002 7F26     		movs	r6, #127
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  552 0060 7248     		ldr	r0, .L94+4
  553              	.L89:
  554 0062 0743     		orrs	r7, r0
-ARM GAS  /tmp/ccDQJlw8.s 			page 10
+ARM GAS  /tmp/ccT36pME.s 			page 10
 
 
  555 0064 04E0     		b	.L90
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  609 00c8 2022     		movs	r2, #32
  610              	.L93:
  611 00ca 4A40     		eors	r2, r1
-ARM GAS  /tmp/ccDQJlw8.s 			page 11
+ARM GAS  /tmp/ccT36pME.s 			page 11
 
 
  612 00cc 5849     		ldr	r1, .L94+8
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  666 012a 4B49     		ldr	r1, .L94+48
  667 012c 1140     		ands	r1, r2
  668 012e C022     		movs	r2, #192
-ARM GAS  /tmp/ccDQJlw8.s 			page 12
+ARM GAS  /tmp/ccT36pME.s 			page 12
 
 
  669 0130 9201     		lsls	r2, r2, #6
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  723 0196 04D0     		beq	.L62
  724 0198 1A88     		ldrh	r2, [r3]
  725 019a 2E49     		ldr	r1, .L94+44
-ARM GAS  /tmp/ccDQJlw8.s 			page 13
+ARM GAS  /tmp/ccT36pME.s 			page 13
 
 
  726 019c 0240     		ands	r2, r0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  780 01fa 1A88     		ldrh	r2, [r3]
  781 01fc 5206     		lsls	r2, r2, #25
  782 01fe 04D5     		bpl	.L65
-ARM GAS  /tmp/ccDQJlw8.s 			page 14
+ARM GAS  /tmp/ccT36pME.s 			page 14
 
 
  783 0200 1A88     		ldrh	r2, [r3]
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  839 0006 0400     		movs	r4, r0
  840 0008 1C22     		movs	r2, #28
  841 000a 0B40     		ands	r3, r1
-ARM GAS  /tmp/ccDQJlw8.s 			page 15
+ARM GAS  /tmp/ccT36pME.s 			page 15
 
 
  842 000c 002D     		cmp	r5, #0
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  896 006a 5143     		muls	r1, r2
  897 006c 0931     		adds	r1, r1, #9
  898 006e FF31     		adds	r1, r1, #255
-ARM GAS  /tmp/ccDQJlw8.s 			page 16
+ARM GAS  /tmp/ccT36pME.s 			page 16
 
 
  899 0070 D1E7     		b	.L129
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  953 00d2 C2E7     		b	.L130
  954              	.L105:
  955 00d4 1848     		ldr	r0, .L132+28
-ARM GAS  /tmp/ccDQJlw8.s 			page 17
+ARM GAS  /tmp/ccT36pME.s 			page 17
 
 
  956 00d6 1D88     		ldrh	r5, [r3]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1012              	HAL_PCD_EP_Receive:
  1013              		@ args = 0, pretend = 0, frame = 0
  1014              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccDQJlw8.s 			page 18
+ARM GAS  /tmp/ccT36pME.s 			page 18
 
 
  1015 0000 F0B5     		push	{r4, r5, r6, r7, lr}
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1069 0066 3280     		strh	r2, [r6]
  1070              	.L139:
  1071 0068 1C23     		movs	r3, #28
-ARM GAS  /tmp/ccDQJlw8.s 			page 19
+ARM GAS  /tmp/ccT36pME.s 			page 19
 
 
  1072              		@ sp needed
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1126 00ca 2D88     		ldrh	r5, [r5]
  1127 00cc D200     		lsls	r2, r2, #3
  1128 00ce 5219     		adds	r2, r2, r5
-ARM GAS  /tmp/ccDQJlw8.s 			page 20
+ARM GAS  /tmp/ccT36pME.s 			page 20
 
 
  1129 00d0 144D     		ldr	r5, .L162
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1183 012c 8FBFFFFF 		.word	-16497
  1184 0130 80800000 		.word	32896
  1185 0134 02040000 		.word	1026
-ARM GAS  /tmp/ccDQJlw8.s 			page 21
+ARM GAS  /tmp/ccT36pME.s 			page 21
 
 
  1187              		.section	.text.HAL_PCD_EP_GetRxCount,"ax",%progbits
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1244 002c 8A70     		strb	r2, [r1, #2]
  1245 002e C20F     		lsrs	r2, r0, #31
  1246 0030 4A70     		strb	r2, [r1, #1]
-ARM GAS  /tmp/ccDQJlw8.s 			page 22
+ARM GAS  /tmp/ccT36pME.s 			page 22
 
 
  1247 0032 0B70     		strb	r3, [r1]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1301 0094 8FBFFFFF 		.word	-16497
  1303              		.section	.text.HAL_PCD_EP_ClrStall,"ax",%progbits
  1304              		.align	1
-ARM GAS  /tmp/ccDQJlw8.s 			page 23
+ARM GAS  /tmp/ccT36pME.s 			page 23
 
 
  1305              		.global	HAL_PCD_EP_ClrStall
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1360              	.L193:
  1361 0058 6140     		eors	r1, r4
  1362 005a 0143     		orrs	r1, r0
-ARM GAS  /tmp/ccDQJlw8.s 			page 24
+ARM GAS  /tmp/ccT36pME.s 			page 24
 
 
  1363 005c 89B2     		uxth	r1, r1
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1420              		.align	1
  1421              		.global	HAL_PCD_ActivateRemoteWakeup
  1422              		.syntax unified
-ARM GAS  /tmp/ccDQJlw8.s 			page 25
+ARM GAS  /tmp/ccT36pME.s 			page 25
 
 
  1423              		.code	16
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1481              		.syntax unified
  1482              		.code	16
  1483              		.thumb_func
-ARM GAS  /tmp/ccDQJlw8.s 			page 26
+ARM GAS  /tmp/ccT36pME.s 			page 26
 
 
  1484              		.fpu softvfp
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1543              		@ frame_needed = 0, uses_anonymous_args = 0
  1544 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
  1545 0002 1C24     		movs	r4, #28
-ARM GAS  /tmp/ccDQJlw8.s 			page 27
+ARM GAS  /tmp/ccT36pME.s 			page 27
 
 
  1546 0004 0F00     		movs	r7, r1
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1600 006c 2837     		adds	r7, r7, #40
  1601 006e 3B78     		ldrb	r3, [r7]
  1602 0070 3268     		ldr	r2, [r6]
-ARM GAS  /tmp/ccDQJlw8.s 			page 28
+ARM GAS  /tmp/ccT36pME.s 			page 28
 
 
  1603 0072 9B00     		lsls	r3, r3, #2
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1657 00d8 074A     		ldr	r2, .L218
  1658 00da 9B18     		adds	r3, r3, r2
  1659 00dc 1D80     		strh	r5, [r3]
-ARM GAS  /tmp/ccDQJlw8.s 			page 29
+ARM GAS  /tmp/ccT36pME.s 			page 29
 
 
  1660 00de E28D     		ldrh	r2, [r4, #46]
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1716              	.L220:
  1717              		@ sp needed
  1718 0026 F0BD     		pop	{r4, r5, r6, r7, pc}
-ARM GAS  /tmp/ccDQJlw8.s 			page 30
+ARM GAS  /tmp/ccT36pME.s 			page 30
 
 
  1719              	.L222:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1775              	.L259:
  1776 0046 D98F     		ldrh	r1, [r3, #62]
  1777 0048 8904     		lsls	r1, r1, #18
-ARM GAS  /tmp/ccDQJlw8.s 			page 31
+ARM GAS  /tmp/ccT36pME.s 			page 31
 
 
  1778 004a 03D5     		bpl	.L260
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1832 00b4 DA8F     		ldrh	r2, [r3, #62]
  1833 00b6 6A49     		ldr	r1, .L312+24
  1834 00b8 2000     		movs	r0, r4
-ARM GAS  /tmp/ccDQJlw8.s 			page 32
+ARM GAS  /tmp/ccT36pME.s 			page 32
 
 
  1835 00ba 0A40     		ands	r2, r1
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1889 011a 1A88     		ldrh	r2, [r3]
  1890 011c 2300     		movs	r3, r4
  1891 011e 2833     		adds	r3, r3, #40
-ARM GAS  /tmp/ccDQJlw8.s 			page 33
+ARM GAS  /tmp/ccT36pME.s 			page 33
 
 
  1892 0120 1B78     		ldrb	r3, [r3]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  1946 018c FF32     		adds	r2, r2, #255
  1947 018e ED31     		adds	r1, r1, #237
  1948 0190 9361     		str	r3, [r2, #24]
-ARM GAS  /tmp/ccDQJlw8.s 			page 34
+ARM GAS  /tmp/ccT36pME.s 			page 34
 
 
  1949 0192 FF31     		adds	r1, r1, #255
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2003 0202 5033     		adds	r3, r3, #80
  2004 0204 1B88     		ldrh	r3, [r3]
  2005 0206 E868     		ldr	r0, [r5, #12]
-ARM GAS  /tmp/ccDQJlw8.s 			page 35
+ARM GAS  /tmp/ccT36pME.s 			page 35
 
 
  2006 0208 5118     		adds	r1, r2, r1
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2060              	.L232:
  2061 0284 AB00     		lsls	r3, r5, #2
  2062 0286 0193     		str	r3, [sp, #4]
-ARM GAS  /tmp/ccDQJlw8.s 			page 36
+ARM GAS  /tmp/ccT36pME.s 			page 36
 
 
  2063 0288 C318     		adds	r3, r0, r3
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2117 02f4 DA61     		str	r2, [r3, #28]
  2118 02f6 0028     		cmp	r0, #0
  2119 02f8 03D0     		beq	.L248
-ARM GAS  /tmp/ccDQJlw8.s 			page 37
+ARM GAS  /tmp/ccT36pME.s 			page 37
 
 
  2120 02fa 9B69     		ldr	r3, [r3, #24]
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2174 0360 1C21     		movs	r1, #28
  2175 0362 4D43     		muls	r5, r1
  2176 0364 6519     		adds	r5, r4, r5
-ARM GAS  /tmp/ccDQJlw8.s 			page 38
+ARM GAS  /tmp/ccT36pME.s 			page 38
 
 
  2177 0366 2368     		ldr	r3, [r4]
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2231 03d0 E318     		adds	r3, r4, r3
  2232 03d2 FF33     		adds	r3, r3, #255
  2233 03d4 5A7A     		ldrb	r2, [r3, #9]
-ARM GAS  /tmp/ccDQJlw8.s 			page 39
+ARM GAS  /tmp/ccT36pME.s 			page 39
 
 
  2234 03d6 2368     		ldr	r3, [r4]
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2288 043c E318     		adds	r3, r4, r3
  2289 043e 2833     		adds	r3, r3, #40
  2290 0440 1A78     		ldrb	r2, [r3]
-ARM GAS  /tmp/ccDQJlw8.s 			page 40
+ARM GAS  /tmp/ccT36pME.s 			page 40
 
 
  2291 0442 2368     		ldr	r3, [r4]
@@ -2378,94 +2378,94 @@ ARM GAS  /tmp/ccDQJlw8.s 			page 1
  2325 0488 C0800000 		.word	32960
  2326 048c 80C00000 		.word	49280
  2328              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccDQJlw8.s 			page 41
+ARM GAS  /tmp/ccT36pME.s 			page 41
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_pcd.c
-     /tmp/ccDQJlw8.s:14     .text.HAL_PCD_MspInit:0000000000000000 $t
-     /tmp/ccDQJlw8.s:22     .text.HAL_PCD_MspInit:0000000000000000 HAL_PCD_MspInit
-     /tmp/ccDQJlw8.s:30     .text.HAL_PCD_Init:0000000000000000 $t
-     /tmp/ccDQJlw8.s:37     .text.HAL_PCD_Init:0000000000000000 HAL_PCD_Init
-     /tmp/ccDQJlw8.s:117    .text.HAL_PCD_Init:0000000000000088 $d
-     /tmp/ccDQJlw8.s:120    .text.HAL_PCD_MspDeInit:0000000000000000 $t
-     /tmp/ccDQJlw8.s:127    .text.HAL_PCD_MspDeInit:0000000000000000 HAL_PCD_MspDeInit
-     /tmp/ccDQJlw8.s:135    .text.HAL_PCD_Start:0000000000000000 $t
-     /tmp/ccDQJlw8.s:142    .text.HAL_PCD_Start:0000000000000000 HAL_PCD_Start
-     /tmp/ccDQJlw8.s:158    .text.HAL_PCD_Stop:0000000000000000 $t
-     /tmp/ccDQJlw8.s:165    .text.HAL_PCD_Stop:0000000000000000 HAL_PCD_Stop
-     /tmp/ccDQJlw8.s:191    .text.HAL_PCD_DeInit:0000000000000000 $t
-     /tmp/ccDQJlw8.s:198    .text.HAL_PCD_DeInit:0000000000000000 HAL_PCD_DeInit
-     /tmp/ccDQJlw8.s:221    .text.HAL_PCD_DataOutStageCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:228    .text.HAL_PCD_DataOutStageCallback:0000000000000000 HAL_PCD_DataOutStageCallback
-     /tmp/ccDQJlw8.s:236    .text.HAL_PCD_DataInStageCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:243    .text.HAL_PCD_DataInStageCallback:0000000000000000 HAL_PCD_DataInStageCallback
-     /tmp/ccDQJlw8.s:251    .text.HAL_PCD_SetupStageCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:258    .text.HAL_PCD_SetupStageCallback:0000000000000000 HAL_PCD_SetupStageCallback
-     /tmp/ccDQJlw8.s:266    .text.HAL_PCD_SOFCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:273    .text.HAL_PCD_SOFCallback:0000000000000000 HAL_PCD_SOFCallback
-     /tmp/ccDQJlw8.s:281    .text.HAL_PCD_ResetCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:288    .text.HAL_PCD_ResetCallback:0000000000000000 HAL_PCD_ResetCallback
-     /tmp/ccDQJlw8.s:296    .text.HAL_PCD_SuspendCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:303    .text.HAL_PCD_SuspendCallback:0000000000000000 HAL_PCD_SuspendCallback
-     /tmp/ccDQJlw8.s:311    .text.HAL_PCD_ResumeCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:318    .text.HAL_PCD_ResumeCallback:0000000000000000 HAL_PCD_ResumeCallback
-     /tmp/ccDQJlw8.s:326    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:333    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 HAL_PCD_ISOOUTIncompleteCallback
-     /tmp/ccDQJlw8.s:341    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:348    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 HAL_PCD_ISOINIncompleteCallback
-     /tmp/ccDQJlw8.s:356    .text.HAL_PCD_ConnectCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:363    .text.HAL_PCD_ConnectCallback:0000000000000000 HAL_PCD_ConnectCallback
-     /tmp/ccDQJlw8.s:371    .text.HAL_PCD_DisconnectCallback:0000000000000000 $t
-     /tmp/ccDQJlw8.s:378    .text.HAL_PCD_DisconnectCallback:0000000000000000 HAL_PCD_DisconnectCallback
-     /tmp/ccDQJlw8.s:386    .text.HAL_PCD_DevConnect:0000000000000000 $t
-     /tmp/ccDQJlw8.s:393    .text.HAL_PCD_DevConnect:0000000000000000 HAL_PCD_DevConnect
-     /tmp/ccDQJlw8.s:418    .text.HAL_PCD_DevDisconnect:0000000000000000 $t
-     /tmp/ccDQJlw8.s:425    .text.HAL_PCD_DevDisconnect:0000000000000000 HAL_PCD_DevDisconnect
-     /tmp/ccDQJlw8.s:449    .text.HAL_PCD_SetAddress:0000000000000000 $t
-     /tmp/ccDQJlw8.s:456    .text.HAL_PCD_SetAddress:0000000000000000 HAL_PCD_SetAddress
-     /tmp/ccDQJlw8.s:487    .text.HAL_PCD_EP_Open:0000000000000000 $t
-     /tmp/ccDQJlw8.s:494    .text.HAL_PCD_EP_Open:0000000000000000 HAL_PCD_EP_Open
-     /tmp/ccDQJlw8.s:539    .text.HAL_PCD_EP_Open:0000000000000050 $d
-     /tmp/ccDQJlw8.s:543    .text.HAL_PCD_EP_Open:0000000000000054 $t
-     /tmp/ccDQJlw8.s:807    .text.HAL_PCD_EP_Open:0000000000000228 $d
-     /tmp/ccDQJlw8.s:826    .text.HAL_PCD_EP_Close:0000000000000000 $t
-     /tmp/ccDQJlw8.s:833    .text.HAL_PCD_EP_Close:0000000000000000 HAL_PCD_EP_Close
-     /tmp/ccDQJlw8.s:995    .text.HAL_PCD_EP_Close:000000000000011c $d
-     /tmp/ccDQJlw8.s:1005   .text.HAL_PCD_EP_Receive:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1012   .text.HAL_PCD_EP_Receive:0000000000000000 HAL_PCD_EP_Receive
-     /tmp/ccDQJlw8.s:1181   .text.HAL_PCD_EP_Receive:0000000000000124 $d
-     /tmp/ccDQJlw8.s:1188   .text.HAL_PCD_EP_GetRxCount:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1195   .text.HAL_PCD_EP_GetRxCount:0000000000000000 HAL_PCD_EP_GetRxCount
-     /tmp/ccDQJlw8.s:1211   .text.HAL_PCD_EP_SetStall:0000000000000000 $t
-ARM GAS  /tmp/ccDQJlw8.s 			page 42
+     /tmp/ccT36pME.s:14     .text.HAL_PCD_MspInit:0000000000000000 $t
+     /tmp/ccT36pME.s:22     .text.HAL_PCD_MspInit:0000000000000000 HAL_PCD_MspInit
+     /tmp/ccT36pME.s:30     .text.HAL_PCD_Init:0000000000000000 $t
+     /tmp/ccT36pME.s:37     .text.HAL_PCD_Init:0000000000000000 HAL_PCD_Init
+     /tmp/ccT36pME.s:117    .text.HAL_PCD_Init:0000000000000088 $d
+     /tmp/ccT36pME.s:120    .text.HAL_PCD_MspDeInit:0000000000000000 $t
+     /tmp/ccT36pME.s:127    .text.HAL_PCD_MspDeInit:0000000000000000 HAL_PCD_MspDeInit
+     /tmp/ccT36pME.s:135    .text.HAL_PCD_Start:0000000000000000 $t
+     /tmp/ccT36pME.s:142    .text.HAL_PCD_Start:0000000000000000 HAL_PCD_Start
+     /tmp/ccT36pME.s:158    .text.HAL_PCD_Stop:0000000000000000 $t
+     /tmp/ccT36pME.s:165    .text.HAL_PCD_Stop:0000000000000000 HAL_PCD_Stop
+     /tmp/ccT36pME.s:191    .text.HAL_PCD_DeInit:0000000000000000 $t
+     /tmp/ccT36pME.s:198    .text.HAL_PCD_DeInit:0000000000000000 HAL_PCD_DeInit
+     /tmp/ccT36pME.s:221    .text.HAL_PCD_DataOutStageCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:228    .text.HAL_PCD_DataOutStageCallback:0000000000000000 HAL_PCD_DataOutStageCallback
+     /tmp/ccT36pME.s:236    .text.HAL_PCD_DataInStageCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:243    .text.HAL_PCD_DataInStageCallback:0000000000000000 HAL_PCD_DataInStageCallback
+     /tmp/ccT36pME.s:251    .text.HAL_PCD_SetupStageCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:258    .text.HAL_PCD_SetupStageCallback:0000000000000000 HAL_PCD_SetupStageCallback
+     /tmp/ccT36pME.s:266    .text.HAL_PCD_SOFCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:273    .text.HAL_PCD_SOFCallback:0000000000000000 HAL_PCD_SOFCallback
+     /tmp/ccT36pME.s:281    .text.HAL_PCD_ResetCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:288    .text.HAL_PCD_ResetCallback:0000000000000000 HAL_PCD_ResetCallback
+     /tmp/ccT36pME.s:296    .text.HAL_PCD_SuspendCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:303    .text.HAL_PCD_SuspendCallback:0000000000000000 HAL_PCD_SuspendCallback
+     /tmp/ccT36pME.s:311    .text.HAL_PCD_ResumeCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:318    .text.HAL_PCD_ResumeCallback:0000000000000000 HAL_PCD_ResumeCallback
+     /tmp/ccT36pME.s:326    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:333    .text.HAL_PCD_ISOOUTIncompleteCallback:0000000000000000 HAL_PCD_ISOOUTIncompleteCallback
+     /tmp/ccT36pME.s:341    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:348    .text.HAL_PCD_ISOINIncompleteCallback:0000000000000000 HAL_PCD_ISOINIncompleteCallback
+     /tmp/ccT36pME.s:356    .text.HAL_PCD_ConnectCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:363    .text.HAL_PCD_ConnectCallback:0000000000000000 HAL_PCD_ConnectCallback
+     /tmp/ccT36pME.s:371    .text.HAL_PCD_DisconnectCallback:0000000000000000 $t
+     /tmp/ccT36pME.s:378    .text.HAL_PCD_DisconnectCallback:0000000000000000 HAL_PCD_DisconnectCallback
+     /tmp/ccT36pME.s:386    .text.HAL_PCD_DevConnect:0000000000000000 $t
+     /tmp/ccT36pME.s:393    .text.HAL_PCD_DevConnect:0000000000000000 HAL_PCD_DevConnect
+     /tmp/ccT36pME.s:418    .text.HAL_PCD_DevDisconnect:0000000000000000 $t
+     /tmp/ccT36pME.s:425    .text.HAL_PCD_DevDisconnect:0000000000000000 HAL_PCD_DevDisconnect
+     /tmp/ccT36pME.s:449    .text.HAL_PCD_SetAddress:0000000000000000 $t
+     /tmp/ccT36pME.s:456    .text.HAL_PCD_SetAddress:0000000000000000 HAL_PCD_SetAddress
+     /tmp/ccT36pME.s:487    .text.HAL_PCD_EP_Open:0000000000000000 $t
+     /tmp/ccT36pME.s:494    .text.HAL_PCD_EP_Open:0000000000000000 HAL_PCD_EP_Open
+     /tmp/ccT36pME.s:539    .text.HAL_PCD_EP_Open:0000000000000050 $d
+     /tmp/ccT36pME.s:543    .text.HAL_PCD_EP_Open:0000000000000054 $t
+     /tmp/ccT36pME.s:807    .text.HAL_PCD_EP_Open:0000000000000228 $d
+     /tmp/ccT36pME.s:826    .text.HAL_PCD_EP_Close:0000000000000000 $t
+     /tmp/ccT36pME.s:833    .text.HAL_PCD_EP_Close:0000000000000000 HAL_PCD_EP_Close
+     /tmp/ccT36pME.s:995    .text.HAL_PCD_EP_Close:000000000000011c $d
+     /tmp/ccT36pME.s:1005   .text.HAL_PCD_EP_Receive:0000000000000000 $t
+     /tmp/ccT36pME.s:1012   .text.HAL_PCD_EP_Receive:0000000000000000 HAL_PCD_EP_Receive
+     /tmp/ccT36pME.s:1181   .text.HAL_PCD_EP_Receive:0000000000000124 $d
+     /tmp/ccT36pME.s:1188   .text.HAL_PCD_EP_GetRxCount:0000000000000000 $t
+     /tmp/ccT36pME.s:1195   .text.HAL_PCD_EP_GetRxCount:0000000000000000 HAL_PCD_EP_GetRxCount
+     /tmp/ccT36pME.s:1211   .text.HAL_PCD_EP_SetStall:0000000000000000 $t
+ARM GAS  /tmp/ccT36pME.s 			page 42
 
 
-     /tmp/ccDQJlw8.s:1218   .text.HAL_PCD_EP_SetStall:0000000000000000 HAL_PCD_EP_SetStall
-     /tmp/ccDQJlw8.s:1297   .text.HAL_PCD_EP_SetStall:0000000000000084 $d
-     /tmp/ccDQJlw8.s:1304   .text.HAL_PCD_EP_ClrStall:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1311   .text.HAL_PCD_EP_ClrStall:0000000000000000 HAL_PCD_EP_ClrStall
-     /tmp/ccDQJlw8.s:1396   .text.HAL_PCD_EP_ClrStall:0000000000000090 $d
-     /tmp/ccDQJlw8.s:1404   .text.HAL_PCD_EP_Flush:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1411   .text.HAL_PCD_EP_Flush:0000000000000000 HAL_PCD_EP_Flush
-     /tmp/ccDQJlw8.s:1420   .text.HAL_PCD_ActivateRemoteWakeup:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1427   .text.HAL_PCD_ActivateRemoteWakeup:0000000000000000 HAL_PCD_ActivateRemoteWakeup
-     /tmp/ccDQJlw8.s:1449   .text.HAL_PCD_DeActivateRemoteWakeup:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1456   .text.HAL_PCD_DeActivateRemoteWakeup:0000000000000000 HAL_PCD_DeActivateRemoteWakeup
-     /tmp/ccDQJlw8.s:1479   .text.HAL_PCD_GetState:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1486   .text.HAL_PCD_GetState:0000000000000000 HAL_PCD_GetState
-     /tmp/ccDQJlw8.s:1498   .text.PCD_WritePMA:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1505   .text.PCD_WritePMA:0000000000000000 PCD_WritePMA
-     /tmp/ccDQJlw8.s:1534   .text.HAL_PCD_EP_Transmit:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1541   .text.HAL_PCD_EP_Transmit:0000000000000000 HAL_PCD_EP_Transmit
-     /tmp/ccDQJlw8.s:1677   .text.HAL_PCD_EP_Transmit:00000000000000f8 $d
-     /tmp/ccDQJlw8.s:1686   .text.PCD_ReadPMA:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1693   .text.PCD_ReadPMA:0000000000000000 PCD_ReadPMA
-     /tmp/ccDQJlw8.s:1729   .text.HAL_PCD_IRQHandler:0000000000000000 $t
-     /tmp/ccDQJlw8.s:1736   .text.HAL_PCD_IRQHandler:0000000000000000 HAL_PCD_IRQHandler
-     /tmp/ccDQJlw8.s:2045   .text.HAL_PCD_IRQHandler:0000000000000248 $d
-     /tmp/ccDQJlw8.s:2061   .text.HAL_PCD_IRQHandler:0000000000000284 $t
-     /tmp/ccDQJlw8.s:2320   .text.HAL_PCD_IRQHandler:0000000000000474 $d
+     /tmp/ccT36pME.s:1218   .text.HAL_PCD_EP_SetStall:0000000000000000 HAL_PCD_EP_SetStall
+     /tmp/ccT36pME.s:1297   .text.HAL_PCD_EP_SetStall:0000000000000084 $d
+     /tmp/ccT36pME.s:1304   .text.HAL_PCD_EP_ClrStall:0000000000000000 $t
+     /tmp/ccT36pME.s:1311   .text.HAL_PCD_EP_ClrStall:0000000000000000 HAL_PCD_EP_ClrStall
+     /tmp/ccT36pME.s:1396   .text.HAL_PCD_EP_ClrStall:0000000000000090 $d
+     /tmp/ccT36pME.s:1404   .text.HAL_PCD_EP_Flush:0000000000000000 $t
+     /tmp/ccT36pME.s:1411   .text.HAL_PCD_EP_Flush:0000000000000000 HAL_PCD_EP_Flush
+     /tmp/ccT36pME.s:1420   .text.HAL_PCD_ActivateRemoteWakeup:0000000000000000 $t
+     /tmp/ccT36pME.s:1427   .text.HAL_PCD_ActivateRemoteWakeup:0000000000000000 HAL_PCD_ActivateRemoteWakeup
+     /tmp/ccT36pME.s:1449   .text.HAL_PCD_DeActivateRemoteWakeup:0000000000000000 $t
+     /tmp/ccT36pME.s:1456   .text.HAL_PCD_DeActivateRemoteWakeup:0000000000000000 HAL_PCD_DeActivateRemoteWakeup
+     /tmp/ccT36pME.s:1479   .text.HAL_PCD_GetState:0000000000000000 $t
+     /tmp/ccT36pME.s:1486   .text.HAL_PCD_GetState:0000000000000000 HAL_PCD_GetState
+     /tmp/ccT36pME.s:1498   .text.PCD_WritePMA:0000000000000000 $t
+     /tmp/ccT36pME.s:1505   .text.PCD_WritePMA:0000000000000000 PCD_WritePMA
+     /tmp/ccT36pME.s:1534   .text.HAL_PCD_EP_Transmit:0000000000000000 $t
+     /tmp/ccT36pME.s:1541   .text.HAL_PCD_EP_Transmit:0000000000000000 HAL_PCD_EP_Transmit
+     /tmp/ccT36pME.s:1677   .text.HAL_PCD_EP_Transmit:00000000000000f8 $d
+     /tmp/ccT36pME.s:1686   .text.PCD_ReadPMA:0000000000000000 $t
+     /tmp/ccT36pME.s:1693   .text.PCD_ReadPMA:0000000000000000 PCD_ReadPMA
+     /tmp/ccT36pME.s:1729   .text.HAL_PCD_IRQHandler:0000000000000000 $t
+     /tmp/ccT36pME.s:1736   .text.HAL_PCD_IRQHandler:0000000000000000 HAL_PCD_IRQHandler
+     /tmp/ccT36pME.s:2045   .text.HAL_PCD_IRQHandler:0000000000000248 $d
+     /tmp/ccT36pME.s:2061   .text.HAL_PCD_IRQHandler:0000000000000284 $t
+     /tmp/ccT36pME.s:2320   .text.HAL_PCD_IRQHandler:0000000000000474 $d
 
 UNDEFINED SYMBOLS
 __gnu_thumb1_case_uqi

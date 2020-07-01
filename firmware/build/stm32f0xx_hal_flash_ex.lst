@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccsW7PdF.s 			page 1
+ARM GAS  /tmp/ccS04Rab.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
   58 0006 FFF7FEFF 		bl	FLASH_WaitForLastOperation
   59 000a 0028     		cmp	r0, #0
   60 000c 1FD1     		bne	.L5
-ARM GAS  /tmp/ccsW7PdF.s 			page 2
+ARM GAS  /tmp/ccS04Rab.s 			page 2
 
 
   61 000e 2026     		movs	r6, #32
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  117 0008 E369     		ldr	r3, [r4, #28]
  118 000a 1342     		tst	r3, r2
  119 000c 03D0     		beq	.L9
-ARM GAS  /tmp/ccsW7PdF.s 			page 3
+ARM GAS  /tmp/ccS04Rab.s 			page 3
 
 
  120 000e 2235     		adds	r5, r5, #34
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  176 000e 0138     		subs	r0, r0, #1
  177 0010 2876     		strb	r0, [r5, #24]
  178 0012 2368     		ldr	r3, [r4]
-ARM GAS  /tmp/ccsW7PdF.s 			page 4
+ARM GAS  /tmp/ccS04Rab.s 			page 4
 
 
  179 0014 0342     		tst	r3, r0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  233 0082 0DD1     		bne	.L33
  234              	.L26:
  235 0084 3F0E     		lsrs	r7, r7, #24
-ARM GAS  /tmp/ccsW7PdF.s 			page 5
+ARM GAS  /tmp/ccS04Rab.s 			page 5
 
 
  236 0086 FF2F     		cmp	r7, #255
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  290 00e8 3261     		str	r2, [r6, #16]
  291 00ea FF2B     		cmp	r3, #255
  292 00ec 21D1     		bne	.L29
-ARM GAS  /tmp/ccsW7PdF.s 			page 6
+ARM GAS  /tmp/ccS04Rab.s 			page 6
 
 
  293              	.L32:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  347 0156 2368     		ldr	r3, [r4]
  348 0158 5B07     		lsls	r3, r3, #29
  349 015a 1BD5     		bpl	.L38
-ARM GAS  /tmp/ccsW7PdF.s 			page 7
+ARM GAS  /tmp/ccS04Rab.s 			page 7
 
 
  350 015c 637B     		ldrb	r3, [r4, #13]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  404 01c8 BB43     		bics	r3, r7
  405 01ca 2361     		str	r3, [r4, #16]
  406 01cc 6EE7     		b	.L40
-ARM GAS  /tmp/ccsW7PdF.s 			page 8
+ARM GAS  /tmp/ccS04Rab.s 			page 8
 
 
  407              	.L86:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  465              		@ frame_needed = 0, uses_anonymous_args = 0
  466              		@ link register save eliminated.
  467 0000 054A     		ldr	r2, .L96
-ARM GAS  /tmp/ccsW7PdF.s 			page 9
+ARM GAS  /tmp/ccS04Rab.s 			page 9
 
 
  468 0002 064B     		ldr	r3, .L96+4
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  525              		.thumb_func
  526              		.fpu softvfp
  528              	HAL_FLASHEx_Erase:
-ARM GAS  /tmp/ccsW7PdF.s 			page 10
+ARM GAS  /tmp/ccS04Rab.s 			page 10
 
 
  529              		@ args = 0, pretend = 0, frame = 0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  583 0062 FFF7FEFF 		bl	FLASH_PageErase
  584 0066 0948     		ldr	r0, .L111+4
  585 0068 FFF7FEFF 		bl	FLASH_WaitForLastOperation
-ARM GAS  /tmp/ccsW7PdF.s 			page 11
+ARM GAS  /tmp/ccS04Rab.s 			page 11
 
 
  586 006c 0221     		movs	r1, #2
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  642              	.L114:
  643              		@ sp needed
  644 0032 2000     		movs	r0, r4
-ARM GAS  /tmp/ccsW7PdF.s 			page 12
+ARM GAS  /tmp/ccS04Rab.s 			page 12
 
 
  645 0034 70BD     		pop	{r4, r5, r6, pc}
@@ -679,38 +679,38 @@ ARM GAS  /tmp/ccsW7PdF.s 			page 1
  660 004c 00000000 		.word	pFlash
  661 0050 00200240 		.word	1073881088
  663              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccsW7PdF.s 			page 13
+ARM GAS  /tmp/ccS04Rab.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_flash_ex.c
-     /tmp/ccsW7PdF.s:14     .text.FLASH_MassErase:0000000000000000 $t
-     /tmp/ccsW7PdF.s:21     .text.FLASH_MassErase:0000000000000000 FLASH_MassErase
-     /tmp/ccsW7PdF.s:42     .text.FLASH_MassErase:000000000000001c $d
-     /tmp/ccsW7PdF.s:46     .text.FLASH_OB_RDP_LevelConfig:0000000000000000 $t
-     /tmp/ccsW7PdF.s:52     .text.FLASH_OB_RDP_LevelConfig:0000000000000000 FLASH_OB_RDP_LevelConfig
-     /tmp/ccsW7PdF.s:97     .text.FLASH_OB_RDP_LevelConfig:0000000000000050 $d
-     /tmp/ccsW7PdF.s:103    .text.HAL_FLASHEx_OBErase:0000000000000000 $t
-     /tmp/ccsW7PdF.s:110    .text.HAL_FLASHEx_OBErase:0000000000000000 HAL_FLASHEx_OBErase
-     /tmp/ccsW7PdF.s:154    .text.HAL_FLASHEx_OBErase:000000000000004c $d
-     /tmp/ccsW7PdF.s:159    .text.HAL_FLASHEx_OBProgram:0000000000000000 $t
-     /tmp/ccsW7PdF.s:166    .text.HAL_FLASHEx_OBProgram:0000000000000000 HAL_FLASHEx_OBProgram
-     /tmp/ccsW7PdF.s:410    .text.HAL_FLASHEx_OBProgram:00000000000001d0 $d
-     /tmp/ccsW7PdF.s:416    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 $t
-     /tmp/ccsW7PdF.s:423    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 HAL_FLASHEx_OBGetConfig
-     /tmp/ccsW7PdF.s:453    .text.HAL_FLASHEx_OBGetConfig:000000000000002c $d
-     /tmp/ccsW7PdF.s:456    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 $t
-     /tmp/ccsW7PdF.s:463    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 HAL_FLASHEx_OBGetUserData
-     /tmp/ccsW7PdF.s:484    .text.HAL_FLASHEx_OBGetUserData:0000000000000018 $d
-     /tmp/ccsW7PdF.s:488    .text.FLASH_PageErase:0000000000000000 $t
-     /tmp/ccsW7PdF.s:495    .text.FLASH_PageErase:0000000000000000 FLASH_PageErase
-     /tmp/ccsW7PdF.s:517    .text.FLASH_PageErase:000000000000001c $d
-     /tmp/ccsW7PdF.s:521    .text.HAL_FLASHEx_Erase:0000000000000000 $t
-     /tmp/ccsW7PdF.s:528    .text.HAL_FLASHEx_Erase:0000000000000000 HAL_FLASHEx_Erase
-     /tmp/ccsW7PdF.s:603    .text.HAL_FLASHEx_Erase:0000000000000088 $d
-     /tmp/ccsW7PdF.s:608    .text.HAL_FLASHEx_Erase_IT:0000000000000000 $t
-     /tmp/ccsW7PdF.s:615    .text.HAL_FLASHEx_Erase_IT:0000000000000000 HAL_FLASHEx_Erase_IT
-     /tmp/ccsW7PdF.s:660    .text.HAL_FLASHEx_Erase_IT:000000000000004c $d
+     /tmp/ccS04Rab.s:14     .text.FLASH_MassErase:0000000000000000 $t
+     /tmp/ccS04Rab.s:21     .text.FLASH_MassErase:0000000000000000 FLASH_MassErase
+     /tmp/ccS04Rab.s:42     .text.FLASH_MassErase:000000000000001c $d
+     /tmp/ccS04Rab.s:46     .text.FLASH_OB_RDP_LevelConfig:0000000000000000 $t
+     /tmp/ccS04Rab.s:52     .text.FLASH_OB_RDP_LevelConfig:0000000000000000 FLASH_OB_RDP_LevelConfig
+     /tmp/ccS04Rab.s:97     .text.FLASH_OB_RDP_LevelConfig:0000000000000050 $d
+     /tmp/ccS04Rab.s:103    .text.HAL_FLASHEx_OBErase:0000000000000000 $t
+     /tmp/ccS04Rab.s:110    .text.HAL_FLASHEx_OBErase:0000000000000000 HAL_FLASHEx_OBErase
+     /tmp/ccS04Rab.s:154    .text.HAL_FLASHEx_OBErase:000000000000004c $d
+     /tmp/ccS04Rab.s:159    .text.HAL_FLASHEx_OBProgram:0000000000000000 $t
+     /tmp/ccS04Rab.s:166    .text.HAL_FLASHEx_OBProgram:0000000000000000 HAL_FLASHEx_OBProgram
+     /tmp/ccS04Rab.s:410    .text.HAL_FLASHEx_OBProgram:00000000000001d0 $d
+     /tmp/ccS04Rab.s:416    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 $t
+     /tmp/ccS04Rab.s:423    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 HAL_FLASHEx_OBGetConfig
+     /tmp/ccS04Rab.s:453    .text.HAL_FLASHEx_OBGetConfig:000000000000002c $d
+     /tmp/ccS04Rab.s:456    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 $t
+     /tmp/ccS04Rab.s:463    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 HAL_FLASHEx_OBGetUserData
+     /tmp/ccS04Rab.s:484    .text.HAL_FLASHEx_OBGetUserData:0000000000000018 $d
+     /tmp/ccS04Rab.s:488    .text.FLASH_PageErase:0000000000000000 $t
+     /tmp/ccS04Rab.s:495    .text.FLASH_PageErase:0000000000000000 FLASH_PageErase
+     /tmp/ccS04Rab.s:517    .text.FLASH_PageErase:000000000000001c $d
+     /tmp/ccS04Rab.s:521    .text.HAL_FLASHEx_Erase:0000000000000000 $t
+     /tmp/ccS04Rab.s:528    .text.HAL_FLASHEx_Erase:0000000000000000 HAL_FLASHEx_Erase
+     /tmp/ccS04Rab.s:603    .text.HAL_FLASHEx_Erase:0000000000000088 $d
+     /tmp/ccS04Rab.s:608    .text.HAL_FLASHEx_Erase_IT:0000000000000000 $t
+     /tmp/ccS04Rab.s:615    .text.HAL_FLASHEx_Erase_IT:0000000000000000 HAL_FLASHEx_Erase_IT
+     /tmp/ccS04Rab.s:660    .text.HAL_FLASHEx_Erase_IT:000000000000004c $d
 
 UNDEFINED SYMBOLS
 pFlash

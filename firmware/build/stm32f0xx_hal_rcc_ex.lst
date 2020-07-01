@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccxlrIOP.s 			page 1
+ARM GAS  /tmp/ccUaBtbl.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
   56 003a 226A     		ldr	r2, [r4, #32]
   57 003c C023     		movs	r3, #192
   58 003e 1100     		movs	r1, r2
-ARM GAS  /tmp/ccxlrIOP.s 			page 2
+ARM GAS  /tmp/ccUaBtbl.s 			page 2
 
 
   59 0040 9B00     		lsls	r3, r3, #2
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  113 00a2 0A6B     		ldr	r2, [r1, #48]
  114 00a4 8243     		bics	r2, r0
  115 00a6 A869     		ldr	r0, [r5, #24]
-ARM GAS  /tmp/ccxlrIOP.s 			page 3
+ARM GAS  /tmp/ccUaBtbl.s 			page 3
 
 
  116 00a8 0243     		orrs	r2, r0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  170 010a 9ED5     		bpl	.L7
  171 010c FFF7FEFF 		bl	HAL_GetTick
  172 0110 0700     		movs	r7, r0
-ARM GAS  /tmp/ccxlrIOP.s 			page 4
+ARM GAS  /tmp/ccUaBtbl.s 			page 4
 
 
  173              	.L14:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  229 002a 0A40     		ands	r2, r1
  230 002c 8261     		str	r2, [r0, #24]
  231 002e 044A     		ldr	r2, .L43+4
-ARM GAS  /tmp/ccxlrIOP.s 			page 5
+ARM GAS  /tmp/ccUaBtbl.s 			page 5
 
 
  232 0030 0260     		str	r2, [r0]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  288 0030 9042     		cmp	r0, r2
  289 0032 F5D1     		bne	.L107
  290 0034 484A     		ldr	r2, .L122
-ARM GAS  /tmp/ccxlrIOP.s 			page 6
+ARM GAS  /tmp/ccUaBtbl.s 			page 6
 
 
  291 0036 116B     		ldr	r1, [r2, #48]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  345 0098 0223     		movs	r3, #2
  346 009a 1000     		movs	r0, r2
  347 009c 1840     		ands	r0, r3
-ARM GAS  /tmp/ccxlrIOP.s 			page 7
+ARM GAS  /tmp/ccUaBtbl.s 			page 7
 
 
  348 009e 1A42     		tst	r2, r3
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  402 00fa 8002     		lsls	r0, r0, #10
  403 00fc 2100     		movs	r1, r4
  404 00fe 0140     		ands	r1, r0
-ARM GAS  /tmp/ccxlrIOP.s 			page 8
+ARM GAS  /tmp/ccUaBtbl.s 			page 8
 
 
  405 0100 0442     		tst	r4, r0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  459              		.align	2
  460              	.L122:
  461 0158 00100240 		.word	1073876992
-ARM GAS  /tmp/ccxlrIOP.s 			page 9
+ARM GAS  /tmp/ccUaBtbl.s 			page 9
 
 
  462 015c 00127A00 		.word	8000000
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  518 004c FFFFFFF7 		.word	-134217729
  519 0050 FFC0FFFF 		.word	-16129
  520 0054 006C0040 		.word	1073769472
-ARM GAS  /tmp/ccxlrIOP.s 			page 10
+ARM GAS  /tmp/ccUaBtbl.s 			page 10
 
 
  522              		.section	.text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate,"ax",%progbits
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  579 0024 006C0040 		.word	1073769472
  581              		.section	.text.HAL_RCCEx_CRSWaitSynchronization,"ax",%progbits
  582              		.align	1
-ARM GAS  /tmp/ccxlrIOP.s 			page 11
+ARM GAS  /tmp/ccUaBtbl.s 			page 11
 
 
  583              		.global	HAL_RCCEx_CRSWaitSynchronization
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  638 0056 3843     		orrs	r0, r7
  639 0058 DA60     		str	r2, [r3, #12]
  640              	.L138:
-ARM GAS  /tmp/ccxlrIOP.s 			page 12
+ARM GAS  /tmp/ccUaBtbl.s 			page 12
 
 
  641 005a 9A68     		ldr	r2, [r3, #8]
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  701              	HAL_RCCEx_CRS_ExpectedSyncCallback:
  702              		@ args = 0, pretend = 0, frame = 0
  703              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccxlrIOP.s 			page 13
+ARM GAS  /tmp/ccUaBtbl.s 			page 13
 
 
  704              		@ link register save eliminated.
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  762 0034 03D0     		beq	.L175
  763 0036 D060     		str	r0, [r2, #12]
  764 0038 FFF7FEFF 		bl	HAL_RCCEx_CRS_ExpectedSyncCallback
-ARM GAS  /tmp/ccxlrIOP.s 			page 14
+ARM GAS  /tmp/ccUaBtbl.s 			page 14
 
 
  765 003c ECE7     		b	.L171
@@ -815,43 +815,43 @@ ARM GAS  /tmp/ccxlrIOP.s 			page 1
  796              	.L212:
  797 0070 006C0040 		.word	1073769472
  799              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccxlrIOP.s 			page 15
+ARM GAS  /tmp/ccUaBtbl.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_rcc_ex.c
-     /tmp/ccxlrIOP.s:14     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
-     /tmp/ccxlrIOP.s:22     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
-     /tmp/ccxlrIOP.s:187    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000128 $d
-     /tmp/ccxlrIOP.s:196    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
-     /tmp/ccxlrIOP.s:203    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
-     /tmp/ccxlrIOP.s:241    .text.HAL_RCCEx_GetPeriphCLKConfig:000000000000003c $d
-     /tmp/ccxlrIOP.s:247    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
-     /tmp/ccxlrIOP.s:254    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
-     /tmp/ccxlrIOP.s:461    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000158 $d
-     /tmp/ccxlrIOP.s:468    .text.HAL_RCCEx_CRSConfig:0000000000000000 $t
-     /tmp/ccxlrIOP.s:475    .text.HAL_RCCEx_CRSConfig:0000000000000000 HAL_RCCEx_CRSConfig
-     /tmp/ccxlrIOP.s:517    .text.HAL_RCCEx_CRSConfig:0000000000000048 $d
-     /tmp/ccxlrIOP.s:523    .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:0000000000000000 $t
-     /tmp/ccxlrIOP.s:530    .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:0000000000000000 HAL_RCCEx_CRSSoftwareSynchronizationGenerate
-     /tmp/ccxlrIOP.s:544    .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:000000000000000c $d
-     /tmp/ccxlrIOP.s:547    .text.HAL_RCCEx_CRSGetSynchronizationInfo:0000000000000000 $t
-     /tmp/ccxlrIOP.s:554    .text.HAL_RCCEx_CRSGetSynchronizationInfo:0000000000000000 HAL_RCCEx_CRSGetSynchronizationInfo
-     /tmp/ccxlrIOP.s:579    .text.HAL_RCCEx_CRSGetSynchronizationInfo:0000000000000024 $d
-     /tmp/ccxlrIOP.s:582    .text.HAL_RCCEx_CRSWaitSynchronization:0000000000000000 $t
-     /tmp/ccxlrIOP.s:589    .text.HAL_RCCEx_CRSWaitSynchronization:0000000000000000 HAL_RCCEx_CRSWaitSynchronization
-     /tmp/ccxlrIOP.s:661    .text.HAL_RCCEx_CRSWaitSynchronization:0000000000000078 $d
-     /tmp/ccxlrIOP.s:664    .text.HAL_RCCEx_CRS_SyncOkCallback:0000000000000000 $t
-     /tmp/ccxlrIOP.s:671    .text.HAL_RCCEx_CRS_SyncOkCallback:0000000000000000 HAL_RCCEx_CRS_SyncOkCallback
-     /tmp/ccxlrIOP.s:679    .text.HAL_RCCEx_CRS_SyncWarnCallback:0000000000000000 $t
-     /tmp/ccxlrIOP.s:686    .text.HAL_RCCEx_CRS_SyncWarnCallback:0000000000000000 HAL_RCCEx_CRS_SyncWarnCallback
-     /tmp/ccxlrIOP.s:694    .text.HAL_RCCEx_CRS_ExpectedSyncCallback:0000000000000000 $t
-     /tmp/ccxlrIOP.s:701    .text.HAL_RCCEx_CRS_ExpectedSyncCallback:0000000000000000 HAL_RCCEx_CRS_ExpectedSyncCallback
-     /tmp/ccxlrIOP.s:709    .text.HAL_RCCEx_CRS_ErrorCallback:0000000000000000 $t
-     /tmp/ccxlrIOP.s:716    .text.HAL_RCCEx_CRS_ErrorCallback:0000000000000000 HAL_RCCEx_CRS_ErrorCallback
-     /tmp/ccxlrIOP.s:724    .text.HAL_RCCEx_CRS_IRQHandler:0000000000000000 $t
-     /tmp/ccxlrIOP.s:731    .text.HAL_RCCEx_CRS_IRQHandler:0000000000000000 HAL_RCCEx_CRS_IRQHandler
-     /tmp/ccxlrIOP.s:797    .text.HAL_RCCEx_CRS_IRQHandler:0000000000000070 $d
+     /tmp/ccUaBtbl.s:14     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
+     /tmp/ccUaBtbl.s:22     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
+     /tmp/ccUaBtbl.s:187    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000128 $d
+     /tmp/ccUaBtbl.s:196    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
+     /tmp/ccUaBtbl.s:203    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
+     /tmp/ccUaBtbl.s:241    .text.HAL_RCCEx_GetPeriphCLKConfig:000000000000003c $d
+     /tmp/ccUaBtbl.s:247    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
+     /tmp/ccUaBtbl.s:254    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
+     /tmp/ccUaBtbl.s:461    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000158 $d
+     /tmp/ccUaBtbl.s:468    .text.HAL_RCCEx_CRSConfig:0000000000000000 $t
+     /tmp/ccUaBtbl.s:475    .text.HAL_RCCEx_CRSConfig:0000000000000000 HAL_RCCEx_CRSConfig
+     /tmp/ccUaBtbl.s:517    .text.HAL_RCCEx_CRSConfig:0000000000000048 $d
+     /tmp/ccUaBtbl.s:523    .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:0000000000000000 $t
+     /tmp/ccUaBtbl.s:530    .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:0000000000000000 HAL_RCCEx_CRSSoftwareSynchronizationGenerate
+     /tmp/ccUaBtbl.s:544    .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:000000000000000c $d
+     /tmp/ccUaBtbl.s:547    .text.HAL_RCCEx_CRSGetSynchronizationInfo:0000000000000000 $t
+     /tmp/ccUaBtbl.s:554    .text.HAL_RCCEx_CRSGetSynchronizationInfo:0000000000000000 HAL_RCCEx_CRSGetSynchronizationInfo
+     /tmp/ccUaBtbl.s:579    .text.HAL_RCCEx_CRSGetSynchronizationInfo:0000000000000024 $d
+     /tmp/ccUaBtbl.s:582    .text.HAL_RCCEx_CRSWaitSynchronization:0000000000000000 $t
+     /tmp/ccUaBtbl.s:589    .text.HAL_RCCEx_CRSWaitSynchronization:0000000000000000 HAL_RCCEx_CRSWaitSynchronization
+     /tmp/ccUaBtbl.s:661    .text.HAL_RCCEx_CRSWaitSynchronization:0000000000000078 $d
+     /tmp/ccUaBtbl.s:664    .text.HAL_RCCEx_CRS_SyncOkCallback:0000000000000000 $t
+     /tmp/ccUaBtbl.s:671    .text.HAL_RCCEx_CRS_SyncOkCallback:0000000000000000 HAL_RCCEx_CRS_SyncOkCallback
+     /tmp/ccUaBtbl.s:679    .text.HAL_RCCEx_CRS_SyncWarnCallback:0000000000000000 $t
+     /tmp/ccUaBtbl.s:686    .text.HAL_RCCEx_CRS_SyncWarnCallback:0000000000000000 HAL_RCCEx_CRS_SyncWarnCallback
+     /tmp/ccUaBtbl.s:694    .text.HAL_RCCEx_CRS_ExpectedSyncCallback:0000000000000000 $t
+     /tmp/ccUaBtbl.s:701    .text.HAL_RCCEx_CRS_ExpectedSyncCallback:0000000000000000 HAL_RCCEx_CRS_ExpectedSyncCallback
+     /tmp/ccUaBtbl.s:709    .text.HAL_RCCEx_CRS_ErrorCallback:0000000000000000 $t
+     /tmp/ccUaBtbl.s:716    .text.HAL_RCCEx_CRS_ErrorCallback:0000000000000000 HAL_RCCEx_CRS_ErrorCallback
+     /tmp/ccUaBtbl.s:724    .text.HAL_RCCEx_CRS_IRQHandler:0000000000000000 $t
+     /tmp/ccUaBtbl.s:731    .text.HAL_RCCEx_CRS_IRQHandler:0000000000000000 HAL_RCCEx_CRS_IRQHandler
+     /tmp/ccUaBtbl.s:797    .text.HAL_RCCEx_CRS_IRQHandler:0000000000000070 $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick
