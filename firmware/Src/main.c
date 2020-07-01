@@ -148,9 +148,8 @@ int main(void)
   set_valid_pdo(3);
 
   // now display
-  HAL_Delay(50);
+  HAL_Delay(400);
   disp_init();
-  HAL_Delay(150);
   clear_screen();
 
   // now system
@@ -409,8 +408,7 @@ uint8_t OLED_Setup_Array[] = {
 0x80, 0xA4, /*Enable the display GDDR*/
 0x80, 0XA6, /*Normal display*/
 0x80, 0x20, /*Memory Mode*/
-0x80, 0x00, /*Wrap memory*/
-0x80, 0xAF /*Display on*/
+0x80, 0x00 /*Wrap memory*/
 };
 
 void read_stusb_rdo(void) {
@@ -422,7 +420,7 @@ void read_stusb_rdo(void) {
     s.pdo = Nego_RDO.b.Object_Pos;
   } else {
     s.imax = 0.0;
-    s.pdo = 1;
+    s.pdo = 0;
   }
 }
 
@@ -465,17 +463,31 @@ HAL_StatusTypeDef set_valid_pdo(uint8_t valid_count) {
   return ret;
 }
 
+void disp_on(void) {
+  uint8_t power_on[] = {
+    0x80, 0xAF /*Display on*/
+  };
+  HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &power_on[0], 2, 1000);
+}
+
+void disp_off(void) {
+  uint8_t power_off[] = {
+    0x80, 0xAE /*Display off*/
+  };
+  HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &power_off[0], 2, 1000);
+}
+
 //not Ralim anymore
 void disp_init(void) {
+  disp_off();
   memcpy(&screenBuffer[0], &REFRESH_COMMANDS[0], sizeof(REFRESH_COMMANDS));
-  uint16_t _cnt = 0;
-  while (HAL_I2C_GetState(&hi2c1) != HAL_I2C_STATE_READY) if (_cnt++ > 10000) break;
-  HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &OLED_Setup_Array[0],sizeof(OLED_Setup_Array),1000);
+  HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &OLED_Setup_Array[0], sizeof(OLED_Setup_Array), 1000);
+  clear_screen();
+  HAL_Delay(100);
+  disp_on();
 }
 
 void refresh(void) {
-  uint16_t _cnt = 0;
-  while (HAL_I2C_GetState(&hi2c1) != HAL_I2C_STATE_READY) if (_cnt++ > 10000) break;
   HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, screenBuffer,FRAMEBUFFER_START + (OLED_WIDTH * 2),1000);
 }
 
