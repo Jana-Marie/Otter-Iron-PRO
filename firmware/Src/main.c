@@ -17,6 +17,8 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <math.h>
+
 #include "main.h"
 #include "font.h"
 #include "stusb4500.h"
@@ -33,10 +35,12 @@
 
 #define TTIP_AVG_FILTER 0.99f
 #define DISP_AVG_FILTER 0.9f
+
 #define MIN_DUTY 0
 #define MAX_DUTY 2000
+
 #define MIN_VOLTAGE 15.0f
-#define MIN_CURRENT 2.0f
+#define MIN_CURRENT 1.0f
 uint16_t wduty = 200;
 
 ADC_HandleTypeDef hadc;
@@ -90,7 +94,7 @@ struct status_t{
 #endif
   uint8_t active;
   uint8_t pdo;
-}s = {.writeFlash = 0, .imax = 3.0f};
+}s = {.writeFlash = 0, .imax = 1.5f}; // imax will be updated enumerated USB PD profile
 
 struct reg_t{
   float target;
@@ -121,8 +125,6 @@ USB_PD_SNK_PDO_TypeDef pdo_profile[3];
 const unsigned char* dfu_string = (unsigned char*) "dfudfudfudfudfu";
 const unsigned char* otter_string = (unsigned char*) "Otter-Iron";
 const unsigned char* by_string = (unsigned char*) "by Jan Henrik";
-const unsigned char* assembly_string = (unsigned char*) "Assembly by";
-const unsigned char* jbr_string = (unsigned char*) "JBR Eng 2020";
 
 int main(void)
 {
@@ -139,7 +141,7 @@ int main(void)
 
   // setup STUSB4500 PD requests before starting controller IT
   update_pdo(1, 5000, 500); // allows comms on standard 5 V
-  // 30 W and 80 W - ensures iron is well behaved and enumerates PD profile before drawing it (Apple charger for example will drop-out without this)
+  // 30 W and 80 W - ensures iron is well behaved and enumerates PD profile before drawing it
   update_pdo(2, 20000, 1500);
   update_pdo(3, 20000, 4000);
   set_valid_pdo(3);
@@ -168,10 +170,6 @@ int main(void)
     draw_string(by_string, 10, 9 ,1);
     refresh();
     HAL_Delay(500);
-    clear_screen();
-    draw_string(assembly_string, 14, 1 ,1);
-    draw_string(jbr_string, 8, 9 ,1);
-    refresh();
 #ifdef ENABLESERIAL
     //start USB CDC
     USBD_Init(&USBD_Device, &VCP_Desc, 0);
@@ -184,7 +182,23 @@ int main(void)
       s.timeout = 20;
 #endif
 #ifdef CHECKUSBPD
+    unsigned char line1[22];
+    unsigned char line2[22];
+
     read_stusb_rdo();
+
+    if (s.pdo > 0) {
+      sprintf((char * restrict) line1, "PD %s %1d", s.pdo > 3 ? "Adjust" : "Profile", s.pdo);
+      sprintf((char * restrict) line2, "%1d.%1d A %2d W", (uint16_t)s.imax,(uint16_t)((s.imax-(uint16_t)s.imax)*10.0f), (uint16_t) (ceil(s.uin) * s.imax));
+    } else {
+      sprintf((char * restrict) line1, "USB !USB-PD");
+      sprintf((char * restrict) line2, "Iron Disabled");
+    }
+    clear_screen();
+    draw_string(line1, 10, 1 ,1);
+    draw_string(line2, 10, 9 ,1);
+    refresh();
+    HAL_Delay(1000);
 #endif
   }
 
@@ -244,23 +258,17 @@ int main(void)
     unsigned char str2[14] = "          ";
     unsigned char str3[14] = "          ";
     unsigned char str4[14] = "          ";
-    unsigned char str5[14] = "          ";
-    unsigned char str6[14] = "          ";
     sprintf((char * restrict) str1, "%d C   ", (uint16_t)r.target);
     sprintf((char * restrict) str2, "%d.%d C", (uint16_t)s.ttipavg,(uint16_t)((s.ttipavg-(uint16_t)s.ttipavg)*10.0f));
     sprintf((char * restrict) str3, "%d.%d V", (uint16_t)s.uin,(uint16_t)((s.uin-(uint16_t)s.uin)*10.0f));
     sprintf((char * restrict) str4, "%d.%d A", (uint16_t)s.iinavg,(uint16_t)((s.iinavg-(uint16_t)s.iinavg)*10.0f));
-    sprintf((char * restrict) str5, "P %d.%d", (uint16_t)s.imax,(uint16_t)((s.imax-(uint16_t)s.imax)*10.0f));
-    sprintf((char * restrict) str6, "PDO %d", s.pdo);
 
     clear_screen();
     draw_string(str1, 10, 1 ,1);
-    draw_string(str6, 60, 1 ,1);
-    draw_string(str5, 10, 9 ,1);
+    draw_string(str2, 10, 9 ,1);
+    draw_string(str3, 60, 1 ,1);
 #ifdef DISPLAYCURRENT
     if(s.timeout == 0){
-      draw_string(str2, 10, 9 ,1);
-      draw_string(str3, 60, 1 ,1);
       draw_string(str4, 10, 1 ,1);
     } else {
       s.timeout--;
@@ -274,7 +282,7 @@ int main(void)
         draw_v_line(60+i, 8, 8, 1);
       }
     } else {
-      draw_string((const unsigned char*) "!ACTV", 60, 9, 1);
+      draw_string((const unsigned char*) ((s.pdo > 0) ? "!ACTV" : "!PWRD"), 60, 9, 1);
     }
 
     refresh();
