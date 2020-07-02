@@ -20,10 +20,13 @@ TARGET = firmware
 # building variables
 ######################################
 # debug build?
-DEBUG = 1
+DEBUG = 0
 # optimization
+ifeq ($(DEBUG), 1)
 OPT = -Og
-
+else
+OPT = -Os
+endif
 
 #######################################
 # paths
@@ -65,6 +68,7 @@ Src/usbd_desc.c \
 Src/usbd_conf.c \
 Src/usbd_cdc_interface.c \
 Src/main.c \
+Src/stusb4500.c \
 Src/system_stm32f0xx.c
 
 

@@ -1,5 +1,8 @@
 #include "main.h"
 
+uint8_t UserRxBuffer[APP_RX_DATA_SIZE];
+uint8_t UserTxBuffer[APP_TX_DATA_SIZE];
+
 USBD_CDC_LineCodingTypeDef LineCoding =
   {
     115200, /* baud rate*/
