@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc4wQWsB.s 			page 1
+ARM GAS  /tmp/ccVVivOE.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
   57              		.global	__aeabi_fmul
   58              		.global	__aeabi_fdiv
   59              		.global	__aeabi_fadd
-ARM GAS  /tmp/cc4wQWsB.s 			page 2
+ARM GAS  /tmp/ccVVivOE.s 			page 2
 
 
   60              		.global	__aeabi_i2d
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  115 0064 0022     		movs	r2, #0
  116 0066 904B     		ldr	r3, .L43+4
  117 0068 FFF7FEFF 		bl	__aeabi_ddiv
-ARM GAS  /tmp/cc4wQWsB.s 			page 3
+ARM GAS  /tmp/ccVVivOE.s 			page 3
 
 
  118 006c 8F4A     		ldr	r2, .L43+8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  172 00fa 0493     		str	r3, [sp, #16]
  173 00fc 0028     		cmp	r0, #0
  174 00fe 00D1     		bne	.LCB136
-ARM GAS  /tmp/cc4wQWsB.s 			page 4
+ARM GAS  /tmp/ccVVivOE.s 			page 4
 
 
  175 0100 CAE0     		b	.L11	@long jump
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  229 017c 396A     		ldr	r1, [r7, #32]
  230 017e 061C     		adds	r6, r0, #0
  231 0180 201C     		adds	r0, r4, #0
-ARM GAS  /tmp/cc4wQWsB.s 			page 5
+ARM GAS  /tmp/ccVVivOE.s 			page 5
 
 
  232 0182 FFF7FEFF 		bl	__aeabi_fmul
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  286 01f6 0199     		ldr	r1, [sp, #4]
  287 01f8 281C     		adds	r0, r5, #0
  288 01fa FFF7FEFF 		bl	__aeabi_fcmple
-ARM GAS  /tmp/cc4wQWsB.s 			page 6
+ARM GAS  /tmp/ccVVivOE.s 			page 6
 
 
  289 01fe 0023     		movs	r3, #0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  343 025e A35E     		ldrsh	r3, [r4, r2]
  344 0260 049A     		ldr	r2, [sp, #16]
  345 0262 5363     		str	r3, [r2, #52]
-ARM GAS  /tmp/cc4wQWsB.s 			page 7
+ARM GAS  /tmp/ccVVivOE.s 			page 7
 
 
  346              	.L32:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  400 02d8 B81E85EB 		.word	-343597384
  401 02dc 51B8E63F 		.word	1072085073
  402 02e0 E07A843F 		.word	1065646816
-ARM GAS  /tmp/cc4wQWsB.s 			page 8
+ARM GAS  /tmp/ccVVivOE.s 			page 8
 
 
  403 02e4 A4707D3F 		.word	1065185444
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  458              		.code	16
  459              		.thumb_func
  460              		.fpu softvfp
-ARM GAS  /tmp/cc4wQWsB.s 			page 9
+ARM GAS  /tmp/ccVVivOE.s 			page 9
 
 
  462              	USB_printfloat:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  518 000a 9B00     		lsls	r3, r3, #2
  519 000c 0093     		str	r3, [sp]
  520 000e 7821     		movs	r1, #120
-ARM GAS  /tmp/cc4wQWsB.s 			page 10
+ARM GAS  /tmp/ccVVivOE.s 			page 10
 
 
  521 0010 0223     		movs	r3, #2
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  579 0008 7821     		movs	r1, #120
  580              		@ sp needed
  581 000a D123     		movs	r3, #209
-ARM GAS  /tmp/cc4wQWsB.s 			page 11
+ARM GAS  /tmp/ccVVivOE.s 			page 11
 
 
  582 000c 024A     		ldr	r2, .L62
@@ -641,1903 +641,1912 @@ ARM GAS  /tmp/cc4wQWsB.s 			page 1
  623              	disp_init:
  624              		@ args = 0, pretend = 0, frame = 0
  625              		@ frame_needed = 0, uses_anonymous_args = 0
- 626 0000 07B5     		push	{r0, r1, r2, lr}
- 627 0002 FFF7FEFF 		bl	disp_off
+ 626 0000 73B5     		push	{r0, r1, r4, r5, r6, lr}
+ 627 0002 FA26     		movs	r6, #250
  628              		@ sp needed
- 629 0006 1122     		movs	r2, #17
- 630 0008 0A49     		ldr	r1, .L68
- 631 000a 0B48     		ldr	r0, .L68+4
- 632 000c FFF7FEFF 		bl	memcpy
- 633 0010 FA23     		movs	r3, #250
- 634 0012 9B00     		lsls	r3, r3, #2
- 635 0014 7821     		movs	r1, #120
- 636 0016 094A     		ldr	r2, .L68+8
- 637 0018 0093     		str	r3, [sp]
- 638 001a 0948     		ldr	r0, .L68+12
- 639 001c 3023     		movs	r3, #48
- 640 001e FFF7FEFF 		bl	HAL_I2C_Master_Transmit
- 641 0022 FFF7FEFF 		bl	clear_screen
- 642 0026 6420     		movs	r0, #100
-ARM GAS  /tmp/cc4wQWsB.s 			page 12
+ 629 0004 FFF7FEFF 		bl	disp_off
+ 630 0008 1122     		movs	r2, #17
+ 631 000a 1149     		ldr	r1, .L68
+ 632 000c 1148     		ldr	r0, .L68+4
+ 633 000e FFF7FEFF 		bl	memcpy
+ 634 0012 FFF7FEFF 		bl	refresh
+ 635 0016 104D     		ldr	r5, .L68+8
+ 636 0018 104C     		ldr	r4, .L68+12
+ 637 001a B600     		lsls	r6, r6, #2
+ 638 001c 2A00     		movs	r2, r5
+ 639 001e 2E23     		movs	r3, #46
+ 640 0020 7821     		movs	r1, #120
+ 641 0022 0096     		str	r6, [sp]
+ 642 0024 2000     		movs	r0, r4
+ARM GAS  /tmp/ccVVivOE.s 			page 12
 
 
- 643 0028 FFF7FEFF 		bl	HAL_Delay
- 644 002c FFF7FEFF 		bl	disp_on
- 645 0030 07BD     		pop	{r0, r1, r2, pc}
- 646              	.L69:
- 647 0032 C046     		.align	2
- 648              	.L68:
- 649 0034 00000000 		.word	.LANCHOR9
- 650 0038 00000000 		.word	screenBuffer
- 651 003c 00000000 		.word	.LANCHOR10
- 652 0040 00000000 		.word	.LANCHOR8
- 654              		.section	.text.set_screen,"ax",%progbits
- 655              		.align	1
- 656              		.global	set_screen
- 657              		.syntax unified
- 658              		.code	16
- 659              		.thumb_func
- 660              		.fpu softvfp
- 662              	set_screen:
- 663              		@ args = 0, pretend = 0, frame = 0
- 664              		@ frame_needed = 0, uses_anonymous_args = 0
- 665 0000 10B5     		push	{r4, lr}
- 666 0002 C022     		movs	r2, #192
- 667              		@ sp needed
- 668 0004 FF21     		movs	r1, #255
- 669 0006 0248     		ldr	r0, .L71
- 670 0008 FFF7FEFF 		bl	memset
- 671 000c 10BD     		pop	{r4, pc}
- 672              	.L72:
- 673 000e C046     		.align	2
- 674              	.L71:
- 675 0010 11000000 		.word	screenBuffer+17
- 677              		.section	.text.write_pixel,"ax",%progbits
- 678              		.align	1
- 679              		.global	write_pixel
- 680              		.syntax unified
- 681              		.code	16
- 682              		.thumb_func
- 683              		.fpu softvfp
- 685              	write_pixel:
- 686              		@ args = 0, pretend = 0, frame = 0
- 687              		@ frame_needed = 0, uses_anonymous_args = 0
- 688 0000 10B5     		push	{r4, lr}
- 689 0002 5F28     		cmp	r0, #95
- 690 0004 1BDC     		bgt	.L73
- 691 0006 0F29     		cmp	r1, #15
- 692 0008 19DC     		bgt	.L73
- 693 000a 012A     		cmp	r2, #1
- 694 000c 18D1     		bne	.L75
- 695 000e 0723     		movs	r3, #7
- 696 0010 CA17     		asrs	r2, r1, #31
- 697 0012 1A40     		ands	r2, r3
- 698 0014 5218     		adds	r2, r2, r1
- 699 0016 5933     		adds	r3, r3, #89
- 700 0018 D210     		asrs	r2, r2, #3
- 701 001a 5A43     		muls	r2, r3
- 702 001c 164B     		ldr	r3, .L78
- 703 001e 1018     		adds	r0, r2, r0
-ARM GAS  /tmp/cc4wQWsB.s 			page 13
+ 643 0026 FFF7FEFF 		bl	HAL_I2C_Master_Transmit
+ 644 002a FFF7FEFF 		bl	disp_off
+ 645 002e 2A00     		movs	r2, r5
+ 646 0030 2E23     		movs	r3, #46
+ 647 0032 7821     		movs	r1, #120
+ 648 0034 0096     		str	r6, [sp]
+ 649 0036 2000     		movs	r0, r4
+ 650 0038 FFF7FEFF 		bl	HAL_I2C_Master_Transmit
+ 651 003c FFF7FEFF 		bl	clear_screen
+ 652 0040 FFF7FEFF 		bl	refresh
+ 653 0044 6420     		movs	r0, #100
+ 654 0046 FFF7FEFF 		bl	HAL_Delay
+ 655 004a FFF7FEFF 		bl	disp_on
+ 656 004e 73BD     		pop	{r0, r1, r4, r5, r6, pc}
+ 657              	.L69:
+ 658              		.align	2
+ 659              	.L68:
+ 660 0050 00000000 		.word	.LANCHOR9
+ 661 0054 00000000 		.word	screenBuffer
+ 662 0058 00000000 		.word	.LANCHOR10
+ 663 005c 00000000 		.word	.LANCHOR8
+ 665              		.section	.text.set_screen,"ax",%progbits
+ 666              		.align	1
+ 667              		.global	set_screen
+ 668              		.syntax unified
+ 669              		.code	16
+ 670              		.thumb_func
+ 671              		.fpu softvfp
+ 673              	set_screen:
+ 674              		@ args = 0, pretend = 0, frame = 0
+ 675              		@ frame_needed = 0, uses_anonymous_args = 0
+ 676 0000 10B5     		push	{r4, lr}
+ 677 0002 C022     		movs	r2, #192
+ 678              		@ sp needed
+ 679 0004 FF21     		movs	r1, #255
+ 680 0006 0248     		ldr	r0, .L71
+ 681 0008 FFF7FEFF 		bl	memset
+ 682 000c 10BD     		pop	{r4, pc}
+ 683              	.L72:
+ 684 000e C046     		.align	2
+ 685              	.L71:
+ 686 0010 11000000 		.word	screenBuffer+17
+ 688              		.section	.text.write_pixel,"ax",%progbits
+ 689              		.align	1
+ 690              		.global	write_pixel
+ 691              		.syntax unified
+ 692              		.code	16
+ 693              		.thumb_func
+ 694              		.fpu softvfp
+ 696              	write_pixel:
+ 697              		@ args = 0, pretend = 0, frame = 0
+ 698              		@ frame_needed = 0, uses_anonymous_args = 0
+ 699 0000 10B5     		push	{r4, lr}
+ 700 0002 5F28     		cmp	r0, #95
+ 701 0004 1BDC     		bgt	.L73
+ 702 0006 0F29     		cmp	r1, #15
+ 703 0008 19DC     		bgt	.L73
+ARM GAS  /tmp/ccVVivOE.s 			page 13
 
 
- 704 0020 1130     		adds	r0, r0, #17
- 705 0022 164A     		ldr	r2, .L78+4
- 706 0024 1940     		ands	r1, r3
- 707 0026 04D5     		bpl	.L76
- 708 0028 0823     		movs	r3, #8
- 709 002a 0139     		subs	r1, r1, #1
- 710 002c 5B42     		rsbs	r3, r3, #0
- 711 002e 1943     		orrs	r1, r3
- 712 0030 0131     		adds	r1, r1, #1
- 713              	.L76:
- 714 0032 0123     		movs	r3, #1
- 715 0034 09B2     		sxth	r1, r1
- 716 0036 8B40     		lsls	r3, r3, r1
- 717 0038 115C     		ldrb	r1, [r2, r0]
- 718 003a 0B43     		orrs	r3, r1
- 719 003c 1354     		strb	r3, [r2, r0]
- 720              	.L73:
- 721              		@ sp needed
- 722 003e 10BD     		pop	{r4, pc}
- 723              	.L75:
- 724 0040 002A     		cmp	r2, #0
- 725 0042 FCD1     		bne	.L73
- 726 0044 CB17     		asrs	r3, r1, #31
- 727 0046 0732     		adds	r2, r2, #7
- 728 0048 1340     		ands	r3, r2
- 729 004a 5B18     		adds	r3, r3, r1
- 730 004c DB10     		asrs	r3, r3, #3
- 731 004e 5932     		adds	r2, r2, #89
- 732 0050 5343     		muls	r3, r2
- 733 0052 1818     		adds	r0, r3, r0
- 734 0054 084B     		ldr	r3, .L78
- 735 0056 094C     		ldr	r4, .L78+4
- 736 0058 1130     		adds	r0, r0, #17
- 737 005a 1940     		ands	r1, r3
- 738 005c 04D5     		bpl	.L77
- 739 005e 0823     		movs	r3, #8
- 740 0060 0139     		subs	r1, r1, #1
- 741 0062 5B42     		rsbs	r3, r3, #0
- 742 0064 1943     		orrs	r1, r3
- 743 0066 0131     		adds	r1, r1, #1
- 744              	.L77:
- 745 0068 0122     		movs	r2, #1
- 746 006a 09B2     		sxth	r1, r1
- 747 006c 8A40     		lsls	r2, r2, r1
- 748 006e 235C     		ldrb	r3, [r4, r0]
- 749 0070 9343     		bics	r3, r2
- 750 0072 2354     		strb	r3, [r4, r0]
- 751 0074 E3E7     		b	.L73
- 752              	.L79:
- 753 0076 C046     		.align	2
- 754              	.L78:
- 755 0078 07000080 		.word	-2147483641
- 756 007c 00000000 		.word	screenBuffer
- 758              		.section	.text.draw_v_line,"ax",%progbits
- 759              		.align	1
- 760              		.global	draw_v_line
- 761              		.syntax unified
-ARM GAS  /tmp/cc4wQWsB.s 			page 14
+ 704 000a 012A     		cmp	r2, #1
+ 705 000c 18D1     		bne	.L75
+ 706 000e 0723     		movs	r3, #7
+ 707 0010 CA17     		asrs	r2, r1, #31
+ 708 0012 1A40     		ands	r2, r3
+ 709 0014 5218     		adds	r2, r2, r1
+ 710 0016 5933     		adds	r3, r3, #89
+ 711 0018 D210     		asrs	r2, r2, #3
+ 712 001a 5A43     		muls	r2, r3
+ 713 001c 164B     		ldr	r3, .L78
+ 714 001e 1018     		adds	r0, r2, r0
+ 715 0020 1130     		adds	r0, r0, #17
+ 716 0022 164A     		ldr	r2, .L78+4
+ 717 0024 1940     		ands	r1, r3
+ 718 0026 04D5     		bpl	.L76
+ 719 0028 0823     		movs	r3, #8
+ 720 002a 0139     		subs	r1, r1, #1
+ 721 002c 5B42     		rsbs	r3, r3, #0
+ 722 002e 1943     		orrs	r1, r3
+ 723 0030 0131     		adds	r1, r1, #1
+ 724              	.L76:
+ 725 0032 0123     		movs	r3, #1
+ 726 0034 09B2     		sxth	r1, r1
+ 727 0036 8B40     		lsls	r3, r3, r1
+ 728 0038 115C     		ldrb	r1, [r2, r0]
+ 729 003a 0B43     		orrs	r3, r1
+ 730 003c 1354     		strb	r3, [r2, r0]
+ 731              	.L73:
+ 732              		@ sp needed
+ 733 003e 10BD     		pop	{r4, pc}
+ 734              	.L75:
+ 735 0040 002A     		cmp	r2, #0
+ 736 0042 FCD1     		bne	.L73
+ 737 0044 CB17     		asrs	r3, r1, #31
+ 738 0046 0732     		adds	r2, r2, #7
+ 739 0048 1340     		ands	r3, r2
+ 740 004a 5B18     		adds	r3, r3, r1
+ 741 004c DB10     		asrs	r3, r3, #3
+ 742 004e 5932     		adds	r2, r2, #89
+ 743 0050 5343     		muls	r3, r2
+ 744 0052 1818     		adds	r0, r3, r0
+ 745 0054 084B     		ldr	r3, .L78
+ 746 0056 094C     		ldr	r4, .L78+4
+ 747 0058 1130     		adds	r0, r0, #17
+ 748 005a 1940     		ands	r1, r3
+ 749 005c 04D5     		bpl	.L77
+ 750 005e 0823     		movs	r3, #8
+ 751 0060 0139     		subs	r1, r1, #1
+ 752 0062 5B42     		rsbs	r3, r3, #0
+ 753 0064 1943     		orrs	r1, r3
+ 754 0066 0131     		adds	r1, r1, #1
+ 755              	.L77:
+ 756 0068 0122     		movs	r2, #1
+ 757 006a 09B2     		sxth	r1, r1
+ 758 006c 8A40     		lsls	r2, r2, r1
+ 759 006e 235C     		ldrb	r3, [r4, r0]
+ 760 0070 9343     		bics	r3, r2
+ARM GAS  /tmp/ccVVivOE.s 			page 14
 
 
- 762              		.code	16
- 763              		.thumb_func
- 764              		.fpu softvfp
- 766              	draw_v_line:
- 767              		@ args = 0, pretend = 0, frame = 8
- 768              		@ frame_needed = 0, uses_anonymous_args = 0
- 769 0000 F7B5     		push	{r0, r1, r2, r4, r5, r6, r7, lr}
- 770 0002 0500     		movs	r5, r0
- 771 0004 0F00     		movs	r7, r1
- 772 0006 1E00     		movs	r6, r3
- 773 0008 0024     		movs	r4, #0
- 774 000a 0192     		str	r2, [sp, #4]
- 775              	.L81:
- 776 000c 3919     		adds	r1, r7, r4
- 777 000e 3200     		movs	r2, r6
- 778 0010 2800     		movs	r0, r5
- 779 0012 09B2     		sxth	r1, r1
- 780 0014 FFF7FEFF 		bl	write_pixel
- 781 0018 019B     		ldr	r3, [sp, #4]
- 782 001a 0134     		adds	r4, r4, #1
- 783 001c A342     		cmp	r3, r4
- 784 001e F5DA     		bge	.L81
- 785              		@ sp needed
- 786 0020 F7BD     		pop	{r0, r1, r2, r4, r5, r6, r7, pc}
- 788              		.section	.text.draw_char,"ax",%progbits
- 789              		.align	1
- 790              		.global	draw_char
- 791              		.syntax unified
- 792              		.code	16
- 793              		.thumb_func
- 794              		.fpu softvfp
- 796              	draw_char:
- 797              		@ args = 0, pretend = 0, frame = 16
- 798              		@ frame_needed = 0, uses_anonymous_args = 0
- 799 0000 F0B5     		push	{r4, r5, r6, r7, lr}
- 800 0002 85B0     		sub	sp, sp, #20
- 801 0004 0300     		movs	r3, r0
- 802 0006 0392     		str	r2, [sp, #12]
- 803 0008 6022     		movs	r2, #96
- 804 000a 0291     		str	r1, [sp, #8]
- 805 000c 1340     		ands	r3, r2
- 806 000e 1042     		tst	r0, r2
- 807 0010 03D0     		beq	.L84
- 808 0012 7F23     		movs	r3, #127
- 809 0014 1840     		ands	r0, r3
- 810 0016 2038     		subs	r0, r0, #32
- 811 0018 C3B2     		uxtb	r3, r0
- 812              	.L84:
- 813 001a 0620     		movs	r0, #6
- 814 001c 0024     		movs	r4, #0
- 815 001e 0127     		movs	r7, #1
- 816 0020 5843     		muls	r0, r3
- 817 0022 0E4B     		ldr	r3, .L94
- 818 0024 C318     		adds	r3, r0, r3
- 819 0026 0193     		str	r3, [sp, #4]
- 820              	.L85:
- 821 0028 0025     		movs	r5, #0
-ARM GAS  /tmp/cc4wQWsB.s 			page 15
+ 761 0072 2354     		strb	r3, [r4, r0]
+ 762 0074 E3E7     		b	.L73
+ 763              	.L79:
+ 764 0076 C046     		.align	2
+ 765              	.L78:
+ 766 0078 07000080 		.word	-2147483641
+ 767 007c 00000000 		.word	screenBuffer
+ 769              		.section	.text.draw_v_line,"ax",%progbits
+ 770              		.align	1
+ 771              		.global	draw_v_line
+ 772              		.syntax unified
+ 773              		.code	16
+ 774              		.thumb_func
+ 775              		.fpu softvfp
+ 777              	draw_v_line:
+ 778              		@ args = 0, pretend = 0, frame = 8
+ 779              		@ frame_needed = 0, uses_anonymous_args = 0
+ 780 0000 F7B5     		push	{r0, r1, r2, r4, r5, r6, r7, lr}
+ 781 0002 0500     		movs	r5, r0
+ 782 0004 0F00     		movs	r7, r1
+ 783 0006 1E00     		movs	r6, r3
+ 784 0008 0024     		movs	r4, #0
+ 785 000a 0192     		str	r2, [sp, #4]
+ 786              	.L81:
+ 787 000c 3919     		adds	r1, r7, r4
+ 788 000e 3200     		movs	r2, r6
+ 789 0010 2800     		movs	r0, r5
+ 790 0012 09B2     		sxth	r1, r1
+ 791 0014 FFF7FEFF 		bl	write_pixel
+ 792 0018 019B     		ldr	r3, [sp, #4]
+ 793 001a 0134     		adds	r4, r4, #1
+ 794 001c A342     		cmp	r3, r4
+ 795 001e F5DA     		bge	.L81
+ 796              		@ sp needed
+ 797 0020 F7BD     		pop	{r0, r1, r2, r4, r5, r6, r7, pc}
+ 799              		.section	.text.draw_char,"ax",%progbits
+ 800              		.align	1
+ 801              		.global	draw_char
+ 802              		.syntax unified
+ 803              		.code	16
+ 804              		.thumb_func
+ 805              		.fpu softvfp
+ 807              	draw_char:
+ 808              		@ args = 0, pretend = 0, frame = 16
+ 809              		@ frame_needed = 0, uses_anonymous_args = 0
+ 810 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 811 0002 85B0     		sub	sp, sp, #20
+ 812 0004 0300     		movs	r3, r0
+ 813 0006 0392     		str	r2, [sp, #12]
+ 814 0008 6022     		movs	r2, #96
+ 815 000a 0291     		str	r1, [sp, #8]
+ 816 000c 1340     		ands	r3, r2
+ 817 000e 1042     		tst	r0, r2
+ 818 0010 03D0     		beq	.L84
+ 819 0012 7F23     		movs	r3, #127
+ 820 0014 1840     		ands	r0, r3
+ 821 0016 2038     		subs	r0, r0, #32
+ARM GAS  /tmp/ccVVivOE.s 			page 15
 
 
- 822 002a 029B     		ldr	r3, [sp, #8]
- 823 002c E618     		adds	r6, r4, r3
- 824 002e 36B2     		sxth	r6, r6
- 825              	.L88:
- 826 0030 039B     		ldr	r3, [sp, #12]
- 827 0032 E918     		adds	r1, r5, r3
- 828 0034 019B     		ldr	r3, [sp, #4]
- 829 0036 09B2     		sxth	r1, r1
- 830 0038 1B5D     		ldrb	r3, [r3, r4]
- 831 003a 2B41     		asrs	r3, r3, r5
- 832 003c 1A00     		movs	r2, r3
- 833 003e 3A40     		ands	r2, r7
- 834 0040 3B42     		tst	r3, r7
- 835 0042 00D0     		beq	.L86
- 836 0044 3A00     		movs	r2, r7
- 837              	.L86:
- 838 0046 3000     		movs	r0, r6
- 839 0048 0135     		adds	r5, r5, #1
- 840 004a FFF7FEFF 		bl	write_pixel
- 841 004e 082D     		cmp	r5, #8
- 842 0050 EED1     		bne	.L88
- 843 0052 0134     		adds	r4, r4, #1
- 844 0054 062C     		cmp	r4, #6
- 845 0056 E7D1     		bne	.L85
- 846 0058 05B0     		add	sp, sp, #20
- 847              		@ sp needed
- 848 005a F0BD     		pop	{r4, r5, r6, r7, pc}
- 849              	.L95:
- 850              		.align	2
- 851              	.L94:
- 852 005c 00000000 		.word	font
- 854              		.section	.text.draw_string,"ax",%progbits
- 855              		.align	1
- 856              		.global	draw_string
- 857              		.syntax unified
- 858              		.code	16
- 859              		.thumb_func
- 860              		.fpu softvfp
- 862              	draw_string:
- 863              		@ args = 0, pretend = 0, frame = 0
- 864              		@ frame_needed = 0, uses_anonymous_args = 0
- 865 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 866 0002 0500     		movs	r5, r0
- 867 0004 0C00     		movs	r4, r1
- 868 0006 1600     		movs	r6, r2
- 869 0008 1F00     		movs	r7, r3
- 870              	.L97:
- 871 000a 2878     		ldrb	r0, [r5]
- 872 000c 0028     		cmp	r0, #0
- 873 000e 00D1     		bne	.L98
- 874              		@ sp needed
- 875 0010 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 876              	.L98:
- 877 0012 2100     		movs	r1, r4
- 878 0014 3B00     		movs	r3, r7
- 879 0016 3200     		movs	r2, r6
- 880 0018 0634     		adds	r4, r4, #6
-ARM GAS  /tmp/cc4wQWsB.s 			page 16
+ 822 0018 C3B2     		uxtb	r3, r0
+ 823              	.L84:
+ 824 001a 0620     		movs	r0, #6
+ 825 001c 0024     		movs	r4, #0
+ 826 001e 0127     		movs	r7, #1
+ 827 0020 5843     		muls	r0, r3
+ 828 0022 0E4B     		ldr	r3, .L94
+ 829 0024 C318     		adds	r3, r0, r3
+ 830 0026 0193     		str	r3, [sp, #4]
+ 831              	.L85:
+ 832 0028 0025     		movs	r5, #0
+ 833 002a 029B     		ldr	r3, [sp, #8]
+ 834 002c E618     		adds	r6, r4, r3
+ 835 002e 36B2     		sxth	r6, r6
+ 836              	.L88:
+ 837 0030 039B     		ldr	r3, [sp, #12]
+ 838 0032 E918     		adds	r1, r5, r3
+ 839 0034 019B     		ldr	r3, [sp, #4]
+ 840 0036 09B2     		sxth	r1, r1
+ 841 0038 1B5D     		ldrb	r3, [r3, r4]
+ 842 003a 2B41     		asrs	r3, r3, r5
+ 843 003c 1A00     		movs	r2, r3
+ 844 003e 3A40     		ands	r2, r7
+ 845 0040 3B42     		tst	r3, r7
+ 846 0042 00D0     		beq	.L86
+ 847 0044 3A00     		movs	r2, r7
+ 848              	.L86:
+ 849 0046 3000     		movs	r0, r6
+ 850 0048 0135     		adds	r5, r5, #1
+ 851 004a FFF7FEFF 		bl	write_pixel
+ 852 004e 082D     		cmp	r5, #8
+ 853 0050 EED1     		bne	.L88
+ 854 0052 0134     		adds	r4, r4, #1
+ 855 0054 062C     		cmp	r4, #6
+ 856 0056 E7D1     		bne	.L85
+ 857 0058 05B0     		add	sp, sp, #20
+ 858              		@ sp needed
+ 859 005a F0BD     		pop	{r4, r5, r6, r7, pc}
+ 860              	.L95:
+ 861              		.align	2
+ 862              	.L94:
+ 863 005c 00000000 		.word	font
+ 865              		.section	.text.draw_string,"ax",%progbits
+ 866              		.align	1
+ 867              		.global	draw_string
+ 868              		.syntax unified
+ 869              		.code	16
+ 870              		.thumb_func
+ 871              		.fpu softvfp
+ 873              	draw_string:
+ 874              		@ args = 0, pretend = 0, frame = 0
+ 875              		@ frame_needed = 0, uses_anonymous_args = 0
+ 876 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 877 0002 0500     		movs	r5, r0
+ 878 0004 0C00     		movs	r4, r1
+ 879 0006 1600     		movs	r6, r2
+ 880 0008 1F00     		movs	r7, r3
+ARM GAS  /tmp/ccVVivOE.s 			page 16
 
 
- 881 001a FFF7FEFF 		bl	draw_char
- 882 001e 0135     		adds	r5, r5, #1
- 883 0020 E4B2     		uxtb	r4, r4
- 884 0022 F2E7     		b	.L97
- 886              		.section	.text.SystemClock_Config,"ax",%progbits
- 887              		.align	1
- 888              		.global	SystemClock_Config
- 889              		.syntax unified
- 890              		.code	16
- 891              		.thumb_func
- 892              		.fpu softvfp
- 894              	SystemClock_Config:
- 895              		@ args = 0, pretend = 0, frame = 96
- 896              		@ frame_needed = 0, uses_anonymous_args = 0
- 897 0000 30B5     		push	{r4, r5, lr}
- 898 0002 1025     		movs	r5, #16
- 899 0004 99B0     		sub	sp, sp, #100
- 900 0006 2C22     		movs	r2, #44
- 901 0008 0021     		movs	r1, #0
- 902 000a 0CA8     		add	r0, sp, #48
- 903 000c FFF7FEFF 		bl	memset
- 904 0010 2A00     		movs	r2, r5
- 905 0012 0021     		movs	r1, #0
- 906 0014 6846     		mov	r0, sp
- 907 0016 FFF7FEFF 		bl	memset
- 908 001a 1C22     		movs	r2, #28
- 909 001c 0021     		movs	r1, #0
- 910 001e 04A8     		add	r0, sp, #16
- 911 0020 FFF7FEFF 		bl	memset
- 912 0024 3223     		movs	r3, #50
- 913 0026 0B93     		str	r3, [sp, #44]
- 914 0028 C023     		movs	r3, #192
- 915 002a 0124     		movs	r4, #1
- 916 002c 0F95     		str	r5, [sp, #60]
- 917 002e 1195     		str	r5, [sp, #68]
- 918 0030 5B02     		lsls	r3, r3, #9
- 919 0032 0E3D     		subs	r5, r5, #14
- 920 0034 0BA8     		add	r0, sp, #44
- 921 0036 1495     		str	r5, [sp, #80]
- 922 0038 1593     		str	r3, [sp, #84]
- 923 003a 0E94     		str	r4, [sp, #56]
- 924 003c 1394     		str	r4, [sp, #76]
- 925 003e 1094     		str	r4, [sp, #64]
- 926 0040 1794     		str	r4, [sp, #92]
- 927 0042 FFF7FEFF 		bl	HAL_RCC_OscConfig
- 928 0046 0723     		movs	r3, #7
- 929 0048 0195     		str	r5, [sp, #4]
- 930 004a 0025     		movs	r5, #0
- 931 004c 2100     		movs	r1, r4
- 932 004e 6846     		mov	r0, sp
- 933 0050 0093     		str	r3, [sp]
- 934 0052 0295     		str	r5, [sp, #8]
- 935 0054 0395     		str	r5, [sp, #12]
- 936 0056 FFF7FEFF 		bl	HAL_RCC_ClockConfig
- 937 005a 044B     		ldr	r3, .L100
- 938 005c 04A8     		add	r0, sp, #16
- 939 005e 0493     		str	r3, [sp, #16]
-ARM GAS  /tmp/cc4wQWsB.s 			page 17
+ 881              	.L97:
+ 882 000a 2878     		ldrb	r0, [r5]
+ 883 000c 0028     		cmp	r0, #0
+ 884 000e 00D1     		bne	.L98
+ 885              		@ sp needed
+ 886 0010 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 887              	.L98:
+ 888 0012 2100     		movs	r1, r4
+ 889 0014 3B00     		movs	r3, r7
+ 890 0016 3200     		movs	r2, r6
+ 891 0018 0634     		adds	r4, r4, #6
+ 892 001a FFF7FEFF 		bl	draw_char
+ 893 001e 0135     		adds	r5, r5, #1
+ 894 0020 E4B2     		uxtb	r4, r4
+ 895 0022 F2E7     		b	.L97
+ 897              		.section	.text.SystemClock_Config,"ax",%progbits
+ 898              		.align	1
+ 899              		.global	SystemClock_Config
+ 900              		.syntax unified
+ 901              		.code	16
+ 902              		.thumb_func
+ 903              		.fpu softvfp
+ 905              	SystemClock_Config:
+ 906              		@ args = 0, pretend = 0, frame = 96
+ 907              		@ frame_needed = 0, uses_anonymous_args = 0
+ 908 0000 30B5     		push	{r4, r5, lr}
+ 909 0002 1025     		movs	r5, #16
+ 910 0004 99B0     		sub	sp, sp, #100
+ 911 0006 2C22     		movs	r2, #44
+ 912 0008 0021     		movs	r1, #0
+ 913 000a 0CA8     		add	r0, sp, #48
+ 914 000c FFF7FEFF 		bl	memset
+ 915 0010 2A00     		movs	r2, r5
+ 916 0012 0021     		movs	r1, #0
+ 917 0014 6846     		mov	r0, sp
+ 918 0016 FFF7FEFF 		bl	memset
+ 919 001a 1C22     		movs	r2, #28
+ 920 001c 0021     		movs	r1, #0
+ 921 001e 04A8     		add	r0, sp, #16
+ 922 0020 FFF7FEFF 		bl	memset
+ 923 0024 3223     		movs	r3, #50
+ 924 0026 0B93     		str	r3, [sp, #44]
+ 925 0028 C023     		movs	r3, #192
+ 926 002a 0124     		movs	r4, #1
+ 927 002c 0F95     		str	r5, [sp, #60]
+ 928 002e 1195     		str	r5, [sp, #68]
+ 929 0030 5B02     		lsls	r3, r3, #9
+ 930 0032 0E3D     		subs	r5, r5, #14
+ 931 0034 0BA8     		add	r0, sp, #44
+ 932 0036 1495     		str	r5, [sp, #80]
+ 933 0038 1593     		str	r3, [sp, #84]
+ 934 003a 0E94     		str	r4, [sp, #56]
+ 935 003c 1394     		str	r4, [sp, #76]
+ 936 003e 1094     		str	r4, [sp, #64]
+ 937 0040 1794     		str	r4, [sp, #92]
+ 938 0042 FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 939 0046 0723     		movs	r3, #7
+ARM GAS  /tmp/ccVVivOE.s 			page 17
 
 
- 940 0060 0895     		str	r5, [sp, #32]
- 941 0062 0A95     		str	r5, [sp, #40]
- 942 0064 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
- 943 0068 19B0     		add	sp, sp, #100
- 944              		@ sp needed
- 945 006a 30BD     		pop	{r4, r5, pc}
- 946              	.L101:
- 947              		.align	2
- 948              	.L100:
- 949 006c 20000200 		.word	131104
- 951              		.section	.rodata.main.str1.1,"aMS",%progbits,1
- 952              	.LC28:
- 953 0000 41646A75 		.ascii	"Adjust\000"
- 953      737400
- 954              	.LC30:
- 955 0007 50726F66 		.ascii	"Profile\000"
- 955      696C6500 
- 956              	.LC32:
- 957 000f 21414354 		.ascii	"!ACTV\000"
- 957      5600
- 958              	.LC34:
- 959 0015 21505752 		.ascii	"!PWRD\000"
- 959      4400
- 960              	.LC45:
- 961 001b 50442025 		.ascii	"PD %s %1d\000"
- 961      73202531 
- 961      6400
- 962              	.LC47:
- 963 0025 2531642E 		.ascii	"%1d.%1d A %2d W\000"
- 963      25316420 
- 963      41202532 
- 963      64205700 
- 964              		.global	__aeabi_d2uiz
- 965              	.LC49:
- 966 0035 55534220 		.ascii	"USB !USB-PD\000"
- 966      21555342 
- 966      2D504400 
- 967              	.LC51:
- 968 0041 49726F6E 		.ascii	"Iron Disabled\000"
- 968      20446973 
- 968      61626C65 
- 968      6400
- 969              	.LC57:
- 970 004f 25642043 		.ascii	"%d C   \000"
- 970      20202000 
- 971              	.LC59:
- 972 0057 25642E25 		.ascii	"%d.%d C\000"
- 972      64204300 
- 973              	.LC61:
- 974 005f 25642E25 		.ascii	"%d.%d V\000"
- 974      64205600 
- 975              	.LC63:
- 976 0067 25642E25 		.ascii	"%d.%d A\000"
- 976      64204100 
- 977              		.section	.text.startup.main,"ax",%progbits
- 978              		.align	1
- 979              		.global	main
-ARM GAS  /tmp/cc4wQWsB.s 			page 18
+ 940 0048 0195     		str	r5, [sp, #4]
+ 941 004a 0025     		movs	r5, #0
+ 942 004c 2100     		movs	r1, r4
+ 943 004e 6846     		mov	r0, sp
+ 944 0050 0093     		str	r3, [sp]
+ 945 0052 0295     		str	r5, [sp, #8]
+ 946 0054 0395     		str	r5, [sp, #12]
+ 947 0056 FFF7FEFF 		bl	HAL_RCC_ClockConfig
+ 948 005a 044B     		ldr	r3, .L100
+ 949 005c 04A8     		add	r0, sp, #16
+ 950 005e 0493     		str	r3, [sp, #16]
+ 951 0060 0895     		str	r5, [sp, #32]
+ 952 0062 0A95     		str	r5, [sp, #40]
+ 953 0064 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
+ 954 0068 19B0     		add	sp, sp, #100
+ 955              		@ sp needed
+ 956 006a 30BD     		pop	{r4, r5, pc}
+ 957              	.L101:
+ 958              		.align	2
+ 959              	.L100:
+ 960 006c 20000200 		.word	131104
+ 962              		.section	.rodata.main.str1.1,"aMS",%progbits,1
+ 963              	.LC28:
+ 964 0000 41646A75 		.ascii	"Adjust\000"
+ 964      737400
+ 965              	.LC30:
+ 966 0007 50726F66 		.ascii	"Profile\000"
+ 966      696C6500 
+ 967              	.LC32:
+ 968 000f 21414354 		.ascii	"!ACTV\000"
+ 968      5600
+ 969              	.LC34:
+ 970 0015 21505752 		.ascii	"!PWRD\000"
+ 970      4400
+ 971              	.LC45:
+ 972 001b 50442025 		.ascii	"PD %s %1d\000"
+ 972      73202531 
+ 972      6400
+ 973              	.LC47:
+ 974 0025 2531642E 		.ascii	"%1d.%1d A %2d W\000"
+ 974      25316420 
+ 974      41202532 
+ 974      64205700 
+ 975              		.global	__aeabi_d2uiz
+ 976              	.LC49:
+ 977 0035 55534220 		.ascii	"USB !USB-PD\000"
+ 977      21555342 
+ 977      2D504400 
+ 978              	.LC51:
+ 979 0041 49726F6E 		.ascii	"Iron Disabled\000"
+ 979      20446973 
+ 979      61626C65 
+ 979      6400
+ 980              	.LC57:
+ 981 004f 25642043 		.ascii	"%d C   \000"
+ 981      20202000 
+ 982              	.LC59:
+ARM GAS  /tmp/ccVVivOE.s 			page 18
 
 
- 980              		.syntax unified
- 981              		.code	16
- 982              		.thumb_func
- 983              		.fpu softvfp
- 985              	main:
- 986              		@ args = 0, pretend = 0, frame = 128
- 987              		@ frame_needed = 0, uses_anonymous_args = 0
- 988 0000 F0B5     		push	{r4, r5, r6, r7, lr}
- 989 0002 A3B0     		sub	sp, sp, #140
- 990 0004 FFF7FEFF 		bl	HAL_Init
- 991 0008 FFF7FEFF 		bl	SystemClock_Config
- 992 000c 1022     		movs	r2, #16
- 993 000e 0021     		movs	r1, #0
- 994 0010 1CA8     		add	r0, sp, #112
- 995 0012 FFF7FEFF 		bl	memset
- 996 0016 8021     		movs	r1, #128
- 997 0018 C84D     		ldr	r5, .L144
- 998 001a 8902     		lsls	r1, r1, #10
- 999 001c 6A69     		ldr	r2, [r5, #20]
- 1000 001e 9020     		movs	r0, #144
- 1001 0020 0A43     		orrs	r2, r1
- 1002 0022 6A61     		str	r2, [r5, #20]
- 1003 0024 6B69     		ldr	r3, [r5, #20]
- 1004 0026 0226     		movs	r6, #2
- 1005 0028 0B40     		ands	r3, r1
- 1006 002a 8021     		movs	r1, #128
- 1007 002c 0993     		str	r3, [sp, #36]
- 1008 002e 099B     		ldr	r3, [sp, #36]
- 1009 0030 6A69     		ldr	r2, [r5, #20]
- 1010 0032 C902     		lsls	r1, r1, #11
- 1011 0034 0A43     		orrs	r2, r1
- 1012 0036 6A61     		str	r2, [r5, #20]
- 1013 0038 6B69     		ldr	r3, [r5, #20]
- 1014 003a C005     		lsls	r0, r0, #23
- 1015 003c 0B40     		ands	r3, r1
- 1016 003e 8021     		movs	r1, #128
- 1017 0040 0A93     		str	r3, [sp, #40]
- 1018 0042 0A9B     		ldr	r3, [sp, #40]
- 1019 0044 6A69     		ldr	r2, [r5, #20]
- 1020 0046 0903     		lsls	r1, r1, #12
- 1021 0048 0A43     		orrs	r2, r1
- 1022 004a 6A61     		str	r2, [r5, #20]
- 1023 004c 6B69     		ldr	r3, [r5, #20]
- 1024 004e 1D96     		str	r6, [sp, #116]
- 1025 0050 0B40     		ands	r3, r1
- 1026 0052 0B93     		str	r3, [sp, #44]
- 1027 0054 0B9B     		ldr	r3, [sp, #44]
- 1028 0056 1823     		movs	r3, #24
- 1029 0058 1BA9     		add	r1, sp, #108
- 1030 005a 1B93     		str	r3, [sp, #108]
- 1031 005c FFF7FEFF 		bl	HAL_GPIO_Init
- 1032 0060 8023     		movs	r3, #128
- 1033 0062 0024     		movs	r4, #0
- 1034 0064 9B01     		lsls	r3, r3, #6
- 1035 0066 B648     		ldr	r0, .L144+4
- 1036 0068 1BA9     		add	r1, sp, #108
- 1037 006a 1B93     		str	r3, [sp, #108]
-ARM GAS  /tmp/cc4wQWsB.s 			page 19
+ 983 0057 25642E25 		.ascii	"%d.%d C\000"
+ 983      64204300 
+ 984              	.LC61:
+ 985 005f 25642E25 		.ascii	"%d.%d V\000"
+ 985      64205600 
+ 986              	.LC63:
+ 987 0067 25642E25 		.ascii	"%d.%d A\000"
+ 987      64204100 
+ 988              		.section	.text.startup.main,"ax",%progbits
+ 989              		.align	1
+ 990              		.global	main
+ 991              		.syntax unified
+ 992              		.code	16
+ 993              		.thumb_func
+ 994              		.fpu softvfp
+ 996              	main:
+ 997              		@ args = 0, pretend = 0, frame = 128
+ 998              		@ frame_needed = 0, uses_anonymous_args = 0
+ 999 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 1000 0002 A3B0     		sub	sp, sp, #140
+ 1001 0004 FFF7FEFF 		bl	HAL_Init
+ 1002 0008 FFF7FEFF 		bl	SystemClock_Config
+ 1003 000c 1022     		movs	r2, #16
+ 1004 000e 0021     		movs	r1, #0
+ 1005 0010 1CA8     		add	r0, sp, #112
+ 1006 0012 FFF7FEFF 		bl	memset
+ 1007 0016 8021     		movs	r1, #128
+ 1008 0018 C84D     		ldr	r5, .L144
+ 1009 001a 8902     		lsls	r1, r1, #10
+ 1010 001c 6A69     		ldr	r2, [r5, #20]
+ 1011 001e 9020     		movs	r0, #144
+ 1012 0020 0A43     		orrs	r2, r1
+ 1013 0022 6A61     		str	r2, [r5, #20]
+ 1014 0024 6B69     		ldr	r3, [r5, #20]
+ 1015 0026 0226     		movs	r6, #2
+ 1016 0028 0B40     		ands	r3, r1
+ 1017 002a 8021     		movs	r1, #128
+ 1018 002c 0993     		str	r3, [sp, #36]
+ 1019 002e 099B     		ldr	r3, [sp, #36]
+ 1020 0030 6A69     		ldr	r2, [r5, #20]
+ 1021 0032 C902     		lsls	r1, r1, #11
+ 1022 0034 0A43     		orrs	r2, r1
+ 1023 0036 6A61     		str	r2, [r5, #20]
+ 1024 0038 6B69     		ldr	r3, [r5, #20]
+ 1025 003a C005     		lsls	r0, r0, #23
+ 1026 003c 0B40     		ands	r3, r1
+ 1027 003e 8021     		movs	r1, #128
+ 1028 0040 0A93     		str	r3, [sp, #40]
+ 1029 0042 0A9B     		ldr	r3, [sp, #40]
+ 1030 0044 6A69     		ldr	r2, [r5, #20]
+ 1031 0046 0903     		lsls	r1, r1, #12
+ 1032 0048 0A43     		orrs	r2, r1
+ 1033 004a 6A61     		str	r2, [r5, #20]
+ 1034 004c 6B69     		ldr	r3, [r5, #20]
+ 1035 004e 1D96     		str	r6, [sp, #116]
+ 1036 0050 0B40     		ands	r3, r1
+ 1037 0052 0B93     		str	r3, [sp, #44]
+ARM GAS  /tmp/ccVVivOE.s 			page 19
 
 
- 1038 006c 1D96     		str	r6, [sp, #116]
- 1039 006e 1C94     		str	r4, [sp, #112]
- 1040 0070 FFF7FEFF 		bl	HAL_GPIO_Init
- 1041 0074 8023     		movs	r3, #128
- 1042 0076 0127     		movs	r7, #1
- 1043 0078 5B01     		lsls	r3, r3, #5
- 1044 007a B248     		ldr	r0, .L144+8
- 1045 007c 1BA9     		add	r1, sp, #108
- 1046 007e 1B93     		str	r3, [sp, #108]
- 1047 0080 1C94     		str	r4, [sp, #112]
- 1048 0082 1D94     		str	r4, [sp, #116]
- 1049 0084 FFF7FEFF 		bl	HAL_GPIO_Init
- 1050 0088 6B69     		ldr	r3, [r5, #20]
- 1051 008a 2200     		movs	r2, r4
- 1052 008c 3B43     		orrs	r3, r7
- 1053 008e 6B61     		str	r3, [r5, #20]
- 1054 0090 6B69     		ldr	r3, [r5, #20]
- 1055 0092 2100     		movs	r1, r4
- 1056 0094 3B40     		ands	r3, r7
- 1057 0096 0920     		movs	r0, #9
- 1058 0098 0893     		str	r3, [sp, #32]
- 1059 009a 089B     		ldr	r3, [sp, #32]
- 1060 009c FFF7FEFF 		bl	HAL_NVIC_SetPriority
- 1061 00a0 0920     		movs	r0, #9
- 1062 00a2 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
- 1063 00a6 2200     		movs	r2, r4
- 1064 00a8 2100     		movs	r1, r4
- 1065 00aa 1020     		movs	r0, #16
- 1066 00ac FFF7FEFF 		bl	HAL_NVIC_SetPriority
- 1067 00b0 1020     		movs	r0, #16
- 1068 00b2 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
- 1069 00b6 8021     		movs	r1, #128
- 1070 00b8 6B69     		ldr	r3, [r5, #20]
- 1071 00ba 8900     		lsls	r1, r1, #2
- 1072 00bc 3B43     		orrs	r3, r7
- 1073 00be 6B61     		str	r3, [r5, #20]
- 1074 00c0 6B69     		ldr	r3, [r5, #20]
- 1075 00c2 1BA8     		add	r0, sp, #108
- 1076 00c4 3B40     		ands	r3, r7
- 1077 00c6 0693     		str	r3, [sp, #24]
- 1078 00c8 069B     		ldr	r3, [sp, #24]
- 1079 00ca AA69     		ldr	r2, [r5, #24]
- 1080 00cc 0A43     		orrs	r2, r1
- 1081 00ce AA61     		str	r2, [r5, #24]
- 1082 00d0 AB69     		ldr	r3, [r5, #24]
- 1083 00d2 0C22     		movs	r2, #12
- 1084 00d4 0B40     		ands	r3, r1
- 1085 00d6 0793     		str	r3, [sp, #28]
- 1086 00d8 2100     		movs	r1, r4
- 1087 00da 079B     		ldr	r3, [sp, #28]
- 1088 00dc FFF7FEFF 		bl	memset
- 1089 00e0 994E     		ldr	r6, .L144+12
- 1090 00e2 9A4B     		ldr	r3, .L144+16
- 1091 00e4 0820     		movs	r0, #8
- 1092 00e6 3360     		str	r3, [r6]
- 1093 00e8 4023     		movs	r3, #64
- 1094 00ea B362     		str	r3, [r6, #40]
-ARM GAS  /tmp/cc4wQWsB.s 			page 20
+ 1038 0054 0B9B     		ldr	r3, [sp, #44]
+ 1039 0056 1823     		movs	r3, #24
+ 1040 0058 1BA9     		add	r1, sp, #108
+ 1041 005a 1B93     		str	r3, [sp, #108]
+ 1042 005c FFF7FEFF 		bl	HAL_GPIO_Init
+ 1043 0060 8023     		movs	r3, #128
+ 1044 0062 0024     		movs	r4, #0
+ 1045 0064 9B01     		lsls	r3, r3, #6
+ 1046 0066 B648     		ldr	r0, .L144+4
+ 1047 0068 1BA9     		add	r1, sp, #108
+ 1048 006a 1B93     		str	r3, [sp, #108]
+ 1049 006c 1D96     		str	r6, [sp, #116]
+ 1050 006e 1C94     		str	r4, [sp, #112]
+ 1051 0070 FFF7FEFF 		bl	HAL_GPIO_Init
+ 1052 0074 8023     		movs	r3, #128
+ 1053 0076 0127     		movs	r7, #1
+ 1054 0078 5B01     		lsls	r3, r3, #5
+ 1055 007a B248     		ldr	r0, .L144+8
+ 1056 007c 1BA9     		add	r1, sp, #108
+ 1057 007e 1B93     		str	r3, [sp, #108]
+ 1058 0080 1C94     		str	r4, [sp, #112]
+ 1059 0082 1D94     		str	r4, [sp, #116]
+ 1060 0084 FFF7FEFF 		bl	HAL_GPIO_Init
+ 1061 0088 6B69     		ldr	r3, [r5, #20]
+ 1062 008a 2200     		movs	r2, r4
+ 1063 008c 3B43     		orrs	r3, r7
+ 1064 008e 6B61     		str	r3, [r5, #20]
+ 1065 0090 6B69     		ldr	r3, [r5, #20]
+ 1066 0092 2100     		movs	r1, r4
+ 1067 0094 3B40     		ands	r3, r7
+ 1068 0096 0920     		movs	r0, #9
+ 1069 0098 0893     		str	r3, [sp, #32]
+ 1070 009a 089B     		ldr	r3, [sp, #32]
+ 1071 009c FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 1072 00a0 0920     		movs	r0, #9
+ 1073 00a2 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 1074 00a6 2200     		movs	r2, r4
+ 1075 00a8 2100     		movs	r1, r4
+ 1076 00aa 1020     		movs	r0, #16
+ 1077 00ac FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 1078 00b0 1020     		movs	r0, #16
+ 1079 00b2 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 1080 00b6 8021     		movs	r1, #128
+ 1081 00b8 6B69     		ldr	r3, [r5, #20]
+ 1082 00ba 8900     		lsls	r1, r1, #2
+ 1083 00bc 3B43     		orrs	r3, r7
+ 1084 00be 6B61     		str	r3, [r5, #20]
+ 1085 00c0 6B69     		ldr	r3, [r5, #20]
+ 1086 00c2 1BA8     		add	r0, sp, #108
+ 1087 00c4 3B40     		ands	r3, r7
+ 1088 00c6 0693     		str	r3, [sp, #24]
+ 1089 00c8 069B     		ldr	r3, [sp, #24]
+ 1090 00ca AA69     		ldr	r2, [r5, #24]
+ 1091 00cc 0A43     		orrs	r2, r1
+ 1092 00ce AA61     		str	r2, [r5, #24]
+ 1093 00d0 AB69     		ldr	r3, [r5, #24]
+ 1094 00d2 0C22     		movs	r2, #12
+ARM GAS  /tmp/ccVVivOE.s 			page 20
 
 
- 1095 00ec 8023     		movs	r3, #128
- 1096 00ee 7061     		str	r0, [r6, #20]
- 1097 00f0 DB00     		lsls	r3, r3, #3
- 1098 00f2 3000     		movs	r0, r6
- 1099 00f4 3761     		str	r7, [r6, #16]
- 1100 00f6 F362     		str	r3, [r6, #44]
- 1101 00f8 3763     		str	r7, [r6, #48]
- 1102 00fa 7763     		str	r7, [r6, #52]
- 1103 00fc 7460     		str	r4, [r6, #4]
- 1104 00fe B460     		str	r4, [r6, #8]
- 1105 0100 F460     		str	r4, [r6, #12]
- 1106 0102 B461     		str	r4, [r6, #24]
- 1107 0104 F461     		str	r4, [r6, #28]
- 1108 0106 3462     		str	r4, [r6, #32]
- 1109 0108 7462     		str	r4, [r6, #36]
- 1110 010a FFF7FEFF 		bl	HAL_ADC_Init
- 1111 010e 0620     		movs	r0, #6
- 1112 0110 8023     		movs	r3, #128
- 1113 0112 1D90     		str	r0, [sp, #116]
- 1114 0114 5B01     		lsls	r3, r3, #5
- 1115 0116 1BA9     		add	r1, sp, #108
- 1116 0118 3000     		movs	r0, r6
- 1117 011a 1C93     		str	r3, [sp, #112]
- 1118 011c 1B94     		str	r4, [sp, #108]
- 1119 011e FFF7FEFF 		bl	HAL_ADC_ConfigChannel
- 1120 0122 1BA9     		add	r1, sp, #108
- 1121 0124 3000     		movs	r0, r6
- 1122 0126 1B97     		str	r7, [sp, #108]
- 1123 0128 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
- 1124 012c 0222     		movs	r2, #2
- 1125 012e 1BA9     		add	r1, sp, #108
- 1126 0130 3000     		movs	r0, r6
- 1127 0132 1B92     		str	r2, [sp, #108]
- 1128 0134 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
- 1129 0138 0523     		movs	r3, #5
- 1130 013a 1BA9     		add	r1, sp, #108
- 1131 013c 3000     		movs	r0, r6
- 1132 013e 1B93     		str	r3, [sp, #108]
- 1133 0140 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
- 1134 0144 3000     		movs	r0, r6
- 1135 0146 FFF7FEFF 		bl	HAL_ADC_MspInit
- 1136 014a 814F     		ldr	r7, .L144+20
- 1137 014c 814B     		ldr	r3, .L144+24
- 1138 014e 3800     		movs	r0, r7
- 1139 0150 3B60     		str	r3, [r7]
- 1140 0152 814B     		ldr	r3, .L144+28
- 1141 0154 BC60     		str	r4, [r7, #8]
- 1142 0156 7B60     		str	r3, [r7, #4]
- 1143 0158 0123     		movs	r3, #1
- 1144 015a 3C61     		str	r4, [r7, #16]
- 1145 015c FB60     		str	r3, [r7, #12]
- 1146 015e 7C61     		str	r4, [r7, #20]
- 1147 0160 BC61     		str	r4, [r7, #24]
- 1148 0162 FC61     		str	r4, [r7, #28]
- 1149 0164 3C62     		str	r4, [r7, #32]
- 1150 0166 FFF7FEFF 		bl	HAL_I2C_Init
- 1151 016a 2100     		movs	r1, r4
-ARM GAS  /tmp/cc4wQWsB.s 			page 21
+ 1095 00d4 0B40     		ands	r3, r1
+ 1096 00d6 0793     		str	r3, [sp, #28]
+ 1097 00d8 2100     		movs	r1, r4
+ 1098 00da 079B     		ldr	r3, [sp, #28]
+ 1099 00dc FFF7FEFF 		bl	memset
+ 1100 00e0 994E     		ldr	r6, .L144+12
+ 1101 00e2 9A4B     		ldr	r3, .L144+16
+ 1102 00e4 0820     		movs	r0, #8
+ 1103 00e6 3360     		str	r3, [r6]
+ 1104 00e8 4023     		movs	r3, #64
+ 1105 00ea B362     		str	r3, [r6, #40]
+ 1106 00ec 8023     		movs	r3, #128
+ 1107 00ee 7061     		str	r0, [r6, #20]
+ 1108 00f0 DB00     		lsls	r3, r3, #3
+ 1109 00f2 3000     		movs	r0, r6
+ 1110 00f4 3761     		str	r7, [r6, #16]
+ 1111 00f6 F362     		str	r3, [r6, #44]
+ 1112 00f8 3763     		str	r7, [r6, #48]
+ 1113 00fa 7763     		str	r7, [r6, #52]
+ 1114 00fc 7460     		str	r4, [r6, #4]
+ 1115 00fe B460     		str	r4, [r6, #8]
+ 1116 0100 F460     		str	r4, [r6, #12]
+ 1117 0102 B461     		str	r4, [r6, #24]
+ 1118 0104 F461     		str	r4, [r6, #28]
+ 1119 0106 3462     		str	r4, [r6, #32]
+ 1120 0108 7462     		str	r4, [r6, #36]
+ 1121 010a FFF7FEFF 		bl	HAL_ADC_Init
+ 1122 010e 0620     		movs	r0, #6
+ 1123 0110 8023     		movs	r3, #128
+ 1124 0112 1D90     		str	r0, [sp, #116]
+ 1125 0114 5B01     		lsls	r3, r3, #5
+ 1126 0116 1BA9     		add	r1, sp, #108
+ 1127 0118 3000     		movs	r0, r6
+ 1128 011a 1C93     		str	r3, [sp, #112]
+ 1129 011c 1B94     		str	r4, [sp, #108]
+ 1130 011e FFF7FEFF 		bl	HAL_ADC_ConfigChannel
+ 1131 0122 1BA9     		add	r1, sp, #108
+ 1132 0124 3000     		movs	r0, r6
+ 1133 0126 1B97     		str	r7, [sp, #108]
+ 1134 0128 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
+ 1135 012c 0222     		movs	r2, #2
+ 1136 012e 1BA9     		add	r1, sp, #108
+ 1137 0130 3000     		movs	r0, r6
+ 1138 0132 1B92     		str	r2, [sp, #108]
+ 1139 0134 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
+ 1140 0138 0523     		movs	r3, #5
+ 1141 013a 1BA9     		add	r1, sp, #108
+ 1142 013c 3000     		movs	r0, r6
+ 1143 013e 1B93     		str	r3, [sp, #108]
+ 1144 0140 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
+ 1145 0144 3000     		movs	r0, r6
+ 1146 0146 FFF7FEFF 		bl	HAL_ADC_MspInit
+ 1147 014a 814F     		ldr	r7, .L144+20
+ 1148 014c 814B     		ldr	r3, .L144+24
+ 1149 014e 3800     		movs	r0, r7
+ 1150 0150 3B60     		str	r3, [r7]
+ 1151 0152 814B     		ldr	r3, .L144+28
+ARM GAS  /tmp/ccVVivOE.s 			page 21
 
 
- 1152 016c 3800     		movs	r0, r7
- 1153 016e FFF7FEFF 		bl	HAL_I2CEx_ConfigAnalogFilter
- 1154 0172 2100     		movs	r1, r4
- 1155 0174 3800     		movs	r0, r7
- 1156 0176 FFF7FEFF 		bl	HAL_I2CEx_ConfigDigitalFilter
- 1157 017a 8021     		movs	r1, #128
- 1158 017c AA69     		ldr	r2, [r5, #24]
- 1159 017e 0901     		lsls	r1, r1, #4
- 1160 0180 0A43     		orrs	r2, r1
- 1161 0182 AA61     		str	r2, [r5, #24]
- 1162 0184 AB69     		ldr	r3, [r5, #24]
- 1163 0186 10AF     		add	r7, sp, #64
- 1164 0188 0B40     		ands	r3, r1
- 1165 018a 1022     		movs	r2, #16
- 1166 018c 2100     		movs	r1, r4
- 1167 018e 3800     		movs	r0, r7
- 1168 0190 0593     		str	r3, [sp, #20]
- 1169 0192 0CAF     		add	r7, sp, #48
- 1170 0194 059B     		ldr	r3, [sp, #20]
- 1171 0196 FFF7FEFF 		bl	memset
- 1172 019a 0822     		movs	r2, #8
- 1173 019c 2100     		movs	r1, r4
- 1174 019e 3800     		movs	r0, r7
- 1175 01a0 14AF     		add	r7, sp, #80
- 1176 01a2 FFF7FEFF 		bl	memset
- 1177 01a6 1C22     		movs	r2, #28
- 1178 01a8 2100     		movs	r1, r4
- 1179 01aa 3800     		movs	r0, r7
- 1180 01ac 1BAF     		add	r7, sp, #108
- 1181 01ae FFF7FEFF 		bl	memset
- 1182 01b2 1C22     		movs	r2, #28
- 1183 01b4 2100     		movs	r1, r4
- 1184 01b6 3800     		movs	r0, r7
- 1185 01b8 FFF7FEFF 		bl	memset
- 1186 01bc 674F     		ldr	r7, .L144+32
- 1187 01be 684B     		ldr	r3, .L144+36
- 1188 01c0 0620     		movs	r0, #6
- 1189 01c2 3B60     		str	r3, [r7]
- 1190 01c4 8023     		movs	r3, #128
- 1191 01c6 5B01     		lsls	r3, r3, #5
- 1192 01c8 FB60     		str	r3, [r7, #12]
- 1193 01ca 8023     		movs	r3, #128
- 1194 01cc 7860     		str	r0, [r7, #4]
- 1195 01ce 3800     		movs	r0, r7
- 1196 01d0 BB61     		str	r3, [r7, #24]
- 1197 01d2 BC60     		str	r4, [r7, #8]
- 1198 01d4 3C61     		str	r4, [r7, #16]
- 1199 01d6 7C61     		str	r4, [r7, #20]
- 1200 01d8 FFF7FEFF 		bl	HAL_TIM_Base_Init
- 1201 01dc 8023     		movs	r3, #128
- 1202 01de 10A9     		add	r1, sp, #64
- 1203 01e0 5B01     		lsls	r3, r3, #5
- 1204 01e2 3800     		movs	r0, r7
- 1205 01e4 1093     		str	r3, [sp, #64]
- 1206 01e6 FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
- 1207 01ea 3800     		movs	r0, r7
- 1208 01ec FFF7FEFF 		bl	HAL_TIM_PWM_Init
-ARM GAS  /tmp/cc4wQWsB.s 			page 22
+ 1152 0154 BC60     		str	r4, [r7, #8]
+ 1153 0156 7B60     		str	r3, [r7, #4]
+ 1154 0158 0123     		movs	r3, #1
+ 1155 015a 3C61     		str	r4, [r7, #16]
+ 1156 015c FB60     		str	r3, [r7, #12]
+ 1157 015e 7C61     		str	r4, [r7, #20]
+ 1158 0160 BC61     		str	r4, [r7, #24]
+ 1159 0162 FC61     		str	r4, [r7, #28]
+ 1160 0164 3C62     		str	r4, [r7, #32]
+ 1161 0166 FFF7FEFF 		bl	HAL_I2C_Init
+ 1162 016a 2100     		movs	r1, r4
+ 1163 016c 3800     		movs	r0, r7
+ 1164 016e FFF7FEFF 		bl	HAL_I2CEx_ConfigAnalogFilter
+ 1165 0172 2100     		movs	r1, r4
+ 1166 0174 3800     		movs	r0, r7
+ 1167 0176 FFF7FEFF 		bl	HAL_I2CEx_ConfigDigitalFilter
+ 1168 017a 8021     		movs	r1, #128
+ 1169 017c AA69     		ldr	r2, [r5, #24]
+ 1170 017e 0901     		lsls	r1, r1, #4
+ 1171 0180 0A43     		orrs	r2, r1
+ 1172 0182 AA61     		str	r2, [r5, #24]
+ 1173 0184 AB69     		ldr	r3, [r5, #24]
+ 1174 0186 10AF     		add	r7, sp, #64
+ 1175 0188 0B40     		ands	r3, r1
+ 1176 018a 1022     		movs	r2, #16
+ 1177 018c 2100     		movs	r1, r4
+ 1178 018e 3800     		movs	r0, r7
+ 1179 0190 0593     		str	r3, [sp, #20]
+ 1180 0192 0CAF     		add	r7, sp, #48
+ 1181 0194 059B     		ldr	r3, [sp, #20]
+ 1182 0196 FFF7FEFF 		bl	memset
+ 1183 019a 0822     		movs	r2, #8
+ 1184 019c 2100     		movs	r1, r4
+ 1185 019e 3800     		movs	r0, r7
+ 1186 01a0 14AF     		add	r7, sp, #80
+ 1187 01a2 FFF7FEFF 		bl	memset
+ 1188 01a6 1C22     		movs	r2, #28
+ 1189 01a8 2100     		movs	r1, r4
+ 1190 01aa 3800     		movs	r0, r7
+ 1191 01ac 1BAF     		add	r7, sp, #108
+ 1192 01ae FFF7FEFF 		bl	memset
+ 1193 01b2 1C22     		movs	r2, #28
+ 1194 01b4 2100     		movs	r1, r4
+ 1195 01b6 3800     		movs	r0, r7
+ 1196 01b8 FFF7FEFF 		bl	memset
+ 1197 01bc 674F     		ldr	r7, .L144+32
+ 1198 01be 684B     		ldr	r3, .L144+36
+ 1199 01c0 0620     		movs	r0, #6
+ 1200 01c2 3B60     		str	r3, [r7]
+ 1201 01c4 8023     		movs	r3, #128
+ 1202 01c6 5B01     		lsls	r3, r3, #5
+ 1203 01c8 FB60     		str	r3, [r7, #12]
+ 1204 01ca 8023     		movs	r3, #128
+ 1205 01cc 7860     		str	r0, [r7, #4]
+ 1206 01ce 3800     		movs	r0, r7
+ 1207 01d0 BB61     		str	r3, [r7, #24]
+ 1208 01d2 BC60     		str	r4, [r7, #8]
+ARM GAS  /tmp/ccVVivOE.s 			page 22
 
 
- 1209 01f0 3800     		movs	r0, r7
- 1210 01f2 FFF7FEFF 		bl	HAL_TIM_OC_Init
- 1211 01f6 0CA9     		add	r1, sp, #48
- 1212 01f8 3800     		movs	r0, r7
- 1213 01fa 0C94     		str	r4, [sp, #48]
- 1214 01fc 0D94     		str	r4, [sp, #52]
- 1215 01fe FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
- 1216 0202 6023     		movs	r3, #96
- 1217 0204 2200     		movs	r2, r4
- 1218 0206 14A9     		add	r1, sp, #80
- 1219 0208 3800     		movs	r0, r7
- 1220 020a 1493     		str	r3, [sp, #80]
- 1221 020c 1594     		str	r4, [sp, #84]
- 1222 020e 1694     		str	r4, [sp, #88]
- 1223 0210 1794     		str	r4, [sp, #92]
- 1224 0212 1894     		str	r4, [sp, #96]
- 1225 0214 1994     		str	r4, [sp, #100]
- 1226 0216 1A94     		str	r4, [sp, #104]
- 1227 0218 FFF7FEFF 		bl	HAL_TIM_PWM_ConfigChannel
- 1228 021c 7023     		movs	r3, #112
- 1229 021e 0C22     		movs	r2, #12
- 1230 0220 1493     		str	r3, [sp, #80]
- 1231 0222 14A9     		add	r1, sp, #80
- 1232 0224 663B     		subs	r3, r3, #102
- 1233 0226 3800     		movs	r0, r7
- 1234 0228 1593     		str	r3, [sp, #84]
- 1235 022a FFF7FEFF 		bl	HAL_TIM_OC_ConfigChannel
- 1236 022e 8021     		movs	r1, #128
- 1237 0230 8901     		lsls	r1, r1, #6
- 1238 0232 2091     		str	r1, [sp, #128]
- 1239 0234 3800     		movs	r0, r7
- 1240 0236 1BA9     		add	r1, sp, #108
- 1241 0238 1B94     		str	r4, [sp, #108]
- 1242 023a 1C94     		str	r4, [sp, #112]
- 1243 023c 1D94     		str	r4, [sp, #116]
- 1244 023e 1E94     		str	r4, [sp, #120]
- 1245 0240 1F94     		str	r4, [sp, #124]
- 1246 0242 2194     		str	r4, [sp, #132]
- 1247 0244 FFF7FEFF 		bl	HAL_TIMEx_ConfigBreakDeadTime
- 1248 0248 3800     		movs	r0, r7
- 1249 024a FFF7FEFF 		bl	HAL_TIM_MspPostInit
- 1250 024e 0222     		movs	r2, #2
- 1251 0250 EB69     		ldr	r3, [r5, #28]
- 1252 0252 2100     		movs	r1, r4
- 1253 0254 1343     		orrs	r3, r2
- 1254 0256 EB61     		str	r3, [r5, #28]
- 1255 0258 EB69     		ldr	r3, [r5, #28]
- 1256 025a 1BA8     		add	r0, sp, #108
- 1257 025c 1340     		ands	r3, r2
- 1258 025e 0493     		str	r3, [sp, #16]
- 1259 0260 0E32     		adds	r2, r2, #14
- 1260 0262 049B     		ldr	r3, [sp, #16]
- 1261 0264 FFF7FEFF 		bl	memset
- 1262 0268 3E4D     		ldr	r5, .L144+40
- 1263 026a 3F4B     		ldr	r3, .L144+44
- 1264 026c 2800     		movs	r0, r5
- 1265 026e 2B60     		str	r3, [r5]
-ARM GAS  /tmp/cc4wQWsB.s 			page 23
+ 1209 01d4 3C61     		str	r4, [r7, #16]
+ 1210 01d6 7C61     		str	r4, [r7, #20]
+ 1211 01d8 FFF7FEFF 		bl	HAL_TIM_Base_Init
+ 1212 01dc 8023     		movs	r3, #128
+ 1213 01de 10A9     		add	r1, sp, #64
+ 1214 01e0 5B01     		lsls	r3, r3, #5
+ 1215 01e2 3800     		movs	r0, r7
+ 1216 01e4 1093     		str	r3, [sp, #64]
+ 1217 01e6 FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+ 1218 01ea 3800     		movs	r0, r7
+ 1219 01ec FFF7FEFF 		bl	HAL_TIM_PWM_Init
+ 1220 01f0 3800     		movs	r0, r7
+ 1221 01f2 FFF7FEFF 		bl	HAL_TIM_OC_Init
+ 1222 01f6 0CA9     		add	r1, sp, #48
+ 1223 01f8 3800     		movs	r0, r7
+ 1224 01fa 0C94     		str	r4, [sp, #48]
+ 1225 01fc 0D94     		str	r4, [sp, #52]
+ 1226 01fe FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+ 1227 0202 6023     		movs	r3, #96
+ 1228 0204 2200     		movs	r2, r4
+ 1229 0206 14A9     		add	r1, sp, #80
+ 1230 0208 3800     		movs	r0, r7
+ 1231 020a 1493     		str	r3, [sp, #80]
+ 1232 020c 1594     		str	r4, [sp, #84]
+ 1233 020e 1694     		str	r4, [sp, #88]
+ 1234 0210 1794     		str	r4, [sp, #92]
+ 1235 0212 1894     		str	r4, [sp, #96]
+ 1236 0214 1994     		str	r4, [sp, #100]
+ 1237 0216 1A94     		str	r4, [sp, #104]
+ 1238 0218 FFF7FEFF 		bl	HAL_TIM_PWM_ConfigChannel
+ 1239 021c 7023     		movs	r3, #112
+ 1240 021e 0C22     		movs	r2, #12
+ 1241 0220 1493     		str	r3, [sp, #80]
+ 1242 0222 14A9     		add	r1, sp, #80
+ 1243 0224 663B     		subs	r3, r3, #102
+ 1244 0226 3800     		movs	r0, r7
+ 1245 0228 1593     		str	r3, [sp, #84]
+ 1246 022a FFF7FEFF 		bl	HAL_TIM_OC_ConfigChannel
+ 1247 022e 8021     		movs	r1, #128
+ 1248 0230 8901     		lsls	r1, r1, #6
+ 1249 0232 2091     		str	r1, [sp, #128]
+ 1250 0234 3800     		movs	r0, r7
+ 1251 0236 1BA9     		add	r1, sp, #108
+ 1252 0238 1B94     		str	r4, [sp, #108]
+ 1253 023a 1C94     		str	r4, [sp, #112]
+ 1254 023c 1D94     		str	r4, [sp, #116]
+ 1255 023e 1E94     		str	r4, [sp, #120]
+ 1256 0240 1F94     		str	r4, [sp, #124]
+ 1257 0242 2194     		str	r4, [sp, #132]
+ 1258 0244 FFF7FEFF 		bl	HAL_TIMEx_ConfigBreakDeadTime
+ 1259 0248 3800     		movs	r0, r7
+ 1260 024a FFF7FEFF 		bl	HAL_TIM_MspPostInit
+ 1261 024e 0222     		movs	r2, #2
+ 1262 0250 EB69     		ldr	r3, [r5, #28]
+ 1263 0252 2100     		movs	r1, r4
+ 1264 0254 1343     		orrs	r3, r2
+ 1265 0256 EB61     		str	r3, [r5, #28]
+ARM GAS  /tmp/ccVVivOE.s 			page 23
 
 
- 1266 0270 3E4B     		ldr	r3, .L144+48
- 1267 0272 2C61     		str	r4, [r5, #16]
- 1268 0274 EB60     		str	r3, [r5, #12]
- 1269 0276 9023     		movs	r3, #144
- 1270 0278 FF33     		adds	r3, r3, #255
- 1271 027a 6B60     		str	r3, [r5, #4]
- 1272 027c AC60     		str	r4, [r5, #8]
- 1273 027e AC61     		str	r4, [r5, #24]
- 1274 0280 FFF7FEFF 		bl	HAL_TIM_Base_Init
- 1275 0284 8023     		movs	r3, #128
- 1276 0286 1BA9     		add	r1, sp, #108
- 1277 0288 5B01     		lsls	r3, r3, #5
- 1278 028a 2800     		movs	r0, r5
- 1279 028c 1B93     		str	r3, [sp, #108]
- 1280 028e FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
- 1281 0292 FA22     		movs	r2, #250
- 1282 0294 3649     		ldr	r1, .L144+52
- 1283 0296 5200     		lsls	r2, r2, #1
- 1284 0298 0120     		movs	r0, #1
- 1285 029a FFF7FEFF 		bl	stusb_update_pdo
- 1286 029e 354A     		ldr	r2, .L144+56
- 1287 02a0 3549     		ldr	r1, .L144+60
- 1288 02a2 0220     		movs	r0, #2
- 1289 02a4 FFF7FEFF 		bl	stusb_update_pdo
- 1290 02a8 FA22     		movs	r2, #250
- 1291 02aa 3349     		ldr	r1, .L144+60
- 1292 02ac 1201     		lsls	r2, r2, #4
- 1293 02ae 0320     		movs	r0, #3
- 1294 02b0 FFF7FEFF 		bl	stusb_update_pdo
- 1295 02b4 0320     		movs	r0, #3
- 1296 02b6 FFF7FEFF 		bl	stusb_set_valid_pdo
- 1297 02ba C820     		movs	r0, #200
- 1298 02bc 4000     		lsls	r0, r0, #1
- 1299 02be FFF7FEFF 		bl	HAL_Delay
- 1300 02c2 FFF7FEFF 		bl	disp_init
- 1301 02c6 FFF7FEFF 		bl	clear_screen
- 1302 02ca 2100     		movs	r1, r4
- 1303 02cc 3800     		movs	r0, r7
- 1304 02ce FFF7FEFF 		bl	HAL_TIM_PWM_Start
- 1305 02d2 0C21     		movs	r1, #12
- 1306 02d4 3800     		movs	r0, r7
- 1307 02d6 FFF7FEFF 		bl	HAL_TIM_OC_Start
- 1308 02da 2849     		ldr	r1, .L144+64
- 1309 02dc 0422     		movs	r2, #4
- 1310 02de 3000     		movs	r0, r6
- 1311 02e0 FFF7FEFF 		bl	HAL_ADC_Start_DMA
- 1312 02e4 9020     		movs	r0, #144
- 1313 02e6 0821     		movs	r1, #8
- 1314 02e8 C005     		lsls	r0, r0, #23
- 1315 02ea FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 1316 02ee A042     		cmp	r0, r4
- 1317 02f0 50D0     		beq	.L103
- 1318 02f2 9020     		movs	r0, #144
- 1319 02f4 1021     		movs	r1, #16
- 1320 02f6 C005     		lsls	r0, r0, #23
- 1321 02f8 FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 1322 02fc A042     		cmp	r0, r4
-ARM GAS  /tmp/cc4wQWsB.s 			page 24
+ 1266 0258 EB69     		ldr	r3, [r5, #28]
+ 1267 025a 1BA8     		add	r0, sp, #108
+ 1268 025c 1340     		ands	r3, r2
+ 1269 025e 0493     		str	r3, [sp, #16]
+ 1270 0260 0E32     		adds	r2, r2, #14
+ 1271 0262 049B     		ldr	r3, [sp, #16]
+ 1272 0264 FFF7FEFF 		bl	memset
+ 1273 0268 3E4D     		ldr	r5, .L144+40
+ 1274 026a 3F4B     		ldr	r3, .L144+44
+ 1275 026c 2800     		movs	r0, r5
+ 1276 026e 2B60     		str	r3, [r5]
+ 1277 0270 3E4B     		ldr	r3, .L144+48
+ 1278 0272 2C61     		str	r4, [r5, #16]
+ 1279 0274 EB60     		str	r3, [r5, #12]
+ 1280 0276 9023     		movs	r3, #144
+ 1281 0278 FF33     		adds	r3, r3, #255
+ 1282 027a 6B60     		str	r3, [r5, #4]
+ 1283 027c AC60     		str	r4, [r5, #8]
+ 1284 027e AC61     		str	r4, [r5, #24]
+ 1285 0280 FFF7FEFF 		bl	HAL_TIM_Base_Init
+ 1286 0284 8023     		movs	r3, #128
+ 1287 0286 1BA9     		add	r1, sp, #108
+ 1288 0288 5B01     		lsls	r3, r3, #5
+ 1289 028a 2800     		movs	r0, r5
+ 1290 028c 1B93     		str	r3, [sp, #108]
+ 1291 028e FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+ 1292 0292 FA22     		movs	r2, #250
+ 1293 0294 3649     		ldr	r1, .L144+52
+ 1294 0296 5200     		lsls	r2, r2, #1
+ 1295 0298 0120     		movs	r0, #1
+ 1296 029a FFF7FEFF 		bl	stusb_update_pdo
+ 1297 029e 354A     		ldr	r2, .L144+56
+ 1298 02a0 3549     		ldr	r1, .L144+60
+ 1299 02a2 0220     		movs	r0, #2
+ 1300 02a4 FFF7FEFF 		bl	stusb_update_pdo
+ 1301 02a8 FA22     		movs	r2, #250
+ 1302 02aa 3349     		ldr	r1, .L144+60
+ 1303 02ac 1201     		lsls	r2, r2, #4
+ 1304 02ae 0320     		movs	r0, #3
+ 1305 02b0 FFF7FEFF 		bl	stusb_update_pdo
+ 1306 02b4 0320     		movs	r0, #3
+ 1307 02b6 FFF7FEFF 		bl	stusb_set_valid_pdo
+ 1308 02ba C820     		movs	r0, #200
+ 1309 02bc FFF7FEFF 		bl	HAL_Delay
+ 1310 02c0 FFF7FEFF 		bl	disp_init
+ 1311 02c4 FFF7FEFF 		bl	clear_screen
+ 1312 02c8 2100     		movs	r1, r4
+ 1313 02ca 3800     		movs	r0, r7
+ 1314 02cc FFF7FEFF 		bl	HAL_TIM_PWM_Start
+ 1315 02d0 0C21     		movs	r1, #12
+ 1316 02d2 3800     		movs	r0, r7
+ 1317 02d4 FFF7FEFF 		bl	HAL_TIM_OC_Start
+ 1318 02d8 2849     		ldr	r1, .L144+64
+ 1319 02da 0422     		movs	r2, #4
+ 1320 02dc 3000     		movs	r0, r6
+ 1321 02de FFF7FEFF 		bl	HAL_ADC_Start_DMA
+ 1322 02e2 9020     		movs	r0, #144
+ARM GAS  /tmp/ccVVivOE.s 			page 24
 
 
- 1323 02fe 49D0     		beq	.L103
- 1324 0300 0123     		movs	r3, #1
- 1325 0302 1F4C     		ldr	r4, .L144+68
- 1326 0304 1A00     		movs	r2, r3
- 1327 0306 1900     		movs	r1, r3
- 1328 0308 2068     		ldr	r0, [r4]
- 1329 030a FFF7FEFF 		bl	draw_string
- 1330 030e 0123     		movs	r3, #1
- 1331 0310 0822     		movs	r2, #8
- 1332 0312 1900     		movs	r1, r3
- 1333 0314 2068     		ldr	r0, [r4]
- 1334 0316 FFF7FEFF 		bl	draw_string
- 1335 031a FFF7FEFF 		bl	refresh
- 1336 031e 2820     		movs	r0, #40
- 1337 0320 FFF7FEFF 		bl	HAL_Delay
- 1338 0324 174B     		ldr	r3, .L144+72
- 1339 0326 184A     		ldr	r2, .L144+76
- 1340 0328 1A60     		str	r2, [r3]
- 1341              		.syntax divided
- 1342              	@ 429 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1343 032a BFF34F8F 		dsb 0xF
- 1344              	@ 0 "" 2
- 1345              		.thumb
- 1346              		.syntax unified
- 1347 032e 174B     		ldr	r3, .L144+80
- 1348 0330 174A     		ldr	r2, .L144+84
- 1349 0332 DA60     		str	r2, [r3, #12]
- 1350              		.syntax divided
- 1351              	@ 429 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1352 0334 BFF34F8F 		dsb 0xF
- 1353              	@ 0 "" 2
- 1354              		.thumb
- 1355              		.syntax unified
- 1356              	.L104:
- 1357              		.syntax divided
- 1358              	@ 375 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1359 0338 C046     		nop
- 1360              	@ 0 "" 2
- 1361              		.thumb
- 1362              		.syntax unified
- 1363 033a FDE7     		b	.L104
- 1364              	.L145:
- 1365              		.align	2
- 1366              	.L144:
- 1367 033c 00100240 		.word	1073876992
- 1368 0340 00080048 		.word	1207961600
- 1369 0344 00040048 		.word	1207960576
- 1370 0348 00000000 		.word	.LANCHOR11
- 1371 034c 00240140 		.word	1073816576
- 1372 0350 00000000 		.word	.LANCHOR8
- 1373 0354 00540040 		.word	1073763328
- 1374 0358 0B020000 		.word	523
- 1375 035c 00000000 		.word	.LANCHOR3
- 1376 0360 002C0140 		.word	1073818624
- 1377 0364 00000000 		.word	.LANCHOR12
- 1378 0368 00040040 		.word	1073742848
- 1379 036c 0F270000 		.word	9999
-ARM GAS  /tmp/cc4wQWsB.s 			page 25
+ 1323 02e4 0821     		movs	r1, #8
+ 1324 02e6 C005     		lsls	r0, r0, #23
+ 1325 02e8 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 1326 02ec A042     		cmp	r0, r4
+ 1327 02ee 51D0     		beq	.L103
+ 1328 02f0 9020     		movs	r0, #144
+ 1329 02f2 1021     		movs	r1, #16
+ 1330 02f4 C005     		lsls	r0, r0, #23
+ 1331 02f6 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 1332 02fa A042     		cmp	r0, r4
+ 1333 02fc 4AD0     		beq	.L103
+ 1334 02fe 0123     		movs	r3, #1
+ 1335 0300 1F4C     		ldr	r4, .L144+68
+ 1336 0302 1A00     		movs	r2, r3
+ 1337 0304 1900     		movs	r1, r3
+ 1338 0306 2068     		ldr	r0, [r4]
+ 1339 0308 FFF7FEFF 		bl	draw_string
+ 1340 030c 0123     		movs	r3, #1
+ 1341 030e 0822     		movs	r2, #8
+ 1342 0310 1900     		movs	r1, r3
+ 1343 0312 2068     		ldr	r0, [r4]
+ 1344 0314 FFF7FEFF 		bl	draw_string
+ 1345 0318 FFF7FEFF 		bl	refresh
+ 1346 031c 2820     		movs	r0, #40
+ 1347 031e FFF7FEFF 		bl	HAL_Delay
+ 1348 0322 184B     		ldr	r3, .L144+72
+ 1349 0324 184A     		ldr	r2, .L144+76
+ 1350 0326 1A60     		str	r2, [r3]
+ 1351              		.syntax divided
+ 1352              	@ 429 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1353 0328 BFF34F8F 		dsb 0xF
+ 1354              	@ 0 "" 2
+ 1355              		.thumb
+ 1356              		.syntax unified
+ 1357 032c 174B     		ldr	r3, .L144+80
+ 1358 032e 184A     		ldr	r2, .L144+84
+ 1359 0330 DA60     		str	r2, [r3, #12]
+ 1360              		.syntax divided
+ 1361              	@ 429 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1362 0332 BFF34F8F 		dsb 0xF
+ 1363              	@ 0 "" 2
+ 1364              		.thumb
+ 1365              		.syntax unified
+ 1366              	.L104:
+ 1367              		.syntax divided
+ 1368              	@ 375 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1369 0336 C046     		nop
+ 1370              	@ 0 "" 2
+ 1371              		.thumb
+ 1372              		.syntax unified
+ 1373 0338 FDE7     		b	.L104
+ 1374              	.L145:
+ 1375 033a C046     		.align	2
+ 1376              	.L144:
+ 1377 033c 00100240 		.word	1073876992
+ 1378 0340 00080048 		.word	1207961600
+ 1379 0344 00040048 		.word	1207960576
+ARM GAS  /tmp/ccVVivOE.s 			page 25
 
 
- 1380 0370 88130000 		.word	5000
- 1381 0374 DC050000 		.word	1500
- 1382 0378 204E0000 		.word	20000
- 1383 037c 00000000 		.word	.LANCHOR1
- 1384 0380 00000000 		.word	.LANCHOR13
- 1385 0384 F03F0020 		.word	536887280
- 1386 0388 EFBEADDE 		.word	-559038737
- 1387 038c 00ED00E0 		.word	-536810240
- 1388 0390 0400FA05 		.word	100270084
- 1389              	.L103:
- 1390 0394 0123     		movs	r3, #1
- 1391 0396 F148     		ldr	r0, .L146
- 1392 0398 1A00     		movs	r2, r3
- 1393 039a 0F21     		movs	r1, #15
- 1394 039c 0068     		ldr	r0, [r0]
- 1395 039e FFF7FEFF 		bl	draw_string
- 1396 03a2 EF48     		ldr	r0, .L146+4
- 1397 03a4 0123     		movs	r3, #1
- 1398 03a6 0922     		movs	r2, #9
- 1399 03a8 0A21     		movs	r1, #10
- 1400 03aa 0068     		ldr	r0, [r0]
- 1401 03ac FFF7FEFF 		bl	draw_string
- 1402 03b0 FFF7FEFF 		bl	refresh
- 1403 03b4 FA20     		movs	r0, #250
- 1404 03b6 4000     		lsls	r0, r0, #1
- 1405 03b8 FFF7FEFF 		bl	HAL_Delay
- 1406 03bc 1422     		movs	r2, #20
- 1407 03be E94C     		ldr	r4, .L146+8
- 1408 03c0 10A8     		add	r0, sp, #64
- 1409 03c2 631D     		adds	r3, r4, #5
- 1410 03c4 DA77     		strb	r2, [r3, #31]
- 1411 03c6 FFF7FEFF 		bl	stusb_read_rdo
- 1412 03ca E51D     		adds	r5, r4, #7
- 1413 03cc 0023     		movs	r3, #0
- 1414 03ce 0028     		cmp	r0, #0
- 1415 03d0 0FD1     		bne	.L143
- 1416 03d2 02AB     		add	r3, sp, #8
- 1417 03d4 188F     		ldrh	r0, [r3, #56]
- 1418 03d6 8005     		lsls	r0, r0, #22
- 1419 03d8 800D     		lsrs	r0, r0, #22
- 1420 03da FFF7FEFF 		bl	__aeabi_ui2f
- 1421 03de E249     		ldr	r1, .L146+12
- 1422 03e0 FFF7FEFF 		bl	__aeabi_fdiv
- 1423 03e4 3B23     		movs	r3, #59
- 1424 03e6 02AA     		add	r2, sp, #8
- 1425 03e8 9B18     		adds	r3, r3, r2
- 1426 03ea 1B78     		ldrb	r3, [r3]
- 1427 03ec 6061     		str	r0, [r4, #20]
- 1428 03ee 5B06     		lsls	r3, r3, #25
- 1429 03f0 5B0F     		lsrs	r3, r3, #29
- 1430              	.L143:
- 1431 03f2 EB77     		strb	r3, [r5, #31]
- 1432 03f4 0734     		adds	r4, r4, #7
- 1433 03f6 E37F     		ldrb	r3, [r4, #31]
- 1434 03f8 002B     		cmp	r3, #0
- 1435 03fa 00D1     		bne	.LCB1450
- 1436 03fc FEE1     		b	.L107	@long jump
-ARM GAS  /tmp/cc4wQWsB.s 			page 26
+ 1380 0348 00000000 		.word	.LANCHOR11
+ 1381 034c 00240140 		.word	1073816576
+ 1382 0350 00000000 		.word	.LANCHOR8
+ 1383 0354 00540040 		.word	1073763328
+ 1384 0358 0B020000 		.word	523
+ 1385 035c 00000000 		.word	.LANCHOR3
+ 1386 0360 002C0140 		.word	1073818624
+ 1387 0364 00000000 		.word	.LANCHOR12
+ 1388 0368 00040040 		.word	1073742848
+ 1389 036c 0F270000 		.word	9999
+ 1390 0370 88130000 		.word	5000
+ 1391 0374 DC050000 		.word	1500
+ 1392 0378 204E0000 		.word	20000
+ 1393 037c 00000000 		.word	.LANCHOR1
+ 1394 0380 00000000 		.word	.LANCHOR13
+ 1395 0384 F03F0020 		.word	536887280
+ 1396 0388 EFBEADDE 		.word	-559038737
+ 1397 038c 00ED00E0 		.word	-536810240
+ 1398 0390 0400FA05 		.word	100270084
+ 1399              	.L103:
+ 1400 0394 0123     		movs	r3, #1
+ 1401 0396 F148     		ldr	r0, .L146
+ 1402 0398 1A00     		movs	r2, r3
+ 1403 039a 0F21     		movs	r1, #15
+ 1404 039c 0068     		ldr	r0, [r0]
+ 1405 039e FFF7FEFF 		bl	draw_string
+ 1406 03a2 EF48     		ldr	r0, .L146+4
+ 1407 03a4 0123     		movs	r3, #1
+ 1408 03a6 0922     		movs	r2, #9
+ 1409 03a8 0A21     		movs	r1, #10
+ 1410 03aa 0068     		ldr	r0, [r0]
+ 1411 03ac FFF7FEFF 		bl	draw_string
+ 1412 03b0 FFF7FEFF 		bl	refresh
+ 1413 03b4 FA20     		movs	r0, #250
+ 1414 03b6 4000     		lsls	r0, r0, #1
+ 1415 03b8 FFF7FEFF 		bl	HAL_Delay
+ 1416 03bc 1422     		movs	r2, #20
+ 1417 03be E94C     		ldr	r4, .L146+8
+ 1418 03c0 10A8     		add	r0, sp, #64
+ 1419 03c2 631D     		adds	r3, r4, #5
+ 1420 03c4 DA77     		strb	r2, [r3, #31]
+ 1421 03c6 FFF7FEFF 		bl	stusb_read_rdo
+ 1422 03ca E51D     		adds	r5, r4, #7
+ 1423 03cc 0023     		movs	r3, #0
+ 1424 03ce 0028     		cmp	r0, #0
+ 1425 03d0 0FD1     		bne	.L143
+ 1426 03d2 02AB     		add	r3, sp, #8
+ 1427 03d4 188F     		ldrh	r0, [r3, #56]
+ 1428 03d6 8005     		lsls	r0, r0, #22
+ 1429 03d8 800D     		lsrs	r0, r0, #22
+ 1430 03da FFF7FEFF 		bl	__aeabi_ui2f
+ 1431 03de E249     		ldr	r1, .L146+12
+ 1432 03e0 FFF7FEFF 		bl	__aeabi_fdiv
+ 1433 03e4 3B23     		movs	r3, #59
+ 1434 03e6 02AA     		add	r2, sp, #8
+ 1435 03e8 9B18     		adds	r3, r3, r2
+ 1436 03ea 1B78     		ldrb	r3, [r3]
+ARM GAS  /tmp/ccVVivOE.s 			page 26
 
 
- 1437              	.LCB1450:
- 1438 03fe DB4A     		ldr	r2, .L146+16
- 1439 0400 032B     		cmp	r3, #3
- 1440 0402 00D8     		bhi	.L108
- 1441 0404 DA4A     		ldr	r2, .L146+20
- 1442              	.L108:
- 1443 0406 DB49     		ldr	r1, .L146+24
- 1444 0408 14A8     		add	r0, sp, #80
- 1445 040a FFF7FEFF 		bl	sprintf
- 1446 040e D54E     		ldr	r6, .L146+8
- 1447 0410 7569     		ldr	r5, [r6, #20]
- 1448 0412 281C     		adds	r0, r5, #0
- 1449 0414 FFF7FEFF 		bl	__aeabi_f2uiz
- 1450 0418 84B2     		uxth	r4, r0
- 1451 041a B068     		ldr	r0, [r6, #8]
- 1452 041c FFF7FEFF 		bl	__aeabi_f2d
- 1453 0420 FFF7FEFF 		bl	ceil
- 1454 0424 0600     		movs	r6, r0
- 1455 0426 2000     		movs	r0, r4
- 1456 0428 0F00     		movs	r7, r1
- 1457 042a FFF7FEFF 		bl	__aeabi_i2f
- 1458 042e 011C     		adds	r1, r0, #0
- 1459 0430 281C     		adds	r0, r5, #0
- 1460 0432 FFF7FEFF 		bl	__aeabi_fsub
- 1461 0436 D049     		ldr	r1, .L146+28
- 1462 0438 FFF7FEFF 		bl	__aeabi_fmul
- 1463 043c FFF7FEFF 		bl	__aeabi_f2uiz
- 1464 0440 83B2     		uxth	r3, r0
- 1465 0442 281C     		adds	r0, r5, #0
- 1466 0444 0293     		str	r3, [sp, #8]
- 1467 0446 FFF7FEFF 		bl	__aeabi_f2d
- 1468 044a 3200     		movs	r2, r6
- 1469 044c 3B00     		movs	r3, r7
- 1470 044e FFF7FEFF 		bl	__aeabi_dmul
- 1471 0452 FFF7FEFF 		bl	__aeabi_d2uiz
- 1472 0456 80B2     		uxth	r0, r0
- 1473 0458 0090     		str	r0, [sp]
- 1474 045a 2200     		movs	r2, r4
- 1475 045c 029B     		ldr	r3, [sp, #8]
- 1476 045e C749     		ldr	r1, .L146+32
- 1477 0460 1BA8     		add	r0, sp, #108
- 1478 0462 FFF7FEFF 		bl	sprintf
- 1479              	.L109:
- 1480 0466 FFF7FEFF 		bl	clear_screen
- 1481 046a 0123     		movs	r3, #1
- 1482 046c 0A21     		movs	r1, #10
- 1483 046e 1A00     		movs	r2, r3
- 1484 0470 14A8     		add	r0, sp, #80
- 1485 0472 FFF7FEFF 		bl	draw_string
- 1486 0476 0123     		movs	r3, #1
- 1487 0478 0922     		movs	r2, #9
- 1488 047a 0A21     		movs	r1, #10
- 1489 047c 1BA8     		add	r0, sp, #108
- 1490 047e FFF7FEFF 		bl	draw_string
- 1491 0482 FFF7FEFF 		bl	refresh
- 1492 0486 FA20     		movs	r0, #250
- 1493 0488 8000     		lsls	r0, r0, #2
-ARM GAS  /tmp/cc4wQWsB.s 			page 27
+ 1437 03ec 6061     		str	r0, [r4, #20]
+ 1438 03ee 5B06     		lsls	r3, r3, #25
+ 1439 03f0 5B0F     		lsrs	r3, r3, #29
+ 1440              	.L143:
+ 1441 03f2 EB77     		strb	r3, [r5, #31]
+ 1442 03f4 0734     		adds	r4, r4, #7
+ 1443 03f6 E37F     		ldrb	r3, [r4, #31]
+ 1444 03f8 002B     		cmp	r3, #0
+ 1445 03fa 00D1     		bne	.LCB1463
+ 1446 03fc FEE1     		b	.L107	@long jump
+ 1447              	.LCB1463:
+ 1448 03fe DB4A     		ldr	r2, .L146+16
+ 1449 0400 032B     		cmp	r3, #3
+ 1450 0402 00D8     		bhi	.L108
+ 1451 0404 DA4A     		ldr	r2, .L146+20
+ 1452              	.L108:
+ 1453 0406 DB49     		ldr	r1, .L146+24
+ 1454 0408 14A8     		add	r0, sp, #80
+ 1455 040a FFF7FEFF 		bl	sprintf
+ 1456 040e D54E     		ldr	r6, .L146+8
+ 1457 0410 7569     		ldr	r5, [r6, #20]
+ 1458 0412 281C     		adds	r0, r5, #0
+ 1459 0414 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1460 0418 84B2     		uxth	r4, r0
+ 1461 041a B068     		ldr	r0, [r6, #8]
+ 1462 041c FFF7FEFF 		bl	__aeabi_f2d
+ 1463 0420 FFF7FEFF 		bl	ceil
+ 1464 0424 0600     		movs	r6, r0
+ 1465 0426 2000     		movs	r0, r4
+ 1466 0428 0F00     		movs	r7, r1
+ 1467 042a FFF7FEFF 		bl	__aeabi_i2f
+ 1468 042e 011C     		adds	r1, r0, #0
+ 1469 0430 281C     		adds	r0, r5, #0
+ 1470 0432 FFF7FEFF 		bl	__aeabi_fsub
+ 1471 0436 D049     		ldr	r1, .L146+28
+ 1472 0438 FFF7FEFF 		bl	__aeabi_fmul
+ 1473 043c FFF7FEFF 		bl	__aeabi_f2uiz
+ 1474 0440 83B2     		uxth	r3, r0
+ 1475 0442 281C     		adds	r0, r5, #0
+ 1476 0444 0293     		str	r3, [sp, #8]
+ 1477 0446 FFF7FEFF 		bl	__aeabi_f2d
+ 1478 044a 3200     		movs	r2, r6
+ 1479 044c 3B00     		movs	r3, r7
+ 1480 044e FFF7FEFF 		bl	__aeabi_dmul
+ 1481 0452 FFF7FEFF 		bl	__aeabi_d2uiz
+ 1482 0456 80B2     		uxth	r0, r0
+ 1483 0458 0090     		str	r0, [sp]
+ 1484 045a 2200     		movs	r2, r4
+ 1485 045c 029B     		ldr	r3, [sp, #8]
+ 1486 045e C749     		ldr	r1, .L146+32
+ 1487 0460 1BA8     		add	r0, sp, #108
+ 1488 0462 FFF7FEFF 		bl	sprintf
+ 1489              	.L109:
+ 1490 0466 FFF7FEFF 		bl	clear_screen
+ 1491 046a 0123     		movs	r3, #1
+ 1492 046c 0A21     		movs	r1, #10
+ 1493 046e 1A00     		movs	r2, r3
+ARM GAS  /tmp/ccVVivOE.s 			page 27
 
 
- 1494 048a FFF7FEFF 		bl	HAL_Delay
- 1495 048e FA20     		movs	r0, #250
- 1496 0490 8000     		lsls	r0, r0, #2
- 1497 0492 FFF7FEFF 		bl	HAL_Delay
- 1498 0496 BA48     		ldr	r0, .L146+36
- 1499 0498 BA4B     		ldr	r3, .L146+40
- 1500 049a 0360     		str	r3, [r0]
- 1501 049c 0023     		movs	r3, #0
- 1502 049e 4360     		str	r3, [r0, #4]
- 1503 04a0 B94B     		ldr	r3, .L146+44
- 1504 04a2 C360     		str	r3, [r0, #12]
- 1505 04a4 8360     		str	r3, [r0, #8]
- 1506 04a6 FFF7FEFF 		bl	HAL_IWDG_Init
- 1507 04aa B84B     		ldr	r3, .L146+48
- 1508 04ac B84C     		ldr	r4, .L146+52
- 1509 04ae 1888     		ldrh	r0, [r3]
- 1510 04b0 C823     		movs	r3, #200
- 1511 04b2 5B00     		lsls	r3, r3, #1
- 1512 04b4 9842     		cmp	r0, r3
- 1513 04b6 00D3     		bcc	.LCB1532
- 1514 04b8 A9E1     		b	.L110	@long jump
- 1515              	.LCB1532:
- 1516 04ba FFF7FEFF 		bl	__aeabi_ui2f
- 1517 04be 2060     		str	r0, [r4]
- 1518              	.L111:
- 1519 04c0 0125     		movs	r5, #1
- 1520              	.L126:
- 1521 04c2 3220     		movs	r0, #50
- 1522 04c4 FFF7FEFF 		bl	HAL_Delay
- 1523 04c8 9020     		movs	r0, #144
- 1524 04ca 0821     		movs	r1, #8
- 1525 04cc C005     		lsls	r0, r0, #23
- 1526 04ce FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 1527 04d2 A44C     		ldr	r4, .L146+8
- 1528 04d4 1021     		movs	r1, #16
- 1529 04d6 A077     		strb	r0, [r4, #30]
- 1530 04d8 9020     		movs	r0, #144
- 1531 04da C005     		lsls	r0, r0, #23
- 1532 04dc FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 1533 04e0 8021     		movs	r1, #128
- 1534 04e2 0600     		movs	r6, r0
- 1535 04e4 8901     		lsls	r1, r1, #6
- 1536 04e6 AB48     		ldr	r0, .L146+56
- 1537 04e8 FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 1538 04ec 0643     		orrs	r6, r0
- 1539 04ee F6B2     		uxtb	r6, r6
- 1540 04f0 A74F     		ldr	r7, .L146+52
- 1541 04f2 6677     		strb	r6, [r4, #29]
- 1542 04f4 012E     		cmp	r6, #1
- 1543 04f6 08D1     		bne	.L112
- 1544 04f8 3868     		ldr	r0, [r7]
- 1545 04fa A749     		ldr	r1, .L146+60
- 1546 04fc FFF7FEFF 		bl	__aeabi_fsub
- 1547 0500 3860     		str	r0, [r7]
- 1548 0502 2820     		movs	r0, #40
- 1549 0504 2677     		strb	r6, [r4, #28]
- 1550 0506 FFF7FEFF 		bl	HAL_Delay
-ARM GAS  /tmp/cc4wQWsB.s 			page 28
+ 1494 0470 14A8     		add	r0, sp, #80
+ 1495 0472 FFF7FEFF 		bl	draw_string
+ 1496 0476 0123     		movs	r3, #1
+ 1497 0478 0922     		movs	r2, #9
+ 1498 047a 0A21     		movs	r1, #10
+ 1499 047c 1BA8     		add	r0, sp, #108
+ 1500 047e FFF7FEFF 		bl	draw_string
+ 1501 0482 FFF7FEFF 		bl	refresh
+ 1502 0486 FA20     		movs	r0, #250
+ 1503 0488 8000     		lsls	r0, r0, #2
+ 1504 048a FFF7FEFF 		bl	HAL_Delay
+ 1505 048e FA20     		movs	r0, #250
+ 1506 0490 8000     		lsls	r0, r0, #2
+ 1507 0492 FFF7FEFF 		bl	HAL_Delay
+ 1508 0496 BA48     		ldr	r0, .L146+36
+ 1509 0498 BA4B     		ldr	r3, .L146+40
+ 1510 049a 0360     		str	r3, [r0]
+ 1511 049c 0023     		movs	r3, #0
+ 1512 049e 4360     		str	r3, [r0, #4]
+ 1513 04a0 B94B     		ldr	r3, .L146+44
+ 1514 04a2 C360     		str	r3, [r0, #12]
+ 1515 04a4 8360     		str	r3, [r0, #8]
+ 1516 04a6 FFF7FEFF 		bl	HAL_IWDG_Init
+ 1517 04aa B84B     		ldr	r3, .L146+48
+ 1518 04ac B84C     		ldr	r4, .L146+52
+ 1519 04ae 1888     		ldrh	r0, [r3]
+ 1520 04b0 C823     		movs	r3, #200
+ 1521 04b2 5B00     		lsls	r3, r3, #1
+ 1522 04b4 9842     		cmp	r0, r3
+ 1523 04b6 00D3     		bcc	.LCB1545
+ 1524 04b8 A9E1     		b	.L110	@long jump
+ 1525              	.LCB1545:
+ 1526 04ba FFF7FEFF 		bl	__aeabi_ui2f
+ 1527 04be 2060     		str	r0, [r4]
+ 1528              	.L111:
+ 1529 04c0 0125     		movs	r5, #1
+ 1530              	.L126:
+ 1531 04c2 3220     		movs	r0, #50
+ 1532 04c4 FFF7FEFF 		bl	HAL_Delay
+ 1533 04c8 9020     		movs	r0, #144
+ 1534 04ca 0821     		movs	r1, #8
+ 1535 04cc C005     		lsls	r0, r0, #23
+ 1536 04ce FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 1537 04d2 A44C     		ldr	r4, .L146+8
+ 1538 04d4 1021     		movs	r1, #16
+ 1539 04d6 A077     		strb	r0, [r4, #30]
+ 1540 04d8 9020     		movs	r0, #144
+ 1541 04da C005     		lsls	r0, r0, #23
+ 1542 04dc FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 1543 04e0 8021     		movs	r1, #128
+ 1544 04e2 0600     		movs	r6, r0
+ 1545 04e4 8901     		lsls	r1, r1, #6
+ 1546 04e6 AB48     		ldr	r0, .L146+56
+ 1547 04e8 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 1548 04ec 0643     		orrs	r6, r0
+ 1549 04ee F6B2     		uxtb	r6, r6
+ 1550 04f0 A74F     		ldr	r7, .L146+52
+ARM GAS  /tmp/ccVVivOE.s 			page 28
 
 
- 1551              	.L112:
- 1552 050a A67F     		ldrb	r6, [r4, #30]
- 1553 050c 012E     		cmp	r6, #1
- 1554 050e 08D1     		bne	.L113
- 1555 0510 3868     		ldr	r0, [r7]
- 1556 0512 A149     		ldr	r1, .L146+60
- 1557 0514 FFF7FEFF 		bl	__aeabi_fadd
- 1558 0518 3860     		str	r0, [r7]
- 1559 051a 2820     		movs	r0, #40
- 1560 051c 2677     		strb	r6, [r4, #28]
- 1561 051e FFF7FEFF 		bl	HAL_Delay
- 1562              	.L113:
- 1563 0522 3E68     		ldr	r6, [r7]
- 1564 0524 9D49     		ldr	r1, .L146+64
- 1565 0526 301C     		adds	r0, r6, #0
- 1566 0528 FFF7FEFF 		bl	__aeabi_fcmpgt
- 1567 052c 0028     		cmp	r0, #0
- 1568 052e 00D0     		beq	.LCB1598
- 1569 0530 70E1     		b	.L128	@long jump
- 1570              	.LCB1598:
- 1571 0532 9B49     		ldr	r1, .L146+68
- 1572 0534 301C     		adds	r0, r6, #0
- 1573 0536 FFF7FEFF 		bl	__aeabi_fcmplt
- 1574 053a 0028     		cmp	r0, #0
- 1575 053c 00D0     		beq	.LCB1604
- 1576 053e 6BE1     		b	.L129	@long jump
- 1577              	.LCB1604:
- 1578              	.L114:
- 1579 0540 3E60     		str	r6, [r7]
- 1580 0542 237F     		ldrb	r3, [r4, #28]
- 1581 0544 012B     		cmp	r3, #1
- 1582 0546 2BD1     		bne	.L115
- 1583 0548 FFF7FEFF 		bl	HAL_FLASH_Unlock
- 1584 054c 0222     		movs	r2, #2
- 1585 054e 954B     		ldr	r3, .L146+72
- 1586 0550 1969     		ldr	r1, [r3, #16]
- 1587 0552 0A43     		orrs	r2, r1
- 1588 0554 1A61     		str	r2, [r3, #16]
- 1589 0556 8D4A     		ldr	r2, .L146+48
- 1590 0558 5A61     		str	r2, [r3, #20]
- 1591 055a 4022     		movs	r2, #64
- 1592 055c 1969     		ldr	r1, [r3, #16]
- 1593 055e 0A43     		orrs	r2, r1
- 1594 0560 1A61     		str	r2, [r3, #16]
- 1595              	.L116:
- 1596 0562 DA68     		ldr	r2, [r3, #12]
- 1597 0564 1600     		movs	r6, r2
- 1598 0566 2E40     		ands	r6, r5
- 1599 0568 2A42     		tst	r2, r5
- 1600 056a FAD1     		bne	.L116
- 1601 056c 2022     		movs	r2, #32
- 1602 056e D968     		ldr	r1, [r3, #12]
- 1603 0570 1142     		tst	r1, r2
- 1604 0572 12D0     		beq	.L117
- 1605 0574 D968     		ldr	r1, [r3, #12]
- 1606 0576 3868     		ldr	r0, [r7]
- 1607 0578 0A43     		orrs	r2, r1
-ARM GAS  /tmp/cc4wQWsB.s 			page 29
+ 1551 04f2 6677     		strb	r6, [r4, #29]
+ 1552 04f4 012E     		cmp	r6, #1
+ 1553 04f6 08D1     		bne	.L112
+ 1554 04f8 3868     		ldr	r0, [r7]
+ 1555 04fa A749     		ldr	r1, .L146+60
+ 1556 04fc FFF7FEFF 		bl	__aeabi_fsub
+ 1557 0500 3860     		str	r0, [r7]
+ 1558 0502 2820     		movs	r0, #40
+ 1559 0504 2677     		strb	r6, [r4, #28]
+ 1560 0506 FFF7FEFF 		bl	HAL_Delay
+ 1561              	.L112:
+ 1562 050a A67F     		ldrb	r6, [r4, #30]
+ 1563 050c 012E     		cmp	r6, #1
+ 1564 050e 08D1     		bne	.L113
+ 1565 0510 3868     		ldr	r0, [r7]
+ 1566 0512 A149     		ldr	r1, .L146+60
+ 1567 0514 FFF7FEFF 		bl	__aeabi_fadd
+ 1568 0518 3860     		str	r0, [r7]
+ 1569 051a 2820     		movs	r0, #40
+ 1570 051c 2677     		strb	r6, [r4, #28]
+ 1571 051e FFF7FEFF 		bl	HAL_Delay
+ 1572              	.L113:
+ 1573 0522 3E68     		ldr	r6, [r7]
+ 1574 0524 9D49     		ldr	r1, .L146+64
+ 1575 0526 301C     		adds	r0, r6, #0
+ 1576 0528 FFF7FEFF 		bl	__aeabi_fcmpgt
+ 1577 052c 0028     		cmp	r0, #0
+ 1578 052e 00D0     		beq	.LCB1611
+ 1579 0530 70E1     		b	.L128	@long jump
+ 1580              	.LCB1611:
+ 1581 0532 9B49     		ldr	r1, .L146+68
+ 1582 0534 301C     		adds	r0, r6, #0
+ 1583 0536 FFF7FEFF 		bl	__aeabi_fcmplt
+ 1584 053a 0028     		cmp	r0, #0
+ 1585 053c 00D0     		beq	.LCB1617
+ 1586 053e 6BE1     		b	.L129	@long jump
+ 1587              	.LCB1617:
+ 1588              	.L114:
+ 1589 0540 3E60     		str	r6, [r7]
+ 1590 0542 237F     		ldrb	r3, [r4, #28]
+ 1591 0544 012B     		cmp	r3, #1
+ 1592 0546 2BD1     		bne	.L115
+ 1593 0548 FFF7FEFF 		bl	HAL_FLASH_Unlock
+ 1594 054c 0222     		movs	r2, #2
+ 1595 054e 954B     		ldr	r3, .L146+72
+ 1596 0550 1969     		ldr	r1, [r3, #16]
+ 1597 0552 0A43     		orrs	r2, r1
+ 1598 0554 1A61     		str	r2, [r3, #16]
+ 1599 0556 8D4A     		ldr	r2, .L146+48
+ 1600 0558 5A61     		str	r2, [r3, #20]
+ 1601 055a 4022     		movs	r2, #64
+ 1602 055c 1969     		ldr	r1, [r3, #16]
+ 1603 055e 0A43     		orrs	r2, r1
+ 1604 0560 1A61     		str	r2, [r3, #16]
+ 1605              	.L116:
+ 1606 0562 DA68     		ldr	r2, [r3, #12]
+ 1607 0564 1600     		movs	r6, r2
+ARM GAS  /tmp/ccVVivOE.s 			page 29
 
 
- 1608 057a 0221     		movs	r1, #2
- 1609 057c DA60     		str	r2, [r3, #12]
- 1610 057e 1A69     		ldr	r2, [r3, #16]
- 1611 0580 8A43     		bics	r2, r1
- 1612 0582 1A61     		str	r2, [r3, #16]
- 1613 0584 FFF7FEFF 		bl	__aeabi_f2uiz
- 1614 0588 3300     		movs	r3, r6
- 1615 058a 82B2     		uxth	r2, r0
- 1616 058c 7F49     		ldr	r1, .L146+48
- 1617 058e 2800     		movs	r0, r5
- 1618 0590 FFF7FEFF 		bl	HAL_FLASH_Program
- 1619 0594 FFF7FEFF 		bl	HAL_FLASH_Lock
- 1620 0598 2677     		strb	r6, [r4, #28]
- 1621              	.L117:
- 1622 059a 0C23     		movs	r3, #12
- 1623 059c 0534     		adds	r4, r4, #5
- 1624 059e E377     		strb	r3, [r4, #31]
- 1625              	.L115:
- 1626 05a0 814C     		ldr	r4, .L146+76
- 1627 05a2 0B22     		movs	r2, #11
- 1628 05a4 2100     		movs	r1, r4
- 1629 05a6 0CA8     		add	r0, sp, #48
- 1630 05a8 FFF7FEFF 		bl	memcpy
- 1631 05ac 3320     		movs	r0, #51
- 1632 05ae 02AB     		add	r3, sp, #8
- 1633 05b0 C018     		adds	r0, r0, r3
- 1634 05b2 0322     		movs	r2, #3
- 1635 05b4 0021     		movs	r1, #0
- 1636 05b6 FFF7FEFF 		bl	memset
- 1637 05ba 2100     		movs	r1, r4
- 1638 05bc 0B22     		movs	r2, #11
- 1639 05be 10A8     		add	r0, sp, #64
- 1640 05c0 FFF7FEFF 		bl	memcpy
- 1641 05c4 4320     		movs	r0, #67
- 1642 05c6 02AB     		add	r3, sp, #8
- 1643 05c8 C018     		adds	r0, r0, r3
- 1644 05ca 0322     		movs	r2, #3
- 1645 05cc 0021     		movs	r1, #0
- 1646 05ce FFF7FEFF 		bl	memset
- 1647 05d2 2100     		movs	r1, r4
- 1648 05d4 0B22     		movs	r2, #11
- 1649 05d6 14A8     		add	r0, sp, #80
- 1650 05d8 FFF7FEFF 		bl	memcpy
- 1651 05dc 5320     		movs	r0, #83
- 1652 05de 02AB     		add	r3, sp, #8
- 1653 05e0 C018     		adds	r0, r0, r3
- 1654 05e2 0322     		movs	r2, #3
- 1655 05e4 0021     		movs	r1, #0
- 1656 05e6 FFF7FEFF 		bl	memset
- 1657 05ea 2100     		movs	r1, r4
- 1658 05ec 0B22     		movs	r2, #11
- 1659 05ee 1BA8     		add	r0, sp, #108
- 1660 05f0 FFF7FEFF 		bl	memcpy
- 1661 05f4 6F20     		movs	r0, #111
- 1662 05f6 02AB     		add	r3, sp, #8
- 1663 05f8 0322     		movs	r2, #3
- 1664 05fa 0021     		movs	r1, #0
-ARM GAS  /tmp/cc4wQWsB.s 			page 30
+ 1608 0566 2E40     		ands	r6, r5
+ 1609 0568 2A42     		tst	r2, r5
+ 1610 056a FAD1     		bne	.L116
+ 1611 056c 2022     		movs	r2, #32
+ 1612 056e D968     		ldr	r1, [r3, #12]
+ 1613 0570 1142     		tst	r1, r2
+ 1614 0572 12D0     		beq	.L117
+ 1615 0574 D968     		ldr	r1, [r3, #12]
+ 1616 0576 3868     		ldr	r0, [r7]
+ 1617 0578 0A43     		orrs	r2, r1
+ 1618 057a 0221     		movs	r1, #2
+ 1619 057c DA60     		str	r2, [r3, #12]
+ 1620 057e 1A69     		ldr	r2, [r3, #16]
+ 1621 0580 8A43     		bics	r2, r1
+ 1622 0582 1A61     		str	r2, [r3, #16]
+ 1623 0584 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1624 0588 3300     		movs	r3, r6
+ 1625 058a 82B2     		uxth	r2, r0
+ 1626 058c 7F49     		ldr	r1, .L146+48
+ 1627 058e 2800     		movs	r0, r5
+ 1628 0590 FFF7FEFF 		bl	HAL_FLASH_Program
+ 1629 0594 FFF7FEFF 		bl	HAL_FLASH_Lock
+ 1630 0598 2677     		strb	r6, [r4, #28]
+ 1631              	.L117:
+ 1632 059a 0C23     		movs	r3, #12
+ 1633 059c 0534     		adds	r4, r4, #5
+ 1634 059e E377     		strb	r3, [r4, #31]
+ 1635              	.L115:
+ 1636 05a0 814C     		ldr	r4, .L146+76
+ 1637 05a2 0B22     		movs	r2, #11
+ 1638 05a4 2100     		movs	r1, r4
+ 1639 05a6 0CA8     		add	r0, sp, #48
+ 1640 05a8 FFF7FEFF 		bl	memcpy
+ 1641 05ac 3320     		movs	r0, #51
+ 1642 05ae 02AB     		add	r3, sp, #8
+ 1643 05b0 C018     		adds	r0, r0, r3
+ 1644 05b2 0322     		movs	r2, #3
+ 1645 05b4 0021     		movs	r1, #0
+ 1646 05b6 FFF7FEFF 		bl	memset
+ 1647 05ba 2100     		movs	r1, r4
+ 1648 05bc 0B22     		movs	r2, #11
+ 1649 05be 10A8     		add	r0, sp, #64
+ 1650 05c0 FFF7FEFF 		bl	memcpy
+ 1651 05c4 4320     		movs	r0, #67
+ 1652 05c6 02AB     		add	r3, sp, #8
+ 1653 05c8 C018     		adds	r0, r0, r3
+ 1654 05ca 0322     		movs	r2, #3
+ 1655 05cc 0021     		movs	r1, #0
+ 1656 05ce FFF7FEFF 		bl	memset
+ 1657 05d2 2100     		movs	r1, r4
+ 1658 05d4 0B22     		movs	r2, #11
+ 1659 05d6 14A8     		add	r0, sp, #80
+ 1660 05d8 FFF7FEFF 		bl	memcpy
+ 1661 05dc 5320     		movs	r0, #83
+ 1662 05de 02AB     		add	r3, sp, #8
+ 1663 05e0 C018     		adds	r0, r0, r3
+ 1664 05e2 0322     		movs	r2, #3
+ARM GAS  /tmp/ccVVivOE.s 			page 30
 
 
- 1665 05fc C018     		adds	r0, r0, r3
- 1666 05fe FFF7FEFF 		bl	memset
- 1667 0602 634B     		ldr	r3, .L146+52
- 1668 0604 1868     		ldr	r0, [r3]
- 1669 0606 FFF7FEFF 		bl	__aeabi_f2uiz
- 1670 060a 6849     		ldr	r1, .L146+80
- 1671 060c 82B2     		uxth	r2, r0
- 1672 060e 0CA8     		add	r0, sp, #48
- 1673 0610 FFF7FEFF 		bl	sprintf
- 1674 0614 534C     		ldr	r4, .L146+8
- 1675 0616 6768     		ldr	r7, [r4, #4]
- 1676 0618 381C     		adds	r0, r7, #0
- 1677 061a FFF7FEFF 		bl	__aeabi_f2uiz
- 1678 061e 86B2     		uxth	r6, r0
- 1679 0620 3000     		movs	r0, r6
- 1680 0622 FFF7FEFF 		bl	__aeabi_i2f
- 1681 0626 011C     		adds	r1, r0, #0
- 1682 0628 381C     		adds	r0, r7, #0
- 1683 062a FFF7FEFF 		bl	__aeabi_fsub
- 1684 062e 5249     		ldr	r1, .L146+28
- 1685 0630 FFF7FEFF 		bl	__aeabi_fmul
- 1686 0634 FFF7FEFF 		bl	__aeabi_f2uiz
- 1687 0638 3200     		movs	r2, r6
- 1688 063a 83B2     		uxth	r3, r0
- 1689 063c 5C49     		ldr	r1, .L146+84
- 1690 063e 10A8     		add	r0, sp, #64
- 1691 0640 FFF7FEFF 		bl	sprintf
- 1692 0644 A768     		ldr	r7, [r4, #8]
- 1693 0646 381C     		adds	r0, r7, #0
- 1694 0648 FFF7FEFF 		bl	__aeabi_f2uiz
- 1695 064c 86B2     		uxth	r6, r0
- 1696 064e 3000     		movs	r0, r6
- 1697 0650 FFF7FEFF 		bl	__aeabi_i2f
- 1698 0654 011C     		adds	r1, r0, #0
- 1699 0656 381C     		adds	r0, r7, #0
- 1700 0658 FFF7FEFF 		bl	__aeabi_fsub
- 1701 065c 4649     		ldr	r1, .L146+28
- 1702 065e FFF7FEFF 		bl	__aeabi_fmul
- 1703 0662 FFF7FEFF 		bl	__aeabi_f2uiz
- 1704 0666 3200     		movs	r2, r6
- 1705 0668 83B2     		uxth	r3, r0
- 1706 066a 5249     		ldr	r1, .L146+88
- 1707 066c 14A8     		add	r0, sp, #80
- 1708 066e FFF7FEFF 		bl	sprintf
- 1709 0672 2769     		ldr	r7, [r4, #16]
- 1710 0674 381C     		adds	r0, r7, #0
- 1711 0676 FFF7FEFF 		bl	__aeabi_f2uiz
- 1712 067a 86B2     		uxth	r6, r0
- 1713 067c 3000     		movs	r0, r6
- 1714 067e FFF7FEFF 		bl	__aeabi_i2f
- 1715 0682 011C     		adds	r1, r0, #0
- 1716 0684 381C     		adds	r0, r7, #0
- 1717 0686 FFF7FEFF 		bl	__aeabi_fsub
- 1718 068a 3B49     		ldr	r1, .L146+28
- 1719 068c FFF7FEFF 		bl	__aeabi_fmul
- 1720 0690 FFF7FEFF 		bl	__aeabi_f2uiz
- 1721 0694 3200     		movs	r2, r6
-ARM GAS  /tmp/cc4wQWsB.s 			page 31
+ 1665 05e4 0021     		movs	r1, #0
+ 1666 05e6 FFF7FEFF 		bl	memset
+ 1667 05ea 2100     		movs	r1, r4
+ 1668 05ec 0B22     		movs	r2, #11
+ 1669 05ee 1BA8     		add	r0, sp, #108
+ 1670 05f0 FFF7FEFF 		bl	memcpy
+ 1671 05f4 6F20     		movs	r0, #111
+ 1672 05f6 02AB     		add	r3, sp, #8
+ 1673 05f8 0322     		movs	r2, #3
+ 1674 05fa 0021     		movs	r1, #0
+ 1675 05fc C018     		adds	r0, r0, r3
+ 1676 05fe FFF7FEFF 		bl	memset
+ 1677 0602 634B     		ldr	r3, .L146+52
+ 1678 0604 1868     		ldr	r0, [r3]
+ 1679 0606 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1680 060a 6849     		ldr	r1, .L146+80
+ 1681 060c 82B2     		uxth	r2, r0
+ 1682 060e 0CA8     		add	r0, sp, #48
+ 1683 0610 FFF7FEFF 		bl	sprintf
+ 1684 0614 534C     		ldr	r4, .L146+8
+ 1685 0616 6768     		ldr	r7, [r4, #4]
+ 1686 0618 381C     		adds	r0, r7, #0
+ 1687 061a FFF7FEFF 		bl	__aeabi_f2uiz
+ 1688 061e 86B2     		uxth	r6, r0
+ 1689 0620 3000     		movs	r0, r6
+ 1690 0622 FFF7FEFF 		bl	__aeabi_i2f
+ 1691 0626 011C     		adds	r1, r0, #0
+ 1692 0628 381C     		adds	r0, r7, #0
+ 1693 062a FFF7FEFF 		bl	__aeabi_fsub
+ 1694 062e 5249     		ldr	r1, .L146+28
+ 1695 0630 FFF7FEFF 		bl	__aeabi_fmul
+ 1696 0634 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1697 0638 3200     		movs	r2, r6
+ 1698 063a 83B2     		uxth	r3, r0
+ 1699 063c 5C49     		ldr	r1, .L146+84
+ 1700 063e 10A8     		add	r0, sp, #64
+ 1701 0640 FFF7FEFF 		bl	sprintf
+ 1702 0644 A768     		ldr	r7, [r4, #8]
+ 1703 0646 381C     		adds	r0, r7, #0
+ 1704 0648 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1705 064c 86B2     		uxth	r6, r0
+ 1706 064e 3000     		movs	r0, r6
+ 1707 0650 FFF7FEFF 		bl	__aeabi_i2f
+ 1708 0654 011C     		adds	r1, r0, #0
+ 1709 0656 381C     		adds	r0, r7, #0
+ 1710 0658 FFF7FEFF 		bl	__aeabi_fsub
+ 1711 065c 4649     		ldr	r1, .L146+28
+ 1712 065e FFF7FEFF 		bl	__aeabi_fmul
+ 1713 0662 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1714 0666 3200     		movs	r2, r6
+ 1715 0668 83B2     		uxth	r3, r0
+ 1716 066a 5249     		ldr	r1, .L146+88
+ 1717 066c 14A8     		add	r0, sp, #80
+ 1718 066e FFF7FEFF 		bl	sprintf
+ 1719 0672 2769     		ldr	r7, [r4, #16]
+ 1720 0674 381C     		adds	r0, r7, #0
+ 1721 0676 FFF7FEFF 		bl	__aeabi_f2uiz
+ARM GAS  /tmp/ccVVivOE.s 			page 31
 
 
- 1722 0696 83B2     		uxth	r3, r0
- 1723 0698 4749     		ldr	r1, .L146+92
- 1724 069a 1BA8     		add	r0, sp, #108
- 1725 069c FFF7FEFF 		bl	sprintf
- 1726 06a0 FFF7FEFF 		bl	clear_screen
- 1727 06a4 2B00     		movs	r3, r5
- 1728 06a6 2A00     		movs	r2, r5
- 1729 06a8 0A21     		movs	r1, #10
- 1730 06aa 0CA8     		add	r0, sp, #48
- 1731 06ac FFF7FEFF 		bl	draw_string
- 1732 06b0 2B00     		movs	r3, r5
- 1733 06b2 0922     		movs	r2, #9
- 1734 06b4 0A21     		movs	r1, #10
- 1735 06b6 10A8     		add	r0, sp, #64
- 1736 06b8 FFF7FEFF 		bl	draw_string
- 1737 06bc 2B00     		movs	r3, r5
- 1738 06be 2A00     		movs	r2, r5
- 1739 06c0 3C21     		movs	r1, #60
- 1740 06c2 14A8     		add	r0, sp, #80
- 1741 06c4 FFF7FEFF 		bl	draw_string
- 1742 06c8 621D     		adds	r2, r4, #5
- 1743 06ca D37F     		ldrb	r3, [r2, #31]
- 1744 06cc 002B     		cmp	r3, #0
- 1745 06ce 00D0     		beq	.LCB1789
- 1746 06d0 A4E0     		b	.L118	@long jump
- 1747              	.LCB1789:
- 1748 06d2 2B00     		movs	r3, r5
- 1749 06d4 2A00     		movs	r2, r5
- 1750 06d6 0A21     		movs	r1, #10
- 1751 06d8 1BA8     		add	r0, sp, #108
- 1752 06da FFF7FEFF 		bl	draw_string
- 1753              	.L119:
- 1754 06de 3749     		ldr	r1, .L146+96
- 1755 06e0 2069     		ldr	r0, [r4, #16]
- 1756 06e2 FFF7FEFF 		bl	__aeabi_fmul
- 1757 06e6 FFF7FEFF 		bl	__aeabi_f2d
- 1758 06ea 0600     		movs	r6, r0
- 1759 06ec E068     		ldr	r0, [r4, #12]
- 1760 06ee 0F00     		movs	r7, r1
- 1761 06f0 FFF7FEFF 		bl	__aeabi_f2d
- 1762 06f4 0022     		movs	r2, #0
- 1763 06f6 324B     		ldr	r3, .L146+100
- 1764 06f8 FFF7FEFF 		bl	__aeabi_dmul
- 1765 06fc 0B00     		movs	r3, r1
- 1766 06fe 0200     		movs	r2, r0
- 1767 0700 3900     		movs	r1, r7
- 1768 0702 3000     		movs	r0, r6
- 1769 0704 FFF7FEFF 		bl	__aeabi_dadd
- 1770 0708 FFF7FEFF 		bl	__aeabi_d2f
- 1771 070c A31D     		adds	r3, r4, #6
- 1772 070e 2061     		str	r0, [r4, #16]
- 1773 0710 DB7F     		ldrb	r3, [r3, #31]
- 1774 0712 002B     		cmp	r3, #0
- 1775 0714 00D1     		bne	.LCB1819
- 1776 0716 8AE0     		b	.L120	@long jump
- 1777              	.LCB1819:
- 1778 0718 2849     		ldr	r1, .L146+96
-ARM GAS  /tmp/cc4wQWsB.s 			page 32
+ 1722 067a 86B2     		uxth	r6, r0
+ 1723 067c 3000     		movs	r0, r6
+ 1724 067e FFF7FEFF 		bl	__aeabi_i2f
+ 1725 0682 011C     		adds	r1, r0, #0
+ 1726 0684 381C     		adds	r0, r7, #0
+ 1727 0686 FFF7FEFF 		bl	__aeabi_fsub
+ 1728 068a 3B49     		ldr	r1, .L146+28
+ 1729 068c FFF7FEFF 		bl	__aeabi_fmul
+ 1730 0690 FFF7FEFF 		bl	__aeabi_f2uiz
+ 1731 0694 3200     		movs	r2, r6
+ 1732 0696 83B2     		uxth	r3, r0
+ 1733 0698 4749     		ldr	r1, .L146+92
+ 1734 069a 1BA8     		add	r0, sp, #108
+ 1735 069c FFF7FEFF 		bl	sprintf
+ 1736 06a0 FFF7FEFF 		bl	clear_screen
+ 1737 06a4 2B00     		movs	r3, r5
+ 1738 06a6 2A00     		movs	r2, r5
+ 1739 06a8 0A21     		movs	r1, #10
+ 1740 06aa 0CA8     		add	r0, sp, #48
+ 1741 06ac FFF7FEFF 		bl	draw_string
+ 1742 06b0 2B00     		movs	r3, r5
+ 1743 06b2 0922     		movs	r2, #9
+ 1744 06b4 0A21     		movs	r1, #10
+ 1745 06b6 10A8     		add	r0, sp, #64
+ 1746 06b8 FFF7FEFF 		bl	draw_string
+ 1747 06bc 2B00     		movs	r3, r5
+ 1748 06be 2A00     		movs	r2, r5
+ 1749 06c0 3C21     		movs	r1, #60
+ 1750 06c2 14A8     		add	r0, sp, #80
+ 1751 06c4 FFF7FEFF 		bl	draw_string
+ 1752 06c8 621D     		adds	r2, r4, #5
+ 1753 06ca D37F     		ldrb	r3, [r2, #31]
+ 1754 06cc 002B     		cmp	r3, #0
+ 1755 06ce 00D0     		beq	.LCB1802
+ 1756 06d0 A4E0     		b	.L118	@long jump
+ 1757              	.LCB1802:
+ 1758 06d2 2B00     		movs	r3, r5
+ 1759 06d4 2A00     		movs	r2, r5
+ 1760 06d6 0A21     		movs	r1, #10
+ 1761 06d8 1BA8     		add	r0, sp, #108
+ 1762 06da FFF7FEFF 		bl	draw_string
+ 1763              	.L119:
+ 1764 06de 3749     		ldr	r1, .L146+96
+ 1765 06e0 2069     		ldr	r0, [r4, #16]
+ 1766 06e2 FFF7FEFF 		bl	__aeabi_fmul
+ 1767 06e6 FFF7FEFF 		bl	__aeabi_f2d
+ 1768 06ea 0600     		movs	r6, r0
+ 1769 06ec E068     		ldr	r0, [r4, #12]
+ 1770 06ee 0F00     		movs	r7, r1
+ 1771 06f0 FFF7FEFF 		bl	__aeabi_f2d
+ 1772 06f4 0022     		movs	r2, #0
+ 1773 06f6 324B     		ldr	r3, .L146+100
+ 1774 06f8 FFF7FEFF 		bl	__aeabi_dmul
+ 1775 06fc 0B00     		movs	r3, r1
+ 1776 06fe 0200     		movs	r2, r0
+ 1777 0700 3900     		movs	r1, r7
+ 1778 0702 3000     		movs	r0, r6
+ARM GAS  /tmp/ccVVivOE.s 			page 32
 
 
- 1779 071a 206A     		ldr	r0, [r4, #32]
- 1780 071c FFF7FEFF 		bl	__aeabi_fmul
- 1781 0720 FFF7FEFF 		bl	__aeabi_f2d
- 1782 0724 1A4B     		ldr	r3, .L146+52
- 1783 0726 0290     		str	r0, [sp, #8]
- 1784 0728 0391     		str	r1, [sp, #12]
- 1785 072a 2649     		ldr	r1, .L146+104
- 1786 072c 5868     		ldr	r0, [r3, #4]
- 1787 072e FFF7FEFF 		bl	__aeabi_fmul
- 1788 0732 2549     		ldr	r1, .L146+108
- 1789 0734 061C     		adds	r6, r0, #0
- 1790 0736 FFF7FEFF 		bl	__aeabi_fcmpgt
- 1791 073a 0028     		cmp	r0, #0
- 1792 073c 71D1     		bne	.L130
- 1793 073e 0021     		movs	r1, #0
- 1794 0740 301C     		adds	r0, r6, #0
- 1795 0742 FFF7FEFF 		bl	__aeabi_fcmplt
- 1796 0746 0028     		cmp	r0, #0
- 1797 0748 6ED1     		bne	.L131
- 1798 074a 301C     		adds	r0, r6, #0
- 1799 074c FFF7FEFF 		bl	__aeabi_f2d
- 1800              	.L121:
- 1801 0750 0022     		movs	r2, #0
- 1802 0752 1B4B     		ldr	r3, .L146+100
- 1803 0754 FFF7FEFF 		bl	__aeabi_dmul
- 1804 0758 38E0     		b	.L147
- 1805              	.L148:
- 1806 075a C046     		.align	2
- 1807              	.L146:
- 1808 075c 00000000 		.word	.LANCHOR14
- 1809 0760 00000000 		.word	.LANCHOR15
- 1810 0764 00000000 		.word	.LANCHOR0
- 1811 0768 0000C842 		.word	1120403456
- 1812 076c 00000000 		.word	.LC28
- 1813 0770 07000000 		.word	.LC30
- 1814 0774 1B000000 		.word	.LC45
- 1815 0778 00002041 		.word	1092616192
- 1816 077c 25000000 		.word	.LC47
- 1817 0780 00000000 		.word	.LANCHOR16
- 1818 0784 00300040 		.word	1073754112
- 1819 0788 FF0F0000 		.word	4095
- 1820 078c 00E40008 		.word	134276096
- 1821 0790 00000000 		.word	.LANCHOR4
- 1822 0794 00080048 		.word	1207961600
- 1823 0798 0000A040 		.word	1084227584
- 1824 079c 0000C843 		.word	1137180672
- 1825 07a0 0000A041 		.word	1101004800
- 1826 07a4 00200240 		.word	1073881088
- 1827 07a8 00000000 		.word	.LANCHOR17
- 1828 07ac 4F000000 		.word	.LC57
- 1829 07b0 57000000 		.word	.LC59
- 1830 07b4 5F000000 		.word	.LC61
- 1831 07b8 67000000 		.word	.LC63
- 1832 07bc 6666663F 		.word	1063675494
- 1833 07c0 9A99B93F 		.word	1069128090
- 1834 07c4 00004040 		.word	1077936128
- 1835 07c8 0000F041 		.word	1106247680
-ARM GAS  /tmp/cc4wQWsB.s 			page 33
+ 1779 0704 FFF7FEFF 		bl	__aeabi_dadd
+ 1780 0708 FFF7FEFF 		bl	__aeabi_d2f
+ 1781 070c A31D     		adds	r3, r4, #6
+ 1782 070e 2061     		str	r0, [r4, #16]
+ 1783 0710 DB7F     		ldrb	r3, [r3, #31]
+ 1784 0712 002B     		cmp	r3, #0
+ 1785 0714 00D1     		bne	.LCB1832
+ 1786 0716 8AE0     		b	.L120	@long jump
+ 1787              	.LCB1832:
+ 1788 0718 2849     		ldr	r1, .L146+96
+ 1789 071a 206A     		ldr	r0, [r4, #32]
+ 1790 071c FFF7FEFF 		bl	__aeabi_fmul
+ 1791 0720 FFF7FEFF 		bl	__aeabi_f2d
+ 1792 0724 1A4B     		ldr	r3, .L146+52
+ 1793 0726 0290     		str	r0, [sp, #8]
+ 1794 0728 0391     		str	r1, [sp, #12]
+ 1795 072a 2649     		ldr	r1, .L146+104
+ 1796 072c 5868     		ldr	r0, [r3, #4]
+ 1797 072e FFF7FEFF 		bl	__aeabi_fmul
+ 1798 0732 2549     		ldr	r1, .L146+108
+ 1799 0734 061C     		adds	r6, r0, #0
+ 1800 0736 FFF7FEFF 		bl	__aeabi_fcmpgt
+ 1801 073a 0028     		cmp	r0, #0
+ 1802 073c 71D1     		bne	.L130
+ 1803 073e 0021     		movs	r1, #0
+ 1804 0740 301C     		adds	r0, r6, #0
+ 1805 0742 FFF7FEFF 		bl	__aeabi_fcmplt
+ 1806 0746 0028     		cmp	r0, #0
+ 1807 0748 6ED1     		bne	.L131
+ 1808 074a 301C     		adds	r0, r6, #0
+ 1809 074c FFF7FEFF 		bl	__aeabi_f2d
+ 1810              	.L121:
+ 1811 0750 0022     		movs	r2, #0
+ 1812 0752 1B4B     		ldr	r3, .L146+100
+ 1813 0754 FFF7FEFF 		bl	__aeabi_dmul
+ 1814 0758 38E0     		b	.L147
+ 1815              	.L148:
+ 1816 075a C046     		.align	2
+ 1817              	.L146:
+ 1818 075c 00000000 		.word	.LANCHOR14
+ 1819 0760 00000000 		.word	.LANCHOR15
+ 1820 0764 00000000 		.word	.LANCHOR0
+ 1821 0768 0000C842 		.word	1120403456
+ 1822 076c 00000000 		.word	.LC28
+ 1823 0770 07000000 		.word	.LC30
+ 1824 0774 1B000000 		.word	.LC45
+ 1825 0778 00002041 		.word	1092616192
+ 1826 077c 25000000 		.word	.LC47
+ 1827 0780 00000000 		.word	.LANCHOR16
+ 1828 0784 00300040 		.word	1073754112
+ 1829 0788 FF0F0000 		.word	4095
+ 1830 078c 00E40008 		.word	134276096
+ 1831 0790 00000000 		.word	.LANCHOR4
+ 1832 0794 00080048 		.word	1207961600
+ 1833 0798 0000A040 		.word	1084227584
+ 1834 079c 0000C843 		.word	1137180672
+ 1835 07a0 0000A041 		.word	1101004800
+ARM GAS  /tmp/ccVVivOE.s 			page 33
 
 
- 1836              	.L147:
- 1837 07cc 029A     		ldr	r2, [sp, #8]
- 1838 07ce 039B     		ldr	r3, [sp, #12]
- 1839 07d0 FFF7FEFF 		bl	__aeabi_dadd
- 1840 07d4 FFF7FEFF 		bl	__aeabi_d2f
- 1841 07d8 0026     		movs	r6, #0
- 1842 07da 2062     		str	r0, [r4, #32]
- 1843              	.L122:
- 1844 07dc 206A     		ldr	r0, [r4, #32]
- 1845 07de FFF7FEFF 		bl	__aeabi_f2iz
- 1846 07e2 8642     		cmp	r6, r0
- 1847 07e4 2EDC     		bgt	.L124
- 1848 07e6 3000     		movs	r0, r6
- 1849 07e8 0822     		movs	r2, #8
- 1850 07ea 3C30     		adds	r0, r0, #60
- 1851 07ec 2B00     		movs	r3, r5
- 1852 07ee 1100     		movs	r1, r2
- 1853 07f0 00B2     		sxth	r0, r0
- 1854 07f2 0136     		adds	r6, r6, #1
- 1855 07f4 FFF7FEFF 		bl	draw_v_line
- 1856 07f8 B6B2     		uxth	r6, r6
- 1857 07fa EFE7     		b	.L122
- 1858              	.L107:
- 1859 07fc 1449     		ldr	r1, .L149
- 1860 07fe 14A8     		add	r0, sp, #80
- 1861 0800 FFF7FEFF 		bl	strcpy
- 1862 0804 1349     		ldr	r1, .L149+4
- 1863 0806 1BA8     		add	r0, sp, #108
- 1864 0808 FFF7FEFF 		bl	strcpy
- 1865 080c 2BE6     		b	.L109
- 1866              	.L110:
- 1867 080e 124B     		ldr	r3, .L149+8
- 1868 0810 2360     		str	r3, [r4]
- 1869 0812 55E6     		b	.L111
- 1870              	.L128:
- 1871 0814 114E     		ldr	r6, .L149+12
- 1872 0816 93E6     		b	.L114
- 1873              	.L129:
- 1874 0818 114E     		ldr	r6, .L149+16
- 1875 081a 91E6     		b	.L114
- 1876              	.L118:
- 1877 081c 013B     		subs	r3, r3, #1
- 1878 081e D377     		strb	r3, [r2, #31]
- 1879 0820 5DE7     		b	.L119
- 1880              	.L130:
- 1881 0822 0020     		movs	r0, #0
- 1882 0824 0F49     		ldr	r1, .L149+20
- 1883 0826 93E7     		b	.L121
- 1884              	.L131:
- 1885 0828 0020     		movs	r0, #0
- 1886 082a 0021     		movs	r1, #0
- 1887 082c 90E7     		b	.L121
- 1888              	.L120:
- 1889 082e 0734     		adds	r4, r4, #7
- 1890 0830 E37F     		ldrb	r3, [r4, #31]
- 1891 0832 0D48     		ldr	r0, .L149+24
- 1892 0834 002B     		cmp	r3, #0
-ARM GAS  /tmp/cc4wQWsB.s 			page 34
+ 1836 07a4 00200240 		.word	1073881088
+ 1837 07a8 00000000 		.word	.LANCHOR17
+ 1838 07ac 4F000000 		.word	.LC57
+ 1839 07b0 57000000 		.word	.LC59
+ 1840 07b4 5F000000 		.word	.LC61
+ 1841 07b8 67000000 		.word	.LC63
+ 1842 07bc 6666663F 		.word	1063675494
+ 1843 07c0 9A99B93F 		.word	1069128090
+ 1844 07c4 00004040 		.word	1077936128
+ 1845 07c8 0000F041 		.word	1106247680
+ 1846              	.L147:
+ 1847 07cc 029A     		ldr	r2, [sp, #8]
+ 1848 07ce 039B     		ldr	r3, [sp, #12]
+ 1849 07d0 FFF7FEFF 		bl	__aeabi_dadd
+ 1850 07d4 FFF7FEFF 		bl	__aeabi_d2f
+ 1851 07d8 0026     		movs	r6, #0
+ 1852 07da 2062     		str	r0, [r4, #32]
+ 1853              	.L122:
+ 1854 07dc 206A     		ldr	r0, [r4, #32]
+ 1855 07de FFF7FEFF 		bl	__aeabi_f2iz
+ 1856 07e2 8642     		cmp	r6, r0
+ 1857 07e4 2EDC     		bgt	.L124
+ 1858 07e6 3000     		movs	r0, r6
+ 1859 07e8 0822     		movs	r2, #8
+ 1860 07ea 3C30     		adds	r0, r0, #60
+ 1861 07ec 2B00     		movs	r3, r5
+ 1862 07ee 1100     		movs	r1, r2
+ 1863 07f0 00B2     		sxth	r0, r0
+ 1864 07f2 0136     		adds	r6, r6, #1
+ 1865 07f4 FFF7FEFF 		bl	draw_v_line
+ 1866 07f8 B6B2     		uxth	r6, r6
+ 1867 07fa EFE7     		b	.L122
+ 1868              	.L107:
+ 1869 07fc 1449     		ldr	r1, .L149
+ 1870 07fe 14A8     		add	r0, sp, #80
+ 1871 0800 FFF7FEFF 		bl	strcpy
+ 1872 0804 1349     		ldr	r1, .L149+4
+ 1873 0806 1BA8     		add	r0, sp, #108
+ 1874 0808 FFF7FEFF 		bl	strcpy
+ 1875 080c 2BE6     		b	.L109
+ 1876              	.L110:
+ 1877 080e 124B     		ldr	r3, .L149+8
+ 1878 0810 2360     		str	r3, [r4]
+ 1879 0812 55E6     		b	.L111
+ 1880              	.L128:
+ 1881 0814 114E     		ldr	r6, .L149+12
+ 1882 0816 93E6     		b	.L114
+ 1883              	.L129:
+ 1884 0818 114E     		ldr	r6, .L149+16
+ 1885 081a 91E6     		b	.L114
+ 1886              	.L118:
+ 1887 081c 013B     		subs	r3, r3, #1
+ 1888 081e D377     		strb	r3, [r2, #31]
+ 1889 0820 5DE7     		b	.L119
+ 1890              	.L130:
+ 1891 0822 0020     		movs	r0, #0
+ 1892 0824 0F49     		ldr	r1, .L149+20
+ARM GAS  /tmp/ccVVivOE.s 			page 34
 
 
- 1893 0836 00D1     		bne	.L125
- 1894 0838 0C48     		ldr	r0, .L149+28
- 1895              	.L125:
- 1896 083a 2B00     		movs	r3, r5
- 1897 083c 0922     		movs	r2, #9
- 1898 083e 3C21     		movs	r1, #60
- 1899 0840 FFF7FEFF 		bl	draw_string
- 1900              	.L124:
- 1901 0844 FFF7FEFF 		bl	refresh
- 1902 0848 0948     		ldr	r0, .L149+32
- 1903 084a FFF7FEFF 		bl	HAL_IWDG_Refresh
- 1904 084e 38E6     		b	.L126
- 1905              	.L150:
- 1906              		.align	2
- 1907              	.L149:
- 1908 0850 35000000 		.word	.LC49
- 1909 0854 41000000 		.word	.LC51
- 1910 0858 00005C43 		.word	1130102784
- 1911 085c 0000C843 		.word	1137180672
- 1912 0860 0000A041 		.word	1101004800
- 1913 0864 00003E40 		.word	1077805056
- 1914 0868 0F000000 		.word	.LC32
- 1915 086c 15000000 		.word	.LC34
- 1916 0870 00000000 		.word	.LANCHOR16
- 1918              		.section	.text.Error_Handler,"ax",%progbits
- 1919              		.align	1
- 1920              		.global	Error_Handler
- 1921              		.syntax unified
- 1922              		.code	16
- 1923              		.thumb_func
- 1924              		.fpu softvfp
- 1926              	Error_Handler:
- 1927              		@ args = 0, pretend = 0, frame = 0
- 1928              		@ frame_needed = 0, uses_anonymous_args = 0
- 1929              		@ link register save eliminated.
- 1930              		@ sp needed
- 1931 0000 7047     		bx	lr
- 1933              		.global	OLED_Setup_Array
- 1934              		.global	REFRESH_COMMANDS
- 1935              		.global	screenBuffer
- 1936              		.global	by_string
- 1937              		.section	.rodata.str1.1,"aMS",%progbits,1
- 1938              	.LC68:
- 1939 0000 6279204A 		.ascii	"by Jan Henrik\000"
- 1939      616E2048 
- 1939      656E7269 
- 1939      6B00
- 1940              		.global	otter_string
- 1941              	.LC69:
- 1942 000e 4F747465 		.ascii	"Otter-Iron\000"
- 1942      722D4972 
- 1942      6F6E00
- 1943              		.global	dfu_string
- 1944              	.LC70:
- 1945 0019 64667564 		.ascii	"dfudfudfudfudfu\000"
- 1945      66756466 
- 1945      75646675 
-ARM GAS  /tmp/cc4wQWsB.s 			page 35
+ 1893 0826 93E7     		b	.L121
+ 1894              	.L131:
+ 1895 0828 0020     		movs	r0, #0
+ 1896 082a 0021     		movs	r1, #0
+ 1897 082c 90E7     		b	.L121
+ 1898              	.L120:
+ 1899 082e 0734     		adds	r4, r4, #7
+ 1900 0830 E37F     		ldrb	r3, [r4, #31]
+ 1901 0832 0D48     		ldr	r0, .L149+24
+ 1902 0834 002B     		cmp	r3, #0
+ 1903 0836 00D1     		bne	.L125
+ 1904 0838 0C48     		ldr	r0, .L149+28
+ 1905              	.L125:
+ 1906 083a 2B00     		movs	r3, r5
+ 1907 083c 0922     		movs	r2, #9
+ 1908 083e 3C21     		movs	r1, #60
+ 1909 0840 FFF7FEFF 		bl	draw_string
+ 1910              	.L124:
+ 1911 0844 FFF7FEFF 		bl	refresh
+ 1912 0848 0948     		ldr	r0, .L149+32
+ 1913 084a FFF7FEFF 		bl	HAL_IWDG_Refresh
+ 1914 084e 38E6     		b	.L126
+ 1915              	.L150:
+ 1916              		.align	2
+ 1917              	.L149:
+ 1918 0850 35000000 		.word	.LC49
+ 1919 0854 41000000 		.word	.LC51
+ 1920 0858 00005C43 		.word	1130102784
+ 1921 085c 0000C843 		.word	1137180672
+ 1922 0860 0000A041 		.word	1101004800
+ 1923 0864 00003E40 		.word	1077805056
+ 1924 0868 0F000000 		.word	.LC32
+ 1925 086c 15000000 		.word	.LC34
+ 1926 0870 00000000 		.word	.LANCHOR16
+ 1928              		.section	.text.Error_Handler,"ax",%progbits
+ 1929              		.align	1
+ 1930              		.global	Error_Handler
+ 1931              		.syntax unified
+ 1932              		.code	16
+ 1933              		.thumb_func
+ 1934              		.fpu softvfp
+ 1936              	Error_Handler:
+ 1937              		@ args = 0, pretend = 0, frame = 0
+ 1938              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1939              		@ link register save eliminated.
+ 1940              		@ sp needed
+ 1941 0000 7047     		bx	lr
+ 1943              		.global	OLED_Setup_Array
+ 1944              		.global	REFRESH_COMMANDS
+ 1945              		.global	screenBuffer
+ 1946              		.global	by_string
+ 1947              		.section	.rodata.str1.1,"aMS",%progbits,1
+ 1948              	.LC68:
+ 1949 0000 6279204A 		.ascii	"by Jan Henrik\000"
+ 1949      616E2048 
+ 1949      656E7269 
+ 1949      6B00
+ARM GAS  /tmp/ccVVivOE.s 			page 35
 
 
- 1945      64667500 
- 1946              		.global	sendDataUSB
- 1947              		.global	tipcal
- 1948              		.global	r
- 1949              		.global	s
- 1950              		.global	USBD_Device
- 1951              		.global	hiwdg
- 1952              		.global	htim3
- 1953              		.global	htim1
- 1954              		.global	hi2c1
- 1955              		.global	hdma_adc
- 1956              		.global	hadc
- 1957              		.global	wduty
- 1958              		.global	font
- 1959              		.section	.rodata
- 1960              		.set	.LANCHOR17,. + 0
- 1961              	.LC55:
- 1962 0000 20202020 		.ascii	"          \000"
- 1962      20202020 
- 1962      202000
- 1963 000b 000000   		.space	3
- 1964              		.section	.bss.ADC_raw,"aw",%nobits
- 1965              		.align	1
- 1966              		.set	.LANCHOR1,. + 0
- 1969              	ADC_raw:
- 1970 0000 00000000 		.space	8
- 1970      00000000 
- 1971              		.section	.bss.USBD_Device,"aw",%nobits
- 1972              		.align	2
- 1975              	USBD_Device:
- 1976 0000 00000000 		.space	548
- 1976      00000000 
- 1976      00000000 
- 1976      00000000 
- 1976      00000000 
- 1977              		.section	.bss.count.0,"aw",%nobits
- 1978              		.align	1
- 1979              		.set	.LANCHOR6,. + 0
- 1982              	count.0:
- 1983 0000 0000     		.space	2
- 1984              		.section	.bss.hadc,"aw",%nobits
- 1985              		.align	2
- 1986              		.set	.LANCHOR11,. + 0
- 1989              	hadc:
- 1990 0000 00000000 		.space	76
- 1990      00000000 
- 1990      00000000 
- 1990      00000000 
- 1990      00000000 
- 1991              		.section	.bss.hdma_adc,"aw",%nobits
- 1992              		.align	2
- 1995              	hdma_adc:
- 1996 0000 00000000 		.space	68
- 1996      00000000 
- 1996      00000000 
- 1996      00000000 
- 1996      00000000 
-ARM GAS  /tmp/cc4wQWsB.s 			page 36
+ 1950              		.global	otter_string
+ 1951              	.LC69:
+ 1952 000e 4F747465 		.ascii	"Otter-Iron\000"
+ 1952      722D4972 
+ 1952      6F6E00
+ 1953              		.global	dfu_string
+ 1954              	.LC70:
+ 1955 0019 64667564 		.ascii	"dfudfudfudfudfu\000"
+ 1955      66756466 
+ 1955      75646675 
+ 1955      64667500 
+ 1956              		.global	sendDataUSB
+ 1957              		.global	tipcal
+ 1958              		.global	r
+ 1959              		.global	s
+ 1960              		.global	USBD_Device
+ 1961              		.global	hiwdg
+ 1962              		.global	htim3
+ 1963              		.global	htim1
+ 1964              		.global	hi2c1
+ 1965              		.global	hdma_adc
+ 1966              		.global	hadc
+ 1967              		.global	wduty
+ 1968              		.global	font
+ 1969              		.section	.rodata
+ 1970              		.set	.LANCHOR17,. + 0
+ 1971              	.LC55:
+ 1972 0000 20202020 		.ascii	"          \000"
+ 1972      20202020 
+ 1972      202000
+ 1973 000b 000000   		.space	3
+ 1974              		.section	.bss.ADC_raw,"aw",%nobits
+ 1975              		.align	1
+ 1976              		.set	.LANCHOR1,. + 0
+ 1979              	ADC_raw:
+ 1980 0000 00000000 		.space	8
+ 1980      00000000 
+ 1981              		.section	.bss.USBD_Device,"aw",%nobits
+ 1982              		.align	2
+ 1985              	USBD_Device:
+ 1986 0000 00000000 		.space	548
+ 1986      00000000 
+ 1986      00000000 
+ 1986      00000000 
+ 1986      00000000 
+ 1987              		.section	.bss.count.0,"aw",%nobits
+ 1988              		.align	1
+ 1989              		.set	.LANCHOR6,. + 0
+ 1992              	count.0:
+ 1993 0000 0000     		.space	2
+ 1994              		.section	.bss.hadc,"aw",%nobits
+ 1995              		.align	2
+ 1996              		.set	.LANCHOR11,. + 0
+ 1999              	hadc:
+ 2000 0000 00000000 		.space	76
+ 2000      00000000 
+ 2000      00000000 
+ARM GAS  /tmp/ccVVivOE.s 			page 36
 
 
- 1997              		.section	.bss.hi2c1,"aw",%nobits
- 1998              		.align	2
- 1999              		.set	.LANCHOR8,. + 0
- 2002              	hi2c1:
- 2003 0000 00000000 		.space	76
- 2003      00000000 
- 2003      00000000 
- 2003      00000000 
- 2003      00000000 
- 2004              		.section	.bss.hiwdg,"aw",%nobits
- 2005              		.align	2
- 2006              		.set	.LANCHOR16,. + 0
- 2009              	hiwdg:
- 2010 0000 00000000 		.space	16
- 2010      00000000 
- 2010      00000000 
- 2010      00000000 
- 2011              		.section	.bss.htim1,"aw",%nobits
- 2012              		.align	2
- 2013              		.set	.LANCHOR3,. + 0
- 2016              	htim1:
- 2017 0000 00000000 		.space	64
- 2017      00000000 
- 2017      00000000 
- 2017      00000000 
- 2017      00000000 
- 2018              		.section	.bss.htim3,"aw",%nobits
- 2019              		.align	2
- 2020              		.set	.LANCHOR12,. + 0
- 2023              	htim3:
- 2024 0000 00000000 		.space	64
- 2024      00000000 
- 2024      00000000 
- 2024      00000000 
- 2024      00000000 
- 2025              		.section	.bss.screenBuffer,"aw",%nobits
- 2028              	screenBuffer:
- 2029 0000 00000000 		.space	218
- 2029      00000000 
- 2029      00000000 
- 2029      00000000 
- 2029      00000000 
- 2030              		.section	.bss.sendDataUSB,"aw",%nobits
- 2031              		.align	2
- 2032              		.set	.LANCHOR7,. + 0
- 2035              	sendDataUSB:
- 2036 0000 00000000 		.space	4
- 2037              		.section	.data.OLED_Setup_Array,"aw"
- 2038              		.set	.LANCHOR10,. + 0
- 2041              	OLED_Setup_Array:
- 2042 0000 80AE80D5 		.ascii	"\200\256\200\325\200\200\200\250\200\017\200\310\200"
- 2042      808080A8 
- 2042      800F80C8 
- 2042      80
- 2043 000d D3800080 		.ascii	"\323\200\000\200@\200\240\200\215\200\024\200\332\200"
- 2043      4080A080 
- 2043      8D801480 
-ARM GAS  /tmp/cc4wQWsB.s 			page 37
+ 2000      00000000 
+ 2000      00000000 
+ 2001              		.section	.bss.hdma_adc,"aw",%nobits
+ 2002              		.align	2
+ 2005              	hdma_adc:
+ 2006 0000 00000000 		.space	68
+ 2006      00000000 
+ 2006      00000000 
+ 2006      00000000 
+ 2006      00000000 
+ 2007              		.section	.bss.hi2c1,"aw",%nobits
+ 2008              		.align	2
+ 2009              		.set	.LANCHOR8,. + 0
+ 2012              	hi2c1:
+ 2013 0000 00000000 		.space	76
+ 2013      00000000 
+ 2013      00000000 
+ 2013      00000000 
+ 2013      00000000 
+ 2014              		.section	.bss.hiwdg,"aw",%nobits
+ 2015              		.align	2
+ 2016              		.set	.LANCHOR16,. + 0
+ 2019              	hiwdg:
+ 2020 0000 00000000 		.space	16
+ 2020      00000000 
+ 2020      00000000 
+ 2020      00000000 
+ 2021              		.section	.bss.htim1,"aw",%nobits
+ 2022              		.align	2
+ 2023              		.set	.LANCHOR3,. + 0
+ 2026              	htim1:
+ 2027 0000 00000000 		.space	64
+ 2027      00000000 
+ 2027      00000000 
+ 2027      00000000 
+ 2027      00000000 
+ 2028              		.section	.bss.htim3,"aw",%nobits
+ 2029              		.align	2
+ 2030              		.set	.LANCHOR12,. + 0
+ 2033              	htim3:
+ 2034 0000 00000000 		.space	64
+ 2034      00000000 
+ 2034      00000000 
+ 2034      00000000 
+ 2034      00000000 
+ 2035              		.section	.bss.screenBuffer,"aw",%nobits
+ 2038              	screenBuffer:
+ 2039 0000 00000000 		.space	218
+ 2039      00000000 
+ 2039      00000000 
+ 2039      00000000 
+ 2039      00000000 
+ 2040              		.section	.bss.sendDataUSB,"aw",%nobits
+ 2041              		.align	2
+ 2042              		.set	.LANCHOR7,. + 0
+ 2045              	sendDataUSB:
+ 2046 0000 00000000 		.space	4
+ARM GAS  /tmp/ccVVivOE.s 			page 37
 
 
- 2043      DA80
- 2044 001b 02808180 		.ascii	"\002\200\201\2003\200\331\200\"\200\333\200@\200\244"
- 2044      3380D980 
- 2044      2280DB80 
- 2044      4080A4
- 2045 002a 80A68020 		.ascii	"\200\246\200 \200\000"
- 2045      8000
- 2046              		.section	.data.by_string,"aw"
- 2047              		.align	2
- 2048              		.set	.LANCHOR15,. + 0
- 2051              	by_string:
- 2052 0000 00000000 		.word	.LC68
- 2053              		.section	.data.dfu_string,"aw"
- 2054              		.align	2
- 2055              		.set	.LANCHOR13,. + 0
- 2058              	dfu_string:
- 2059 0000 19000000 		.word	.LC70
- 2060              		.section	.data.otter_string,"aw"
- 2061              		.align	2
- 2062              		.set	.LANCHOR14,. + 0
- 2065              	otter_string:
- 2066 0000 0E000000 		.word	.LC69
- 2067              		.section	.data.r,"aw"
- 2068              		.align	2
- 2069              		.set	.LANCHOR4,. + 0
- 2072              	r:
- 2073 0000 00005C43 		.word	1130102784
- 2074 0004 00000000 		.space	8
- 2074      00000000 
- 2075 000c 00002041 		.word	1092616192
- 2076 0010 00000000 		.space	8
- 2076      00000000 
- 2077 0018 240B9838 		.word	949488420
- 2078 001c 0000003F 		.word	1056964608
- 2079 0020 0000803F 		.word	1065353216
- 2080 0024 00007041 		.word	1097859072
- 2081              		.section	.data.s,"aw"
- 2082              		.align	2
- 2083              		.set	.LANCHOR0,. + 0
- 2086              	s:
- 2087 0000 00000000 		.space	20
- 2087      00000000 
- 2087      00000000 
- 2087      00000000 
- 2087      00000000 
- 2088 0014 0000C03F 		.word	1069547520
- 2089 0018 00000000 		.space	4
- 2090 001c 00       		.byte	0
- 2091 001d 00000000 		.space	11
- 2091      00000000 
- 2091      000000
- 2092              		.section	.data.tipcal,"aw"
- 2093              		.align	2
- 2094              		.set	.LANCHOR2,. + 0
- 2097              	tipcal:
- 2098 0000 0000F042 		.word	1123024896
- 2099 0004 0000B842 		.word	1119354880
-ARM GAS  /tmp/cc4wQWsB.s 			page 38
+ 2047              		.section	.data.OLED_Setup_Array,"aw"
+ 2048              		.set	.LANCHOR10,. + 0
+ 2051              	OLED_Setup_Array:
+ 2052 0000 80D58080 		.ascii	"\200\325\200\200\200\250\200\017\200\310\200\323\200"
+ 2052      80A8800F 
+ 2052      80C880D3 
+ 2052      80
+ 2053 000d 00804080 		.ascii	"\000\200@\200\240\200\215\200\024\200\332\200\002\200"
+ 2053      A0808D80 
+ 2053      1480DA80 
+ 2053      0280
+ 2054 001b 81803380 		.ascii	"\201\2003\200\331\200\"\200\333\200@\200\244\200\246"
+ 2054      D9802280 
+ 2054      DB804080 
+ 2054      A480A6
+ 2055 002a 80208000 		.ascii	"\200 \200\000"
+ 2056              		.section	.data.by_string,"aw"
+ 2057              		.align	2
+ 2058              		.set	.LANCHOR15,. + 0
+ 2061              	by_string:
+ 2062 0000 00000000 		.word	.LC68
+ 2063              		.section	.data.dfu_string,"aw"
+ 2064              		.align	2
+ 2065              		.set	.LANCHOR13,. + 0
+ 2068              	dfu_string:
+ 2069 0000 19000000 		.word	.LC70
+ 2070              		.section	.data.otter_string,"aw"
+ 2071              		.align	2
+ 2072              		.set	.LANCHOR14,. + 0
+ 2075              	otter_string:
+ 2076 0000 0E000000 		.word	.LC69
+ 2077              		.section	.data.r,"aw"
+ 2078              		.align	2
+ 2079              		.set	.LANCHOR4,. + 0
+ 2082              	r:
+ 2083 0000 00005C43 		.word	1130102784
+ 2084 0004 00000000 		.space	8
+ 2084      00000000 
+ 2085 000c 00002041 		.word	1092616192
+ 2086 0010 00000000 		.space	8
+ 2086      00000000 
+ 2087 0018 240B9838 		.word	949488420
+ 2088 001c 0000003F 		.word	1056964608
+ 2089 0020 0000803F 		.word	1065353216
+ 2090 0024 00007041 		.word	1097859072
+ 2091              		.section	.data.s,"aw"
+ 2092              		.align	2
+ 2093              		.set	.LANCHOR0,. + 0
+ 2096              	s:
+ 2097 0000 00000000 		.space	20
+ 2097      00000000 
+ 2097      00000000 
+ 2097      00000000 
+ 2097      00000000 
+ 2098 0014 0000C03F 		.word	1069547520
+ 2099 0018 00000000 		.space	4
+ 2100 001c 00       		.byte	0
+ARM GAS  /tmp/ccVVivOE.s 			page 38
 
 
- 2100              		.section	.data.wduty,"aw"
- 2101              		.align	1
- 2102              		.set	.LANCHOR5,. + 0
- 2105              	wduty:
- 2106 0000 2003     		.short	800
- 2107              		.section	.rodata.REFRESH_COMMANDS,"a"
- 2108              		.set	.LANCHOR9,. + 0
- 2111              	REFRESH_COMMANDS:
- 2112 0000 80AF8021 		.ascii	"\200\257\200!\200 \200\177\200\300\200\"\200\000\200"
- 2112      8020807F 
- 2112      80C08022 
- 2112      800080
- 2113 000f 0140     		.ascii	"\001@"
- 2114              		.section	.rodata.font,"a"
- 2117              	font:
- 2118 0000 00000000 		.ascii	"\000\000\000\000\000\000"
- 2118      0000
- 2119 0006 2F000000 		.ascii	"/\000\000\000\000\000"
- 2119      0000
- 2120 000c 03000300 		.ascii	"\003\000\003\000\000\000"
- 2120      0000
- 2121 0012 123F1212 		.ascii	"\022?\022\022?\022"
- 2121      3F12
- 2122 0018 2E2A7F2A 		.ascii	".*\177*:\000"
- 2122      3A00
- 2123 001e 23130804 		.ascii	"#\023\010\00421"
- 2123      3231
- 2124 0024 102A252A 		.ascii	"\020*%*\020 "
- 2124      1020
- 2125 002a 02010000 		.ascii	"\002\001\000\000\000\000"
- 2125      0000
- 2126 0030 1E210000 		.ascii	"\036!\000\000\000\000"
- 2126      0000
- 2127 0036 211E0000 		.ascii	"!\036\000\000\000\000"
- 2127      0000
- 2128 003c 082A1C2A 		.ascii	"\010*\034*\010\010"
- 2128      0808
- 2129 0042 08083E08 		.ascii	"\010\010>\010\010\010"
- 2129      0808
- 2130 0048 80600000 		.ascii	"\200`\000\000\000\000"
+ 2101 001d 00000000 		.space	11
+ 2101      00000000 
+ 2101      000000
+ 2102              		.section	.data.tipcal,"aw"
+ 2103              		.align	2
+ 2104              		.set	.LANCHOR2,. + 0
+ 2107              	tipcal:
+ 2108 0000 0000F042 		.word	1123024896
+ 2109 0004 0000B842 		.word	1119354880
+ 2110              		.section	.data.wduty,"aw"
+ 2111              		.align	1
+ 2112              		.set	.LANCHOR5,. + 0
+ 2115              	wduty:
+ 2116 0000 2003     		.short	800
+ 2117              		.section	.rodata.REFRESH_COMMANDS,"a"
+ 2118              		.set	.LANCHOR9,. + 0
+ 2121              	REFRESH_COMMANDS:
+ 2122 0000 80AF8021 		.ascii	"\200\257\200!\200 \200\177\200\300\200\"\200\000\200"
+ 2122      8020807F 
+ 2122      80C08022 
+ 2122      800080
+ 2123 000f 0140     		.ascii	"\001@"
+ 2124              		.section	.rodata.font,"a"
+ 2127              	font:
+ 2128 0000 00000000 		.ascii	"\000\000\000\000\000\000"
+ 2128      0000
+ 2129 0006 2F000000 		.ascii	"/\000\000\000\000\000"
+ 2129      0000
+ 2130 000c 03000300 		.ascii	"\003\000\003\000\000\000"
  2130      0000
- 2131 004e 08080808 		.ascii	"\010\010\010\010\010\000"
- 2131      0800
- 2132 0054 30300000 		.ascii	"00\000\000\000\000"
- 2132      0000
- 2133 005a 20100804 		.ascii	" \020\010\004\002\000"
- 2133      0200
- 2134 0060 1E312925 		.ascii	"\0361)%#\036"
- 2134      231E
- 2135 0066 22213F20 		.ascii	"\"!?   "
- 2135      2020
- 2136 006c 32292929 		.ascii	"2))))&"
- 2136      2926
- 2137 0072 12212125 		.ascii	"\022!!%%\032"
- 2137      251A
- 2138 0078 1814123F 		.ascii	"\030\024\022?\020\020"
- 2138      1010
-ARM GAS  /tmp/cc4wQWsB.s 			page 39
+ 2131 0012 123F1212 		.ascii	"\022?\022\022?\022"
+ 2131      3F12
+ 2132 0018 2E2A7F2A 		.ascii	".*\177*:\000"
+ 2132      3A00
+ 2133 001e 23130804 		.ascii	"#\023\010\00421"
+ 2133      3231
+ 2134 0024 102A252A 		.ascii	"\020*%*\020 "
+ 2134      1020
+ 2135 002a 02010000 		.ascii	"\002\001\000\000\000\000"
+ 2135      0000
+ 2136 0030 1E210000 		.ascii	"\036!\000\000\000\000"
+ 2136      0000
+ 2137 0036 211E0000 		.ascii	"!\036\000\000\000\000"
+ 2137      0000
+ 2138 003c 082A1C2A 		.ascii	"\010*\034*\010\010"
+ 2138      0808
+ 2139 0042 08083E08 		.ascii	"\010\010>\010\010\010"
+ 2139      0808
+ 2140 0048 80600000 		.ascii	"\200`\000\000\000\000"
+ 2140      0000
+ 2141 004e 08080808 		.ascii	"\010\010\010\010\010\000"
+ 2141      0800
+ 2142 0054 30300000 		.ascii	"00\000\000\000\000"
+ 2142      0000
+ 2143 005a 20100804 		.ascii	" \020\010\004\002\000"
+ 2143      0200
+ 2144 0060 1E312925 		.ascii	"\0361)%#\036"
+ARM GAS  /tmp/ccVVivOE.s 			page 39
 
 
- 2139 007e 17252525 		.ascii	"\027%%%%\031"
- 2139      2519
- 2140 0084 1E252525 		.ascii	"\036%%%%\030"
- 2140      2518
- 2141 008a 01013109 		.ascii	"\001\0011\011\005\003"
- 2141      0503
- 2142 0090 1A252525 		.ascii	"\032%%%%\032"
- 2142      251A
- 2143 0096 06292929 		.ascii	"\006))))\036"
- 2143      291E
- 2144 009c 24000000 		.ascii	"$\000\000\000\000\000"
- 2144      0000
- 2145 00a2 80640000 		.ascii	"\200d\000\000\000\000"
- 2145      0000
- 2146 00a8 08142200 		.ascii	"\010\024\"\000\000\000"
- 2146      0000
- 2147 00ae 14141414 		.ascii	"\024\024\024\024\024\000"
- 2147      1400
- 2148 00b4 22140800 		.ascii	"\"\024\010\000\000\000"
- 2148      0000
- 2149 00ba 02010129 		.ascii	"\002\001\001)\005\002"
- 2149      0502
- 2150 00c0 1E212D2B 		.ascii	"\036!-+-\016"
- 2150      2D0E
- 2151 00c6 3E090909 		.ascii	">\011\011\011\011>"
- 2151      093E
- 2152 00cc 3F252525 		.ascii	"?%%%%\032"
+ 2144      231E
+ 2145 0066 22213F20 		.ascii	"\"!?   "
+ 2145      2020
+ 2146 006c 32292929 		.ascii	"2))))&"
+ 2146      2926
+ 2147 0072 12212125 		.ascii	"\022!!%%\032"
+ 2147      251A
+ 2148 0078 1814123F 		.ascii	"\030\024\022?\020\020"
+ 2148      1010
+ 2149 007e 17252525 		.ascii	"\027%%%%\031"
+ 2149      2519
+ 2150 0084 1E252525 		.ascii	"\036%%%%\030"
+ 2150      2518
+ 2151 008a 01013109 		.ascii	"\001\0011\011\005\003"
+ 2151      0503
+ 2152 0090 1A252525 		.ascii	"\032%%%%\032"
  2152      251A
- 2153 00d2 1E212121 		.ascii	"\036!!!!\022"
- 2153      2112
- 2154 00d8 3F212121 		.ascii	"?!!!\022\014"
- 2154      120C
- 2155 00de 3F252525 		.ascii	"?%%%%!"
- 2155      2521
- 2156 00e4 3F050505 		.ascii	"?\005\005\005\005\001"
- 2156      0501
- 2157 00ea 1E212121 		.ascii	"\036!!!)\032"
- 2157      291A
- 2158 00f0 3F040404 		.ascii	"?\004\004\004\004?"
- 2158      043F
- 2159 00f6 21213F21 		.ascii	"!!?!!!"
- 2159      2121
- 2160 00fc 10202020 		.ascii	"\020    \037"
- 2160      201F
- 2161 0102 3F040C0A 		.ascii	"?\004\014\012\021 "
- 2161      1120
- 2162 0108 3F202020 		.ascii	"?     "
- 2162      2020
- 2163 010e 3F020404 		.ascii	"?\002\004\004\002?"
- 2163      023F
- 2164 0114 3F020408 		.ascii	"?\002\004\010\020?"
- 2164      103F
- 2165 011a 1E212121 		.ascii	"\036!!!!\036"
- 2165      211E
- 2166 0120 3F090909 		.ascii	"?\011\011\011\011\006"
- 2166      0906
- 2167 0126 1E212931 		.ascii	"\036!)1!\036"
-ARM GAS  /tmp/cc4wQWsB.s 			page 40
+ 2153 0096 06292929 		.ascii	"\006))))\036"
+ 2153      291E
+ 2154 009c 24000000 		.ascii	"$\000\000\000\000\000"
+ 2154      0000
+ 2155 00a2 80640000 		.ascii	"\200d\000\000\000\000"
+ 2155      0000
+ 2156 00a8 08142200 		.ascii	"\010\024\"\000\000\000"
+ 2156      0000
+ 2157 00ae 14141414 		.ascii	"\024\024\024\024\024\000"
+ 2157      1400
+ 2158 00b4 22140800 		.ascii	"\"\024\010\000\000\000"
+ 2158      0000
+ 2159 00ba 02010129 		.ascii	"\002\001\001)\005\002"
+ 2159      0502
+ 2160 00c0 1E212D2B 		.ascii	"\036!-+-\016"
+ 2160      2D0E
+ 2161 00c6 3E090909 		.ascii	">\011\011\011\011>"
+ 2161      093E
+ 2162 00cc 3F252525 		.ascii	"?%%%%\032"
+ 2162      251A
+ 2163 00d2 1E212121 		.ascii	"\036!!!!\022"
+ 2163      2112
+ 2164 00d8 3F212121 		.ascii	"?!!!\022\014"
+ 2164      120C
+ 2165 00de 3F252525 		.ascii	"?%%%%!"
+ 2165      2521
+ 2166 00e4 3F050505 		.ascii	"?\005\005\005\005\001"
+ 2166      0501
+ 2167 00ea 1E212121 		.ascii	"\036!!!)\032"
+ 2167      291A
+ 2168 00f0 3F040404 		.ascii	"?\004\004\004\004?"
+ 2168      043F
+ 2169 00f6 21213F21 		.ascii	"!!?!!!"
+ 2169      2121
+ 2170 00fc 10202020 		.ascii	"\020    \037"
+ 2170      201F
+ 2171 0102 3F040C0A 		.ascii	"?\004\014\012\021 "
+ 2171      1120
+ 2172 0108 3F202020 		.ascii	"?     "
+ 2172      2020
+ARM GAS  /tmp/ccVVivOE.s 			page 40
 
 
- 2167      211E
- 2168 012c 3F090909 		.ascii	"?\011\011\011\031&"
- 2168      1926
- 2169 0132 12252525 		.ascii	"\022%%%%\030"
- 2169      2518
- 2170 0138 0101013F 		.ascii	"\001\001\001?\001\001"
- 2170      0101
- 2171 013e 1F202020 		.ascii	"\037    \037"
- 2171      201F
- 2172 0144 0F102020 		.ascii	"\017\020  \020\017"
- 2172      100F
- 2173 014a 1F201010 		.ascii	"\037 \020\020 \037"
- 2173      201F
- 2174 0150 21120C0C 		.ascii	"!\022\014\014\022!"
- 2174      1221
- 2175 0156 01020C38 		.ascii	"\001\002\0148\004\002"
- 2175      0402
- 2176 015c 21312925 		.ascii	"!1)%#!"
- 2176      2321
- 2177 0162 3F210000 		.ascii	"?!\000\000\000\000"
- 2177      0000
- 2178 0168 02040810 		.ascii	"\002\004\010\020 \000"
- 2178      2000
- 2179 016e 213F0000 		.ascii	"!?\000\000\000\000"
- 2179      0000
- 2180 0174 04023F02 		.ascii	"\004\002?\002\004\000"
- 2180      0400
- 2181 017a 40404040 		.ascii	"@@@@@@"
- 2181      4040
- 2182 0180 01020000 		.ascii	"\001\002\000\000\000\000"
- 2182      0000
- 2183 0186 10302A2A 		.ascii	"\0200**<\000"
- 2183      3C00
- 2184 018c 3F242424 		.ascii	"?$$$\030\000"
- 2184      1800
- 2185 0192 0C142222 		.ascii	"\014\024\"\"\000\000"
- 2185      0000
- 2186 0198 18242424 		.ascii	"\030$$$?\000"
- 2186      3F00
- 2187 019e 1C2C2A2A 		.ascii	"\034,**$\000"
- 2187      2400
- 2188 01a4 3E050100 		.ascii	">\005\001\000\000\000"
- 2188      0000
- 2189 01aa 1828A4A4 		.ascii	"\030(\244\244|\000"
- 2189      7C00
- 2190 01b0 3F04040C 		.ascii	"?\004\004\0140\000"
- 2190      3000
- 2191 01b6 243D2000 		.ascii	"$= \000\000\000"
- 2191      0000
- 2192 01bc 2040403D 		.ascii	" @@=\000\000"
+ 2173 010e 3F020404 		.ascii	"?\002\004\004\002?"
+ 2173      023F
+ 2174 0114 3F020408 		.ascii	"?\002\004\010\020?"
+ 2174      103F
+ 2175 011a 1E212121 		.ascii	"\036!!!!\036"
+ 2175      211E
+ 2176 0120 3F090909 		.ascii	"?\011\011\011\011\006"
+ 2176      0906
+ 2177 0126 1E212931 		.ascii	"\036!)1!\036"
+ 2177      211E
+ 2178 012c 3F090909 		.ascii	"?\011\011\011\031&"
+ 2178      1926
+ 2179 0132 12252525 		.ascii	"\022%%%%\030"
+ 2179      2518
+ 2180 0138 0101013F 		.ascii	"\001\001\001?\001\001"
+ 2180      0101
+ 2181 013e 1F202020 		.ascii	"\037    \037"
+ 2181      201F
+ 2182 0144 0F102020 		.ascii	"\017\020  \020\017"
+ 2182      100F
+ 2183 014a 1F201010 		.ascii	"\037 \020\020 \037"
+ 2183      201F
+ 2184 0150 21120C0C 		.ascii	"!\022\014\014\022!"
+ 2184      1221
+ 2185 0156 01020C38 		.ascii	"\001\002\0148\004\002"
+ 2185      0402
+ 2186 015c 21312925 		.ascii	"!1)%#!"
+ 2186      2321
+ 2187 0162 3F210000 		.ascii	"?!\000\000\000\000"
+ 2187      0000
+ 2188 0168 02040810 		.ascii	"\002\004\010\020 \000"
+ 2188      2000
+ 2189 016e 213F0000 		.ascii	"!?\000\000\000\000"
+ 2189      0000
+ 2190 0174 04023F02 		.ascii	"\004\002?\002\004\000"
+ 2190      0400
+ 2191 017a 40404040 		.ascii	"@@@@@@"
+ 2191      4040
+ 2192 0180 01020000 		.ascii	"\001\002\000\000\000\000"
  2192      0000
- 2193 01c2 3F0C1220 		.ascii	"?\014\022 \000\000"
- 2193      0000
- 2194 01c8 1F202000 		.ascii	"\037  \000\000\000"
- 2194      0000
- 2195 01ce 3E023C02 		.ascii	">\002<\002<\000"
- 2195      3C00
-ARM GAS  /tmp/cc4wQWsB.s 			page 41
+ 2193 0186 10302A2A 		.ascii	"\0200**<\000"
+ 2193      3C00
+ 2194 018c 3F242424 		.ascii	"?$$$\030\000"
+ 2194      1800
+ 2195 0192 0C142222 		.ascii	"\014\024\"\"\000\000"
+ 2195      0000
+ 2196 0198 18242424 		.ascii	"\030$$$?\000"
+ 2196      3F00
+ 2197 019e 1C2C2A2A 		.ascii	"\034,**$\000"
+ 2197      2400
+ 2198 01a4 3E050100 		.ascii	">\005\001\000\000\000"
+ 2198      0000
+ 2199 01aa 1828A4A4 		.ascii	"\030(\244\244|\000"
+ 2199      7C00
+ 2200 01b0 3F04040C 		.ascii	"?\004\004\0140\000"
+ 2200      3000
+ 2201 01b6 243D2000 		.ascii	"$= \000\000\000"
+ARM GAS  /tmp/ccVVivOE.s 			page 41
 
 
- 2196 01d4 3E020202 		.ascii	">\002\002\002<\000"
- 2196      3C00
- 2197 01da 0C142232 		.ascii	"\014\024\"2\014\000"
- 2197      0C00
- 2198 01e0 FC242424 		.ascii	"\374$$$\030\000"
- 2198      1800
- 2199 01e6 18242424 		.ascii	"\030$$$\374\200"
- 2199      FC80
- 2200 01ec 3C040202 		.ascii	"<\004\002\002\000\000"
- 2200      0000
- 2201 01f2 242C2A2A 		.ascii	"$,**\020\000"
- 2201      1000
- 2202 01f8 021F2220 		.ascii	"\002\037\" \000\000"
+ 2201      0000
+ 2202 01bc 2040403D 		.ascii	" @@=\000\000"
  2202      0000
- 2203 01fe 1E202020 		.ascii	"\036   \036\000"
- 2203      1E00
- 2204 0204 06182018 		.ascii	"\006\030 \030\006\000"
- 2204      0600
- 2205 020a 1E301C30 		.ascii	"\0360\0340\016\000"
- 2205      0E00
- 2206 0210 22140814 		.ascii	"\"\024\010\024\"\000"
- 2206      2200
- 2207 0216 0C10A0A0 		.ascii	"\014\020\240\240|\000"
- 2207      7C00
- 2208 021c 22322A26 		.ascii	"\"2*&\"\""
- 2208      2222
- 2209 0222 0C3F2100 		.ascii	"\014?!\000\000\000"
- 2209      0000
- 2210 0228 3F000000 		.ascii	"?\000\000\000\000\000"
+ 2203 01c2 3F0C1220 		.ascii	"?\014\022 \000\000"
+ 2203      0000
+ 2204 01c8 1F202000 		.ascii	"\037  \000\000\000"
+ 2204      0000
+ 2205 01ce 3E023C02 		.ascii	">\002<\002<\000"
+ 2205      3C00
+ 2206 01d4 3E020202 		.ascii	">\002\002\002<\000"
+ 2206      3C00
+ 2207 01da 0C142232 		.ascii	"\014\024\"2\014\000"
+ 2207      0C00
+ 2208 01e0 FC242424 		.ascii	"\374$$$\030\000"
+ 2208      1800
+ 2209 01e6 18242424 		.ascii	"\030$$$\374\200"
+ 2209      FC80
+ 2210 01ec 3C040202 		.ascii	"<\004\002\002\000\000"
  2210      0000
- 2211 022e 213F0C00 		.ascii	"!?\014\000\000\000"
- 2211      0000
- 2212 0234 02010201 		.ascii	"\002\001\002\001\000\000"
+ 2211 01f2 242C2A2A 		.ascii	"$,**\020\000"
+ 2211      1000
+ 2212 01f8 021F2220 		.ascii	"\002\037\" \000\000"
  2212      0000
- 2213 023a 00000000 		.ascii	"\000\000\000\000\000\000"
- 2213      0000
- 2214              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/cc4wQWsB.s 			page 42
+ 2213 01fe 1E202020 		.ascii	"\036   \036\000"
+ 2213      1E00
+ 2214 0204 06182018 		.ascii	"\006\030 \030\006\000"
+ 2214      0600
+ 2215 020a 1E301C30 		.ascii	"\0360\0340\016\000"
+ 2215      0E00
+ 2216 0210 22140814 		.ascii	"\"\024\010\024\"\000"
+ 2216      2200
+ 2217 0216 0C10A0A0 		.ascii	"\014\020\240\240|\000"
+ 2217      7C00
+ 2218 021c 22322A26 		.ascii	"\"2*&\"\""
+ 2218      2222
+ 2219 0222 0C3F2100 		.ascii	"\014?!\000\000\000"
+ 2219      0000
+ 2220 0228 3F000000 		.ascii	"?\000\000\000\000\000"
+ 2220      0000
+ 2221 022e 213F0C00 		.ascii	"!?\014\000\000\000"
+ 2221      0000
+ 2222 0234 02010201 		.ascii	"\002\001\002\001\000\000"
+ 2222      0000
+ 2223 023a 00000000 		.ascii	"\000\000\000\000\000\000"
+ 2223      0000
+ 2224              		.ident	"GCC: (Arch Repository) 10.1.0"
+ARM GAS  /tmp/ccVVivOE.s 			page 42
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/cc4wQWsB.s:15     .text.check_usbpd:0000000000000000 $t
-     /tmp/cc4wQWsB.s:23     .text.check_usbpd:0000000000000000 check_usbpd
-     /tmp/cc4wQWsB.s:46     .text.check_usbpd:0000000000000024 $d
-     /tmp/cc4wQWsB.s:68     .text.reg:0000000000000000 $t
-     /tmp/cc4wQWsB.s:75     .text.reg:0000000000000000 reg
-     /tmp/cc4wQWsB.s:387    .text.reg:00000000000002a4 $d
-     /tmp/cc4wQWsB.s:415    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-     /tmp/cc4wQWsB.s:422    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-     /tmp/cc4wQWsB.s:446    .text.HAL_TIM_PeriodElapsedCallback:0000000000000024 $d
-     /tmp/cc4wQWsB.s:1975   .bss.USBD_Device:0000000000000000 USBD_Device
-     /tmp/cc4wQWsB.s:455    .text.USB_printfloat:0000000000000000 $t
-     /tmp/cc4wQWsB.s:462    .text.USB_printfloat:0000000000000000 USB_printfloat
-     /tmp/cc4wQWsB.s:497    .text.USB_printfloat:0000000000000048 $d
-     /tmp/cc4wQWsB.s:503    .text.disp_on:0000000000000000 $t
-     /tmp/cc4wQWsB.s:510    .text.disp_on:0000000000000000 disp_on
-     /tmp/cc4wQWsB.s:530    .text.disp_on:000000000000001c $d
-     /tmp/cc4wQWsB.s:534    .text.disp_off:0000000000000000 $t
-     /tmp/cc4wQWsB.s:541    .text.disp_off:0000000000000000 disp_off
-     /tmp/cc4wQWsB.s:561    .text.disp_off:000000000000001c $d
-     /tmp/cc4wQWsB.s:565    .text.refresh:0000000000000000 $t
-     /tmp/cc4wQWsB.s:572    .text.refresh:0000000000000000 refresh
-     /tmp/cc4wQWsB.s:589    .text.refresh:0000000000000018 $d
-     /tmp/cc4wQWsB.s:2028   .bss.screenBuffer:0000000000000000 screenBuffer
-     /tmp/cc4wQWsB.s:593    .text.clear_screen:0000000000000000 $t
-     /tmp/cc4wQWsB.s:600    .text.clear_screen:0000000000000000 clear_screen
-     /tmp/cc4wQWsB.s:613    .text.clear_screen:0000000000000010 $d
-     /tmp/cc4wQWsB.s:616    .text.disp_init:0000000000000000 $t
-     /tmp/cc4wQWsB.s:623    .text.disp_init:0000000000000000 disp_init
-     /tmp/cc4wQWsB.s:649    .text.disp_init:0000000000000034 $d
-     /tmp/cc4wQWsB.s:655    .text.set_screen:0000000000000000 $t
-     /tmp/cc4wQWsB.s:662    .text.set_screen:0000000000000000 set_screen
-     /tmp/cc4wQWsB.s:675    .text.set_screen:0000000000000010 $d
-     /tmp/cc4wQWsB.s:678    .text.write_pixel:0000000000000000 $t
-     /tmp/cc4wQWsB.s:685    .text.write_pixel:0000000000000000 write_pixel
-     /tmp/cc4wQWsB.s:755    .text.write_pixel:0000000000000078 $d
-     /tmp/cc4wQWsB.s:759    .text.draw_v_line:0000000000000000 $t
-     /tmp/cc4wQWsB.s:766    .text.draw_v_line:0000000000000000 draw_v_line
-     /tmp/cc4wQWsB.s:789    .text.draw_char:0000000000000000 $t
-     /tmp/cc4wQWsB.s:796    .text.draw_char:0000000000000000 draw_char
-     /tmp/cc4wQWsB.s:852    .text.draw_char:000000000000005c $d
-     /tmp/cc4wQWsB.s:2117   .rodata.font:0000000000000000 font
-     /tmp/cc4wQWsB.s:855    .text.draw_string:0000000000000000 $t
-     /tmp/cc4wQWsB.s:862    .text.draw_string:0000000000000000 draw_string
-     /tmp/cc4wQWsB.s:887    .text.SystemClock_Config:0000000000000000 $t
-     /tmp/cc4wQWsB.s:894    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/cc4wQWsB.s:949    .text.SystemClock_Config:000000000000006c $d
-     /tmp/cc4wQWsB.s:978    .text.startup.main:0000000000000000 $t
-     /tmp/cc4wQWsB.s:985    .text.startup.main:0000000000000000 main
-     /tmp/cc4wQWsB.s:1367   .text.startup.main:000000000000033c $d
-     /tmp/cc4wQWsB.s:1390   .text.startup.main:0000000000000394 $t
-     /tmp/cc4wQWsB.s:1808   .text.startup.main:000000000000075c $d
-     /tmp/cc4wQWsB.s:1837   .text.startup.main:00000000000007cc $t
-     /tmp/cc4wQWsB.s:1908   .text.startup.main:0000000000000850 $d
-     /tmp/cc4wQWsB.s:1919   .text.Error_Handler:0000000000000000 $t
-     /tmp/cc4wQWsB.s:1926   .text.Error_Handler:0000000000000000 Error_Handler
-ARM GAS  /tmp/cc4wQWsB.s 			page 43
+     /tmp/ccVVivOE.s:15     .text.check_usbpd:0000000000000000 $t
+     /tmp/ccVVivOE.s:23     .text.check_usbpd:0000000000000000 check_usbpd
+     /tmp/ccVVivOE.s:46     .text.check_usbpd:0000000000000024 $d
+     /tmp/ccVVivOE.s:68     .text.reg:0000000000000000 $t
+     /tmp/ccVVivOE.s:75     .text.reg:0000000000000000 reg
+     /tmp/ccVVivOE.s:387    .text.reg:00000000000002a4 $d
+     /tmp/ccVVivOE.s:415    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+     /tmp/ccVVivOE.s:422    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+     /tmp/ccVVivOE.s:446    .text.HAL_TIM_PeriodElapsedCallback:0000000000000024 $d
+     /tmp/ccVVivOE.s:1985   .bss.USBD_Device:0000000000000000 USBD_Device
+     /tmp/ccVVivOE.s:455    .text.USB_printfloat:0000000000000000 $t
+     /tmp/ccVVivOE.s:462    .text.USB_printfloat:0000000000000000 USB_printfloat
+     /tmp/ccVVivOE.s:497    .text.USB_printfloat:0000000000000048 $d
+     /tmp/ccVVivOE.s:503    .text.disp_on:0000000000000000 $t
+     /tmp/ccVVivOE.s:510    .text.disp_on:0000000000000000 disp_on
+     /tmp/ccVVivOE.s:530    .text.disp_on:000000000000001c $d
+     /tmp/ccVVivOE.s:534    .text.disp_off:0000000000000000 $t
+     /tmp/ccVVivOE.s:541    .text.disp_off:0000000000000000 disp_off
+     /tmp/ccVVivOE.s:561    .text.disp_off:000000000000001c $d
+     /tmp/ccVVivOE.s:565    .text.refresh:0000000000000000 $t
+     /tmp/ccVVivOE.s:572    .text.refresh:0000000000000000 refresh
+     /tmp/ccVVivOE.s:589    .text.refresh:0000000000000018 $d
+     /tmp/ccVVivOE.s:2038   .bss.screenBuffer:0000000000000000 screenBuffer
+     /tmp/ccVVivOE.s:593    .text.clear_screen:0000000000000000 $t
+     /tmp/ccVVivOE.s:600    .text.clear_screen:0000000000000000 clear_screen
+     /tmp/ccVVivOE.s:613    .text.clear_screen:0000000000000010 $d
+     /tmp/ccVVivOE.s:616    .text.disp_init:0000000000000000 $t
+     /tmp/ccVVivOE.s:623    .text.disp_init:0000000000000000 disp_init
+     /tmp/ccVVivOE.s:660    .text.disp_init:0000000000000050 $d
+     /tmp/ccVVivOE.s:666    .text.set_screen:0000000000000000 $t
+     /tmp/ccVVivOE.s:673    .text.set_screen:0000000000000000 set_screen
+     /tmp/ccVVivOE.s:686    .text.set_screen:0000000000000010 $d
+     /tmp/ccVVivOE.s:689    .text.write_pixel:0000000000000000 $t
+     /tmp/ccVVivOE.s:696    .text.write_pixel:0000000000000000 write_pixel
+     /tmp/ccVVivOE.s:766    .text.write_pixel:0000000000000078 $d
+     /tmp/ccVVivOE.s:770    .text.draw_v_line:0000000000000000 $t
+     /tmp/ccVVivOE.s:777    .text.draw_v_line:0000000000000000 draw_v_line
+     /tmp/ccVVivOE.s:800    .text.draw_char:0000000000000000 $t
+     /tmp/ccVVivOE.s:807    .text.draw_char:0000000000000000 draw_char
+     /tmp/ccVVivOE.s:863    .text.draw_char:000000000000005c $d
+     /tmp/ccVVivOE.s:2127   .rodata.font:0000000000000000 font
+     /tmp/ccVVivOE.s:866    .text.draw_string:0000000000000000 $t
+     /tmp/ccVVivOE.s:873    .text.draw_string:0000000000000000 draw_string
+     /tmp/ccVVivOE.s:898    .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccVVivOE.s:905    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccVVivOE.s:960    .text.SystemClock_Config:000000000000006c $d
+     /tmp/ccVVivOE.s:989    .text.startup.main:0000000000000000 $t
+     /tmp/ccVVivOE.s:996    .text.startup.main:0000000000000000 main
+     /tmp/ccVVivOE.s:1377   .text.startup.main:000000000000033c $d
+     /tmp/ccVVivOE.s:1400   .text.startup.main:0000000000000394 $t
+     /tmp/ccVVivOE.s:1818   .text.startup.main:000000000000075c $d
+     /tmp/ccVVivOE.s:1847   .text.startup.main:00000000000007cc $t
+     /tmp/ccVVivOE.s:1918   .text.startup.main:0000000000000850 $d
+     /tmp/ccVVivOE.s:1929   .text.Error_Handler:0000000000000000 $t
+     /tmp/ccVVivOE.s:1936   .text.Error_Handler:0000000000000000 Error_Handler
+ARM GAS  /tmp/ccVVivOE.s 			page 43
 
 
-     /tmp/cc4wQWsB.s:2041   .data.OLED_Setup_Array:0000000000000000 OLED_Setup_Array
-     /tmp/cc4wQWsB.s:2111   .rodata.REFRESH_COMMANDS:0000000000000000 REFRESH_COMMANDS
-     /tmp/cc4wQWsB.s:2051   .data.by_string:0000000000000000 by_string
-     /tmp/cc4wQWsB.s:2065   .data.otter_string:0000000000000000 otter_string
-     /tmp/cc4wQWsB.s:2058   .data.dfu_string:0000000000000000 dfu_string
-     /tmp/cc4wQWsB.s:2035   .bss.sendDataUSB:0000000000000000 sendDataUSB
-     /tmp/cc4wQWsB.s:2097   .data.tipcal:0000000000000000 tipcal
-     /tmp/cc4wQWsB.s:2072   .data.r:0000000000000000 r
-     /tmp/cc4wQWsB.s:2086   .data.s:0000000000000000 s
-     /tmp/cc4wQWsB.s:2009   .bss.hiwdg:0000000000000000 hiwdg
-     /tmp/cc4wQWsB.s:2023   .bss.htim3:0000000000000000 htim3
-     /tmp/cc4wQWsB.s:2016   .bss.htim1:0000000000000000 htim1
-     /tmp/cc4wQWsB.s:2002   .bss.hi2c1:0000000000000000 hi2c1
-     /tmp/cc4wQWsB.s:1995   .bss.hdma_adc:0000000000000000 hdma_adc
-     /tmp/cc4wQWsB.s:1989   .bss.hadc:0000000000000000 hadc
-     /tmp/cc4wQWsB.s:2105   .data.wduty:0000000000000000 wduty
-     /tmp/cc4wQWsB.s:1963   .rodata:000000000000000b $d
-     /tmp/cc4wQWsB.s:1965   .bss.ADC_raw:0000000000000000 $d
-     /tmp/cc4wQWsB.s:1969   .bss.ADC_raw:0000000000000000 ADC_raw
-     /tmp/cc4wQWsB.s:1972   .bss.USBD_Device:0000000000000000 $d
-     /tmp/cc4wQWsB.s:1978   .bss.count.0:0000000000000000 $d
-     /tmp/cc4wQWsB.s:1982   .bss.count.0:0000000000000000 count.0
-     /tmp/cc4wQWsB.s:1985   .bss.hadc:0000000000000000 $d
-     /tmp/cc4wQWsB.s:1992   .bss.hdma_adc:0000000000000000 $d
-     /tmp/cc4wQWsB.s:1998   .bss.hi2c1:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2005   .bss.hiwdg:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2012   .bss.htim1:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2019   .bss.htim3:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2029   .bss.screenBuffer:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2031   .bss.sendDataUSB:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2047   .data.by_string:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2054   .data.dfu_string:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2061   .data.otter_string:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2068   .data.r:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2082   .data.s:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2093   .data.tipcal:0000000000000000 $d
-     /tmp/cc4wQWsB.s:2101   .data.wduty:0000000000000000 $d
+     /tmp/ccVVivOE.s:2051   .data.OLED_Setup_Array:0000000000000000 OLED_Setup_Array
+     /tmp/ccVVivOE.s:2121   .rodata.REFRESH_COMMANDS:0000000000000000 REFRESH_COMMANDS
+     /tmp/ccVVivOE.s:2061   .data.by_string:0000000000000000 by_string
+     /tmp/ccVVivOE.s:2075   .data.otter_string:0000000000000000 otter_string
+     /tmp/ccVVivOE.s:2068   .data.dfu_string:0000000000000000 dfu_string
+     /tmp/ccVVivOE.s:2045   .bss.sendDataUSB:0000000000000000 sendDataUSB
+     /tmp/ccVVivOE.s:2107   .data.tipcal:0000000000000000 tipcal
+     /tmp/ccVVivOE.s:2082   .data.r:0000000000000000 r
+     /tmp/ccVVivOE.s:2096   .data.s:0000000000000000 s
+     /tmp/ccVVivOE.s:2019   .bss.hiwdg:0000000000000000 hiwdg
+     /tmp/ccVVivOE.s:2033   .bss.htim3:0000000000000000 htim3
+     /tmp/ccVVivOE.s:2026   .bss.htim1:0000000000000000 htim1
+     /tmp/ccVVivOE.s:2012   .bss.hi2c1:0000000000000000 hi2c1
+     /tmp/ccVVivOE.s:2005   .bss.hdma_adc:0000000000000000 hdma_adc
+     /tmp/ccVVivOE.s:1999   .bss.hadc:0000000000000000 hadc
+     /tmp/ccVVivOE.s:2115   .data.wduty:0000000000000000 wduty
+     /tmp/ccVVivOE.s:1973   .rodata:000000000000000b $d
+     /tmp/ccVVivOE.s:1975   .bss.ADC_raw:0000000000000000 $d
+     /tmp/ccVVivOE.s:1979   .bss.ADC_raw:0000000000000000 ADC_raw
+     /tmp/ccVVivOE.s:1982   .bss.USBD_Device:0000000000000000 $d
+     /tmp/ccVVivOE.s:1988   .bss.count.0:0000000000000000 $d
+     /tmp/ccVVivOE.s:1992   .bss.count.0:0000000000000000 count.0
+     /tmp/ccVVivOE.s:1995   .bss.hadc:0000000000000000 $d
+     /tmp/ccVVivOE.s:2002   .bss.hdma_adc:0000000000000000 $d
+     /tmp/ccVVivOE.s:2008   .bss.hi2c1:0000000000000000 $d
+     /tmp/ccVVivOE.s:2015   .bss.hiwdg:0000000000000000 $d
+     /tmp/ccVVivOE.s:2022   .bss.htim1:0000000000000000 $d
+     /tmp/ccVVivOE.s:2029   .bss.htim3:0000000000000000 $d
+     /tmp/ccVVivOE.s:2039   .bss.screenBuffer:0000000000000000 $d
+     /tmp/ccVVivOE.s:2041   .bss.sendDataUSB:0000000000000000 $d
+     /tmp/ccVVivOE.s:2057   .data.by_string:0000000000000000 $d
+     /tmp/ccVVivOE.s:2064   .data.dfu_string:0000000000000000 $d
+     /tmp/ccVVivOE.s:2071   .data.otter_string:0000000000000000 $d
+     /tmp/ccVVivOE.s:2078   .data.r:0000000000000000 $d
+     /tmp/ccVVivOE.s:2092   .data.s:0000000000000000 $d
+     /tmp/ccVVivOE.s:2103   .data.tipcal:0000000000000000 $d
+     /tmp/ccVVivOE.s:2111   .data.wduty:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_fcmpge
@@ -2558,7 +2567,7 @@ __aeabi_fcmple
 __aeabi_fcmpgt
 __aeabi_fcmplt
 __aeabi_f2iz
-ARM GAS  /tmp/cc4wQWsB.s 			page 44
+ARM GAS  /tmp/ccVVivOE.s 			page 44
 
 
 __aeabi_dcmple

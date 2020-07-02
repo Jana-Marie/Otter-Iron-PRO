@@ -141,7 +141,7 @@ int main(void)
   stusb_set_valid_pdo(3);
 
   // now display
-  HAL_Delay(400);
+  HAL_Delay(200);
   disp_init();
   clear_screen();
 
@@ -392,7 +392,6 @@ void USB_printfloat(float _buf){
 uint8_t screenBuffer[16 + (OLED_WIDTH * 2) + 10];  // The data buffer
 const uint8_t REFRESH_COMMANDS[17] = { 0x80, 0xAF, 0x80, 0x21, 0x80, 0x20, 0x80, 0x7F, 0x80, 0xC0, 0x80, 0x22, 0x80, 0x00, 0x80, 0x01, 0x40 };
 uint8_t OLED_Setup_Array[] = {
-0x80, 0xAE, /*Display off*/
 0x80, 0xD5, /*Set display clock divide ratio / osc freq*/
 0x80, 0x80, /*Divide ratios*/
 0x80, 0xA8, /*Set Multiplex Ratio*/
@@ -432,12 +431,21 @@ void disp_off(void) {
   HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &power_off[0], 2, 1000);
 }
 
-//not Ralim anymore
+//not Ralim anymore - https://datasheet.lcsc.com/szlcsc/1810010328_UG-Univision-Semicon-UG-9616TSWCG02_C88335.pdf 4.4.4
 void disp_init(void) {
+  // off
   disp_off();
+  // configuration sequence
   memcpy(&screenBuffer[0], &REFRESH_COMMANDS[0], sizeof(REFRESH_COMMANDS));
+  refresh();
   HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &OLED_Setup_Array[0], sizeof(OLED_Setup_Array), 1000);
+  // repeat above to be sure
+  disp_off();
+  HAL_I2C_Master_Transmit(&hi2c1,DEVICEADDR_OLED, &OLED_Setup_Array[0], sizeof(OLED_Setup_Array), 1000);
+  // clear by sending empty framebuffer
   clear_screen();
+  refresh();
+  // on after 100 ms
   HAL_Delay(100);
   disp_on();
 }
