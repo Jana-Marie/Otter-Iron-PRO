@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cccS1FaW.s 			page 1
+ARM GAS  /tmp/cc1DsfeR.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
   56 0034 00200240 		.word	1073881088
   57 0038 00000000 		.word	.LANCHOR0
   59              		.section	.text.HAL_FLASH_Program_IT,"ax",%progbits
-ARM GAS  /tmp/cccS1FaW.s 			page 2
+ARM GAS  /tmp/cc1DsfeR.s 			page 2
 
 
   60              		.align	1
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  115 0050 F2E7     		b	.L15
  116              	.L20:
  117 0052 C046     		.align	2
-ARM GAS  /tmp/cccS1FaW.s 			page 3
+ARM GAS  /tmp/cc1DsfeR.s 			page 3
 
 
  118              	.L19:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  178 001e 3000     		movs	r0, r6
  179 0020 FFF7FEFF 		bl	HAL_FLASH_OperationErrorCallback
  180 0024 0023     		movs	r3, #0
-ARM GAS  /tmp/cccS1FaW.s 			page 4
+ARM GAS  /tmp/cc1DsfeR.s 			page 4
 
 
  181 0026 2370     		strb	r3, [r4]
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  235 008e EAE7     		b	.L27
  236              	.L29:
  237 0090 2378     		ldrb	r3, [r4]
-ARM GAS  /tmp/cccS1FaW.s 			page 5
+ARM GAS  /tmp/cc1DsfeR.s 			page 5
 
 
  238 0092 022B     		cmp	r3, #2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  292 00fa A360     		str	r3, [r4, #8]
  293 00fc D2E7     		b	.L44
  294              	.L33:
-ARM GAS  /tmp/cccS1FaW.s 			page 6
+ARM GAS  /tmp/cc1DsfeR.s 			page 6
 
 
  295 00fe 2378     		ldrb	r3, [r4]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  353              	HAL_FLASH_Lock:
  354              		@ args = 0, pretend = 0, frame = 0
  355              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cccS1FaW.s 			page 7
+ARM GAS  /tmp/cc1DsfeR.s 			page 7
 
 
  356              		@ link register save eliminated.
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  414              	HAL_FLASH_OB_Lock:
  415              		@ args = 0, pretend = 0, frame = 0
  416              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cccS1FaW.s 			page 8
+ARM GAS  /tmp/cc1DsfeR.s 			page 8
 
 
  417              		@ link register save eliminated.
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  475 0014 2022     		movs	r2, #32
  476 0016 D968     		ldr	r1, [r3, #12]
  477 0018 1142     		tst	r1, r2
-ARM GAS  /tmp/cccS1FaW.s 			page 9
+ARM GAS  /tmp/cc1DsfeR.s 			page 9
 
 
  478 001a 00D0     		beq	.L74
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  534 000e 0400     		movs	r4, r0
  535 0010 0220     		movs	r0, #2
  536 0012 012A     		cmp	r2, #1
-ARM GAS  /tmp/cccS1FaW.s 			page 10
+ARM GAS  /tmp/cc1DsfeR.s 			page 10
 
 
  537 0014 2ED0     		beq	.L86
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  591              	.L94:
  592 0078 00000000 		.word	.LANCHOR0
  593 007c 50C30000 		.word	50000
-ARM GAS  /tmp/cccS1FaW.s 			page 11
+ARM GAS  /tmp/cc1DsfeR.s 			page 11
 
 
  594 0080 00200240 		.word	1073881088
@@ -639,50 +639,50 @@ ARM GAS  /tmp/cccS1FaW.s 			page 1
  631      00000000 
  631      00000000 
  632              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/cccS1FaW.s 			page 12
+ARM GAS  /tmp/cc1DsfeR.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_flash.c
-     /tmp/cccS1FaW.s:14     .text.FLASH_SetErrorCode:0000000000000000 $t
-     /tmp/cccS1FaW.s:21     .text.FLASH_SetErrorCode:0000000000000000 FLASH_SetErrorCode
-     /tmp/cccS1FaW.s:56     .text.FLASH_SetErrorCode:0000000000000034 $d
-     /tmp/cccS1FaW.s:60     .text.HAL_FLASH_Program_IT:0000000000000000 $t
-     /tmp/cccS1FaW.s:67     .text.HAL_FLASH_Program_IT:0000000000000000 HAL_FLASH_Program_IT
-     /tmp/cccS1FaW.s:119    .text.HAL_FLASH_Program_IT:0000000000000054 $d
-     /tmp/cccS1FaW.s:123    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 $t
-     /tmp/cccS1FaW.s:130    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 HAL_FLASH_EndOfOperationCallback
-     /tmp/cccS1FaW.s:138    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 $t
-     /tmp/cccS1FaW.s:145    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 HAL_FLASH_OperationErrorCallback
-     /tmp/cccS1FaW.s:153    .text.HAL_FLASH_IRQHandler:0000000000000000 $t
-     /tmp/cccS1FaW.s:160    .text.HAL_FLASH_IRQHandler:0000000000000000 HAL_FLASH_IRQHandler
-     /tmp/cccS1FaW.s:307    .text.HAL_FLASH_IRQHandler:0000000000000110 $d
-     /tmp/cccS1FaW.s:312    .text.HAL_FLASH_Unlock:0000000000000000 $t
-     /tmp/cccS1FaW.s:319    .text.HAL_FLASH_Unlock:0000000000000000 HAL_FLASH_Unlock
-     /tmp/cccS1FaW.s:341    .text.HAL_FLASH_Unlock:000000000000001c $d
-     /tmp/cccS1FaW.s:346    .text.HAL_FLASH_Lock:0000000000000000 $t
-     /tmp/cccS1FaW.s:353    .text.HAL_FLASH_Lock:0000000000000000 HAL_FLASH_Lock
-     /tmp/cccS1FaW.s:368    .text.HAL_FLASH_Lock:0000000000000010 $d
-     /tmp/cccS1FaW.s:371    .text.HAL_FLASH_OB_Unlock:0000000000000000 $t
-     /tmp/cccS1FaW.s:378    .text.HAL_FLASH_OB_Unlock:0000000000000000 HAL_FLASH_OB_Unlock
-     /tmp/cccS1FaW.s:402    .text.HAL_FLASH_OB_Unlock:0000000000000020 $d
-     /tmp/cccS1FaW.s:407    .text.HAL_FLASH_OB_Lock:0000000000000000 $t
-     /tmp/cccS1FaW.s:414    .text.HAL_FLASH_OB_Lock:0000000000000000 HAL_FLASH_OB_Lock
-     /tmp/cccS1FaW.s:429    .text.HAL_FLASH_OB_Lock:0000000000000010 $d
-     /tmp/cccS1FaW.s:433    .text.HAL_FLASH_GetError:0000000000000000 $t
-     /tmp/cccS1FaW.s:440    .text.HAL_FLASH_GetError:0000000000000000 HAL_FLASH_GetError
-     /tmp/cccS1FaW.s:451    .text.HAL_FLASH_GetError:0000000000000008 $d
-     /tmp/cccS1FaW.s:454    .text.FLASH_WaitForLastOperation:0000000000000000 $t
-     /tmp/cccS1FaW.s:461    .text.FLASH_WaitForLastOperation:0000000000000000 FLASH_WaitForLastOperation
-     /tmp/cccS1FaW.s:513    .text.FLASH_WaitForLastOperation:0000000000000050 $d
-     /tmp/cccS1FaW.s:517    .text.HAL_FLASH_Program:0000000000000000 $t
-     /tmp/cccS1FaW.s:524    .text.HAL_FLASH_Program:0000000000000000 HAL_FLASH_Program
-     /tmp/cccS1FaW.s:592    .text.HAL_FLASH_Program:0000000000000078 $d
-     /tmp/cccS1FaW.s:597    .text.HAL_FLASH_OB_Launch:0000000000000000 $t
-     /tmp/cccS1FaW.s:604    .text.HAL_FLASH_OB_Launch:0000000000000000 HAL_FLASH_OB_Launch
-     /tmp/cccS1FaW.s:621    .text.HAL_FLASH_OB_Launch:0000000000000018 $d
-     /tmp/cccS1FaW.s:630    .bss.pFlash:0000000000000000 pFlash
-     /tmp/cccS1FaW.s:626    .bss.pFlash:0000000000000000 $d
+     /tmp/cc1DsfeR.s:14     .text.FLASH_SetErrorCode:0000000000000000 $t
+     /tmp/cc1DsfeR.s:21     .text.FLASH_SetErrorCode:0000000000000000 FLASH_SetErrorCode
+     /tmp/cc1DsfeR.s:56     .text.FLASH_SetErrorCode:0000000000000034 $d
+     /tmp/cc1DsfeR.s:60     .text.HAL_FLASH_Program_IT:0000000000000000 $t
+     /tmp/cc1DsfeR.s:67     .text.HAL_FLASH_Program_IT:0000000000000000 HAL_FLASH_Program_IT
+     /tmp/cc1DsfeR.s:119    .text.HAL_FLASH_Program_IT:0000000000000054 $d
+     /tmp/cc1DsfeR.s:123    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 $t
+     /tmp/cc1DsfeR.s:130    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 HAL_FLASH_EndOfOperationCallback
+     /tmp/cc1DsfeR.s:138    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 $t
+     /tmp/cc1DsfeR.s:145    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 HAL_FLASH_OperationErrorCallback
+     /tmp/cc1DsfeR.s:153    .text.HAL_FLASH_IRQHandler:0000000000000000 $t
+     /tmp/cc1DsfeR.s:160    .text.HAL_FLASH_IRQHandler:0000000000000000 HAL_FLASH_IRQHandler
+     /tmp/cc1DsfeR.s:307    .text.HAL_FLASH_IRQHandler:0000000000000110 $d
+     /tmp/cc1DsfeR.s:312    .text.HAL_FLASH_Unlock:0000000000000000 $t
+     /tmp/cc1DsfeR.s:319    .text.HAL_FLASH_Unlock:0000000000000000 HAL_FLASH_Unlock
+     /tmp/cc1DsfeR.s:341    .text.HAL_FLASH_Unlock:000000000000001c $d
+     /tmp/cc1DsfeR.s:346    .text.HAL_FLASH_Lock:0000000000000000 $t
+     /tmp/cc1DsfeR.s:353    .text.HAL_FLASH_Lock:0000000000000000 HAL_FLASH_Lock
+     /tmp/cc1DsfeR.s:368    .text.HAL_FLASH_Lock:0000000000000010 $d
+     /tmp/cc1DsfeR.s:371    .text.HAL_FLASH_OB_Unlock:0000000000000000 $t
+     /tmp/cc1DsfeR.s:378    .text.HAL_FLASH_OB_Unlock:0000000000000000 HAL_FLASH_OB_Unlock
+     /tmp/cc1DsfeR.s:402    .text.HAL_FLASH_OB_Unlock:0000000000000020 $d
+     /tmp/cc1DsfeR.s:407    .text.HAL_FLASH_OB_Lock:0000000000000000 $t
+     /tmp/cc1DsfeR.s:414    .text.HAL_FLASH_OB_Lock:0000000000000000 HAL_FLASH_OB_Lock
+     /tmp/cc1DsfeR.s:429    .text.HAL_FLASH_OB_Lock:0000000000000010 $d
+     /tmp/cc1DsfeR.s:433    .text.HAL_FLASH_GetError:0000000000000000 $t
+     /tmp/cc1DsfeR.s:440    .text.HAL_FLASH_GetError:0000000000000000 HAL_FLASH_GetError
+     /tmp/cc1DsfeR.s:451    .text.HAL_FLASH_GetError:0000000000000008 $d
+     /tmp/cc1DsfeR.s:454    .text.FLASH_WaitForLastOperation:0000000000000000 $t
+     /tmp/cc1DsfeR.s:461    .text.FLASH_WaitForLastOperation:0000000000000000 FLASH_WaitForLastOperation
+     /tmp/cc1DsfeR.s:513    .text.FLASH_WaitForLastOperation:0000000000000050 $d
+     /tmp/cc1DsfeR.s:517    .text.HAL_FLASH_Program:0000000000000000 $t
+     /tmp/cc1DsfeR.s:524    .text.HAL_FLASH_Program:0000000000000000 HAL_FLASH_Program
+     /tmp/cc1DsfeR.s:592    .text.HAL_FLASH_Program:0000000000000078 $d
+     /tmp/cc1DsfeR.s:597    .text.HAL_FLASH_OB_Launch:0000000000000000 $t
+     /tmp/cc1DsfeR.s:604    .text.HAL_FLASH_OB_Launch:0000000000000000 HAL_FLASH_OB_Launch
+     /tmp/cc1DsfeR.s:621    .text.HAL_FLASH_OB_Launch:0000000000000018 $d
+     /tmp/cc1DsfeR.s:630    .bss.pFlash:0000000000000000 pFlash
+     /tmp/cc1DsfeR.s:626    .bss.pFlash:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 FLASH_PageErase

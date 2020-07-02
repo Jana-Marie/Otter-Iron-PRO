@@ -1,4 +1,10 @@
-#define RDO_REG_STATUS 0x91
+#ifndef __STUSB4500_H
+#define __STUSB4500_H
+
+#include "stm32f0xx_hal.h"
+
+#define STUSB4500_ADDR         0x28
+#define RDO_REG_STATUS         0x91
 
 typedef union {
   uint32_t d32;
@@ -16,8 +22,8 @@ typedef union {
   } b;
 } STUSB_GEN1S_RDO_REG_STATUS_RegTypeDef;
 
-#define DPM_PDO_NUMB 0x70
-#define DPM_SNK_PDO1 0x85
+#define DPM_PDO_NUMB           0x70
+#define DPM_SNK_PDO1           0x85
 
 typedef union {
   uint32_t d32;
@@ -49,3 +55,9 @@ typedef union {
   } bat;
 
 } USB_PD_SNK_PDO_TypeDef;
+
+HAL_StatusTypeDef stusb_read_rdo(STUSB_GEN1S_RDO_REG_STATUS_RegTypeDef *Nego_RDO);
+HAL_StatusTypeDef stusb_update_pdo(uint8_t pdo_number, uint16_t voltage_mv, uint16_t current_ma);
+HAL_StatusTypeDef stusb_set_valid_pdo(uint8_t valid_count);
+
+#endif

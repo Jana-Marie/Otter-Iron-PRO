@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc0PADIG.s 			page 1
+ARM GAS  /tmp/ccUz7Y8E.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc0PADIG.s 			page 1
   56 003a 9103     		lsls	r1, r2, #14
   57 003c 04D5     		bpl	.L3
   58 003e 8021     		movs	r1, #128
-ARM GAS  /tmp/cc0PADIG.s 			page 2
+ARM GAS  /tmp/ccUz7Y8E.s 			page 2
 
 
   59 0040 5868     		ldr	r0, [r3, #4]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc0PADIG.s 			page 1
  116              		.syntax unified
  117              		.code	16
  118              		.thumb_func
-ARM GAS  /tmp/cc0PADIG.s 			page 3
+ARM GAS  /tmp/ccUz7Y8E.s 			page 3
 
 
  119              		.fpu softvfp
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc0PADIG.s 			page 1
  178 0018 00040140 		.word	1073808384
  180              		.section	.text.HAL_PWREx_EnableVddio2Monitor,"ax",%progbits
  181              		.align	1
-ARM GAS  /tmp/cc0PADIG.s 			page 4
+ARM GAS  /tmp/ccUz7Y8E.s 			page 4
 
 
  182              		.global	HAL_PWREx_EnableVddio2Monitor
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc0PADIG.s 			page 1
  240              		.section	.text.HAL_PWREx_Vddio2MonitorCallback,"ax",%progbits
  241              		.align	1
  242              		.weak	HAL_PWREx_Vddio2MonitorCallback
-ARM GAS  /tmp/cc0PADIG.s 			page 5
+ARM GAS  /tmp/ccUz7Y8E.s 			page 5
 
 
  243              		.syntax unified
@@ -278,35 +278,35 @@ ARM GAS  /tmp/cc0PADIG.s 			page 1
  280              	.L43:
  281 0018 00040140 		.word	1073808384
  283              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/cc0PADIG.s 			page 6
+ARM GAS  /tmp/ccUz7Y8E.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_pwr_ex.c
-     /tmp/cc0PADIG.s:14     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
-     /tmp/cc0PADIG.s:22     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
-     /tmp/cc0PADIG.s:85     .text.HAL_PWR_ConfigPVD:0000000000000068 $d
-     /tmp/cc0PADIG.s:90     .text.HAL_PWR_EnablePVD:0000000000000000 $t
-     /tmp/cc0PADIG.s:97     .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
-     /tmp/cc0PADIG.s:111    .text.HAL_PWR_EnablePVD:000000000000000c $d
-     /tmp/cc0PADIG.s:114    .text.HAL_PWR_DisablePVD:0000000000000000 $t
-     /tmp/cc0PADIG.s:121    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
-     /tmp/cc0PADIG.s:135    .text.HAL_PWR_DisablePVD:000000000000000c $d
-     /tmp/cc0PADIG.s:138    .text.HAL_PWR_PVDCallback:0000000000000000 $t
-     /tmp/cc0PADIG.s:145    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
-     /tmp/cc0PADIG.s:153    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
-     /tmp/cc0PADIG.s:160    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
-     /tmp/cc0PADIG.s:178    .text.HAL_PWR_PVD_IRQHandler:0000000000000018 $d
-     /tmp/cc0PADIG.s:181    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 $t
-     /tmp/cc0PADIG.s:188    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 HAL_PWREx_EnableVddio2Monitor
-     /tmp/cc0PADIG.s:206    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000014 $d
-     /tmp/cc0PADIG.s:209    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 $t
-     /tmp/cc0PADIG.s:216    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 HAL_PWREx_DisableVddio2Monitor
-     /tmp/cc0PADIG.s:238    .text.HAL_PWREx_DisableVddio2Monitor:000000000000001c $d
-     /tmp/cc0PADIG.s:241    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 $t
-     /tmp/cc0PADIG.s:248    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 HAL_PWREx_Vddio2MonitorCallback
-     /tmp/cc0PADIG.s:256    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 $t
-     /tmp/cc0PADIG.s:263    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 HAL_PWREx_Vddio2Monitor_IRQHandler
-     /tmp/cc0PADIG.s:281    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000018 $d
+     /tmp/ccUz7Y8E.s:14     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:22     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
+     /tmp/ccUz7Y8E.s:85     .text.HAL_PWR_ConfigPVD:0000000000000068 $d
+     /tmp/ccUz7Y8E.s:90     .text.HAL_PWR_EnablePVD:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:97     .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
+     /tmp/ccUz7Y8E.s:111    .text.HAL_PWR_EnablePVD:000000000000000c $d
+     /tmp/ccUz7Y8E.s:114    .text.HAL_PWR_DisablePVD:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:121    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
+     /tmp/ccUz7Y8E.s:135    .text.HAL_PWR_DisablePVD:000000000000000c $d
+     /tmp/ccUz7Y8E.s:138    .text.HAL_PWR_PVDCallback:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:145    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
+     /tmp/ccUz7Y8E.s:153    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:160    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
+     /tmp/ccUz7Y8E.s:178    .text.HAL_PWR_PVD_IRQHandler:0000000000000018 $d
+     /tmp/ccUz7Y8E.s:181    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:188    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000000 HAL_PWREx_EnableVddio2Monitor
+     /tmp/ccUz7Y8E.s:206    .text.HAL_PWREx_EnableVddio2Monitor:0000000000000014 $d
+     /tmp/ccUz7Y8E.s:209    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:216    .text.HAL_PWREx_DisableVddio2Monitor:0000000000000000 HAL_PWREx_DisableVddio2Monitor
+     /tmp/ccUz7Y8E.s:238    .text.HAL_PWREx_DisableVddio2Monitor:000000000000001c $d
+     /tmp/ccUz7Y8E.s:241    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:248    .text.HAL_PWREx_Vddio2MonitorCallback:0000000000000000 HAL_PWREx_Vddio2MonitorCallback
+     /tmp/ccUz7Y8E.s:256    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 $t
+     /tmp/ccUz7Y8E.s:263    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000000 HAL_PWREx_Vddio2Monitor_IRQHandler
+     /tmp/ccUz7Y8E.s:281    .text.HAL_PWREx_Vddio2Monitor_IRQHandler:0000000000000018 $d
 
 NO UNDEFINED SYMBOLS

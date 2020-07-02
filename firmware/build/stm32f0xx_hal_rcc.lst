@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccPI9iL6.s 			page 1
+ARM GAS  /tmp/cciriLq4.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
   56 0034 00100240 		.word	1073876992
   57 0038 0CF8FFF0 		.word	-251660276
   58 003c FFFFF6FE 		.word	-17367041
-ARM GAS  /tmp/ccPI9iL6.s 			page 2
+ARM GAS  /tmp/cciriLq4.s 			page 2
 
 
   59 0040 FFFFFBFF 		.word	-262145
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  115 0042 6A63     		str	r2, [r5, #52]
  116 0044 FFF7FEFF 		bl	HAL_GetTick
  117 0048 0600     		movs	r6, r0
-ARM GAS  /tmp/ccPI9iL6.s 			page 3
+ARM GAS  /tmp/cciriLq4.s 			page 3
 
 
  118              	.L62:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  172 00a2 B3D1     		bne	.L10
  173              	.L26:
  174 00a4 0120     		movs	r0, #1
-ARM GAS  /tmp/ccPI9iL6.s 			page 4
+ARM GAS  /tmp/cciriLq4.s 			page 4
 
 
  175              	.L11:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  229 0106 F6D9     		bls	.L15
  230 0108 E4E7     		b	.L20
  231              	.L14:
-ARM GAS  /tmp/ccPI9iL6.s 			page 5
+ARM GAS  /tmp/cciriLq4.s 			page 5
 
 
  232 010a 052B     		cmp	r3, #5
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  286 016c 002A     		cmp	r2, #0
  287 016e 0FD0     		beq	.L27
  288 0170 2A68     		ldr	r2, [r5]
-ARM GAS  /tmp/ccPI9iL6.s 			page 6
+ARM GAS  /tmp/cciriLq4.s 			page 6
 
 
  289 0172 0227     		movs	r7, #2
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  343 01dc 7AE7     		b	.L20
  344              	.L35:
  345 01de 6A6A     		ldr	r2, [r5, #36]
-ARM GAS  /tmp/ccPI9iL6.s 			page 7
+ARM GAS  /tmp/cciriLq4.s 			page 7
 
 
  346 01e0 0227     		movs	r7, #2
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  400 0242 FFF7FEFF 		bl	HAL_GetTick
  401 0246 0190     		str	r0, [sp, #4]
  402              	.L46:
-ARM GAS  /tmp/ccPI9iL6.s 			page 8
+ARM GAS  /tmp/cciriLq4.s 			page 8
 
 
  403 0248 3368     		ldr	r3, [r6]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  457 02b0 00D0     		beq	.LCB511
  458 02b2 B7E6     		b	.L41	@long jump
  459              	.LCB511:
-ARM GAS  /tmp/ccPI9iL6.s 			page 9
+ARM GAS  /tmp/cciriLq4.s 			page 9
 
 
  460 02b4 EB69     		ldr	r3, [r5, #28]
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  514 0318 0228     		cmp	r0, #2
  515 031a F6D9     		bls	.L65
  516 031c DAE6     		b	.L20
-ARM GAS  /tmp/ccPI9iL6.s 			page 10
+ARM GAS  /tmp/cciriLq4.s 			page 10
 
 
  517              	.L116:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  571              	.LCB640:
  572 0388 FFF7FEFF 		bl	HAL_GetTick
  573 038c 801B     		subs	r0, r0, r6
-ARM GAS  /tmp/ccPI9iL6.s 			page 11
+ARM GAS  /tmp/cciriLq4.s 			page 11
 
 
  574 038e 0228     		cmp	r0, #2
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  628 03f4 A16A     		ldr	r1, [r4, #40]
  629 03f6 E36A     		ldr	r3, [r4, #44]
  630 03f8 6A68     		ldr	r2, [r5, #4]
-ARM GAS  /tmp/ccPI9iL6.s 			page 12
+ARM GAS  /tmp/cciriLq4.s 			page 12
 
 
  631 03fa 0B43     		orrs	r3, r1
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  686              		.global	HAL_RCC_MCOConfig
  687              		.syntax unified
  688              		.code	16
-ARM GAS  /tmp/ccPI9iL6.s 			page 13
+ARM GAS  /tmp/cciriLq4.s 			page 13
 
 
  689              		.thumb_func
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  746              	HAL_RCC_EnableCSS:
  747              		@ args = 0, pretend = 0, frame = 0
  748              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccPI9iL6.s 			page 14
+ARM GAS  /tmp/cciriLq4.s 			page 14
 
 
  749              		@ link register save eliminated.
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  800              		.syntax unified
  801              		.code	16
  802              		.thumb_func
-ARM GAS  /tmp/ccPI9iL6.s 			page 15
+ARM GAS  /tmp/cciriLq4.s 			page 15
 
 
  803              		.fpu softvfp
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  858 005e FBD1     		bne	.L132
  859 0060 0648     		ldr	r0, .L135+16
  860              	.L134:
-ARM GAS  /tmp/ccPI9iL6.s 			page 16
+ARM GAS  /tmp/cciriLq4.s 			page 16
 
 
  861 0062 FFF7FEFF 		bl	__aeabi_uidiv
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  917              	.L164:
  918 0034 FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
  919 0038 6368     		ldr	r3, [r4, #4]
-ARM GAS  /tmp/ccPI9iL6.s 			page 17
+ARM GAS  /tmp/cciriLq4.s 			page 17
 
 
  920 003a 454A     		ldr	r2, .L184+8
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  974 009c 1CD1     		bne	.L181
  975              	.L151:
  976 009e 0C22     		movs	r2, #12
-ARM GAS  /tmp/ccPI9iL6.s 			page 18
+ARM GAS  /tmp/cciriLq4.s 			page 18
 
 
  977 00a0 6368     		ldr	r3, [r4, #4]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  1031 0100 8CE7     		b	.L154	@long jump
  1032              	.LCB1144:
  1033 0102 FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  /tmp/ccPI9iL6.s 			page 19
+ARM GAS  /tmp/cciriLq4.s 			page 19
 
 
  1034 0106 144B     		ldr	r3, .L184+16
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  1090              		@ frame_needed = 0, uses_anonymous_args = 0
  1091              		@ link register save eliminated.
  1092 0000 014B     		ldr	r3, .L187
-ARM GAS  /tmp/ccPI9iL6.s 			page 20
+ARM GAS  /tmp/cciriLq4.s 			page 20
 
 
  1093              		@ sp needed
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  1151 0010 4260     		str	r2, [r0, #4]
  1152              	.L194:
  1153 0012 0121     		movs	r1, #1
-ARM GAS  /tmp/ccPI9iL6.s 			page 21
+ARM GAS  /tmp/cciriLq4.s 			page 21
 
 
  1154 0014 1A68     		ldr	r2, [r3]
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  1208 007a 1440     		ands	r4, r2
  1209 007c 1142     		tst	r1, r2
  1210 007e 01D0     		beq	.L195
-ARM GAS  /tmp/ccPI9iL6.s 			page 22
+ARM GAS  /tmp/cciriLq4.s 			page 22
 
 
  1211 0080 0122     		movs	r2, #1
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  1267              	.L206:
  1268 002e C046     		.align	2
  1269              	.L205:
-ARM GAS  /tmp/ccPI9iL6.s 			page 23
+ARM GAS  /tmp/cciriLq4.s 			page 23
 
 
  1270 0030 00100240 		.word	1073876992
@@ -1364,51 +1364,51 @@ ARM GAS  /tmp/ccPI9iL6.s 			page 1
  1314 0018 00100240 		.word	1073876992
  1315 001c 0A100240 		.word	1073877002
  1317              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccPI9iL6.s 			page 24
+ARM GAS  /tmp/cciriLq4.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_rcc.c
-     /tmp/ccPI9iL6.s:14     .text.HAL_RCC_DeInit:0000000000000000 $t
-     /tmp/ccPI9iL6.s:22     .text.HAL_RCC_DeInit:0000000000000000 HAL_RCC_DeInit
-     /tmp/ccPI9iL6.s:56     .text.HAL_RCC_DeInit:0000000000000034 $d
-     /tmp/ccPI9iL6.s:64     .text.HAL_RCC_OscConfig:0000000000000000 $t
-     /tmp/ccPI9iL6.s:71     .text.HAL_RCC_OscConfig:0000000000000000 HAL_RCC_OscConfig
-     /tmp/ccPI9iL6.s:520    .text.HAL_RCC_OscConfig:0000000000000320 $d
-     /tmp/ccPI9iL6.s:527    .text.HAL_RCC_OscConfig:0000000000000338 $t
-     /tmp/ccPI9iL6.s:679    .text.HAL_RCC_OscConfig:0000000000000454 $d
-     /tmp/ccPI9iL6.s:685    .text.HAL_RCC_MCOConfig:0000000000000000 $t
-     /tmp/ccPI9iL6.s:692    .text.HAL_RCC_MCOConfig:0000000000000000 HAL_RCC_MCOConfig
-     /tmp/ccPI9iL6.s:735    .text.HAL_RCC_MCOConfig:000000000000004c $d
-     /tmp/ccPI9iL6.s:739    .text.HAL_RCC_EnableCSS:0000000000000000 $t
-     /tmp/ccPI9iL6.s:746    .text.HAL_RCC_EnableCSS:0000000000000000 HAL_RCC_EnableCSS
-     /tmp/ccPI9iL6.s:761    .text.HAL_RCC_EnableCSS:0000000000000010 $d
-     /tmp/ccPI9iL6.s:764    .text.HAL_RCC_DisableCSS:0000000000000000 $t
-     /tmp/ccPI9iL6.s:771    .text.HAL_RCC_DisableCSS:0000000000000000 HAL_RCC_DisableCSS
-     /tmp/ccPI9iL6.s:785    .text.HAL_RCC_DisableCSS:000000000000000c $d
-     /tmp/ccPI9iL6.s:798    .text.HAL_RCC_GetSysClockFreq:0000000000000000 $t
-     /tmp/ccPI9iL6.s:805    .text.HAL_RCC_GetSysClockFreq:0000000000000000 HAL_RCC_GetSysClockFreq
-     /tmp/ccPI9iL6.s:867    .text.HAL_RCC_GetSysClockFreq:000000000000006c $d
-     /tmp/ccPI9iL6.s:875    .text.HAL_RCC_ClockConfig:0000000000000000 $t
-     /tmp/ccPI9iL6.s:882    .text.HAL_RCC_ClockConfig:0000000000000000 HAL_RCC_ClockConfig
-     /tmp/ccPI9iL6.s:1073   .text.HAL_RCC_ClockConfig:0000000000000148 $d
-     /tmp/ccPI9iL6.s:1081   .text.HAL_RCC_GetHCLKFreq:0000000000000000 $t
-     /tmp/ccPI9iL6.s:1088   .text.HAL_RCC_GetHCLKFreq:0000000000000000 HAL_RCC_GetHCLKFreq
-     /tmp/ccPI9iL6.s:1099   .text.HAL_RCC_GetHCLKFreq:0000000000000008 $d
-     /tmp/ccPI9iL6.s:1102   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 $t
-     /tmp/ccPI9iL6.s:1109   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 HAL_RCC_GetPCLK1Freq
-     /tmp/ccPI9iL6.s:1127   .text.HAL_RCC_GetPCLK1Freq:0000000000000014 $d
-     /tmp/ccPI9iL6.s:1132   .text.HAL_RCC_GetOscConfig:0000000000000000 $t
-     /tmp/ccPI9iL6.s:1139   .text.HAL_RCC_GetOscConfig:0000000000000000 HAL_RCC_GetOscConfig
-     /tmp/ccPI9iL6.s:1230   .text.HAL_RCC_GetOscConfig:000000000000009c $d
-     /tmp/ccPI9iL6.s:1233   .text.HAL_RCC_GetClockConfig:0000000000000000 $t
-     /tmp/ccPI9iL6.s:1240   .text.HAL_RCC_GetClockConfig:0000000000000000 HAL_RCC_GetClockConfig
-     /tmp/ccPI9iL6.s:1270   .text.HAL_RCC_GetClockConfig:0000000000000030 $d
-     /tmp/ccPI9iL6.s:1274   .text.HAL_RCC_CSSCallback:0000000000000000 $t
-     /tmp/ccPI9iL6.s:1281   .text.HAL_RCC_CSSCallback:0000000000000000 HAL_RCC_CSSCallback
-     /tmp/ccPI9iL6.s:1289   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 $t
-     /tmp/ccPI9iL6.s:1296   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 HAL_RCC_NMI_IRQHandler
-     /tmp/ccPI9iL6.s:1314   .text.HAL_RCC_NMI_IRQHandler:0000000000000018 $d
+     /tmp/cciriLq4.s:14     .text.HAL_RCC_DeInit:0000000000000000 $t
+     /tmp/cciriLq4.s:22     .text.HAL_RCC_DeInit:0000000000000000 HAL_RCC_DeInit
+     /tmp/cciriLq4.s:56     .text.HAL_RCC_DeInit:0000000000000034 $d
+     /tmp/cciriLq4.s:64     .text.HAL_RCC_OscConfig:0000000000000000 $t
+     /tmp/cciriLq4.s:71     .text.HAL_RCC_OscConfig:0000000000000000 HAL_RCC_OscConfig
+     /tmp/cciriLq4.s:520    .text.HAL_RCC_OscConfig:0000000000000320 $d
+     /tmp/cciriLq4.s:527    .text.HAL_RCC_OscConfig:0000000000000338 $t
+     /tmp/cciriLq4.s:679    .text.HAL_RCC_OscConfig:0000000000000454 $d
+     /tmp/cciriLq4.s:685    .text.HAL_RCC_MCOConfig:0000000000000000 $t
+     /tmp/cciriLq4.s:692    .text.HAL_RCC_MCOConfig:0000000000000000 HAL_RCC_MCOConfig
+     /tmp/cciriLq4.s:735    .text.HAL_RCC_MCOConfig:000000000000004c $d
+     /tmp/cciriLq4.s:739    .text.HAL_RCC_EnableCSS:0000000000000000 $t
+     /tmp/cciriLq4.s:746    .text.HAL_RCC_EnableCSS:0000000000000000 HAL_RCC_EnableCSS
+     /tmp/cciriLq4.s:761    .text.HAL_RCC_EnableCSS:0000000000000010 $d
+     /tmp/cciriLq4.s:764    .text.HAL_RCC_DisableCSS:0000000000000000 $t
+     /tmp/cciriLq4.s:771    .text.HAL_RCC_DisableCSS:0000000000000000 HAL_RCC_DisableCSS
+     /tmp/cciriLq4.s:785    .text.HAL_RCC_DisableCSS:000000000000000c $d
+     /tmp/cciriLq4.s:798    .text.HAL_RCC_GetSysClockFreq:0000000000000000 $t
+     /tmp/cciriLq4.s:805    .text.HAL_RCC_GetSysClockFreq:0000000000000000 HAL_RCC_GetSysClockFreq
+     /tmp/cciriLq4.s:867    .text.HAL_RCC_GetSysClockFreq:000000000000006c $d
+     /tmp/cciriLq4.s:875    .text.HAL_RCC_ClockConfig:0000000000000000 $t
+     /tmp/cciriLq4.s:882    .text.HAL_RCC_ClockConfig:0000000000000000 HAL_RCC_ClockConfig
+     /tmp/cciriLq4.s:1073   .text.HAL_RCC_ClockConfig:0000000000000148 $d
+     /tmp/cciriLq4.s:1081   .text.HAL_RCC_GetHCLKFreq:0000000000000000 $t
+     /tmp/cciriLq4.s:1088   .text.HAL_RCC_GetHCLKFreq:0000000000000000 HAL_RCC_GetHCLKFreq
+     /tmp/cciriLq4.s:1099   .text.HAL_RCC_GetHCLKFreq:0000000000000008 $d
+     /tmp/cciriLq4.s:1102   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 $t
+     /tmp/cciriLq4.s:1109   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 HAL_RCC_GetPCLK1Freq
+     /tmp/cciriLq4.s:1127   .text.HAL_RCC_GetPCLK1Freq:0000000000000014 $d
+     /tmp/cciriLq4.s:1132   .text.HAL_RCC_GetOscConfig:0000000000000000 $t
+     /tmp/cciriLq4.s:1139   .text.HAL_RCC_GetOscConfig:0000000000000000 HAL_RCC_GetOscConfig
+     /tmp/cciriLq4.s:1230   .text.HAL_RCC_GetOscConfig:000000000000009c $d
+     /tmp/cciriLq4.s:1233   .text.HAL_RCC_GetClockConfig:0000000000000000 $t
+     /tmp/cciriLq4.s:1240   .text.HAL_RCC_GetClockConfig:0000000000000000 HAL_RCC_GetClockConfig
+     /tmp/cciriLq4.s:1270   .text.HAL_RCC_GetClockConfig:0000000000000030 $d
+     /tmp/cciriLq4.s:1274   .text.HAL_RCC_CSSCallback:0000000000000000 $t
+     /tmp/cciriLq4.s:1281   .text.HAL_RCC_CSSCallback:0000000000000000 HAL_RCC_CSSCallback
+     /tmp/cciriLq4.s:1289   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 $t
+     /tmp/cciriLq4.s:1296   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 HAL_RCC_NMI_IRQHandler
+     /tmp/cciriLq4.s:1314   .text.HAL_RCC_NMI_IRQHandler:0000000000000018 $d
 
 UNDEFINED SYMBOLS
 SystemCoreClock

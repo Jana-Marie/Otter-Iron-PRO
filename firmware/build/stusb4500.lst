@@ -1,0 +1,240 @@
+ARM GAS  /tmp/cc0gsYbQ.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 4
+   9              		.eabi_attribute 34, 0
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stusb4500.c"
+  12              		.text
+  13              		.section	.text.stusb_read_rdo,"ax",%progbits
+  14              		.align	1
+  15              		.global	stusb_read_rdo
+  16              		.arch armv6s-m
+  17              		.syntax unified
+  18              		.code	16
+  19              		.thumb_func
+  20              		.fpu softvfp
+  22              	stusb_read_rdo:
+  23              		@ args = 0, pretend = 0, frame = 0
+  24              		@ frame_needed = 0, uses_anonymous_args = 0
+  25 0000 1FB5     		push	{r0, r1, r2, r3, r4, lr}
+  26 0002 FA23     		movs	r3, #250
+  27 0004 9B00     		lsls	r3, r3, #2
+  28 0006 0293     		str	r3, [sp, #8]
+  29 0008 0423     		movs	r3, #4
+  30 000a 0090     		str	r0, [sp]
+  31 000c 0193     		str	r3, [sp, #4]
+  32 000e 9122     		movs	r2, #145
+  33 0010 5021     		movs	r1, #80
+  34 0012 033B     		subs	r3, r3, #3
+  35 0014 0248     		ldr	r0, .L2
+  36 0016 FFF7FEFF 		bl	HAL_I2C_Mem_Read
+  37 001a 05B0     		add	sp, sp, #20
+  38              		@ sp needed
+  39 001c 00BD     		pop	{pc}
+  40              	.L3:
+  41 001e C046     		.align	2
+  42              	.L2:
+  43 0020 00000000 		.word	hi2c1
+  45              		.global	__aeabi_uidiv
+  46              		.section	.text.stusb_update_pdo,"ax",%progbits
+  47              		.align	1
+  48              		.global	stusb_update_pdo
+  49              		.syntax unified
+  50              		.code	16
+  51              		.thumb_func
+  52              		.fpu softvfp
+  54              	stusb_update_pdo:
+  55              		@ args = 0, pretend = 0, frame = 56
+  56              		@ frame_needed = 0, uses_anonymous_args = 0
+  57 0000 FA23     		movs	r3, #250
+  58 0002 F0B5     		push	{r4, r5, r6, r7, lr}
+  59 0004 9B00     		lsls	r3, r3, #2
+  60 0006 93B0     		sub	sp, sp, #76
+ARM GAS  /tmp/cc0gsYbQ.s 			page 2
+
+
+  61 0008 0293     		str	r3, [sp, #8]
+  62 000a 0C23     		movs	r3, #12
+  63 000c 2D4F     		ldr	r7, .L10
+  64 000e 08AC     		add	r4, sp, #32
+  65 0010 0590     		str	r0, [sp, #20]
+  66 0012 0691     		str	r1, [sp, #24]
+  67 0014 0792     		str	r2, [sp, #28]
+  68 0016 5021     		movs	r1, #80
+  69 0018 0193     		str	r3, [sp, #4]
+  70 001a 0094     		str	r4, [sp]
+  71 001c 0B3B     		subs	r3, r3, #11
+  72 001e 8522     		movs	r2, #133
+  73 0020 3800     		movs	r0, r7
+  74 0022 FFF7FEFF 		bl	HAL_I2C_Mem_Read
+  75 0026 2300     		movs	r3, r4
+  76 0028 274C     		ldr	r4, .L10+4
+  77 002a 0321     		movs	r1, #3
+  78 002c 2500     		movs	r5, r4
+  79              	.L5:
+  80 002e 5A78     		ldrb	r2, [r3, #1]
+  81 0030 1E78     		ldrb	r6, [r3]
+  82 0032 1202     		lsls	r2, r2, #8
+  83 0034 9219     		adds	r2, r2, r6
+  84 0036 9E78     		ldrb	r6, [r3, #2]
+  85 0038 0139     		subs	r1, r1, #1
+  86 003a 3604     		lsls	r6, r6, #16
+  87 003c 9219     		adds	r2, r2, r6
+  88 003e DE78     		ldrb	r6, [r3, #3]
+  89 0040 C9B2     		uxtb	r1, r1
+  90 0042 3606     		lsls	r6, r6, #24
+  91 0044 9219     		adds	r2, r2, r6
+  92 0046 2260     		str	r2, [r4]
+  93 0048 0433     		adds	r3, r3, #4
+  94 004a 0834     		adds	r4, r4, #8
+  95 004c 0029     		cmp	r1, #0
+  96 004e EED1     		bne	.L5
+  97 0050 059B     		ldr	r3, [sp, #20]
+  98 0052 5C1E     		subs	r4, r3, #1
+  99 0054 E3B2     		uxtb	r3, r4
+ 100 0056 022B     		cmp	r3, #2
+ 101 0058 25D8     		bhi	.L6
+ 102 005a 0798     		ldr	r0, [sp, #28]
+ 103 005c 0A31     		adds	r1, r1, #10
+ 104 005e FFF7FEFF 		bl	__aeabi_uidiv
+ 105 0062 E600     		lsls	r6, r4, #3
+ 106 0064 8005     		lsls	r0, r0, #22
+ 107 0066 830D     		lsrs	r3, r0, #22
+ 108 0068 A85B     		ldrh	r0, [r5, r6]
+ 109 006a 800A     		lsrs	r0, r0, #10
+ 110 006c 8002     		lsls	r0, r0, #10
+ 111 006e 1843     		orrs	r0, r3
+ 112 0070 059B     		ldr	r3, [sp, #20]
+ 113 0072 A853     		strh	r0, [r5, r6]
+ 114 0074 012B     		cmp	r3, #1
+ 115 0076 18D1     		bne	.L7
+ 116 0078 AD19     		adds	r5, r5, r6
+ 117 007a 2B68     		ldr	r3, [r5]
+ARM GAS  /tmp/cc0gsYbQ.s 			page 3
+
+
+ 118 007c 134A     		ldr	r2, .L10+8
+ 119 007e 1A40     		ands	r2, r3
+ 120 0080 134B     		ldr	r3, .L10+12
+ 121 0082 1343     		orrs	r3, r2
+ 122 0084 2B60     		str	r3, [r5]
+ 123              	.L8:
+ 124 0086 FA23     		movs	r3, #250
+ 125 0088 9B00     		lsls	r3, r3, #2
+ 126 008a 0293     		str	r3, [sp, #8]
+ 127 008c 0423     		movs	r3, #4
+ 128 008e 0193     		str	r3, [sp, #4]
+ 129 0090 0D4B     		ldr	r3, .L10+4
+ 130 0092 A200     		lsls	r2, r4, #2
+ 131 0094 9E19     		adds	r6, r3, r6
+ 132 0096 8532     		adds	r2, r2, #133
+ 133 0098 0123     		movs	r3, #1
+ 134 009a 5021     		movs	r1, #80
+ 135 009c 3800     		movs	r0, r7
+ 136 009e 92B2     		uxth	r2, r2
+ 137 00a0 0096     		str	r6, [sp]
+ 138 00a2 FFF7FEFF 		bl	HAL_I2C_Mem_Write
+ 139              	.L6:
+ 140 00a6 13B0     		add	sp, sp, #76
+ 141              		@ sp needed
+ 142 00a8 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 143              	.L7:
+ 144 00aa 0698     		ldr	r0, [sp, #24]
+ 145 00ac 3221     		movs	r1, #50
+ 146 00ae FFF7FEFF 		bl	__aeabi_uidiv
+ 147 00b2 8005     		lsls	r0, r0, #22
+ 148 00b4 AA59     		ldr	r2, [r5, r6]
+ 149 00b6 030B     		lsrs	r3, r0, #12
+ 150 00b8 0648     		ldr	r0, .L10+16
+ 151 00ba 1040     		ands	r0, r2
+ 152 00bc 1843     		orrs	r0, r3
+ 153 00be A851     		str	r0, [r5, r6]
+ 154 00c0 E1E7     		b	.L8
+ 155              	.L11:
+ 156 00c2 C046     		.align	2
+ 157              	.L10:
+ 158 00c4 00000000 		.word	hi2c1
+ 159 00c8 00000000 		.word	.LANCHOR0
+ 160 00cc FF03F0F7 		.word	-135265281
+ 161 00d0 00900108 		.word	134320128
+ 162 00d4 FF03F0FF 		.word	-1047553
+ 164              		.section	.text.stusb_set_valid_pdo,"ax",%progbits
+ 165              		.align	1
+ 166              		.global	stusb_set_valid_pdo
+ 167              		.syntax unified
+ 168              		.code	16
+ 169              		.thumb_func
+ 170              		.fpu softvfp
+ 172              	stusb_set_valid_pdo:
+ 173              		@ args = 0, pretend = 0, frame = 8
+ 174              		@ frame_needed = 0, uses_anonymous_args = 0
+ 175 0000 7FB5     		push	{r0, r1, r2, r3, r4, r5, r6, lr}
+ 176 0002 1722     		movs	r2, #23
+ARM GAS  /tmp/cc0gsYbQ.s 			page 4
+
+
+ 177 0004 6A44     		add	r2, r2, sp
+ 178 0006 0300     		movs	r3, r0
+ 179 0008 1070     		strb	r0, [r2]
+ 180 000a FF20     		movs	r0, #255
+ 181 000c 032B     		cmp	r3, #3
+ 182 000e 0AD8     		bhi	.L13
+ 183 0010 FA23     		movs	r3, #250
+ 184 0012 9B00     		lsls	r3, r3, #2
+ 185 0014 0293     		str	r3, [sp, #8]
+ 186 0016 0123     		movs	r3, #1
+ 187 0018 0092     		str	r2, [sp]
+ 188 001a 5021     		movs	r1, #80
+ 189 001c 7022     		movs	r2, #112
+ 190 001e 0348     		ldr	r0, .L15
+ 191 0020 0193     		str	r3, [sp, #4]
+ 192 0022 FFF7FEFF 		bl	HAL_I2C_Mem_Write
+ 193              	.L13:
+ 194 0026 07B0     		add	sp, sp, #28
+ 195              		@ sp needed
+ 196 0028 00BD     		pop	{pc}
+ 197              	.L16:
+ 198 002a C046     		.align	2
+ 199              	.L15:
+ 200 002c 00000000 		.word	hi2c1
+ 202              		.global	pdo_profile
+ 203              		.section	.bss.pdo_profile,"aw",%nobits
+ 204              		.align	2
+ 205              		.set	.LANCHOR0,. + 0
+ 208              	pdo_profile:
+ 209 0000 00000000 		.space	24
+ 209      00000000 
+ 209      00000000 
+ 209      00000000 
+ 209      00000000 
+ 210              		.ident	"GCC: (Arch Repository) 10.1.0"
+ARM GAS  /tmp/cc0gsYbQ.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stusb4500.c
+     /tmp/cc0gsYbQ.s:14     .text.stusb_read_rdo:0000000000000000 $t
+     /tmp/cc0gsYbQ.s:22     .text.stusb_read_rdo:0000000000000000 stusb_read_rdo
+     /tmp/cc0gsYbQ.s:43     .text.stusb_read_rdo:0000000000000020 $d
+     /tmp/cc0gsYbQ.s:47     .text.stusb_update_pdo:0000000000000000 $t
+     /tmp/cc0gsYbQ.s:54     .text.stusb_update_pdo:0000000000000000 stusb_update_pdo
+     /tmp/cc0gsYbQ.s:158    .text.stusb_update_pdo:00000000000000c4 $d
+     /tmp/cc0gsYbQ.s:165    .text.stusb_set_valid_pdo:0000000000000000 $t
+     /tmp/cc0gsYbQ.s:172    .text.stusb_set_valid_pdo:0000000000000000 stusb_set_valid_pdo
+     /tmp/cc0gsYbQ.s:200    .text.stusb_set_valid_pdo:000000000000002c $d
+     /tmp/cc0gsYbQ.s:208    .bss.pdo_profile:0000000000000000 pdo_profile
+     /tmp/cc0gsYbQ.s:204    .bss.pdo_profile:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_I2C_Mem_Read
+hi2c1
+__aeabi_uidiv
+HAL_I2C_Mem_Write

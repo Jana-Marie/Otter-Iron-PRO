@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccxThxgj.s 			page 1
+ARM GAS  /tmp/ccruzXKf.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccxThxgj.s 			page 1
   59              		.align	1
   60              		.syntax unified
   61              		.code	16
-ARM GAS  /tmp/ccxThxgj.s 			page 2
+ARM GAS  /tmp/ccruzXKf.s 			page 2
 
 
   62              		.thumb_func
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccxThxgj.s 			page 1
  119 0024 0422     		movs	r2, #4
  120 0026 2800     		movs	r0, r5
  121 0028 1231     		adds	r1, r1, #18
-ARM GAS  /tmp/ccxThxgj.s 			page 3
+ARM GAS  /tmp/ccruzXKf.s 			page 3
 
 
  122 002a FFF7FEFF 		bl	IntToUnicode
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccxThxgj.s 			page 1
  176              		@ args = 0, pretend = 0, frame = 0
  177              		@ frame_needed = 0, uses_anonymous_args = 0
  178 0000 10B5     		push	{r4, lr}
-ARM GAS  /tmp/ccxThxgj.s 			page 4
+ARM GAS  /tmp/ccruzXKf.s 			page 4
 
 
  179 0002 044C     		ldr	r4, .L24
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccxThxgj.s 			page 1
  237 0002 044C     		ldr	r4, .L30
  238 0004 0A00     		movs	r2, r1
  239              		@ sp needed
-ARM GAS  /tmp/ccxThxgj.s 			page 5
+ARM GAS  /tmp/ccruzXKf.s 			page 5
 
 
  240 0006 2100     		movs	r1, r4
@@ -295,42 +295,42 @@ ARM GAS  /tmp/ccxThxgj.s 			page 1
  291      000201
  292 000f 020301   		.ascii	"\002\003\001"
  293              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccxThxgj.s 			page 6
+ARM GAS  /tmp/ccruzXKf.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_desc.c
-     /tmp/ccxThxgj.s:14     .text.USBD_VCP_DeviceDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:22     .text.USBD_VCP_DeviceDescriptor:0000000000000000 USBD_VCP_DeviceDescriptor
-     /tmp/ccxThxgj.s:34     .text.USBD_VCP_DeviceDescriptor:0000000000000008 $d
-     /tmp/ccxThxgj.s:37     .text.USBD_VCP_LangIDStrDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:44     .text.USBD_VCP_LangIDStrDescriptor:0000000000000000 USBD_VCP_LangIDStrDescriptor
-     /tmp/ccxThxgj.s:56     .text.USBD_VCP_LangIDStrDescriptor:0000000000000008 $d
-     /tmp/ccxThxgj.s:59     .text.IntToUnicode:0000000000000000 $t
-     /tmp/ccxThxgj.s:65     .text.IntToUnicode:0000000000000000 IntToUnicode
-     /tmp/ccxThxgj.s:92     .text.USBD_VCP_SerialStrDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:99     .text.USBD_VCP_SerialStrDescriptor:0000000000000000 USBD_VCP_SerialStrDescriptor
-     /tmp/ccxThxgj.s:130    .text.USBD_VCP_SerialStrDescriptor:0000000000000034 $d
-     /tmp/ccxThxgj.s:139    .text.USBD_VCP_ProductStrDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:146    .text.USBD_VCP_ProductStrDescriptor:0000000000000000 USBD_VCP_ProductStrDescriptor
-     /tmp/ccxThxgj.s:161    .text.USBD_VCP_ProductStrDescriptor:0000000000000014 $d
-     /tmp/ccxThxgj.s:259    .bss.USBD_StrDesc:0000000000000000 USBD_StrDesc
-     /tmp/ccxThxgj.s:168    .text.USBD_VCP_ManufacturerStrDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:175    .text.USBD_VCP_ManufacturerStrDescriptor:0000000000000000 USBD_VCP_ManufacturerStrDescriptor
-     /tmp/ccxThxgj.s:190    .text.USBD_VCP_ManufacturerStrDescriptor:0000000000000014 $d
-     /tmp/ccxThxgj.s:197    .text.USBD_VCP_ConfigStrDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:204    .text.USBD_VCP_ConfigStrDescriptor:0000000000000000 USBD_VCP_ConfigStrDescriptor
-     /tmp/ccxThxgj.s:219    .text.USBD_VCP_ConfigStrDescriptor:0000000000000014 $d
-     /tmp/ccxThxgj.s:226    .text.USBD_VCP_InterfaceStrDescriptor:0000000000000000 $t
-     /tmp/ccxThxgj.s:233    .text.USBD_VCP_InterfaceStrDescriptor:0000000000000000 USBD_VCP_InterfaceStrDescriptor
-     /tmp/ccxThxgj.s:248    .text.USBD_VCP_InterfaceStrDescriptor:0000000000000014 $d
-     /tmp/ccxThxgj.s:265    .data.USBD_StringSerial:0000000000000000 USBD_StringSerial
-     /tmp/ccxThxgj.s:284    .rodata.USBD_LangIDDesc:0000000000000000 USBD_LangIDDesc
-     /tmp/ccxThxgj.s:290    .rodata.hUSBDDeviceDesc:0000000000000000 hUSBDDeviceDesc
-     /tmp/ccxThxgj.s:272    .data.VCP_Desc:0000000000000000 VCP_Desc
-     /tmp/ccxThxgj.s:260    .bss.USBD_StrDesc:0000000000000000 $d
-     /tmp/ccxThxgj.s:267    .data.USBD_StringSerial:0000000000000003 $d
-     /tmp/ccxThxgj.s:269    .data.VCP_Desc:0000000000000000 $d
+     /tmp/ccruzXKf.s:14     .text.USBD_VCP_DeviceDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:22     .text.USBD_VCP_DeviceDescriptor:0000000000000000 USBD_VCP_DeviceDescriptor
+     /tmp/ccruzXKf.s:34     .text.USBD_VCP_DeviceDescriptor:0000000000000008 $d
+     /tmp/ccruzXKf.s:37     .text.USBD_VCP_LangIDStrDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:44     .text.USBD_VCP_LangIDStrDescriptor:0000000000000000 USBD_VCP_LangIDStrDescriptor
+     /tmp/ccruzXKf.s:56     .text.USBD_VCP_LangIDStrDescriptor:0000000000000008 $d
+     /tmp/ccruzXKf.s:59     .text.IntToUnicode:0000000000000000 $t
+     /tmp/ccruzXKf.s:65     .text.IntToUnicode:0000000000000000 IntToUnicode
+     /tmp/ccruzXKf.s:92     .text.USBD_VCP_SerialStrDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:99     .text.USBD_VCP_SerialStrDescriptor:0000000000000000 USBD_VCP_SerialStrDescriptor
+     /tmp/ccruzXKf.s:130    .text.USBD_VCP_SerialStrDescriptor:0000000000000034 $d
+     /tmp/ccruzXKf.s:139    .text.USBD_VCP_ProductStrDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:146    .text.USBD_VCP_ProductStrDescriptor:0000000000000000 USBD_VCP_ProductStrDescriptor
+     /tmp/ccruzXKf.s:161    .text.USBD_VCP_ProductStrDescriptor:0000000000000014 $d
+     /tmp/ccruzXKf.s:259    .bss.USBD_StrDesc:0000000000000000 USBD_StrDesc
+     /tmp/ccruzXKf.s:168    .text.USBD_VCP_ManufacturerStrDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:175    .text.USBD_VCP_ManufacturerStrDescriptor:0000000000000000 USBD_VCP_ManufacturerStrDescriptor
+     /tmp/ccruzXKf.s:190    .text.USBD_VCP_ManufacturerStrDescriptor:0000000000000014 $d
+     /tmp/ccruzXKf.s:197    .text.USBD_VCP_ConfigStrDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:204    .text.USBD_VCP_ConfigStrDescriptor:0000000000000000 USBD_VCP_ConfigStrDescriptor
+     /tmp/ccruzXKf.s:219    .text.USBD_VCP_ConfigStrDescriptor:0000000000000014 $d
+     /tmp/ccruzXKf.s:226    .text.USBD_VCP_InterfaceStrDescriptor:0000000000000000 $t
+     /tmp/ccruzXKf.s:233    .text.USBD_VCP_InterfaceStrDescriptor:0000000000000000 USBD_VCP_InterfaceStrDescriptor
+     /tmp/ccruzXKf.s:248    .text.USBD_VCP_InterfaceStrDescriptor:0000000000000014 $d
+     /tmp/ccruzXKf.s:265    .data.USBD_StringSerial:0000000000000000 USBD_StringSerial
+     /tmp/ccruzXKf.s:284    .rodata.USBD_LangIDDesc:0000000000000000 USBD_LangIDDesc
+     /tmp/ccruzXKf.s:290    .rodata.hUSBDDeviceDesc:0000000000000000 hUSBDDeviceDesc
+     /tmp/ccruzXKf.s:272    .data.VCP_Desc:0000000000000000 VCP_Desc
+     /tmp/ccruzXKf.s:260    .bss.USBD_StrDesc:0000000000000000 $d
+     /tmp/ccruzXKf.s:267    .data.USBD_StringSerial:0000000000000003 $d
+     /tmp/ccruzXKf.s:269    .data.VCP_Desc:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 USBD_GetString

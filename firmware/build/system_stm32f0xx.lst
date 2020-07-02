@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccJWmyY9.s 			page 1
+ARM GAS  /tmp/cc6PHMPj.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccJWmyY9.s 			page 1
   56 0030 1A60     		str	r2, [r3]
   57 0032 5A68     		ldr	r2, [r3, #4]
   58              		@ sp needed
-ARM GAS  /tmp/ccJWmyY9.s 			page 2
+ARM GAS  /tmp/cc6PHMPj.s 			page 2
 
 
   59 0034 0240     		ands	r2, r0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccJWmyY9.s 			page 1
  115              		@ frame_needed = 0, uses_anonymous_args = 0
  116 0000 0C22     		movs	r2, #12
  117 0002 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  /tmp/ccJWmyY9.s 			page 3
+ARM GAS  /tmp/cc6PHMPj.s 			page 3
 
 
  118 0004 154E     		ldr	r6, .L12
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccJWmyY9.s 			page 1
  172 0068 00000000 		.word	.LANCHOR2
  173 006c 006CDC02 		.word	48000000
  175              		.global	SysMemBootJump
-ARM GAS  /tmp/ccJWmyY9.s 			page 4
+ARM GAS  /tmp/cc6PHMPj.s 			page 4
 
 
  176              		.global	APBPrescTable
@@ -207,23 +207,23 @@ ARM GAS  /tmp/ccJWmyY9.s 			page 1
  204 0000 00000000 		.ascii	"\000\000\000\000\001\002\003\004"
  204      01020304 
  205              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccJWmyY9.s 			page 5
+ARM GAS  /tmp/cc6PHMPj.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 system_stm32f0xx.c
-     /tmp/ccJWmyY9.s:14     .text.SystemInit:0000000000000000 $t
-     /tmp/ccJWmyY9.s:22     .text.SystemInit:0000000000000000 SystemInit
-     /tmp/ccJWmyY9.s:90     .text.SystemInit:000000000000006c $d
-     /tmp/ccJWmyY9.s:106    .text.SystemCoreClockUpdate:0000000000000000 $t
-     /tmp/ccJWmyY9.s:113    .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
-     /tmp/ccJWmyY9.s:169    .text.SystemCoreClockUpdate:000000000000005c $d
-     /tmp/ccJWmyY9.s:184    .bss.SysMemBootJump:0000000000000000 SysMemBootJump
-     /tmp/ccJWmyY9.s:203    .rodata.APBPrescTable:0000000000000000 APBPrescTable
-     /tmp/ccJWmyY9.s:197    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
-     /tmp/ccJWmyY9.s:191    .data.SystemCoreClock:0000000000000000 SystemCoreClock
-     /tmp/ccJWmyY9.s:180    .bss.SysMemBootJump:0000000000000000 $d
-     /tmp/ccJWmyY9.s:187    .data.SystemCoreClock:0000000000000000 $d
+     /tmp/cc6PHMPj.s:14     .text.SystemInit:0000000000000000 $t
+     /tmp/cc6PHMPj.s:22     .text.SystemInit:0000000000000000 SystemInit
+     /tmp/cc6PHMPj.s:90     .text.SystemInit:000000000000006c $d
+     /tmp/cc6PHMPj.s:106    .text.SystemCoreClockUpdate:0000000000000000 $t
+     /tmp/cc6PHMPj.s:113    .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
+     /tmp/cc6PHMPj.s:169    .text.SystemCoreClockUpdate:000000000000005c $d
+     /tmp/cc6PHMPj.s:184    .bss.SysMemBootJump:0000000000000000 SysMemBootJump
+     /tmp/cc6PHMPj.s:203    .rodata.APBPrescTable:0000000000000000 APBPrescTable
+     /tmp/cc6PHMPj.s:197    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
+     /tmp/cc6PHMPj.s:191    .data.SystemCoreClock:0000000000000000 SystemCoreClock
+     /tmp/cc6PHMPj.s:180    .bss.SysMemBootJump:0000000000000000 $d
+     /tmp/cc6PHMPj.s:187    .data.SystemCoreClock:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv

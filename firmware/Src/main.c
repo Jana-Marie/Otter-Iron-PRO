@@ -41,7 +41,7 @@
 
 #define MIN_VOLTAGE 15.0f
 #define MIN_CURRENT 1.0f
-uint16_t wduty = 200;
+uint16_t wduty = 800;
 
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
@@ -74,9 +74,6 @@ void draw_char(unsigned char  c, uint8_t x, uint8_t y, uint8_t brightness);
 void draw_string(const unsigned char * str, uint8_t x, uint8_t y, uint8_t brightness);
 void draw_v_line(int16_t x, int16_t y, uint16_t h, uint8_t color);
 void USB_printfloat(float _buf);
-void read_stusb_rdo(void);
-HAL_StatusTypeDef update_pdo(uint8_t pdo_number, uint16_t voltage_mv, uint16_t current_ma);
-HAL_StatusTypeDef set_valid_pdo(uint8_t valid_count);
 
 struct status_t{
   float ttip;
@@ -119,9 +116,6 @@ static uint16_t ADC_raw[4];
 extern uint8_t UserTxBuffer[APP_TX_DATA_SIZE];/* Received Data over UART (CDC interface) are stored in this buffer */
 uint32_t sendDataUSB;
 
-STUSB_GEN1S_RDO_REG_STATUS_RegTypeDef Nego_RDO;
-USB_PD_SNK_PDO_TypeDef pdo_profile[3];
-
 const unsigned char* dfu_string = (unsigned char*) "dfudfudfudfudfu";
 const unsigned char* otter_string = (unsigned char*) "Otter-Iron";
 const unsigned char* by_string = (unsigned char*) "by Jan Henrik";
@@ -140,11 +134,11 @@ int main(void)
   TIM3_Init();
 
   // setup STUSB4500 PD requests before starting controller IT
-  update_pdo(1, 5000, 500); // allows comms on standard 5 V
+  stusb_update_pdo(1, 5000, 500); // allows comms on standard 5 V
   // 30 W and 80 W - ensures iron is well behaved and enumerates PD profile before drawing it
-  update_pdo(2, 20000, 1500);
-  update_pdo(3, 20000, 4000);
-  set_valid_pdo(3);
+  stusb_update_pdo(2, 20000, 1500);
+  stusb_update_pdo(3, 20000, 4000);
+  stusb_set_valid_pdo(3);
 
   // now display
   HAL_Delay(400);
@@ -184,8 +178,14 @@ int main(void)
 #ifdef CHECKUSBPD
     unsigned char line1[22];
     unsigned char line2[22];
+    STUSB_GEN1S_RDO_REG_STATUS_RegTypeDef Nego_RDO;
 
-    read_stusb_rdo();
+    if (stusb_read_rdo(&Nego_RDO) == HAL_OK) {
+      s.imax = (float) Nego_RDO.b.MaxCurrent / 100.0;
+      s.pdo = Nego_RDO.b.Object_Pos;
+    } else {
+      s.pdo = 0;
+    }
 
     if (s.pdo > 0) {
       sprintf((char * restrict) line1, "PD %s %1d", s.pdo > 3 ? "Adjust" : "Profile", s.pdo);
@@ -336,7 +336,7 @@ void reg(void) {
         r.error = 0.0;
         r.ierror = 0.0;
         r.derror = 0.0;
-        wduty = 150;
+        wduty = 800;
         s.active = 0;
       } else {
         count++;
@@ -417,58 +417,6 @@ uint8_t OLED_Setup_Array[] = {
 0x80, 0x20, /*Memory Mode*/
 0x80, 0x00 /*Wrap memory*/
 };
-
-void read_stusb_rdo(void) {
-  HAL_StatusTypeDef ret;
-  ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), (uint16_t) RDO_REG_STATUS, I2C_MEMADD_SIZE_8BIT, (uint8_t *) &Nego_RDO, 4, 1000);
-
-  if (ret == 0) {
-    s.imax = (float) Nego_RDO.b.MaxCurrent / 100.0;
-    s.pdo = Nego_RDO.b.Object_Pos;
-  } else {
-    s.imax = 0.0;
-    s.pdo = 0;
-  }
-}
-
-HAL_StatusTypeDef update_pdo(uint8_t pdo_number, uint16_t voltage_mv, uint16_t current_ma) {
-  HAL_StatusTypeDef ret;
-  uint16_t addr;
-  uint8_t data[40];
-  uint8_t i, j = 0;
-
-  // get existing
-  addr = DPM_SNK_PDO1;
-  ret = HAL_I2C_Mem_Read(&hi2c1, (0x28 << 1), addr, I2C_MEMADD_SIZE_8BIT, data, 12, 1000);
-  for (i = 0 ; i < 3 ; i++) { pdo_profile[i].d32 = (uint32_t) (data[j] +(data[j+1]<<8)+(data[j+2]<<16)+(data[j+3]<<24));
-    j += 4;
-  }
-
-  // update
-  if ((pdo_number == 1) || (pdo_number == 2) || (pdo_number == 3)) {
-    pdo_profile[pdo_number - 1].fix.Operationnal_Current = current_ma / 10;
-    if (pdo_number == 1) {
-      //force 5V for PDO_1 to follow the USB PD spec
-      pdo_profile[pdo_number - 1].fix.Voltage = 100; // 5000/50=100
-      pdo_profile[pdo_number - 1].fix.USB_Communications_Capable = 1;
-    } else {
-      pdo_profile[pdo_number - 1].fix.Voltage = voltage_mv / 50;
-    }
-
-    addr = DPM_SNK_PDO1 + (4 * (pdo_number - 1));
-    ret = HAL_I2C_Mem_Write(&hi2c1, (0x28 << 1), addr, I2C_MEMADD_SIZE_8BIT, (uint8_t *) &pdo_profile[pdo_number - 1].d32, 4, 1000);
-  }
-
-  return ret;
-}
-
-HAL_StatusTypeDef set_valid_pdo(uint8_t valid_count) {
-  HAL_StatusTypeDef ret = -1;
-  if (valid_count <= 3) {
-    ret = HAL_I2C_Mem_Write(&hi2c1, (0x28 << 1), DPM_PDO_NUMB, I2C_MEMADD_SIZE_8BIT, &valid_count, 1, 10);
-  }
-  return ret;
-}
 
 void disp_on(void) {
   uint8_t power_on[] = {

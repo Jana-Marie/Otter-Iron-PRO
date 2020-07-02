@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccu5VODt.s 			page 1
+ARM GAS  /tmp/ccqIdrKp.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
   58 0002 034A     		ldr	r2, .L5
   59 0004 5B00     		lsls	r3, r3, #1
   60 0006 1168     		ldr	r1, [r2]
-ARM GAS  /tmp/ccu5VODt.s 			page 2
+ARM GAS  /tmp/ccqIdrKp.s 			page 2
 
 
   61 0008 0B43     		orrs	r3, r1
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
  120              		.syntax unified
  121              		.code	16
  122              		.thumb_func
-ARM GAS  /tmp/ccu5VODt.s 			page 3
+ARM GAS  /tmp/ccqIdrKp.s 			page 3
 
 
  123              		.fpu softvfp
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
  180              		.syntax unified
  181 0018 FAE7     		b	.L16
  182              	.L20:
-ARM GAS  /tmp/ccu5VODt.s 			page 4
+ARM GAS  /tmp/ccqIdrKp.s 			page 4
 
 
  183 001a C046     		.align	2
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
  239              	.L25:
  240              		.align	2
  241              	.L24:
-ARM GAS  /tmp/ccu5VODt.s 			page 5
+ARM GAS  /tmp/ccqIdrKp.s 			page 5
 
 
  242 0030 00700040 		.word	1073770496
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
  300              	.L31:
  301              		.align	2
  302              	.L30:
-ARM GAS  /tmp/ccu5VODt.s 			page 6
+ARM GAS  /tmp/ccqIdrKp.s 			page 6
 
 
  303 000c 00ED00E0 		.word	-536810240
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
  363              		@ frame_needed = 0, uses_anonymous_args = 0
  364              		@ link register save eliminated.
  365 0000 1021     		movs	r1, #16
-ARM GAS  /tmp/ccu5VODt.s 			page 7
+ARM GAS  /tmp/ccqIdrKp.s 			page 7
 
 
  366              		@ sp needed
@@ -372,46 +372,46 @@ ARM GAS  /tmp/ccu5VODt.s 			page 1
  374              	.L39:
  375 000c 00ED00E0 		.word	-536810240
  377              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccu5VODt.s 			page 8
+ARM GAS  /tmp/ccqIdrKp.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_pwr.c
-     /tmp/ccu5VODt.s:14     .text.HAL_PWR_DeInit:0000000000000000 $t
-     /tmp/ccu5VODt.s:22     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
-     /tmp/ccu5VODt.s:41     .text.HAL_PWR_DeInit:0000000000000018 $d
-     /tmp/ccu5VODt.s:45     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
-     /tmp/ccu5VODt.s:52     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
-     /tmp/ccu5VODt.s:67     .text.HAL_PWR_EnableBkUpAccess:0000000000000010 $d
-     /tmp/ccu5VODt.s:70     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
-     /tmp/ccu5VODt.s:77     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
-     /tmp/ccu5VODt.s:91     .text.HAL_PWR_DisableBkUpAccess:000000000000000c $d
-     /tmp/ccu5VODt.s:95     .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
-     /tmp/ccu5VODt.s:102    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
-     /tmp/ccu5VODt.s:115    .text.HAL_PWR_EnableWakeUpPin:000000000000000c $d
-     /tmp/ccu5VODt.s:118    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
-     /tmp/ccu5VODt.s:125    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
-     /tmp/ccu5VODt.s:138    .text.HAL_PWR_DisableWakeUpPin:000000000000000c $d
-     /tmp/ccu5VODt.s:141    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
-     /tmp/ccu5VODt.s:148    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
-     /tmp/ccu5VODt.s:185    .text.HAL_PWR_EnterSLEEPMode:000000000000001c $d
-     /tmp/ccu5VODt.s:188    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
-     /tmp/ccu5VODt.s:195    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
-     /tmp/ccu5VODt.s:242    .text.HAL_PWR_EnterSTOPMode:0000000000000030 $d
-     /tmp/ccu5VODt.s:246    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
-     /tmp/ccu5VODt.s:253    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
-     /tmp/ccu5VODt.s:278    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
-     /tmp/ccu5VODt.s:282    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
-     /tmp/ccu5VODt.s:289    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
-     /tmp/ccu5VODt.s:303    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
-     /tmp/ccu5VODt.s:306    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
-     /tmp/ccu5VODt.s:313    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
-     /tmp/ccu5VODt.s:327    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
-     /tmp/ccu5VODt.s:330    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
-     /tmp/ccu5VODt.s:337    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
-     /tmp/ccu5VODt.s:351    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
-     /tmp/ccu5VODt.s:354    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
-     /tmp/ccu5VODt.s:361    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
-     /tmp/ccu5VODt.s:375    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
+     /tmp/ccqIdrKp.s:14     .text.HAL_PWR_DeInit:0000000000000000 $t
+     /tmp/ccqIdrKp.s:22     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
+     /tmp/ccqIdrKp.s:41     .text.HAL_PWR_DeInit:0000000000000018 $d
+     /tmp/ccqIdrKp.s:45     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
+     /tmp/ccqIdrKp.s:52     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
+     /tmp/ccqIdrKp.s:67     .text.HAL_PWR_EnableBkUpAccess:0000000000000010 $d
+     /tmp/ccqIdrKp.s:70     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
+     /tmp/ccqIdrKp.s:77     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
+     /tmp/ccqIdrKp.s:91     .text.HAL_PWR_DisableBkUpAccess:000000000000000c $d
+     /tmp/ccqIdrKp.s:95     .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
+     /tmp/ccqIdrKp.s:102    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
+     /tmp/ccqIdrKp.s:115    .text.HAL_PWR_EnableWakeUpPin:000000000000000c $d
+     /tmp/ccqIdrKp.s:118    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
+     /tmp/ccqIdrKp.s:125    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
+     /tmp/ccqIdrKp.s:138    .text.HAL_PWR_DisableWakeUpPin:000000000000000c $d
+     /tmp/ccqIdrKp.s:141    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
+     /tmp/ccqIdrKp.s:148    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
+     /tmp/ccqIdrKp.s:185    .text.HAL_PWR_EnterSLEEPMode:000000000000001c $d
+     /tmp/ccqIdrKp.s:188    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
+     /tmp/ccqIdrKp.s:195    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
+     /tmp/ccqIdrKp.s:242    .text.HAL_PWR_EnterSTOPMode:0000000000000030 $d
+     /tmp/ccqIdrKp.s:246    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
+     /tmp/ccqIdrKp.s:253    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
+     /tmp/ccqIdrKp.s:278    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
+     /tmp/ccqIdrKp.s:282    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
+     /tmp/ccqIdrKp.s:289    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
+     /tmp/ccqIdrKp.s:303    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
+     /tmp/ccqIdrKp.s:306    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
+     /tmp/ccqIdrKp.s:313    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
+     /tmp/ccqIdrKp.s:327    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
+     /tmp/ccqIdrKp.s:330    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
+     /tmp/ccqIdrKp.s:337    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
+     /tmp/ccqIdrKp.s:351    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
+     /tmp/ccqIdrKp.s:354    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
+     /tmp/ccqIdrKp.s:361    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
+     /tmp/ccqIdrKp.s:375    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
 
 NO UNDEFINED SYMBOLS

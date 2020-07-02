@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccZLK2zo.s 			page 1
+ARM GAS  /tmp/ccSlPOFo.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
   60              	HAL_TIMEx_HallSensor_Init:
   61              		@ args = 0, pretend = 0, frame = 40
   62              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccZLK2zo.s 			page 2
+ARM GAS  /tmp/ccSlPOFo.s 			page 2
 
 
   63 0000 F0B5     		push	{r4, r5, r6, r7, lr}
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  117 0070 0722     		movs	r2, #7
  118 0072 8360     		str	r3, [r0, #8]
  119 0074 8368     		ldr	r3, [r0, #8]
-ARM GAS  /tmp/ccZLK2zo.s 			page 3
+ARM GAS  /tmp/ccSlPOFo.s 			page 3
 
 
  120 0076 9343     		bics	r3, r2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  178 0000 70B5     		push	{r4, r5, r6, lr}
  179 0002 0500     		movs	r5, r0
  180 0004 0223     		movs	r3, #2
-ARM GAS  /tmp/ccZLK2zo.s 			page 4
+ARM GAS  /tmp/ccSlPOFo.s 			page 4
 
 
  181 0006 3D35     		adds	r5, r5, #61
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  238              		.section	.text.HAL_TIMEx_HallSensor_Stop,"ax",%progbits
  239              		.align	1
  240              		.global	HAL_TIMEx_HallSensor_Stop
-ARM GAS  /tmp/ccZLK2zo.s 			page 5
+ARM GAS  /tmp/ccSlPOFo.s 			page 5
 
 
  241              		.syntax unified
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  298 0010 0122     		movs	r2, #1
  299 0012 FFF7FEFF 		bl	TIM_CCxChannelCmd
  300 0016 0123     		movs	r3, #1
-ARM GAS  /tmp/ccZLK2zo.s 			page 6
+ARM GAS  /tmp/ccSlPOFo.s 			page 6
 
 
  301 0018 2268     		ldr	r2, [r4]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  358              		.fpu softvfp
  360              	HAL_TIMEx_HallSensor_Start_DMA:
  361              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccZLK2zo.s 			page 7
+ARM GAS  /tmp/ccSlPOFo.s 			page 7
 
 
  362              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  416 0060 00000000 		.word	TIM_DMACaptureCplt
  417 0064 00000000 		.word	TIM_DMAError
  419              		.section	.text.HAL_TIMEx_HallSensor_Stop_DMA,"ax",%progbits
-ARM GAS  /tmp/ccZLK2zo.s 			page 8
+ARM GAS  /tmp/ccSlPOFo.s 			page 8
 
 
  420              		.align	1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  477              		@ sp needed
  478 0004 0422     		movs	r2, #4
  479 0006 0068     		ldr	r0, [r0]
-ARM GAS  /tmp/ccZLK2zo.s 			page 9
+ARM GAS  /tmp/ccSlPOFo.s 			page 9
 
 
  480 0008 FFF7FEFF 		bl	TIM_CCxNChannelCmd
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  536 003c 0020     		movs	r0, #0
  537              		@ sp needed
  538 003e 10BD     		pop	{r4, pc}
-ARM GAS  /tmp/ccZLK2zo.s 			page 10
+ARM GAS  /tmp/ccSlPOFo.s 			page 10
 
 
  539              	.L40:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  595 0046 C268     		ldr	r2, [r0, #12]
  596              	.L48:
  597 0048 1343     		orrs	r3, r2
-ARM GAS  /tmp/ccZLK2zo.s 			page 11
+ARM GAS  /tmp/ccSlPOFo.s 			page 11
 
 
  598 004a 01E0     		b	.L49
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  654 0046 06D1     		bne	.L59
  655 0048 196A     		ldr	r1, [r3, #32]
  656 004a 1142     		tst	r1, r2
-ARM GAS  /tmp/ccZLK2zo.s 			page 12
+ARM GAS  /tmp/ccSlPOFo.s 			page 12
 
 
  657 004c 03D1     		bne	.L59
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  713 0016 F0B2     		uxtb	r0, r6
  714 0018 012E     		cmp	r6, #1
  715 001a 05D1     		bne	.L66
-ARM GAS  /tmp/ccZLK2zo.s 			page 13
+ARM GAS  /tmp/ccSlPOFo.s 			page 13
 
 
  716 001c 0029     		cmp	r1, #0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  770 007e 8662     		str	r6, [r0, #40]
  771 0080 134E     		ldr	r6, .L78+4
  772 0082 0663     		str	r6, [r0, #48]
-ARM GAS  /tmp/ccZLK2zo.s 			page 14
+ARM GAS  /tmp/ccSlPOFo.s 			page 14
 
 
  773 0084 FFF7FEFF 		bl	HAL_DMA_Start_IT
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  829 0008 31D0     		beq	.L81
  830 000a 23D8     		bhi	.L82
  831 000c 0029     		cmp	r1, #0
-ARM GAS  /tmp/ccZLK2zo.s 			page 15
+ARM GAS  /tmp/ccSlPOFo.s 			page 15
 
 
  832 000e 26D0     		beq	.L83
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  886 006c F9E7     		b	.L89
  887              	.L81:
  888 006e C368     		ldr	r3, [r0, #12]
-ARM GAS  /tmp/ccZLK2zo.s 			page 16
+ARM GAS  /tmp/ccSlPOFo.s 			page 16
 
 
  889 0070 064A     		ldr	r2, .L90+24
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  950              		.section	.text.HAL_TIMEx_PWMN_Stop_IT,"ax",%progbits
  951              		.align	1
  952              		.global	HAL_TIMEx_PWMN_Stop_IT
-ARM GAS  /tmp/ccZLK2zo.s 			page 17
+ARM GAS  /tmp/ccSlPOFo.s 			page 17
 
 
  953              		.syntax unified
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1014 0008 FFF7FEFF 		bl	TIM_CCxNChannelCmd
  1015 000c 8023     		movs	r3, #128
  1016 000e 2268     		ldr	r2, [r4]
-ARM GAS  /tmp/ccZLK2zo.s 			page 18
+ARM GAS  /tmp/ccSlPOFo.s 			page 18
 
 
  1017 0010 1B02     		lsls	r3, r3, #8
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1076              		.syntax unified
  1077              		.code	16
  1078              		.thumb_func
-ARM GAS  /tmp/ccZLK2zo.s 			page 19
+ARM GAS  /tmp/ccSlPOFo.s 			page 19
 
 
  1079              		.fpu softvfp
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1135              		.global	HAL_TIMEx_ConfigCommutationEvent
  1136              		.syntax unified
  1137              		.code	16
-ARM GAS  /tmp/ccZLK2zo.s 			page 20
+ARM GAS  /tmp/ccSlPOFo.s 			page 20
 
 
  1138              		.thumb_func
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1195              		@ frame_needed = 0, uses_anonymous_args = 0
  1196 0000 30B5     		push	{r4, r5, lr}
  1197 0002 0400     		movs	r4, r0
-ARM GAS  /tmp/ccZLK2zo.s 			page 21
+ARM GAS  /tmp/ccSlPOFo.s 			page 21
 
 
  1198 0004 3C34     		adds	r4, r4, #60
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1254 0004 3C35     		adds	r5, r5, #60
  1255 0006 2B78     		ldrb	r3, [r5]
  1256 0008 0400     		movs	r4, r0
-ARM GAS  /tmp/ccZLK2zo.s 			page 22
+ARM GAS  /tmp/ccSlPOFo.s 			page 22
 
 
  1257 000a 1600     		movs	r6, r2
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1312              		.code	16
  1313              		.thumb_func
  1314              		.fpu softvfp
-ARM GAS  /tmp/ccZLK2zo.s 			page 23
+ARM GAS  /tmp/ccSlPOFo.s 			page 23
 
 
  1316              	HAL_TIMEx_MasterConfigSynchronization:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1372 000a 0200     		movs	r2, r0
  1373 000c 1800     		movs	r0, r3
  1374 000e 012D     		cmp	r5, #1
-ARM GAS  /tmp/ccZLK2zo.s 			page 24
+ARM GAS  /tmp/ccSlPOFo.s 			page 24
 
 
  1375 0010 24D0     		beq	.L124
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1430              		.syntax unified
  1431              		.code	16
  1432              		.thumb_func
-ARM GAS  /tmp/ccZLK2zo.s 			page 25
+ARM GAS  /tmp/ccSlPOFo.s 			page 25
 
 
  1433              		.fpu softvfp
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1490 002c 002B     		cmp	r3, #0
  1491 002e 04D1     		bne	.L135
  1492 0030 2268     		ldr	r2, [r4]
-ARM GAS  /tmp/ccZLK2zo.s 			page 26
+ARM GAS  /tmp/ccSlPOFo.s 			page 26
 
 
  1493 0032 2A49     		ldr	r1, .L152
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1547 008e 0029     		cmp	r1, #0
  1548 0090 03D0     		beq	.L142
  1549 0092 9969     		ldr	r1, [r3, #24]
-ARM GAS  /tmp/ccZLK2zo.s 			page 27
+ARM GAS  /tmp/ccSlPOFo.s 			page 27
 
 
  1550              	.L148:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1605              		.syntax unified
  1606              		.code	16
  1607              		.thumb_func
-ARM GAS  /tmp/ccZLK2zo.s 			page 28
+ARM GAS  /tmp/ccSlPOFo.s 			page 28
 
 
  1608              		.fpu softvfp
@@ -1677,103 +1677,103 @@ ARM GAS  /tmp/ccZLK2zo.s 			page 1
  1668 0004 C0B2     		uxtb	r0, r0
  1669 0006 7047     		bx	lr
  1671              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccZLK2zo.s 			page 29
+ARM GAS  /tmp/ccSlPOFo.s 			page 29
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_tim_ex.c
-     /tmp/ccZLK2zo.s:14     .text.TIM_CCxNChannelCmd:0000000000000000 $t
-     /tmp/ccZLK2zo.s:21     .text.TIM_CCxNChannelCmd:0000000000000000 TIM_CCxNChannelCmd
-     /tmp/ccZLK2zo.s:38     .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 $t
-     /tmp/ccZLK2zo.s:45     .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 HAL_TIMEx_HallSensor_MspInit
-     /tmp/ccZLK2zo.s:53     .text.HAL_TIMEx_HallSensor_Init:0000000000000000 $t
-     /tmp/ccZLK2zo.s:60     .text.HAL_TIMEx_HallSensor_Init:0000000000000000 HAL_TIMEx_HallSensor_Init
-     /tmp/ccZLK2zo.s:153    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 $t
-     /tmp/ccZLK2zo.s:160    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 HAL_TIMEx_HallSensor_MspDeInit
-     /tmp/ccZLK2zo.s:168    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 $t
-     /tmp/ccZLK2zo.s:175    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 HAL_TIMEx_HallSensor_DeInit
-     /tmp/ccZLK2zo.s:209    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000038 $d
-     /tmp/ccZLK2zo.s:213    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 $t
-     /tmp/ccZLK2zo.s:220    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 HAL_TIMEx_HallSensor_Start
-     /tmp/ccZLK2zo.s:239    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 $t
-     /tmp/ccZLK2zo.s:246    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 HAL_TIMEx_HallSensor_Stop
-     /tmp/ccZLK2zo.s:275    .text.HAL_TIMEx_HallSensor_Stop:000000000000002c $d
-     /tmp/ccZLK2zo.s:279    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:286    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 HAL_TIMEx_HallSensor_Start_IT
-     /tmp/ccZLK2zo.s:309    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:316    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 HAL_TIMEx_HallSensor_Stop_IT
-     /tmp/ccZLK2zo.s:349    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000034 $d
-     /tmp/ccZLK2zo.s:353    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:360    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 HAL_TIMEx_HallSensor_Start_DMA
-     /tmp/ccZLK2zo.s:416    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000060 $d
-     /tmp/ccZLK2zo.s:420    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:427    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 HAL_TIMEx_HallSensor_Stop_DMA
-     /tmp/ccZLK2zo.s:460    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000034 $d
-     /tmp/ccZLK2zo.s:465    .text.HAL_TIMEx_OCN_Start:0000000000000000 $t
-     /tmp/ccZLK2zo.s:472    .text.HAL_TIMEx_OCN_Start:0000000000000000 HAL_TIMEx_OCN_Start
-     /tmp/ccZLK2zo.s:495    .text.HAL_TIMEx_OCN_Stop:0000000000000000 $t
-     /tmp/ccZLK2zo.s:502    .text.HAL_TIMEx_OCN_Stop:0000000000000000 HAL_TIMEx_OCN_Stop
-     /tmp/ccZLK2zo.s:542    .text.HAL_TIMEx_OCN_Stop:0000000000000040 $d
-     /tmp/ccZLK2zo.s:547    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:554    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 HAL_TIMEx_OCN_Start_IT
-     /tmp/ccZLK2zo.s:607    .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:614    .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 HAL_TIMEx_OCN_Stop_IT
-     /tmp/ccZLK2zo.s:687    .text.HAL_TIMEx_OCN_Stop_IT:0000000000000074 $d
-     /tmp/ccZLK2zo.s:692    .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:699    .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 HAL_TIMEx_OCN_Start_DMA
-     /tmp/ccZLK2zo.s:811    .text.HAL_TIMEx_OCN_Start_DMA:00000000000000cc $d
-     /tmp/ccZLK2zo.s:815    .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:822    .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 HAL_TIMEx_OCN_Stop_DMA
-     /tmp/ccZLK2zo.s:894    .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000074 $d
-     /tmp/ccZLK2zo.s:903    .text.HAL_TIMEx_PWMN_Start:0000000000000000 $t
-     /tmp/ccZLK2zo.s:910    .text.HAL_TIMEx_PWMN_Start:0000000000000000 HAL_TIMEx_PWMN_Start
-     /tmp/ccZLK2zo.s:919    .text.HAL_TIMEx_PWMN_Stop:0000000000000000 $t
-     /tmp/ccZLK2zo.s:926    .text.HAL_TIMEx_PWMN_Stop:0000000000000000 HAL_TIMEx_PWMN_Stop
-     /tmp/ccZLK2zo.s:935    .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:942    .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 HAL_TIMEx_PWMN_Start_IT
-     /tmp/ccZLK2zo.s:951    .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:958    .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 HAL_TIMEx_PWMN_Stop_IT
-     /tmp/ccZLK2zo.s:967    .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:974    .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 HAL_TIMEx_PWMN_Start_DMA
-     /tmp/ccZLK2zo.s:983    .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:990    .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 HAL_TIMEx_PWMN_Stop_DMA
-ARM GAS  /tmp/ccZLK2zo.s 			page 30
+     /tmp/ccSlPOFo.s:14     .text.TIM_CCxNChannelCmd:0000000000000000 $t
+     /tmp/ccSlPOFo.s:21     .text.TIM_CCxNChannelCmd:0000000000000000 TIM_CCxNChannelCmd
+     /tmp/ccSlPOFo.s:38     .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 $t
+     /tmp/ccSlPOFo.s:45     .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 HAL_TIMEx_HallSensor_MspInit
+     /tmp/ccSlPOFo.s:53     .text.HAL_TIMEx_HallSensor_Init:0000000000000000 $t
+     /tmp/ccSlPOFo.s:60     .text.HAL_TIMEx_HallSensor_Init:0000000000000000 HAL_TIMEx_HallSensor_Init
+     /tmp/ccSlPOFo.s:153    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 $t
+     /tmp/ccSlPOFo.s:160    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 HAL_TIMEx_HallSensor_MspDeInit
+     /tmp/ccSlPOFo.s:168    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 $t
+     /tmp/ccSlPOFo.s:175    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 HAL_TIMEx_HallSensor_DeInit
+     /tmp/ccSlPOFo.s:209    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000038 $d
+     /tmp/ccSlPOFo.s:213    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 $t
+     /tmp/ccSlPOFo.s:220    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 HAL_TIMEx_HallSensor_Start
+     /tmp/ccSlPOFo.s:239    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 $t
+     /tmp/ccSlPOFo.s:246    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 HAL_TIMEx_HallSensor_Stop
+     /tmp/ccSlPOFo.s:275    .text.HAL_TIMEx_HallSensor_Stop:000000000000002c $d
+     /tmp/ccSlPOFo.s:279    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:286    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 HAL_TIMEx_HallSensor_Start_IT
+     /tmp/ccSlPOFo.s:309    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:316    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 HAL_TIMEx_HallSensor_Stop_IT
+     /tmp/ccSlPOFo.s:349    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000034 $d
+     /tmp/ccSlPOFo.s:353    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:360    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 HAL_TIMEx_HallSensor_Start_DMA
+     /tmp/ccSlPOFo.s:416    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000060 $d
+     /tmp/ccSlPOFo.s:420    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:427    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 HAL_TIMEx_HallSensor_Stop_DMA
+     /tmp/ccSlPOFo.s:460    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000034 $d
+     /tmp/ccSlPOFo.s:465    .text.HAL_TIMEx_OCN_Start:0000000000000000 $t
+     /tmp/ccSlPOFo.s:472    .text.HAL_TIMEx_OCN_Start:0000000000000000 HAL_TIMEx_OCN_Start
+     /tmp/ccSlPOFo.s:495    .text.HAL_TIMEx_OCN_Stop:0000000000000000 $t
+     /tmp/ccSlPOFo.s:502    .text.HAL_TIMEx_OCN_Stop:0000000000000000 HAL_TIMEx_OCN_Stop
+     /tmp/ccSlPOFo.s:542    .text.HAL_TIMEx_OCN_Stop:0000000000000040 $d
+     /tmp/ccSlPOFo.s:547    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:554    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 HAL_TIMEx_OCN_Start_IT
+     /tmp/ccSlPOFo.s:607    .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:614    .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 HAL_TIMEx_OCN_Stop_IT
+     /tmp/ccSlPOFo.s:687    .text.HAL_TIMEx_OCN_Stop_IT:0000000000000074 $d
+     /tmp/ccSlPOFo.s:692    .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:699    .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 HAL_TIMEx_OCN_Start_DMA
+     /tmp/ccSlPOFo.s:811    .text.HAL_TIMEx_OCN_Start_DMA:00000000000000cc $d
+     /tmp/ccSlPOFo.s:815    .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:822    .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 HAL_TIMEx_OCN_Stop_DMA
+     /tmp/ccSlPOFo.s:894    .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000074 $d
+     /tmp/ccSlPOFo.s:903    .text.HAL_TIMEx_PWMN_Start:0000000000000000 $t
+     /tmp/ccSlPOFo.s:910    .text.HAL_TIMEx_PWMN_Start:0000000000000000 HAL_TIMEx_PWMN_Start
+     /tmp/ccSlPOFo.s:919    .text.HAL_TIMEx_PWMN_Stop:0000000000000000 $t
+     /tmp/ccSlPOFo.s:926    .text.HAL_TIMEx_PWMN_Stop:0000000000000000 HAL_TIMEx_PWMN_Stop
+     /tmp/ccSlPOFo.s:935    .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:942    .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 HAL_TIMEx_PWMN_Start_IT
+     /tmp/ccSlPOFo.s:951    .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:958    .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 HAL_TIMEx_PWMN_Stop_IT
+     /tmp/ccSlPOFo.s:967    .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:974    .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 HAL_TIMEx_PWMN_Start_DMA
+     /tmp/ccSlPOFo.s:983    .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:990    .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 HAL_TIMEx_PWMN_Stop_DMA
+ARM GAS  /tmp/ccSlPOFo.s 			page 30
 
 
-     /tmp/ccZLK2zo.s:999    .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1006   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 HAL_TIMEx_OnePulseN_Start
-     /tmp/ccZLK2zo.s:1025   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1032   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 HAL_TIMEx_OnePulseN_Stop
-     /tmp/ccZLK2zo.s:1041   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1048   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 HAL_TIMEx_OnePulseN_Start_IT
-     /tmp/ccZLK2zo.s:1074   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1081   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 HAL_TIMEx_OnePulseN_Stop_IT
-     /tmp/ccZLK2zo.s:1129   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000050 $d
-     /tmp/ccZLK2zo.s:1134   .text.HAL_TIMEx_ConfigCommutationEvent:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1141   .text.HAL_TIMEx_ConfigCommutationEvent:0000000000000000 HAL_TIMEx_ConfigCommutationEvent
-     /tmp/ccZLK2zo.s:1186   .text.HAL_TIMEx_ConfigCommutationEvent_IT:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1193   .text.HAL_TIMEx_ConfigCommutationEvent_IT:0000000000000000 HAL_TIMEx_ConfigCommutationEvent_IT
-     /tmp/ccZLK2zo.s:1242   .text.HAL_TIMEx_ConfigCommutationEvent_DMA:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1249   .text.HAL_TIMEx_ConfigCommutationEvent_DMA:0000000000000000 HAL_TIMEx_ConfigCommutationEvent_DMA
-     /tmp/ccZLK2zo.s:1305   .text.HAL_TIMEx_ConfigCommutationEvent_DMA:0000000000000060 $d
-     /tmp/ccZLK2zo.s:1625   .text.TIMEx_DMACommutationCplt:0000000000000000 TIMEx_DMACommutationCplt
-     /tmp/ccZLK2zo.s:1309   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1316   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 HAL_TIMEx_MasterConfigSynchronization
-     /tmp/ccZLK2zo.s:1357   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1364   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 HAL_TIMEx_ConfigBreakDeadTime
-     /tmp/ccZLK2zo.s:1419   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000060 $d
-     /tmp/ccZLK2zo.s:1428   .text.HAL_TIMEx_RemapConfig:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1435   .text.HAL_TIMEx_RemapConfig:0000000000000000 HAL_TIMEx_RemapConfig
-     /tmp/ccZLK2zo.s:1458   .text.HAL_TIM_ConfigOCrefClear:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1465   .text.HAL_TIM_ConfigOCrefClear:0000000000000000 HAL_TIM_ConfigOCrefClear
-     /tmp/ccZLK2zo.s:1599   .text.HAL_TIM_ConfigOCrefClear:00000000000000dc $d
-     /tmp/ccZLK2zo.s:1603   .text.HAL_TIMEx_CommutationCallback:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1610   .text.HAL_TIMEx_CommutationCallback:0000000000000000 HAL_TIMEx_CommutationCallback
-     /tmp/ccZLK2zo.s:1618   .text.TIMEx_DMACommutationCplt:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1639   .text.HAL_TIMEx_BreakCallback:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1646   .text.HAL_TIMEx_BreakCallback:0000000000000000 HAL_TIMEx_BreakCallback
-     /tmp/ccZLK2zo.s:1654   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 $t
-     /tmp/ccZLK2zo.s:1661   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 HAL_TIMEx_HallSensor_GetState
+     /tmp/ccSlPOFo.s:999    .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1006   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 HAL_TIMEx_OnePulseN_Start
+     /tmp/ccSlPOFo.s:1025   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1032   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 HAL_TIMEx_OnePulseN_Stop
+     /tmp/ccSlPOFo.s:1041   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1048   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 HAL_TIMEx_OnePulseN_Start_IT
+     /tmp/ccSlPOFo.s:1074   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1081   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 HAL_TIMEx_OnePulseN_Stop_IT
+     /tmp/ccSlPOFo.s:1129   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000050 $d
+     /tmp/ccSlPOFo.s:1134   .text.HAL_TIMEx_ConfigCommutationEvent:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1141   .text.HAL_TIMEx_ConfigCommutationEvent:0000000000000000 HAL_TIMEx_ConfigCommutationEvent
+     /tmp/ccSlPOFo.s:1186   .text.HAL_TIMEx_ConfigCommutationEvent_IT:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1193   .text.HAL_TIMEx_ConfigCommutationEvent_IT:0000000000000000 HAL_TIMEx_ConfigCommutationEvent_IT
+     /tmp/ccSlPOFo.s:1242   .text.HAL_TIMEx_ConfigCommutationEvent_DMA:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1249   .text.HAL_TIMEx_ConfigCommutationEvent_DMA:0000000000000000 HAL_TIMEx_ConfigCommutationEvent_DMA
+     /tmp/ccSlPOFo.s:1305   .text.HAL_TIMEx_ConfigCommutationEvent_DMA:0000000000000060 $d
+     /tmp/ccSlPOFo.s:1625   .text.TIMEx_DMACommutationCplt:0000000000000000 TIMEx_DMACommutationCplt
+     /tmp/ccSlPOFo.s:1309   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1316   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 HAL_TIMEx_MasterConfigSynchronization
+     /tmp/ccSlPOFo.s:1357   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1364   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 HAL_TIMEx_ConfigBreakDeadTime
+     /tmp/ccSlPOFo.s:1419   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000060 $d
+     /tmp/ccSlPOFo.s:1428   .text.HAL_TIMEx_RemapConfig:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1435   .text.HAL_TIMEx_RemapConfig:0000000000000000 HAL_TIMEx_RemapConfig
+     /tmp/ccSlPOFo.s:1458   .text.HAL_TIM_ConfigOCrefClear:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1465   .text.HAL_TIM_ConfigOCrefClear:0000000000000000 HAL_TIM_ConfigOCrefClear
+     /tmp/ccSlPOFo.s:1599   .text.HAL_TIM_ConfigOCrefClear:00000000000000dc $d
+     /tmp/ccSlPOFo.s:1603   .text.HAL_TIMEx_CommutationCallback:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1610   .text.HAL_TIMEx_CommutationCallback:0000000000000000 HAL_TIMEx_CommutationCallback
+     /tmp/ccSlPOFo.s:1618   .text.TIMEx_DMACommutationCplt:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1639   .text.HAL_TIMEx_BreakCallback:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1646   .text.HAL_TIMEx_BreakCallback:0000000000000000 HAL_TIMEx_BreakCallback
+     /tmp/ccSlPOFo.s:1654   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 $t
+     /tmp/ccSlPOFo.s:1661   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 HAL_TIMEx_HallSensor_GetState
 
 UNDEFINED SYMBOLS
 TIM_Base_SetConfig

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccJ7Wva5.s 			page 1
+ARM GAS  /tmp/ccXVTg4Z.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
   58 0012 8458     		ldr	r4, [r0, r2]
   59 0014 AD00     		lsls	r5, r5, #2
   60 0016 605D     		ldrb	r0, [r4, r5]
-ARM GAS  /tmp/ccJ7Wva5.s 			page 2
+ARM GAS  /tmp/ccXVTg4Z.s 			page 2
 
 
   61 0018 FF28     		cmp	r0, #255
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  119 0008 00000000 		.word	.LANCHOR1
  121              		.section	.text.USBD_CDC_GetOtherSpeedCfgDesc,"ax",%progbits
  122              		.align	1
-ARM GAS  /tmp/ccJ7Wva5.s 			page 3
+ARM GAS  /tmp/ccXVTg4Z.s 			page 3
 
 
  123              		.syntax unified
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  182 0012 E850     		str	r0, [r5, r3]
  183 0014 A359     		ldr	r3, [r4, r6]
  184 0016 0220     		movs	r0, #2
-ARM GAS  /tmp/ccJ7Wva5.s 			page 4
+ARM GAS  /tmp/ccXVTg4Z.s 			page 4
 
 
  185 0018 002B     		cmp	r3, #0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  241              	.L34:
  242 003a 2000     		movs	r0, r4
  243 003c FFF7FEFF 		bl	USBD_CtlSendData
-ARM GAS  /tmp/ccJ7Wva5.s 			page 5
+ARM GAS  /tmp/ccXVTg4Z.s 			page 5
 
 
  244 0040 08E0     		b	.L31
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  300 001a FFF7FEFF 		bl	USBD_LL_CloseEP
  301 001e 6359     		ldr	r3, [r4, r5]
  302 0020 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccJ7Wva5.s 			page 6
+ARM GAS  /tmp/ccXVTg4Z.s 			page 6
 
 
  303 0022 09D0     		beq	.L38
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  359 0044 0028     		cmp	r0, #0
  360 0046 13D0     		beq	.L45
  361 0048 E359     		ldr	r3, [r4, r7]
-ARM GAS  /tmp/ccJ7Wva5.s 			page 7
+ARM GAS  /tmp/ccXVTg4Z.s 			page 7
 
 
  362 004a 0027     		movs	r7, #0
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  418 000c 9200     		lsls	r2, r2, #2
  419 000e 9950     		str	r1, [r3, r2]
  420              	.L50:
-ARM GAS  /tmp/ccJ7Wva5.s 			page 8
+ARM GAS  /tmp/ccXVTg4Z.s 			page 8
 
 
  421              		@ sp needed
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  481 0000 8623     		movs	r3, #134
  482 0002 9B00     		lsls	r3, r3, #2
  483 0004 C258     		ldr	r2, [r0, r3]
-ARM GAS  /tmp/ccJ7Wva5.s 			page 9
+ARM GAS  /tmp/ccXVTg4Z.s 			page 9
 
 
  484 0006 10B5     		push	{r4, lr}
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  540 0024 2000     		movs	r0, r4
  541 0026 10BD     		pop	{r4, pc}
  542              	.L60:
-ARM GAS  /tmp/ccJ7Wva5.s 			page 10
+ARM GAS  /tmp/ccXVTg4Z.s 			page 10
 
 
  543 0028 4023     		movs	r3, #64
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  590              		.align	2
  591              		.set	.LANCHOR1,. + 0
  594              	USBD_CDC_CfgHSDesc:
-ARM GAS  /tmp/ccJ7Wva5.s 			page 11
+ARM GAS  /tmp/ccXVTg4Z.s 			page 11
 
 
  595 0000 09024300 		.ascii	"\011\002C\000\002\001\000\3002\011\004\000\000\001\002"
@@ -651,59 +651,59 @@ ARM GAS  /tmp/ccJ7Wva5.s 			page 1
  617      05810240 
  617      0000
  618              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccJ7Wva5.s 			page 12
+ARM GAS  /tmp/ccXVTg4Z.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_cdc.c
-     /tmp/ccJ7Wva5.s:14     .text.USBD_CDC_DataIn:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:21     .text.USBD_CDC_DataIn:0000000000000000 USBD_CDC_DataIn
-     /tmp/ccJ7Wva5.s:40     .text.USBD_CDC_EP0_RxReady:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:46     .text.USBD_CDC_EP0_RxReady:0000000000000000 USBD_CDC_EP0_RxReady
-     /tmp/ccJ7Wva5.s:77     .text.USBD_CDC_EP0_RxReady:0000000000000030 $d
-     /tmp/ccJ7Wva5.s:80     .text.USBD_CDC_GetFSCfgDesc:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:86     .text.USBD_CDC_GetFSCfgDesc:0000000000000000 USBD_CDC_GetFSCfgDesc
-     /tmp/ccJ7Wva5.s:98     .text.USBD_CDC_GetFSCfgDesc:0000000000000008 $d
-     /tmp/ccJ7Wva5.s:101    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:107    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 USBD_CDC_GetHSCfgDesc
-     /tmp/ccJ7Wva5.s:119    .text.USBD_CDC_GetHSCfgDesc:0000000000000008 $d
-     /tmp/ccJ7Wva5.s:122    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:128    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 USBD_CDC_GetOtherSpeedCfgDesc
-     /tmp/ccJ7Wva5.s:140    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000008 $d
-     /tmp/ccJ7Wva5.s:143    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:150    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 USBD_CDC_GetDeviceQualifierDescriptor
-     /tmp/ccJ7Wva5.s:162    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000008 $d
-     /tmp/ccJ7Wva5.s:165    .text.USBD_CDC_DataOut:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:171    .text.USBD_CDC_DataOut:0000000000000000 USBD_CDC_DataOut
-     /tmp/ccJ7Wva5.s:203    .text.USBD_CDC_Setup:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:209    .text.USBD_CDC_Setup:0000000000000000 USBD_CDC_Setup
-     /tmp/ccJ7Wva5.s:276    .text.USBD_CDC_Setup:0000000000000074 $d
-     /tmp/ccJ7Wva5.s:280    .text.USBD_CDC_DeInit:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:286    .text.USBD_CDC_DeInit:0000000000000000 USBD_CDC_DeInit
-     /tmp/ccJ7Wva5.s:319    .text.USBD_CDC_Init:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:325    .text.USBD_CDC_Init:0000000000000000 USBD_CDC_Init
-     /tmp/ccJ7Wva5.s:401    .text.USBD_CDC_RegisterInterface:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:408    .text.USBD_CDC_RegisterInterface:0000000000000000 USBD_CDC_RegisterInterface
-     /tmp/ccJ7Wva5.s:425    .text.USBD_CDC_SetTxBuffer:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:432    .text.USBD_CDC_SetTxBuffer:0000000000000000 USBD_CDC_SetTxBuffer
-     /tmp/ccJ7Wva5.s:450    .text.USBD_CDC_SetRxBuffer:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:457    .text.USBD_CDC_SetRxBuffer:0000000000000000 USBD_CDC_SetRxBuffer
-     /tmp/ccJ7Wva5.s:471    .text.USBD_CDC_TransmitPacket:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:478    .text.USBD_CDC_TransmitPacket:0000000000000000 USBD_CDC_TransmitPacket
-     /tmp/ccJ7Wva5.s:511    .text.USBD_CDC_ReceivePacket:0000000000000000 $t
-     /tmp/ccJ7Wva5.s:518    .text.USBD_CDC_ReceivePacket:0000000000000000 USBD_CDC_ReceivePacket
-     /tmp/ccJ7Wva5.s:612    .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 USBD_CDC_OtherSpeedCfgDesc
-     /tmp/ccJ7Wva5.s:583    .data.USBD_CDC_CfgFSDesc:0000000000000000 USBD_CDC_CfgFSDesc
-     /tmp/ccJ7Wva5.s:594    .data.USBD_CDC_CfgHSDesc:0000000000000000 USBD_CDC_CfgHSDesc
-     /tmp/ccJ7Wva5.s:563    .data.USBD_CDC:0000000000000000 USBD_CDC
-     /tmp/ccJ7Wva5.s:557    .bss.ifalt.0:0000000000000000 ifalt.0
-     /tmp/ccJ7Wva5.s:558    .bss.ifalt.0:0000000000000000 $d
-     /tmp/ccJ7Wva5.s:560    .data.USBD_CDC:0000000000000000 $d
-     /tmp/ccJ7Wva5.s:579    .data.USBD_CDC_CfgFSDesc:0000000000000000 $d
-     /tmp/ccJ7Wva5.s:590    .data.USBD_CDC_CfgHSDesc:0000000000000000 $d
-     /tmp/ccJ7Wva5.s:601    .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 $d
-     /tmp/ccJ7Wva5.s:605    .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 USBD_CDC_DeviceQualifierDesc
-     /tmp/ccJ7Wva5.s:608    .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 $d
+     /tmp/ccXVTg4Z.s:14     .text.USBD_CDC_DataIn:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:21     .text.USBD_CDC_DataIn:0000000000000000 USBD_CDC_DataIn
+     /tmp/ccXVTg4Z.s:40     .text.USBD_CDC_EP0_RxReady:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:46     .text.USBD_CDC_EP0_RxReady:0000000000000000 USBD_CDC_EP0_RxReady
+     /tmp/ccXVTg4Z.s:77     .text.USBD_CDC_EP0_RxReady:0000000000000030 $d
+     /tmp/ccXVTg4Z.s:80     .text.USBD_CDC_GetFSCfgDesc:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:86     .text.USBD_CDC_GetFSCfgDesc:0000000000000000 USBD_CDC_GetFSCfgDesc
+     /tmp/ccXVTg4Z.s:98     .text.USBD_CDC_GetFSCfgDesc:0000000000000008 $d
+     /tmp/ccXVTg4Z.s:101    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:107    .text.USBD_CDC_GetHSCfgDesc:0000000000000000 USBD_CDC_GetHSCfgDesc
+     /tmp/ccXVTg4Z.s:119    .text.USBD_CDC_GetHSCfgDesc:0000000000000008 $d
+     /tmp/ccXVTg4Z.s:122    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:128    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000000 USBD_CDC_GetOtherSpeedCfgDesc
+     /tmp/ccXVTg4Z.s:140    .text.USBD_CDC_GetOtherSpeedCfgDesc:0000000000000008 $d
+     /tmp/ccXVTg4Z.s:143    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:150    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000000 USBD_CDC_GetDeviceQualifierDescriptor
+     /tmp/ccXVTg4Z.s:162    .text.USBD_CDC_GetDeviceQualifierDescriptor:0000000000000008 $d
+     /tmp/ccXVTg4Z.s:165    .text.USBD_CDC_DataOut:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:171    .text.USBD_CDC_DataOut:0000000000000000 USBD_CDC_DataOut
+     /tmp/ccXVTg4Z.s:203    .text.USBD_CDC_Setup:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:209    .text.USBD_CDC_Setup:0000000000000000 USBD_CDC_Setup
+     /tmp/ccXVTg4Z.s:276    .text.USBD_CDC_Setup:0000000000000074 $d
+     /tmp/ccXVTg4Z.s:280    .text.USBD_CDC_DeInit:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:286    .text.USBD_CDC_DeInit:0000000000000000 USBD_CDC_DeInit
+     /tmp/ccXVTg4Z.s:319    .text.USBD_CDC_Init:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:325    .text.USBD_CDC_Init:0000000000000000 USBD_CDC_Init
+     /tmp/ccXVTg4Z.s:401    .text.USBD_CDC_RegisterInterface:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:408    .text.USBD_CDC_RegisterInterface:0000000000000000 USBD_CDC_RegisterInterface
+     /tmp/ccXVTg4Z.s:425    .text.USBD_CDC_SetTxBuffer:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:432    .text.USBD_CDC_SetTxBuffer:0000000000000000 USBD_CDC_SetTxBuffer
+     /tmp/ccXVTg4Z.s:450    .text.USBD_CDC_SetRxBuffer:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:457    .text.USBD_CDC_SetRxBuffer:0000000000000000 USBD_CDC_SetRxBuffer
+     /tmp/ccXVTg4Z.s:471    .text.USBD_CDC_TransmitPacket:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:478    .text.USBD_CDC_TransmitPacket:0000000000000000 USBD_CDC_TransmitPacket
+     /tmp/ccXVTg4Z.s:511    .text.USBD_CDC_ReceivePacket:0000000000000000 $t
+     /tmp/ccXVTg4Z.s:518    .text.USBD_CDC_ReceivePacket:0000000000000000 USBD_CDC_ReceivePacket
+     /tmp/ccXVTg4Z.s:612    .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 USBD_CDC_OtherSpeedCfgDesc
+     /tmp/ccXVTg4Z.s:583    .data.USBD_CDC_CfgFSDesc:0000000000000000 USBD_CDC_CfgFSDesc
+     /tmp/ccXVTg4Z.s:594    .data.USBD_CDC_CfgHSDesc:0000000000000000 USBD_CDC_CfgHSDesc
+     /tmp/ccXVTg4Z.s:563    .data.USBD_CDC:0000000000000000 USBD_CDC
+     /tmp/ccXVTg4Z.s:557    .bss.ifalt.0:0000000000000000 ifalt.0
+     /tmp/ccXVTg4Z.s:558    .bss.ifalt.0:0000000000000000 $d
+     /tmp/ccXVTg4Z.s:560    .data.USBD_CDC:0000000000000000 $d
+     /tmp/ccXVTg4Z.s:579    .data.USBD_CDC_CfgFSDesc:0000000000000000 $d
+     /tmp/ccXVTg4Z.s:590    .data.USBD_CDC_CfgHSDesc:0000000000000000 $d
+     /tmp/ccXVTg4Z.s:601    .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 $d
+     /tmp/ccXVTg4Z.s:605    .data.USBD_CDC_DeviceQualifierDesc:0000000000000000 USBD_CDC_DeviceQualifierDesc
+     /tmp/ccXVTg4Z.s:608    .data.USBD_CDC_OtherSpeedCfgDesc:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 USBD_LL_GetRxDataSize
@@ -711,7 +711,7 @@ USBD_CtlSendData
 USBD_CtlPrepareRx
 USBD_LL_CloseEP
 USBD_static_free
-ARM GAS  /tmp/ccJ7Wva5.s 			page 13
+ARM GAS  /tmp/ccXVTg4Z.s 			page 13
 
 
 USBD_LL_OpenEP

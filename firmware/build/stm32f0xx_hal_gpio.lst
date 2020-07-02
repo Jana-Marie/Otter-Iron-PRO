@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccBfV7WO.s 			page 1
+ARM GAS  /tmp/ccAzqejJ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
   56 0036 5468     		ldr	r4, [r2, #4]
   57 0038 1022     		movs	r2, #16
   58 003a 2500     		movs	r5, r4
-ARM GAS  /tmp/ccBfV7WO.s 			page 2
+ARM GAS  /tmp/ccAzqejJ.s 			page 2
 
 
   59 003c 9543     		bics	r5, r2
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  113 00a4 0299     		ldr	r1, [sp, #8]
  114 00a6 3A40     		ands	r2, r7
  115 00a8 8F68     		ldr	r7, [r1, #8]
-ARM GAS  /tmp/ccBfV7WO.s 			page 3
+ARM GAS  /tmp/ccAzqejJ.s 			page 3
 
 
  116 00aa AF40     		lsls	r7, r7, r5
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  170 0114 0499     		ldr	r1, [sp, #16]
  171 0116 0A43     		orrs	r2, r1
  172 0118 0199     		ldr	r1, [sp, #4]
-ARM GAS  /tmp/ccBfV7WO.s 			page 4
+ARM GAS  /tmp/ccAzqejJ.s 			page 4
 
 
  173 011a AA60     		str	r2, [r5, #8]
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  228              		.global	HAL_GPIO_DeInit
  229              		.syntax unified
  230              		.code	16
-ARM GAS  /tmp/ccBfV7WO.s 			page 5
+ARM GAS  /tmp/ccAzqejJ.s 			page 5
 
 
  231              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  286 005c 8268     		ldr	r2, [r0, #8]
  287 005e 204C     		ldr	r4, .L40+4
  288 0060 B243     		bics	r2, r6
-ARM GAS  /tmp/ccBfV7WO.s 			page 6
+ARM GAS  /tmp/ccAzqejJ.s 			page 6
 
 
  289 0062 8260     		str	r2, [r0, #8]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  343 00cc A943     		bics	r1, r5
  344 00ce 9160     		str	r1, [r2, #8]
  345 00d0 D168     		ldr	r1, [r2, #12]
-ARM GAS  /tmp/ccBfV7WO.s 			page 7
+ARM GAS  /tmp/ccAzqejJ.s 			page 7
 
 
  346 00d2 A943     		bics	r1, r5
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  405              		.global	HAL_GPIO_TogglePin
  406              		.syntax unified
  407              		.code	16
-ARM GAS  /tmp/ccBfV7WO.s 			page 8
+ARM GAS  /tmp/ccAzqejJ.s 			page 8
 
 
  408              		.thumb_func
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  467              		@ sp needed
  468 0000 7047     		bx	lr
  470              		.section	.text.HAL_GPIO_EXTI_IRQHandler,"ax",%progbits
-ARM GAS  /tmp/ccBfV7WO.s 			page 9
+ARM GAS  /tmp/ccAzqejJ.s 			page 9
 
 
  471              		.align	1
@@ -505,29 +505,29 @@ ARM GAS  /tmp/ccBfV7WO.s 			page 1
  493              	.L54:
  494 0014 00040140 		.word	1073808384
  496              		.ident	"GCC: (Arch Repository) 10.1.0"
-ARM GAS  /tmp/ccBfV7WO.s 			page 10
+ARM GAS  /tmp/ccAzqejJ.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f0xx_hal_gpio.c
-     /tmp/ccBfV7WO.s:14     .text.HAL_GPIO_Init:0000000000000000 $t
-     /tmp/ccBfV7WO.s:22     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
-     /tmp/ccBfV7WO.s:218    .text.HAL_GPIO_Init:0000000000000164 $d
-     /tmp/ccBfV7WO.s:227    .text.HAL_GPIO_DeInit:0000000000000000 $t
-     /tmp/ccBfV7WO.s:234    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
-     /tmp/ccBfV7WO.s:354    .text.HAL_GPIO_DeInit:00000000000000dc $d
-     /tmp/ccBfV7WO.s:362    .text.HAL_GPIO_ReadPin:0000000000000000 $t
-     /tmp/ccBfV7WO.s:369    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
-     /tmp/ccBfV7WO.s:382    .text.HAL_GPIO_WritePin:0000000000000000 $t
-     /tmp/ccBfV7WO.s:389    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
-     /tmp/ccBfV7WO.s:404    .text.HAL_GPIO_TogglePin:0000000000000000 $t
-     /tmp/ccBfV7WO.s:411    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
-     /tmp/ccBfV7WO.s:422    .text.HAL_GPIO_LockPin:0000000000000000 $t
-     /tmp/ccBfV7WO.s:429    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
-     /tmp/ccBfV7WO.s:456    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
-     /tmp/ccBfV7WO.s:463    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
-     /tmp/ccBfV7WO.s:471    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
-     /tmp/ccBfV7WO.s:478    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
-     /tmp/ccBfV7WO.s:494    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000014 $d
+     /tmp/ccAzqejJ.s:14     .text.HAL_GPIO_Init:0000000000000000 $t
+     /tmp/ccAzqejJ.s:22     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
+     /tmp/ccAzqejJ.s:218    .text.HAL_GPIO_Init:0000000000000164 $d
+     /tmp/ccAzqejJ.s:227    .text.HAL_GPIO_DeInit:0000000000000000 $t
+     /tmp/ccAzqejJ.s:234    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
+     /tmp/ccAzqejJ.s:354    .text.HAL_GPIO_DeInit:00000000000000dc $d
+     /tmp/ccAzqejJ.s:362    .text.HAL_GPIO_ReadPin:0000000000000000 $t
+     /tmp/ccAzqejJ.s:369    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
+     /tmp/ccAzqejJ.s:382    .text.HAL_GPIO_WritePin:0000000000000000 $t
+     /tmp/ccAzqejJ.s:389    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
+     /tmp/ccAzqejJ.s:404    .text.HAL_GPIO_TogglePin:0000000000000000 $t
+     /tmp/ccAzqejJ.s:411    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
+     /tmp/ccAzqejJ.s:422    .text.HAL_GPIO_LockPin:0000000000000000 $t
+     /tmp/ccAzqejJ.s:429    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
+     /tmp/ccAzqejJ.s:456    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+     /tmp/ccAzqejJ.s:463    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+     /tmp/ccAzqejJ.s:471    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
+     /tmp/ccAzqejJ.s:478    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
+     /tmp/ccAzqejJ.s:494    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000014 $d
 
 NO UNDEFINED SYMBOLS
