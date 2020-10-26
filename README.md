@@ -4,7 +4,7 @@ USB-PD soldering station for JBC C245 handles based on the [Otter-Iron](https://
 
  - v1.0 tested, works but not great
  - v1.1 untested, wont be tested
- - v2.0 tested, works great!
+ - v2.0 tested, works great! (update: It seems to draw too much current, needs fix)
 
 ## Firmware
 
