@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name TS100C-rescue)(type Legacy)(uri ${KIPRJMOD}/TS100C-rescue.lib)(options "")(descr ""))
   (lib (name OtterIron_Devkit-rescue)(type Legacy)(uri ${KIPRJMOD}/OtterIron_Devkit-rescue.lib)(options "")(descr ""))
+  (lib (name OtterIron_PRO_Bot-rescue)(type Legacy)(uri ${KIPRJMOD}/OtterIron_PRO_Bot-rescue.lib)(options "")(descr ""))
 )
