@@ -1,6 +1,6 @@
 # Otter-Iron-PRO
 
-USB-PD soldering station for JBC C245 handles based on the [Otter-Iron](https://github.com/Jana-Marie/Otter-Iron). More coming soon :)
+USB-PD soldering station for JBC C245 handles based on the [Otter-Iron](https://github.com/Jana-Marie/Otter-Iron).
 
  - v1.0 tested, works but not great
  - v1.1 untested, wont be tested

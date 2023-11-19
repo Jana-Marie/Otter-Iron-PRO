@@ -3,5 +3,6 @@
 
 [BOM](https://github.com/jeanthom/Otter-Iron-PRO-BOM)
 
-![](https://pbs.twimg.com/media/EW4WcY-XYAIYt2b?format=jpg&name=large)
-![](https://pbs.twimg.com/media/EW4WdAkWAAAsa6j?format=jpg&name=large)
+![](../images/2_1.jpeg)
+![](../images/2_2.jpeg)
+
